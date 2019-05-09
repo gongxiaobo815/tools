@@ -471,6 +471,7 @@ function copyFilesToSDcard()
         echo "Failed: Copy perf.sh to filesystem failed!"
         return 1
     fi
+    chmod +x ${LogPath}squashfs-root/usr/bin/perf
 
     # 2. copy root filesystem
     if [[ ${arch} =~ "x86" ]];then
