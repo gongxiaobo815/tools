@@ -529,6 +529,9 @@ function make_sysroot()
     if [ ! -f /usr/lib/aarch64-linux-gnu/libz.so ]; then
         ln -s /lib/aarch64-linux-gnu/libz.so.1 /usr/lib/aarch64-linux-gnu/libz.so
     fi
+    ln -s /usr/aarch64-linux-gnu/include/sys /usr/include/sys
+    ln -s /usr/aarch64-linux-gnu/include/bits /usr/include/bits
+    ln -s /usr/aarch64-linux-gnu/include/gnu /usr/include/gnu
 }
 
 # ########################Begin Executing######################################
