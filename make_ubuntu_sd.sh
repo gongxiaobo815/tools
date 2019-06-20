@@ -259,6 +259,12 @@ EOF
     if [ -f ${LogPath}squashfs-root/etc/rsyslog.d/50-default.conf ];then
         sed -i 's/*.*;auth,authpriv.none/*.*;auth,authpriv,kern.none/g' ${LogPath}squashfs-root/etc/rsyslog.d/50-default.conf
     fi
+    echo 'LogLevel=emerg' >> /etc/systemd/system.conf
+    echo 'MaxLevelStore=emerg' >> /etc/systemd/journald.conf
+    echo 'MaxLevelSyslog=emerg' >> /etc/systemd/journald.conf
+    echo 'MaxLevelKMsg=emerg' >> /etc/systemd/journald.conf
+    echo 'MaxLevelConsole=emerg' >> /etc/systemd/journald.conf
+    echo 'MaxLevelWall=emerg' >> /etc/systemd/journald.conf
 }
 
 
