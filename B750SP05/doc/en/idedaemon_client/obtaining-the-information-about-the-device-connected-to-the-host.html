@@ -1,0 +1,477 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Obtaining the Information About the Device Connected to the Host · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters-theme.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-copy/css/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="generating-character-string-encryption-files.html" />
+    
+    
+    <link rel="prev" href="collecting-dump-information-recorded-by-the-black-box-on-the-host.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="mind-studio-sends-a-command-to-a-device.html">
+            
+                <a href="mind-studio-sends-a-command-to-a-device.html">
+            
+                    
+                    Mind Studio Sends a Command to a Device
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="mind-studio-sends-a-command-to-the-host.html">
+            
+                <a href="mind-studio-sends-a-command-to-the-host.html">
+            
+                    
+                    Mind Studio Sends a Command to the Host
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="mind-studio-transfers-a-file-to-a-device.html">
+            
+                <a href="mind-studio-transfers-a-file-to-a-device.html">
+            
+                    
+                    Mind Studio Transfers a File to a Device
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="mind-studio-transfers-a-file-to-the-host.html">
+            
+                <a href="mind-studio-transfers-a-file-to-the-host.html">
+            
+                    
+                    Mind Studio Transfers a File to the Host
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="mind-studio-obtains-a-file-from-the-host.html">
+            
+                <a href="mind-studio-obtains-a-file-from-the-host.html">
+            
+                    
+                    Mind Studio Obtains a File from the Host
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="detecting-the-heartbeat-between-mind-studio-and-the-host.html">
+            
+                <a href="detecting-the-heartbeat-between-mind-studio-and-the-host.html">
+            
+                    
+                    Detecting the Heartbeat Between Mind Studio and the Host
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="setting-the-log-level.html">
+            
+                <a href="setting-the-log-level.html">
+            
+                    
+                    Setting the Log Level
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="mind-studio-sends-information-about-profiling-items-to-the-host.html">
+            
+                <a href="mind-studio-sends-information-about-profiling-items-to-the-host.html">
+            
+                    
+                    Mind Studio Sends Information About Profiling Items to the Host
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="collecting-dump-information-recorded-by-the-black-box-on-the-host.html">
+            
+                <a href="collecting-dump-information-recorded-by-the-black-box-on-the-host.html">
+            
+                    
+                    Collecting Dump Information Recorded by the Black Box on the Host
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12" data-path="obtaining-the-information-about-the-device-connected-to-the-host.html">
+            
+                <a href="obtaining-the-information-about-the-device-connected-to-the-host.html">
+            
+                    
+                    Obtaining the Information About the Device Connected to the Host
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="generating-character-string-encryption-files.html">
+            
+                <a href="generating-character-string-encryption-files.html">
+            
+                    
+                    Generating Character String Encryption Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="synchronizing-the-time-between-mind-studio-and-the-host.html">
+            
+                <a href="synchronizing-the-time-between-mind-studio-and-the-host.html">
+            
+                    
+                    Synchronizing the Time Between Mind Studio and the Host
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="displaying-help-information.html">
+            
+                <a href="displaying-help-information.html">
+            
+                    
+                    Displaying Help Information
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Obtaining the Information About the Device Connected to the Host</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="obtaining-the-information-about-the-device-connected-to-the-host">Obtaining the Information About the Device Connected to the Host<a name="EN-US_TOPIC_0147907759"></a></h1>
+<h2 id="command-function">Command Function<a name="section16840213414"></a></h2>
+<p>Allows Mind Studio to obtain the information about the device connected to the host.</p>
+<h2 id="command-format">Command Format<a name="section13936161914410"></a></h2>
+<p>IDE-daemon-client --host &lt;<em>host_ip</em>&gt;:&lt;<em>port</em>&gt; --api &lt;<em>params</em>&gt;</p>
+<h2 id="parameter-description">Parameter Description<a name="section9202122985815"></a></h2>
+<p><strong>Table  1</strong>  Parameter description</p>
+<p><a name="table20202142935810"></a></p>
+<table><thead align="left"><tr id="row1720422910589"><th class="cellrowborder" valign="top" width="25.080000000000002%" id="mcps1.2.5.1.1"><p id="p1620592911587"><a name="p1620592911587"></a><a name="p1620592911587"></a><strong>Parameter</strong></p>
+</th>
+<th class="cellrowborder" valign="top" width="24.92%" id="mcps1.2.5.1.2"><p id="p12205182918587"><a name="p12205182918587"></a><a name="p12205182918587"></a><strong>Description</strong></p>
+</th>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.3"><p id="p5205429155810"><a name="p5205429155810"></a><a name="p5205429155810"></a><strong id="b5176854112114"><a name="b5176854112114"></a><a name="b5176854112114"></a>Mandatory</strong></p>
+</th>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.4"><p id="p42061929195812"><a name="p42061929195812"></a><a name="p42061929195812"></a><strong>Default Value</strong></p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row122066296585"><td class="cellrowborder" valign="top" width="25.080000000000002%" headers="mcps1.2.5.1.1 "><p id="p1420618293586"><a name="p1420618293586"></a><a name="p1420618293586"></a>--host</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.92%" headers="mcps1.2.5.1.2 "><a name="ul1257115238211"></a><a name="ul1257115238211"></a><ul id="ul1257115238211"><li><em id="i13791105792115"><a name="i13791105792115"></a><a name="i13791105792115"></a>host_ip</em>: Specifies the IP address of the host.</li><li><em id="i1917611142218"><a name="i1917611142218"></a><a name="i1917611142218"></a>port</em>: Specifies the port number.</li></ul>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p16209029105817"><a name="p16209029105817"></a><a name="p16209029105817"></a>Yes</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p172091429155816"><a name="p172091429155816"></a><a name="p172091429155816"></a>The default value of <em id="i850312411222"><a name="i850312411222"></a><a name="i850312411222"></a>port</em> is 22118.</p>
+</td>
+</tr>
+<tr id="row112101129155815"><td class="cellrowborder" valign="top" width="25.080000000000002%" headers="mcps1.2.5.1.1 "><p id="p895813598132"><a name="p895813598132"></a><a name="p895813598132"></a>--api</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.92%" headers="mcps1.2.5.1.2 "><p id="p1782311962516"><a name="p1782311962516"></a><a name="p1782311962516"></a><em id="i2055810722218"><a name="i2055810722218"></a><a name="i2055810722218"></a>params</em> includes the following items:</p>
+<a name="ul2878164517311"></a><a name="ul2878164517311"></a><ul id="ul2878164517311"><li><strong id="b178469266222"><a name="b178469266222"></a><a name="b178469266222"></a>device_info</strong>: Indicates the list of devices connected to the host.</li><li><strong id="b1798925272220"><a name="b1798925272220"></a><a name="b1798925272220"></a>device_status</strong>: Only the status of the camera on the developer board can be queried. The value <strong id="b15934192014247"><a name="b15934192014247"></a><a name="b15934192014247"></a>0</strong> indicates that the camera does not exist, and the value <strong id="b18369142517249"><a name="b18369142517249"></a><a name="b18369142517249"></a>1</strong> indicates that the camera exists. If the value <strong id="b1411273162419"><a name="b1411273162419"></a><a name="b1411273162419"></a>100</strong> is returned, <strong id="b17561163711241"><a name="b17561163711241"></a><a name="b17561163711241"></a>1</strong> indicates the Hi3559 chip, and the last two 0s indicate that the two cameras do not exist.</li><li><strong id="b16395142032519"><a name="b16395142032519"></a><a name="b16395142032519"></a>board_id</strong>: Only the device type on the developer board can be queried.</li><li><strong id="b78837525264"><a name="b78837525264"></a><a name="b78837525264"></a>sys_version</strong>: Only the product version of the developer board can be queried.</li></ul>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p13211229145814"><a name="p13211229145814"></a><a name="p13211229145814"></a>Yes</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p821242910585"><a name="p821242910585"></a><a name="p821242910585"></a>-</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="example">Example<a name="section18411611595"></a></h2>
+<ol>
+<li>Log in to the Mind Studio server as the Mind Studio installation user.</li>
+<li><p>Run the following commands to set the environment variables:</p>
+<pre><code>export  LD_LIBRARY_PATH=~/tools/che/ddk/ddk/uihost/lib
+export  PATH=$PATH:~/tools/che/ddk/ddk/uihost/bin
+</code></pre></li>
+<li><p>Run the following command to obtain the list of all devices connected to the host:</p>
+<pre><code>IDE-daemon-client --host xx.xx.xx.xx:22118 --api device_info
+</code></pre><blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong><br><em>xx.xx.xx.xx</em>  should be replaced with the actual IP address of the host.  </p>
+</blockquote>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="collecting-dump-information-recorded-by-the-black-box-on-the-host.html" class="navigation navigation-prev " aria-label="Previous page: Collecting Dump Information Recorded by the Black Box on the Host">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="generating-character-string-encryption-files.html" class="navigation navigation-next " aria-label="Next page: Generating Character String Encryption Files">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Obtaining the Information About the Device Connected to the Host","level":"1.12","depth":1,"next":{"title":"Generating Character String Encryption Files","level":"1.13","depth":1,"path":"generating-character-string-encryption-files.md","ref":"generating-character-string-encryption-files.md","articles":[]},"previous":{"title":"Collecting Dump Information Recorded by the Black Box on the Host","level":"1.11","depth":1,"path":"collecting-dump-information-recorded-by-the-black-box-on-the-host.md","ref":"collecting-dump-information-recorded-by-the-black-box-on-the-host.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"imgUrl":"","topnav":[]},"plugins":["expandable-chapters","copy"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy":{},"expandableChapters":{"cssFile":["expandable-chapters-theme.css"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"website.css"}},"file":{"path":"obtaining-the-information-about-the-device-connected-to-the-host.md","mtime":"2019-03-21T09:13:07.144Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-21T09:16:10.647Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/clipboard.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/copy.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

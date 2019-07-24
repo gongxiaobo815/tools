@@ -1,0 +1,1906 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Quantization Configuration · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters-theme.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-copy/css/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="aipp-configuration.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="function-description.html">
+            
+                <a href="function-description.html">
+            
+                    
+                    Function Description
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="user-management.html">
+            
+                <a href="user-management.html">
+            
+                    
+                    User Management
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="logging-in.html">
+            
+                <a href="logging-in.html">
+            
+                    
+                    Logging In
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="resetting-the-password.html">
+            
+                <a href="resetting-the-password.html">
+            
+                    
+                    Resetting the Password
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="changing-the-password.html">
+            
+                <a href="changing-the-password.html">
+            
+                    
+                    Changing the Password
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="logging-out.html">
+            
+                <a href="logging-out.html">
+            
+                    
+                    Logging Out
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="querying-security-logs.html">
+            
+                <a href="querying-security-logs.html">
+            
+                    
+                    Querying Security Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="project-management.html">
+            
+                <a href="project-management.html">
+            
+                    
+                    Project Management
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="overview-0.html">
+            
+                <a href="overview-0.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="basic-operations.html">
+            
+                <a href="basic-operations.html">
+            
+                    
+                    Basic Operations
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="creating-deleting-a-project.html">
+            
+                <a href="creating-deleting-a-project.html">
+            
+                    
+                    Creating/Deleting a Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="uploading-downloading-a-project.html">
+            
+                <a href="uploading-downloading-a-project.html">
+            
+                    
+                    Uploading/Downloading a Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="creating-deleting-a-file.html">
+            
+                <a href="creating-deleting-a-file.html">
+            
+                    
+                    Creating/Deleting a File
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="uploading-a-file-folder.html">
+            
+                <a href="uploading-a-file-folder.html">
+            
+                    
+                    Uploading a File/Folder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.5" data-path="opening-a-project.html">
+            
+                <a href="opening-a-project.html">
+            
+                    
+                    Opening a Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6" data-path="closing-a-project.html">
+            
+                <a href="closing-a-project.html">
+            
+                    
+                    Closing a Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.7" data-path="compiling-a-project.html">
+            
+                <a href="compiling-a-project.html">
+            
+                    
+                    Compiling a Project 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.8" data-path="running-a-project.html">
+            
+                <a href="running-a-project.html">
+            
+                    
+                    Running a Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.9" data-path="supported-file-formats.html">
+            
+                <a href="supported-file-formats.html">
+            
+                    
+                    Supported File Formats
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="dataset-management.html">
+            
+                <a href="dataset-management.html">
+            
+                    
+                    Dataset Management
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="overview-1.html">
+            
+                <a href="overview-1.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="dataset-management-in-the-projects-explorer-window.html">
+            
+                <a href="dataset-management-in-the-projects-explorer-window.html">
+            
+                    
+                    Dataset Management in the Projects Explorer Window
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="viewing-the-datasets.html">
+            
+                <a href="viewing-the-datasets.html">
+            
+                    
+                    Viewing the Datasets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="importing-a-dataset.html">
+            
+                <a href="importing-a-dataset.html">
+            
+                    
+                    Importing a Dataset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="viewing-the-dataset-properties.html">
+            
+                <a href="viewing-the-dataset-properties.html">
+            
+                    
+                    Viewing the Dataset Properties
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="generating-a-cpp-file.html">
+            
+                <a href="generating-a-cpp-file.html">
+            
+                    
+                    Generating a .cpp File
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.5" data-path="selecting-images.html">
+            
+                <a href="selecting-images.html">
+            
+                    
+                    Selecting Images
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.6" data-path="deleting-a-custom-dataset.html">
+            
+                <a href="deleting-a-custom-dataset.html">
+            
+                    
+                    Deleting a Custom Dataset
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="dataset-management-in-the-model-zoo-explorer-window.html">
+            
+                <a href="dataset-management-in-the-model-zoo-explorer-window.html">
+            
+                    
+                    Dataset Management in the Model Zoo Explorer Window
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="viewing-the-datasets-2.html">
+            
+                <a href="viewing-the-datasets-2.html">
+            
+                    
+                    Viewing the Datasets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="copying-a-path.html">
+            
+                <a href="copying-a-path.html">
+            
+                    
+                    Copying a Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" data-path="refreshing.html">
+            
+                <a href="refreshing.html">
+            
+                    
+                    Refreshing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="model-management.html">
+            
+                <a href="model-management.html">
+            
+                    
+                    Model Management
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="overview-3.html">
+            
+                <a href="overview-3.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="model-conversion.html">
+            
+                <a href="model-conversion.html">
+            
+                    
+                    Model Conversion
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="using-the-ui.html">
+            
+                <a href="using-the-ui.html">
+            
+                    
+                    Using the UI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1.1" data-path="adding-a-custom-model-component.html">
+            
+                <a href="adding-a-custom-model-component.html">
+            
+                    
+                    Adding a Custom Model Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.1.2" data-path="encrypting-and-decrypting-a-custom-model.html">
+            
+                <a href="encrypting-and-decrypting-a-custom-model.html">
+            
+                    
+                    Encrypting and Decrypting a Custom Model 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="using-command-lines.html">
+            
+                <a href="using-command-lines.html">
+            
+                    
+                    Using Command Lines
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.2.1" data-path="convert-model-using-the-omg-command.html">
+            
+                <a href="convert-model-using-the-omg-command.html">
+            
+                    
+                    Convert Model Using the omg Command
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="model-management-in-the-projects-explorer-window.html">
+            
+                <a href="model-management-in-the-projects-explorer-window.html">
+            
+                    
+                    Model Management in the Projects Explorer Window
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="viewing-the-models.html">
+            
+                <a href="viewing-the-models.html">
+            
+                    
+                    Viewing the Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" data-path="adding-a-caffe-model-component.html">
+            
+                <a href="adding-a-caffe-model-component.html">
+            
+                    
+                    Adding a Caffe Model Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.3" data-path="viewing-model-properties.html">
+            
+                <a href="viewing-model-properties.html">
+            
+                    
+                    Viewing Model Properties
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.4" data-path="viewing-the-network-structure-of-a-model.html">
+            
+                <a href="viewing-the-network-structure-of-a-model.html">
+            
+                    
+                    Viewing the Network Structure of a Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.5" data-path="deleting-a-model-component.html">
+            
+                <a href="deleting-a-model-component.html">
+            
+                    
+                    Deleting a Model Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="model-management-in-the-model-zoo-explorer-window.html">
+            
+                <a href="model-management-in-the-model-zoo-explorer-window.html">
+            
+                    
+                    Model Management in the Model Zoo Explorer Window
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.4.1" data-path="viewing-the-models-4.html">
+            
+                <a href="viewing-the-models-4.html">
+            
+                    
+                    Viewing the Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.2" data-path="adding-a-custom-model-component-5.html">
+            
+                <a href="adding-a-custom-model-component-5.html">
+            
+                    
+                    Adding a Custom Model Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.3" data-path="copying-a-path-6.html">
+            
+                <a href="copying-a-path-6.html">
+            
+                    
+                    Copying a Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.4" data-path="refreshing-a-folder.html">
+            
+                <a href="refreshing-a-folder.html">
+            
+                    
+                    Refreshing a Folder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.5" data-path="importing-an-offline-model.html">
+            
+                <a href="importing-an-offline-model.html">
+            
+                    
+                    Importing an Offline Model 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="reference.html">
+            
+                <a href="reference.html">
+            
+                    
+                    Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.5.1" data-path="aipp-configuration.html">
+            
+                <a href="aipp-configuration.html">
+            
+                    
+                    AIPP Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.5.2" data-path="quantization-configuration.html">
+            
+                <a href="quantization-configuration.html">
+            
+                    
+                    Quantization Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Quantization Configuration</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="quantization-configuration">Quantization Configuration<a id="EN-US_TOPIC_0144442645"></a></h1>
+<p>With  <strong>Quantization</strong>  enabled during offline model conversion &#xFF08;for details, see 5.2.1.1 &quot;Adding a Custom Model Component&quot;&#xFF09;, after the model conversion is complete, you can view the parameter configurations in the  <strong>convertModel.log</strong>  file of the project.</p>
+<h2 id="format-of-the-configuration-file">Format of the Configuration File<a id="en-us_topic_0136383424_section14265174803114"></a></h2>
+<ul>
+<li>The weight, offset, and data quantization of convolution and fully connected operators with or without offset are supported. The scalar weight and vector weight are supported.</li>
+<li><p>The multiple network input scenario is supported. Images &#xFF08;<strong>IMAGE</strong>&#xFF09; and binary files (<strong>BINARY</strong>) are supported.</p>
+<ul>
+<li>Images &#xFF08;<strong>IMAGE</strong>&#xFF09; can be in .jpg, .png, or .bmp format.</li>
+<li><p><a href="#en-us_topic_0136383424_table1228094310286">Table 1</a>  describes the supported formats of binary files &#xFF08;<strong>BINARY</strong>&#xFF09;.</p>
+<p><strong>Table  1</strong>  Binary file formats</p>
+<p><a id="en-us_topic_0136383424_table1228094310286"></a></p>
+<table><thead align="left"><tr id="en-us_topic_0136383424_row162811443112810"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.1"><p id="en-us_topic_0136383424_p1281943172815"><a id="en-us_topic_0136383424_p1281943172815"></a><a id="en-us_topic_0136383424_p1281943172815"></a>Offset</p>
+</th>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.2"><p id="en-us_topic_0136383424_p128144311286"><a id="en-us_topic_0136383424_p128144311286"></a><a id="en-us_topic_0136383424_p128144311286"></a>Type</p>
+</th>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.3"><p id="en-us_topic_0136383424_p9281184372812"><a id="en-us_topic_0136383424_p9281184372812"></a><a id="en-us_topic_0136383424_p9281184372812"></a>Value</p>
+</th>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.4"><p id="en-us_topic_0136383424_p10281343142816"><a id="en-us_topic_0136383424_p10281343142816"></a><a id="en-us_topic_0136383424_p10281343142816"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="en-us_topic_0136383424_row6281144310288"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0136383424_p9281343192812"><a id="en-us_topic_0136383424_p9281343192812"></a><a id="en-us_topic_0136383424_p9281343192812"></a>0000</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0136383424_p228194313287"><a id="en-us_topic_0136383424_p228194313287"></a><a id="en-us_topic_0136383424_p228194313287"></a>32bit int</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0136383424_p132812043172815"><a id="en-us_topic_0136383424_p132812043172815"></a><a id="en-us_topic_0136383424_p132812043172815"></a>magic</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0136383424_p27399225299"><a id="en-us_topic_0136383424_p27399225299"></a><a id="en-us_topic_0136383424_p27399225299"></a>magic number</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row132814431281"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0136383424_p128184310288"><a id="en-us_topic_0136383424_p128184310288"></a><a id="en-us_topic_0136383424_p128184310288"></a>0004</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0136383424_p1428119439286"><a id="en-us_topic_0136383424_p1428119439286"></a><a id="en-us_topic_0136383424_p1428119439286"></a>32bit int</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0136383424_p192811543132816"><a id="en-us_topic_0136383424_p192811543132816"></a><a id="en-us_topic_0136383424_p192811543132816"></a>50</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0136383424_p6855103582919"><a id="en-us_topic_0136383424_p6855103582919"></a><a id="en-us_topic_0136383424_p6855103582919"></a>input num</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row20281134313281"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0136383424_p1328224312818"><a id="en-us_topic_0136383424_p1328224312818"></a><a id="en-us_topic_0136383424_p1328224312818"></a>0008</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0136383424_p132821443172813"><a id="en-us_topic_0136383424_p132821443172813"></a><a id="en-us_topic_0136383424_p132821443172813"></a>32bit int</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0136383424_p228234352820"><a id="en-us_topic_0136383424_p228234352820"></a><a id="en-us_topic_0136383424_p228234352820"></a>3</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0136383424_p5282114362811"><a id="en-us_topic_0136383424_p5282114362811"></a><a id="en-us_topic_0136383424_p5282114362811"></a>input channels</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row2282204372811"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0136383424_p528264317283"><a id="en-us_topic_0136383424_p528264317283"></a><a id="en-us_topic_0136383424_p528264317283"></a>0012</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0136383424_p22821043152816"><a id="en-us_topic_0136383424_p22821043152816"></a><a id="en-us_topic_0136383424_p22821043152816"></a>32bit int</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0136383424_p02822439284"><a id="en-us_topic_0136383424_p02822439284"></a><a id="en-us_topic_0136383424_p02822439284"></a>28</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0136383424_p1528244372812"><a id="en-us_topic_0136383424_p1528244372812"></a><a id="en-us_topic_0136383424_p1528244372812"></a>input height</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row162821643142815"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0136383424_p6282144392811"><a id="en-us_topic_0136383424_p6282144392811"></a><a id="en-us_topic_0136383424_p6282144392811"></a>0016</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0136383424_p142821943182815"><a id="en-us_topic_0136383424_p142821943182815"></a><a id="en-us_topic_0136383424_p142821943182815"></a>32bit int</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0136383424_p1328215438282"><a id="en-us_topic_0136383424_p1328215438282"></a><a id="en-us_topic_0136383424_p1328215438282"></a>28</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0136383424_p1328224315285"><a id="en-us_topic_0136383424_p1328224315285"></a><a id="en-us_topic_0136383424_p1328224315285"></a>input width</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row1628219436281"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="en-us_topic_0136383424_p152821439288"><a id="en-us_topic_0136383424_p152821439288"></a><a id="en-us_topic_0136383424_p152821439288"></a>...</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="en-us_topic_0136383424_p328284311286"><a id="en-us_topic_0136383424_p328284311286"></a><a id="en-us_topic_0136383424_p328284311286"></a>float</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="en-us_topic_0136383424_p192828433284"><a id="en-us_topic_0136383424_p192828433284"></a><a id="en-us_topic_0136383424_p192828433284"></a>126</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="en-us_topic_0136383424_p3471182353015"><a id="en-us_topic_0136383424_p3471182353015"></a><a id="en-us_topic_0136383424_p3471182353015"></a>pixel</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong><br>The header of binary file contains 20 bytes with five int numbers. The first is  <strong>510</strong>  &#xFF08;<strong>magic_num</strong>&#xFF09;, which is used for verification. The other four numbers are  <strong>n</strong>,  <strong>c</strong>,  <strong>h</strong>, and  <strong>w</strong>. Data following them are of the float type. The data records are equal to the value of (n*c*h*w). For non-4D data, the data needs to be supplemented to four dimensions and the value of the supplemented dimension is  <strong>1</strong>.  </p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="templates-of-the-configuration-file-">Templates of the Configuration File <a id="en-us_topic_0136383424_section6835123143216"></a></h2>
+<p>The name of the quantization configuration file is user-defined. For details about the file content, see the following templates:</p>
+<ul>
+<li><p>Single-input scenario &#xFF08;<strong>IMAGE</strong>&#xFF09;</p>
+<pre><code>device:USE_CPU
+quantize_algo:HALF_OFFSET
+weight_type:VECTOR_TYPE
+preprocess_parameter:
+{
+input_type:IMAGE
+image_format:BGR
+input_file_path:&apos;calibration/image_set&apos;
+mean_value:104.0
+mean_value:117.0
+mean_value:123.0
+standard_deviation:1.0
+}
+</code></pre></li>
+<li><p>Multi-input scenario &#xFF08;<strong>IMAGE</strong>+<strong>BINARY</strong>&#xFF09;</p>
+<pre><code>device:USE_CPU
+quantize_algo:HALF_OFFSET
+weight_type:VECTOR_TYPE
+preprocess_parameter:
+{
+input_type:IMAGE
+image_format:BGR
+input_file_path:&apos;calibration/image_set&apos;
+mean_value:104.0
+mean_value:117.0
+mean_value:123.0
+standard_deviation:1.0
+}
+preprocess_parameter:
+{
+input_type:BINARY 
+input_file_path:&apos;calibration/img_info.bin&apos;
+}
+</code></pre></li>
+<li><p>Multi-input scenario &#xFF08;<strong>IMAGE</strong>+<strong>BINARY</strong>&#xFF09;, including all parameters</p>
+<pre><code>device:USE_CPU
+quantize_algo:HALF_OFFSET
+weight_type:VECTOR_TYPE
+bin:150
+type:KL
+inference_with_data_quantized:false
+inference_with_weight_quantized:true
+super_parameter:
+{
+min_percentile:PERCENTILE_HIGH
+max_percentile:PERCENTILE_MID
+start_ratio:0.7
+end_ratio:1.3
+step_ratio:0.01
+}
+exclude_op:&apos;fc1000&apos;
+batch_count:50
+preprocess_parameter:
+{
+input_type:IMAGE
+image_format:BGR
+input_file_path:&apos;calibration/image_set&apos;
+mean_value:104.0
+mean_value:117.0
+mean_value:123.0
+standard_deviation:1.0
+}
+preprocess_parameter:
+{
+input_type:BINARY 
+input_file_path:&apos;calibration/img_info.bin&apos;
+}
+</code></pre></li>
+</ul>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong><br>When using this configuration file, set the required parameters as required. The parameters in the preceding templates are only recommended settings. Generally, the recommended settings do not need to be modified &#xFF08;except the input file setting&#xFF09;.  </p>
+</blockquote>
+<h2 id="parameters-in-the-configuration-file">Parameters in the Configuration File<a id="en-us_topic_0136383424_section157361043103216"></a></h2>
+<p>The global setting parameters are described as follows.</p>
+<p><strong>Table  2</strong>  device</p>
+<p><a id="en-us_topic_0136383424_table839920196016"></a></p>
+<table><tbody><tr id="en-us_topic_0136383424_row141971913019"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.1.1"><p id="en-us_topic_0136383424_p174212199012"><a id="en-us_topic_0136383424_p174212199012"></a><a id="en-us_topic_0136383424_p174212199012"></a>Name</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0136383424_p158971054210"><a id="en-us_topic_0136383424_p158971054210"></a><a id="en-us_topic_0136383424_p158971054210"></a>Inference mode</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row1543514199014"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.2.1"><p id="en-us_topic_0136383424_p1843718192018"><a id="en-us_topic_0136383424_p1843718192018"></a><a id="en-us_topic_0136383424_p1843718192018"></a>Type</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.2.1 "><p id="en-us_topic_0136383424_p1443819192014"><a id="en-us_topic_0136383424_p1443819192014"></a><a id="en-us_topic_0136383424_p1443819192014"></a>enum</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row15446161919019"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.3.1"><p id="en-us_topic_0136383424_p54476191014"><a id="en-us_topic_0136383424_p54476191014"></a><a id="en-us_topic_0136383424_p54476191014"></a>Value Range</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.3.1 "><p id="en-us_topic_0136383424_p1644931913011"><a id="en-us_topic_0136383424_p1644931913011"></a><a id="en-us_topic_0136383424_p1644931913011"></a>USE_CPU</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row745519198019"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.4.1"><p id="en-us_topic_0136383424_p1745671916011"><a id="en-us_topic_0136383424_p1745671916011"></a><a id="en-us_topic_0136383424_p1745671916011"></a>Description</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.4.1 "><p id="en-us_topic_0136383424_p174571419509"><a id="en-us_topic_0136383424_p174571419509"></a><a id="en-us_topic_0136383424_p174571419509"></a><strong id="b7983163564917"><a id="b7983163564917"></a><a id="b7983163564917"></a>USE_CPU</strong>: Uses the CPU for inference.</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row14693190014"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.5.1"><p id="en-us_topic_0136383424_p134719191012"><a id="en-us_topic_0136383424_p134719191012"></a><a id="en-us_topic_0136383424_p134719191012"></a>Note</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.5.1 "><p id="en-us_topic_0136383424_p6473019906"><a id="en-us_topic_0136383424_p6473019906"></a><a id="en-us_topic_0136383424_p6473019906"></a>Currently, the CPU is used for quantization inference.</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row14921119704"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.6.1"><p id="en-us_topic_0136383424_p134942191108"><a id="en-us_topic_0136383424_p134942191108"></a><a id="en-us_topic_0136383424_p134942191108"></a>Recommended Setting</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.6.1 "><p id="en-us_topic_0136383424_p134951219409"><a id="en-us_topic_0136383424_p134951219409"></a><a id="en-us_topic_0136383424_p134951219409"></a>USE_CPU</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Table  3</strong>  quantize_algo</p>
+<p><a id="table17378233636"></a></p>
+<table><tbody><tr id="row83924338311"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.1.1"><p id="p3398143314310"><a id="p3398143314310"></a><a id="p3398143314310"></a>Name</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.1.1 "><p id="p18814306419"><a id="p18814306419"></a><a id="p18814306419"></a>Quantization mode</p>
+</td>
+</tr>
+<tr id="row64072331734"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.2.1"><p id="p341316331037"><a id="p341316331037"></a><a id="p341316331037"></a>Type</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.2.1 "><p id="p282215013416"><a id="p282215013416"></a><a id="p282215013416"></a>enum</p>
+</td>
+</tr>
+<tr id="row16421133312312"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.3.1"><p id="p3426183315320"><a id="p3426183315320"></a><a id="p3426183315320"></a>Value Range</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.3.1 "><p id="p14832201349"><a id="p14832201349"></a><a id="p14832201349"></a>NON_OFFSET/HALF_OFFSET</p>
+</td>
+</tr>
+<tr id="row743473312320"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.4.1"><p id="p44401833038"><a id="p44401833038"></a><a id="p44401833038"></a>Description</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.4.1 "><p id="p108439014413"><a id="p108439014413"></a><a id="p108439014413"></a>There are two quantization mapping formulas:</p>
+<a id="ul198471001049"></a><a id="ul198471001049"></a><ul id="ul198471001049"><li>With offset: q_uint8 = round(d_float/scale) &#x2013; offset</li><li>Without offset: q_int8 = round(d_float/scale)</li></ul>
+<p id="p3863110244"><a id="p3863110244"></a><a id="p3863110244"></a>The weight and data are involved in the mapping.</p>
+<a id="ul178664010413"></a><a id="ul178664010413"></a><ul id="ul178664010413"><li><strong id="b5908121911297"><a id="b5908121911297"></a><a id="b5908121911297"></a>NON_OFFSET</strong>: The weight and data use the without-offset mode.</li><li><strong id="b1873632112912"><a id="b1873632112912"></a><a id="b1873632112912"></a>HALF_OFFSET</strong>: The data uses the with-offset mode, and the weight uses the without-offset mode.</li></ul>
+</td>
+</tr>
+<tr id="row1344643312313"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.5.1"><p id="p7453833933"><a id="p7453833933"></a><a id="p7453833933"></a>Note</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.5.1 "><p id="p188879019417"><a id="p188879019417"></a><a id="p188879019417"></a>Both <strong id="b83412271548"><a id="b83412271548"></a><a id="b83412271548"></a>NON_OFFSET </strong>and <strong id="b6812122913549"><a id="b6812122913549"></a><a id="b6812122913549"></a>HALF_OFFSET </strong>modes are supported.</p>
+</td>
+</tr>
+<tr id="row1246043310318"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.6.1"><p id="p1946533318316"><a id="p1946533318316"></a><a id="p1946533318316"></a>Recommended Setting</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.6.1 "><p id="p1894170446"><a id="p1894170446"></a><a id="p1894170446"></a>HALF_OFFSET</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Table  4</strong>  weight_type</p>
+<p><a id="en-us_topic_0136383424_table176048167174"></a></p>
+<table><tbody><tr id="en-us_topic_0136383424_row5608121612177"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.1.1"><p id="en-us_topic_0136383424_p1460914166179"><a id="en-us_topic_0136383424_p1460914166179"></a><a id="en-us_topic_0136383424_p1460914166179"></a>Name</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0136383424_p5104969188"><a id="en-us_topic_0136383424_p5104969188"></a><a id="en-us_topic_0136383424_p5104969188"></a>Weight quantization mode</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row5612171621720"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.2.1"><p id="en-us_topic_0136383424_p196128161175"><a id="en-us_topic_0136383424_p196128161175"></a><a id="en-us_topic_0136383424_p196128161175"></a>Type</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.2.1 "><p id="en-us_topic_0136383424_p161418169178"><a id="en-us_topic_0136383424_p161418169178"></a><a id="en-us_topic_0136383424_p161418169178"></a>enum</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row8615121621713"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.3.1"><p id="en-us_topic_0136383424_p361613165173"><a id="en-us_topic_0136383424_p361613165173"></a><a id="en-us_topic_0136383424_p361613165173"></a>Value Range</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.3.1 "><p id="en-us_topic_0136383424_p147041439171820"><a id="en-us_topic_0136383424_p147041439171820"></a><a id="en-us_topic_0136383424_p147041439171820"></a>VECTOR_TYPE/SCALAR_TYPE</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row9620191691717"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.4.1"><p id="en-us_topic_0136383424_p14621161681713"><a id="en-us_topic_0136383424_p14621161681713"></a><a id="en-us_topic_0136383424_p14621161681713"></a>Description</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.4.1 "><p id="p280720207592"><a id="p280720207592"></a><a id="p280720207592"></a>For a convolution operator, it may have multiple convolution cores, and the corresponding quantization parameters may be different.</p>
+<a id="ul2020853311596"></a><a id="ul2020853311596"></a><ul id="ul2020853311596"><li><strong id="b209710222298"><a id="b209710222298"></a><a id="b209710222298"></a>VECTOR_TYPE</strong>: Each convolution core uses a separate group of quantization parameters.</li><li><strong id="b17502142417297"><a id="b17502142417297"></a><a id="b17502142417297"></a>SCALAR_TYPE</strong>: Multiple convolution cores use the same group of quantization parameters.</li></ul>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row15624171615176"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.5.1"><p id="en-us_topic_0136383424_p11625616171713"><a id="en-us_topic_0136383424_p11625616171713"></a><a id="en-us_topic_0136383424_p11625616171713"></a>Note</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.5.1 "><p id="en-us_topic_0136383424_p11711153951817"><a id="en-us_topic_0136383424_p11711153951817"></a><a id="en-us_topic_0136383424_p11711153951817"></a><strong id="b166172025105710"><a id="b166172025105710"></a><a id="b166172025105710"></a>VECTOR_TYPE</strong> is recommended.</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row166277161172"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.6.1"><p id="en-us_topic_0136383424_p762810165178"><a id="en-us_topic_0136383424_p762810165178"></a><a id="en-us_topic_0136383424_p762810165178"></a>Recommended Setting</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.6.1 "><p id="en-us_topic_0136383424_p9713839111815"><a id="en-us_topic_0136383424_p9713839111815"></a><a id="en-us_topic_0136383424_p9713839111815"></a>VECTOR_TYPE</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Table  5</strong>  preprocess_parameter</p>
+<p><a id="en-us_topic_0136383424_table12841618149"></a></p>
+<table><tbody><tr id="en-us_topic_0136383424_row5129018442"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.1.1"><p id="en-us_topic_0136383424_p78007341545"><a id="en-us_topic_0136383424_p78007341545"></a><a id="en-us_topic_0136383424_p78007341545"></a>Name</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0136383424_p2812193412413"><a id="en-us_topic_0136383424_p2812193412413"></a><a id="en-us_topic_0136383424_p2812193412413"></a>Preprocessing and input parameters</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row141621618443"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.2.1"><p id="en-us_topic_0136383424_p19833534147"><a id="en-us_topic_0136383424_p19833534147"></a><a id="en-us_topic_0136383424_p19833534147"></a>Type</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.2.1 "><p id="en-us_topic_0136383424_p1684714342414"><a id="en-us_topic_0136383424_p1684714342414"></a><a id="en-us_topic_0136383424_p1684714342414"></a>Struct</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row919914185410"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.3.1"><p id="en-us_topic_0136383424_p16869934147"><a id="en-us_topic_0136383424_p16869934147"></a><a id="en-us_topic_0136383424_p16869934147"></a>Value Range</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.3.1 "><p id="en-us_topic_0136383424_p18889133412420"><a id="en-us_topic_0136383424_p18889133412420"></a><a id="en-us_topic_0136383424_p18889133412420"></a>Including <strong id="b12276114195818"><a id="b12276114195818"></a><a id="b12276114195818"></a>input_type</strong>, <strong id="b129031053587"><a id="b129031053587"></a><a id="b129031053587"></a>image_format</strong>, <strong id="b9384137105811"><a id="b9384137105811"></a><a id="b9384137105811"></a>input_file_path</strong>, <strong id="b1966120965818"><a id="b1966120965818"></a><a id="b1966120965818"></a>mean_value</strong>, and <strong id="b76161124589"><a id="b76161124589"></a><a id="b76161124589"></a>standard_deviation</strong></p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row1226191810412"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.4.1"><p id="en-us_topic_0136383424_p2911934846"><a id="en-us_topic_0136383424_p2911934846"></a><a id="en-us_topic_0136383424_p2911934846"></a>Description</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.4.1 "><p id="en-us_topic_0136383424_p12927193417417"><a id="en-us_topic_0136383424_p12927193417417"></a><a id="en-us_topic_0136383424_p12927193417417"></a>Preprocessing and input settings</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row1929701813412"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.5.1"><p id="en-us_topic_0136383424_p79521634143"><a id="en-us_topic_0136383424_p79521634143"></a><a id="en-us_topic_0136383424_p79521634143"></a>Note</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.5.1 "><p id="en-us_topic_0136383424_p19674341446"><a id="en-us_topic_0136383424_p19674341446"></a><a id="en-us_topic_0136383424_p19674341446"></a>The number of <strong id="b1092453817586"><a id="b1092453817586"></a><a id="b1092453817586"></a>preprocess_parameter </strong>parameters must be the same as the number of operators input to the network.</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row203278188416"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.6.1"><p id="en-us_topic_0136383424_p159887341148"><a id="en-us_topic_0136383424_p159887341148"></a><a id="en-us_topic_0136383424_p159887341148"></a>Recommended Setting</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.6.1 "><p id="en-us_topic_0136383424_p1253516417"><a id="en-us_topic_0136383424_p1253516417"></a><a id="en-us_topic_0136383424_p1253516417"></a>None</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Table  6</strong>  input_type</p>
+<p><a id="en-us_topic_0136383424_table177015811416"></a></p>
+<table><tbody><tr id="en-us_topic_0136383424_row1680817588410"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.1.1"><p id="en-us_topic_0136383424_p142546354515"><a id="en-us_topic_0136383424_p142546354515"></a><a id="en-us_topic_0136383424_p142546354515"></a>Name</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0136383424_p1026912351557"><a id="en-us_topic_0136383424_p1026912351557"></a><a id="en-us_topic_0136383424_p1026912351557"></a>Input data format</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row10837658542"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.2.1"><p id="en-us_topic_0136383424_p829216357518"><a id="en-us_topic_0136383424_p829216357518"></a><a id="en-us_topic_0136383424_p829216357518"></a>Type</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.2.1 "><p id="en-us_topic_0136383424_p1231013351358"><a id="en-us_topic_0136383424_p1231013351358"></a><a id="en-us_topic_0136383424_p1231013351358"></a>enum</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row1287113585414"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.3.1"><p id="en-us_topic_0136383424_p133215353512"><a id="en-us_topic_0136383424_p133215353512"></a><a id="en-us_topic_0136383424_p133215353512"></a>Value Range</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.3.1 "><p id="en-us_topic_0136383424_p634783513516"><a id="en-us_topic_0136383424_p634783513516"></a><a id="en-us_topic_0136383424_p634783513516"></a>IMAGE/BINARY</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row99006586417"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.4.1"><p id="en-us_topic_0136383424_p1037163515514"><a id="en-us_topic_0136383424_p1037163515514"></a><a id="en-us_topic_0136383424_p1037163515514"></a>Description</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.4.1 "><p id="p13652425606"><a id="p13652425606"></a><a id="p13652425606"></a>Input type</p>
+<a id="ul17501224917"></a><a id="ul17501224917"></a><ul id="ul17501224917"><li><strong id="b140819251299"><a id="b140819251299"></a><a id="b140819251299"></a>IMAGE</strong>: image format</li><li><strong id="b15221112732910"><a id="b15221112732910"></a><a id="b15221112732910"></a>BINARY</strong>: binary format</li></ul>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row1935115818418"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.5.1"><p id="en-us_topic_0136383424_p1041123518515"><a id="en-us_topic_0136383424_p1041123518515"></a><a id="en-us_topic_0136383424_p1041123518515"></a>Note</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.5.1 "><p id="en-us_topic_0136383424_p144302357514"><a id="en-us_topic_0136383424_p144302357514"></a><a id="en-us_topic_0136383424_p144302357514"></a>Configure the value as required.</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row79744586419"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.6.1"><p id="en-us_topic_0136383424_p345218351550"><a id="en-us_topic_0136383424_p345218351550"></a><a id="en-us_topic_0136383424_p345218351550"></a>Recommended Setting</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.6.1 "><p id="en-us_topic_0136383424_p1046812351357"><a id="en-us_topic_0136383424_p1046812351357"></a><a id="en-us_topic_0136383424_p1046812351357"></a>None</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Table  7</strong>  image_format</p>
+<p><a id="en-us_topic_0136383424_table1298316348189"></a></p>
+<table><tbody><tr id="en-us_topic_0136383424_row10201235181819"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.1.1"><p id="en-us_topic_0136383424_p183333513188"><a id="en-us_topic_0136383424_p183333513188"></a><a id="en-us_topic_0136383424_p183333513188"></a>Name</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0136383424_p3461335161817"><a id="en-us_topic_0136383424_p3461335161817"></a><a id="en-us_topic_0136383424_p3461335161817"></a>Order of the three image input channels</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row2521435181815"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.2.1"><p id="en-us_topic_0136383424_p19631835181813"><a id="en-us_topic_0136383424_p19631835181813"></a><a id="en-us_topic_0136383424_p19631835181813"></a>Type</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.2.1 "><p id="en-us_topic_0136383424_p074535151814"><a id="en-us_topic_0136383424_p074535151814"></a><a id="en-us_topic_0136383424_p074535151814"></a>enum</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row1882153541815"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.3.1"><p id="en-us_topic_0136383424_p9919359187"><a id="en-us_topic_0136383424_p9919359187"></a><a id="en-us_topic_0136383424_p9919359187"></a>Value Range</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.3.1 "><p id="en-us_topic_0136383424_p91053359181"><a id="en-us_topic_0136383424_p91053359181"></a><a id="en-us_topic_0136383424_p91053359181"></a>BGR/RGB</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row18110193591820"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.4.1"><p id="en-us_topic_0136383424_p1812493591812"><a id="en-us_topic_0136383424_p1812493591812"></a><a id="en-us_topic_0136383424_p1812493591812"></a>Description</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.4.1 "><p id="en-us_topic_0136383424_p286691342012"><a id="en-us_topic_0136383424_p286691342012"></a><a id="en-us_topic_0136383424_p286691342012"></a>Order of the three image input channels during model training</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row71432035141813"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.5.1"><p id="en-us_topic_0136383424_p9152335131813"><a id="en-us_topic_0136383424_p9152335131813"></a><a id="en-us_topic_0136383424_p9152335131813"></a>Note</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.5.1 "><p id="en-us_topic_0136383424_p16166635161814"><a id="en-us_topic_0136383424_p16166635161814"></a><a id="en-us_topic_0136383424_p16166635161814"></a>This parameter needs to be set for <strong id="b1765113491624"><a id="b1765113491624"></a><a id="b1765113491624"></a>IMAGE </strong>input. This parameter is determined based on the order of the input channels during network training. Generally, the order is BGR during network training.</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row617118352186"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.6.1"><p id="en-us_topic_0136383424_p5185635101813"><a id="en-us_topic_0136383424_p5185635101813"></a><a id="en-us_topic_0136383424_p5185635101813"></a>Recommended Setting</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.6.1 "><p id="en-us_topic_0136383424_p1420043511812"><a id="en-us_topic_0136383424_p1420043511812"></a><a id="en-us_topic_0136383424_p1420043511812"></a>BGR</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Table  8</strong>  input_file_path</p>
+<p><a id="en-us_topic_0136383424_table61701953145716"></a></p>
+<table><tbody><tr id="en-us_topic_0136383424_row122071053185720"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.1.1"><p id="en-us_topic_0136383424_p1522015311572"><a id="en-us_topic_0136383424_p1522015311572"></a><a id="en-us_topic_0136383424_p1522015311572"></a>Name</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0136383424_p15233145314570"><a id="en-us_topic_0136383424_p15233145314570"></a><a id="en-us_topic_0136383424_p15233145314570"></a>Address of the input data</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row17240135375720"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.2.1"><p id="en-us_topic_0136383424_p152553533578"><a id="en-us_topic_0136383424_p152553533578"></a><a id="en-us_topic_0136383424_p152553533578"></a>Type</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.2.1 "><p id="en-us_topic_0136383424_p6269195311578"><a id="en-us_topic_0136383424_p6269195311578"></a><a id="en-us_topic_0136383424_p6269195311578"></a>string</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row027595325717"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.3.1"><p id="en-us_topic_0136383424_p1291653145715"><a id="en-us_topic_0136383424_p1291653145715"></a><a id="en-us_topic_0136383424_p1291653145715"></a>Value Range</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.3.1 "><p id="en-us_topic_0136383424_p18302135314577"><a id="en-us_topic_0136383424_p18302135314577"></a><a id="en-us_topic_0136383424_p18302135314577"></a>The path cannot contain Chinese characters, special characters, or spaces.</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row15309853185713"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.4.1"><p id="en-us_topic_0136383424_p1732012538574"><a id="en-us_topic_0136383424_p1732012538574"></a><a id="en-us_topic_0136383424_p1732012538574"></a>Description</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.4.1 "><p id="en-us_topic_0136383424_p7336145312577"><a id="en-us_topic_0136383424_p7336145312577"></a><a id="en-us_topic_0136383424_p7336145312577"></a>Folder or file to be quantified</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row173426538576"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.5.1"><p id="en-us_topic_0136383424_p835718538571"><a id="en-us_topic_0136383424_p835718538571"></a><a id="en-us_topic_0136383424_p835718538571"></a>Note</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.5.1 "><p id="p1986491318113"><a id="p1986491318113"></a><a id="p1986491318113"></a>Set this parameter based on the actual network configuration.</p>
+<a id="ul5507103018111"></a><a id="ul5507103018111"></a><ul id="ul5507103018111"><li>For <strong id="b14268728172911"><a id="b14268728172911"></a><a id="b14268728172911"></a>IMAGE </strong>input, specify the folder.</li><li>For <strong id="b5174152916297"><a id="b5174152916297"></a><a id="b5174152916297"></a>BINARY </strong>input, specify the file.</li></ul>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row12373175385716"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.6.1"><p id="en-us_topic_0136383424_p2037315325716"><a id="en-us_topic_0136383424_p2037315325716"></a><a id="en-us_topic_0136383424_p2037315325716"></a>Recommended Setting</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.6.1 "><p id="en-us_topic_0136383424_p938595320579"><a id="en-us_topic_0136383424_p938595320579"></a><a id="en-us_topic_0136383424_p938595320579"></a>Set this parameter to the image folder or binary file as required.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Table  9</strong>  mean_value</p>
+<p><a id="en-us_topic_0136383424_table149415218194"></a></p>
+<table><tbody><tr id="en-us_topic_0136383424_row129992161912"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.1.1"><p id="en-us_topic_0136383424_p310017213198"><a id="en-us_topic_0136383424_p310017213198"></a><a id="en-us_topic_0136383424_p310017213198"></a>Name</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0136383424_p1928174471910"><a id="en-us_topic_0136383424_p1928174471910"></a><a id="en-us_topic_0136383424_p1928174471910"></a>Mean value for image preprocessing</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row1102202111917"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.2.1"><p id="en-us_topic_0136383424_p710516211915"><a id="en-us_topic_0136383424_p710516211915"></a><a id="en-us_topic_0136383424_p710516211915"></a>Type</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.2.1 "><p id="en-us_topic_0136383424_p293144481918"><a id="en-us_topic_0136383424_p293144481918"></a><a id="en-us_topic_0136383424_p293144481918"></a>float</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row31084211199"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.3.1"><p id="en-us_topic_0136383424_p211017281917"><a id="en-us_topic_0136383424_p211017281917"></a><a id="en-us_topic_0136383424_p211017281917"></a>Value Range</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.3.1 "><p id="en-us_topic_0136383424_p139351144121911"><a id="en-us_topic_0136383424_p139351144121911"></a><a id="en-us_topic_0136383424_p139351144121911"></a>[0, 255.0]</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row10113162101911"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.4.1"><p id="en-us_topic_0136383424_p1311420212193"><a id="en-us_topic_0136383424_p1311420212193"></a><a id="en-us_topic_0136383424_p1311420212193"></a>Description</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.4.1 "><p id="en-us_topic_0136383424_p139381444197"><a id="en-us_topic_0136383424_p139381444197"></a><a id="en-us_topic_0136383424_p139381444197"></a>Mean value of a channel for image preprocessing </p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row6116629199"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.5.1"><p id="en-us_topic_0136383424_p3118923198"><a id="en-us_topic_0136383424_p3118923198"></a><a id="en-us_topic_0136383424_p3118923198"></a>Note</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.5.1 "><p id="en-us_topic_0136383424_p159412044121918"><a id="en-us_topic_0136383424_p159412044121918"></a><a id="en-us_topic_0136383424_p159412044121918"></a>This parameter needs to be set for <strong id="b1839313331162"><a id="b1839313331162"></a><a id="b1839313331162"></a>IMAGE </strong>input. The count of mean values is determined by the channel count. Three mean values need to be configured for the RGB channels as follows:</p>
+<p id="en-us_topic_0136383424_p1494194451919"><a id="en-us_topic_0136383424_p1494194451919"></a><a id="en-us_topic_0136383424_p1494194451919"></a><strong id="b36215302086"><a id="b36215302086"></a><a id="b36215302086"></a>mean_value</strong>:<strong id="b136213301281"><a id="b136213301281"></a><a id="b136213301281"></a> 104.0</strong></p>
+<p id="en-us_topic_0136383424_p20943544111918"><a id="en-us_topic_0136383424_p20943544111918"></a><a id="en-us_topic_0136383424_p20943544111918"></a><strong id="b1182818351384"><a id="b1182818351384"></a><a id="b1182818351384"></a>mean_value</strong>: <strong id="b58287351084"><a id="b58287351084"></a><a id="b58287351084"></a>117.0</strong></p>
+<p id="en-us_topic_0136383424_p13944144431912"><a id="en-us_topic_0136383424_p13944144431912"></a><a id="en-us_topic_0136383424_p13944144431912"></a><strong id="b15609340981"><a id="b15609340981"></a><a id="b15609340981"></a>mean_value</strong>: <strong id="b16256401887"><a id="b16256401887"></a><a id="b16256401887"></a>123.0</strong></p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row151211291910"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.6.1"><p id="en-us_topic_0136383424_p1912322161913"><a id="en-us_topic_0136383424_p1912322161913"></a><a id="en-us_topic_0136383424_p1912322161913"></a>Recommended Setting</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.6.1 "><p id="en-us_topic_0136383424_p5946044101915"><a id="en-us_topic_0136383424_p5946044101915"></a><a id="en-us_topic_0136383424_p5946044101915"></a>None</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Table  10</strong>  standard_deviation</p>
+<p><a id="en-us_topic_0136383424_table573519114202"></a></p>
+<table><tbody><tr id="en-us_topic_0136383424_row474031119206"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.1.1"><p id="en-us_topic_0136383424_p187421111209"><a id="en-us_topic_0136383424_p187421111209"></a><a id="en-us_topic_0136383424_p187421111209"></a>Name</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0136383424_p196237464202"><a id="en-us_topic_0136383424_p196237464202"></a><a id="en-us_topic_0136383424_p196237464202"></a>Standard deviation for image preprocessing</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row474415115200"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.2.1"><p id="en-us_topic_0136383424_p5746411172011"><a id="en-us_topic_0136383424_p5746411172011"></a><a id="en-us_topic_0136383424_p5746411172011"></a>Type</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.2.1 "><p id="en-us_topic_0136383424_p1062614467209"><a id="en-us_topic_0136383424_p1062614467209"></a><a id="en-us_topic_0136383424_p1062614467209"></a>float</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row1375001162015"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.3.1"><p id="en-us_topic_0136383424_p207531911122010"><a id="en-us_topic_0136383424_p207531911122010"></a><a id="en-us_topic_0136383424_p207531911122010"></a>Value Range</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.3.1 "><p id="en-us_topic_0136383424_p1604134420200"><a id="en-us_topic_0136383424_p1604134420200"></a><a id="en-us_topic_0136383424_p1604134420200"></a>[0, FLOAT_MAX]</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row3756141182014"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.4.1"><p id="en-us_topic_0136383424_p147589118204"><a id="en-us_topic_0136383424_p147589118204"></a><a id="en-us_topic_0136383424_p147589118204"></a>Description</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.4.1 "><p id="en-us_topic_0136383424_p1963224620204"><a id="en-us_topic_0136383424_p1963224620204"></a><a id="en-us_topic_0136383424_p1963224620204"></a>Standard deviation for image preprocessing</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row876381122019"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.5.1"><p id="en-us_topic_0136383424_p11766151182015"><a id="en-us_topic_0136383424_p11766151182015"></a><a id="en-us_topic_0136383424_p11766151182015"></a>Note</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.5.1 "><p id="en-us_topic_0136383424_p13635184692010"><a id="en-us_topic_0136383424_p13635184692010"></a><a id="en-us_topic_0136383424_p13635184692010"></a>This parameter needs to be set for <strong id="b10787714917"><a id="b10787714917"></a><a id="b10787714917"></a>IMAGE </strong>input. One standard deviation is used for multiple channels.</p>
+<p id="p10837122713812"><a id="p10837122713812"></a><a id="p10837122713812"></a>If the input range is beyond the range that can be represented by the float type, the quantization precision of the model cannot be guaranteed.</p>
+<p id="p19323148103817"><a id="p19323148103817"></a><a id="p19323148103817"></a>If 0 &#x2264; standard_deviation &#x2264; 0.00001, the value of <strong id="b52020595104"><a id="b52020595104"></a><a id="b52020595104"></a>standard_deviation</strong> is <strong id="b164543151116"><a id="b164543151116"></a><a id="b164543151116"></a>1.0</strong>.</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383424_row2076915118209"><th class="firstcol" valign="top" width="19%" id="mcps1.2.3.6.1"><p id="en-us_topic_0136383424_p187727117202"><a id="en-us_topic_0136383424_p187727117202"></a><a id="en-us_topic_0136383424_p187727117202"></a>Recommended Setting</p>
+</th>
+<td class="cellrowborder" valign="top" width="81%" headers="mcps1.2.3.6.1 "><p id="en-us_topic_0136383424_p763784622014"><a id="en-us_topic_0136383424_p763784622014"></a><a id="en-us_topic_0136383424_p763784622014"></a><strong id="b178489851118"><a id="b178489851118"></a><a id="b178489851118"></a>1.0</strong>: The image value range (Original image value &#x2013; Mean value) does not change. <strong id="b942893010115"><a id="b942893010115"></a><a id="b942893010115"></a>255.0</strong>: If the image value range is [0, 255], the value can be condensed to [0, 1.0].)</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Table  11</strong>  bin</p>
+<p><a id="table329585475910"></a></p>
+<table><tbody><tr id="row65472545593"><th class="firstcol" valign="top" width="18.96%" id="mcps1.2.3.1.1"><p id="p254745485913"><a id="p254745485913"></a><a id="p254745485913"></a>Name</p>
+</th>
+<td class="cellrowborder" valign="top" width="81.04%" headers="mcps1.2.3.1.1 "><p id="p19548135410597"><a id="p19548135410597"></a><a id="p19548135410597"></a>Data range of the mapping histogram</p>
+</td>
+</tr>
+<tr id="row1754875475913"><th class="firstcol" valign="top" width="18.96%" id="mcps1.2.3.2.1"><p id="p7548754135915"><a id="p7548754135915"></a><a id="p7548754135915"></a>Type</p>
+</th>
+<td class="cellrowborder" valign="top" width="81.04%" headers="mcps1.2.3.2.1 "><p id="p0549754165920"><a id="p0549754165920"></a><a id="p0549754165920"></a>uint32</p>
+</td>
+</tr>
+<tr id="row10550754185914"><th class="firstcol" valign="top" width="18.96%" id="mcps1.2.3.3.1"><p id="p1755016544592"><a id="p1755016544592"></a><a id="p1755016544592"></a>Value Range</p>
+</th>
+<td class="cellrowborder" valign="top" width="81.04%" headers="mcps1.2.3.3.1 "><p id="p16551354125916"><a id="p16551354125916"></a><a id="p16551354125916"></a>[0, 1000]</p>
+</td>
+</tr>
+<tr id="row655110542598"><th class="firstcol" valign="top" width="18.96%" id="mcps1.2.3.4.1"><p id="p1855115411593"><a id="p1855115411593"></a><a id="p1855115411593"></a>Description</p>
+</th>
+<td class="cellrowborder" valign="top" width="81.04%" headers="mcps1.2.3.4.1 "><p id="p1655185495914"><a id="p1655185495914"></a><a id="p1655185495914"></a>Data range of the histogram statistics</p>
+</td>
+</tr>
+<tr id="row115519545595"><th class="firstcol" valign="top" width="18.96%" id="mcps1.2.3.5.1"><p id="p7551145411597"><a id="p7551145411597"></a><a id="p7551145411597"></a>Note</p>
+</th>
+<td class="cellrowborder" valign="top" width="81.04%" headers="mcps1.2.3.5.1 "><p id="p9551205425918"><a id="p9551205425918"></a><a id="p9551205425918"></a>The statistics histogram is required during the calculation of scatter. The value of this parameter determines the maximum value of histogram statistics. If this parameter is not set or set to <strong id="b1333416346177"><a id="b1333416346177"></a><a id="b1333416346177"></a>0</strong>, the default value <strong id="b222143901717"><a id="b222143901717"></a><a id="b222143901717"></a>150 </strong>is used.</p>
+</td>
+</tr>
+<tr id="row1255125455912"><th class="firstcol" valign="top" width="18.96%" id="mcps1.2.3.6.1"><p id="p18551205416592"><a id="p18551205416592"></a><a id="p18551205416592"></a>Recommended Setting</p>
+</th>
+<td class="cellrowborder" valign="top" width="81.04%" headers="mcps1.2.3.6.1 "><p id="p155518541594"><a id="p155518541594"></a><a id="p155518541594"></a>100/150/200/250</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Table  12</strong>  type</p>
+<p><a id="table75792038100"></a></p>
+<table><tbody><tr id="row880519381909"><th class="firstcol" valign="top" width="19.580000000000002%" id="mcps1.2.3.1.1"><p id="p6805143813011"><a id="p6805143813011"></a><a id="p6805143813011"></a>Name</p>
+</th>
+<td class="cellrowborder" valign="top" width="80.42%" headers="mcps1.2.3.1.1 "><p id="p1380620381409"><a id="p1380620381409"></a><a id="p1380620381409"></a>Type of the divergence calculation indicator </p>
+</td>
+</tr>
+<tr id="row6806738509"><th class="firstcol" valign="top" width="19.580000000000002%" id="mcps1.2.3.2.1"><p id="p58062038807"><a id="p58062038807"></a><a id="p58062038807"></a>Type</p>
+</th>
+<td class="cellrowborder" valign="top" width="80.42%" headers="mcps1.2.3.2.1 "><p id="p1380613812018"><a id="p1380613812018"></a><a id="p1380613812018"></a>enum</p>
+</td>
+</tr>
+<tr id="row1480614380018"><th class="firstcol" valign="top" width="19.580000000000002%" id="mcps1.2.3.3.1"><p id="p88060381306"><a id="p88060381306"></a><a id="p88060381306"></a>Value Range</p>
+</th>
+<td class="cellrowborder" valign="top" width="80.42%" headers="mcps1.2.3.3.1 "><p id="p158061381909"><a id="p158061381909"></a><a id="p158061381909"></a>KL/SYMKL/JSD</p>
+</td>
+</tr>
+<tr id="row380653819011"><th class="firstcol" valign="top" width="19.580000000000002%" id="mcps1.2.3.4.1"><p id="p68061038508"><a id="p68061038508"></a><a id="p68061038508"></a>Description</p>
+</th>
+<td class="cellrowborder" valign="top" width="80.42%" headers="mcps1.2.3.4.1 "><p id="p108062381709"><a id="p108062381709"></a><a id="p108062381709"></a><strong id="b269125842310"><a id="b269125842310"></a><a id="b269125842310"></a>KL</strong>: Kullback-Leibler Divergence; <strong id="b46601102249"><a id="b46601102249"></a><a id="b46601102249"></a>SYMKL</strong>: Symmetric Kullback-Leibler Divergence; <strong id="b7347122182414"><a id="b7347122182414"></a><a id="b7347122182414"></a>JSD</strong>: Jensen-Shannon Divergence</p>
+</td>
+</tr>
+<tr id="row1980614386016"><th class="firstcol" valign="top" width="19.580000000000002%" id="mcps1.2.3.5.1"><p id="p178061538302"><a id="p178061538302"></a><a id="p178061538302"></a>Note</p>
+</th>
+<td class="cellrowborder" valign="top" width="80.42%" headers="mcps1.2.3.5.1 "><p id="p1580614383015"><a id="p1580614383015"></a><a id="p1580614383015"></a>Different divergence types correspond to different calculation methods. The default value is <strong id="b5865024102412"><a id="b5865024102412"></a><a id="b5865024102412"></a>KL</strong>.</p>
+</td>
+</tr>
+<tr id="row5811143819010"><th class="firstcol" valign="top" width="19.580000000000002%" id="mcps1.2.3.6.1"><p id="p08118389012"><a id="p08118389012"></a><a id="p08118389012"></a>Recommended Setting</p>
+</th>
+<td class="cellrowborder" valign="top" width="80.42%" headers="mcps1.2.3.6.1 "><p id="p198121438209"><a id="p198121438209"></a><a id="p198121438209"></a>None</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Table  13</strong>  inference_with_data_quantized</p>
+<p><a id="table1879173520116"></a></p>
+<table><tbody><tr id="row898314350114"><th class="firstcol" valign="top" width="20.19%" id="mcps1.2.3.1.1"><p id="p1598410354119"><a id="p1598410354119"></a><a id="p1598410354119"></a>Name</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.81%" headers="mcps1.2.3.1.1 "><p id="p18984153510112"><a id="p18984153510112"></a><a id="p18984153510112"></a>Whether to use the quantized data as the inference input </p>
+</td>
+</tr>
+<tr id="row1498453516113"><th class="firstcol" valign="top" width="20.19%" id="mcps1.2.3.2.1"><p id="p3985133513111"><a id="p3985133513111"></a><a id="p3985133513111"></a>Type</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.81%" headers="mcps1.2.3.2.1 "><p id="p49851435212"><a id="p49851435212"></a><a id="p49851435212"></a>bool</p>
+</td>
+</tr>
+<tr id="row79859350111"><th class="firstcol" valign="top" width="20.19%" id="mcps1.2.3.3.1"><p id="p89851735219"><a id="p89851735219"></a><a id="p89851735219"></a>Value Range</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.81%" headers="mcps1.2.3.3.1 "><p id="p1898543518113"><a id="p1898543518113"></a><a id="p1898543518113"></a>true/false</p>
+</td>
+</tr>
+<tr id="row209913359116"><th class="firstcol" valign="top" width="20.19%" id="mcps1.2.3.4.1"><p id="p699212350111"><a id="p699212350111"></a><a id="p699212350111"></a>Description</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.81%" headers="mcps1.2.3.4.1 "><p id="p9992835311"><a id="p9992835311"></a><a id="p9992835311"></a>Whether to use the quantized data as the inference input </p>
+</td>
+</tr>
+<tr id="row199939351111"><th class="firstcol" valign="top" width="20.19%" id="mcps1.2.3.5.1"><p id="p5993635811"><a id="p5993635811"></a><a id="p5993635811"></a>Note</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.81%" headers="mcps1.2.3.5.1 "><p id="p799312352120"><a id="p799312352120"></a><a id="p799312352120"></a>When this parameter is set to <strong id="b163824410267"><a id="b163824410267"></a><a id="b163824410267"></a>true</strong>, the quantization of the input data is simulated. The default value is <strong id="b1341862882617"><a id="b1341862882617"></a><a id="b1341862882617"></a>false</strong>. </p>
+</td>
+</tr>
+<tr id="row19931135015"><th class="firstcol" valign="top" width="20.19%" id="mcps1.2.3.6.1"><p id="p49934354113"><a id="p49934354113"></a><a id="p49934354113"></a>Recommended Setting</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.81%" headers="mcps1.2.3.6.1 "><p id="p1699316351212"><a id="p1699316351212"></a><a id="p1699316351212"></a>false</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Table  14</strong>  inference_with_weight_quantized</p>
+<p><a id="table32827315210"></a></p>
+<table><tbody><tr id="row17495183525"><th class="firstcol" valign="top" width="20.19%" id="mcps1.2.3.1.1"><p id="p94961318214"><a id="p94961318214"></a><a id="p94961318214"></a>Name</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.81%" headers="mcps1.2.3.1.1 "><p id="p5502103326"><a id="p5502103326"></a><a id="p5502103326"></a>Whether to use the quantized data as the inference input </p>
+</td>
+</tr>
+<tr id="row105029311219"><th class="firstcol" valign="top" width="20.19%" id="mcps1.2.3.2.1"><p id="p9502735213"><a id="p9502735213"></a><a id="p9502735213"></a>Type</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.81%" headers="mcps1.2.3.2.1 "><p id="p0502131624"><a id="p0502131624"></a><a id="p0502131624"></a>bool</p>
+</td>
+</tr>
+<tr id="row85038318215"><th class="firstcol" valign="top" width="20.19%" id="mcps1.2.3.3.1"><p id="p95031331727"><a id="p95031331727"></a><a id="p95031331727"></a>Value Range</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.81%" headers="mcps1.2.3.3.1 "><p id="p1503113222"><a id="p1503113222"></a><a id="p1503113222"></a>true/false</p>
+</td>
+</tr>
+<tr id="row1050412315217"><th class="firstcol" valign="top" width="20.19%" id="mcps1.2.3.4.1"><p id="p105041231929"><a id="p105041231929"></a><a id="p105041231929"></a>Description</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.81%" headers="mcps1.2.3.4.1 "><p id="p1250453823"><a id="p1250453823"></a><a id="p1250453823"></a>Whether to use the quantized data as the inference input </p>
+</td>
+</tr>
+<tr id="row14504534219"><th class="firstcol" valign="top" width="20.19%" id="mcps1.2.3.5.1"><p id="p15041631126"><a id="p15041631126"></a><a id="p15041631126"></a>Note</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.81%" headers="mcps1.2.3.5.1 "><p id="p2504838220"><a id="p2504838220"></a><a id="p2504838220"></a>When this function is enabled, the quantization and de-quantization of the weight data are simulated. The default value is <strong id="b20577755171311"><a id="b20577755171311"></a><a id="b20577755171311"></a>true</strong>.</p>
+</td>
+</tr>
+<tr id="row3504133210"><th class="firstcol" valign="top" width="20.19%" id="mcps1.2.3.6.1"><p id="p950420311217"><a id="p950420311217"></a><a id="p950420311217"></a>Recommended Setting</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.81%" headers="mcps1.2.3.6.1 "><p id="p15504153920"><a id="p15504153920"></a><a id="p15504153920"></a>true</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Table  15</strong>  super_parameter</p>
+<p><a id="table412282513211"></a></p>
+<table><tbody><tr id="row1834742514215"><th class="firstcol" valign="top" width="20.28%" id="mcps1.2.3.1.1"><p id="p334818251428"><a id="p334818251428"></a><a id="p334818251428"></a>Name</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.72%" headers="mcps1.2.3.1.1 "><p id="p434916251820"><a id="p434916251820"></a><a id="p434916251820"></a>Searches parameters.</p>
+</td>
+</tr>
+<tr id="row12349152517218"><th class="firstcol" valign="top" width="20.28%" id="mcps1.2.3.2.1"><p id="p183492251826"><a id="p183492251826"></a><a id="p183492251826"></a>Type</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.72%" headers="mcps1.2.3.2.1 "><p id="p13491625128"><a id="p13491625128"></a><a id="p13491625128"></a>Struct</p>
+</td>
+</tr>
+<tr id="row234918254218"><th class="firstcol" valign="top" width="20.28%" id="mcps1.2.3.3.1"><p id="p234917256215"><a id="p234917256215"></a><a id="p234917256215"></a>Value Range</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.72%" headers="mcps1.2.3.3.1 "><p id="p4349182515212"><a id="p4349182515212"></a><a id="p4349182515212"></a>Including <strong id="b590784319141"><a id="b590784319141"></a><a id="b590784319141"></a>min_percentile</strong>, <strong id="b1994164551416"><a id="b1994164551416"></a><a id="b1994164551416"></a>max_percentile</strong>, <strong id="b7438114616143"><a id="b7438114616143"></a><a id="b7438114616143"></a>start_ratio</strong>, <strong id="b0235184819147"><a id="b0235184819147"></a><a id="b0235184819147"></a>end_ratio</strong>, and <strong id="b166416505143"><a id="b166416505143"></a><a id="b166416505143"></a>step_ratio</strong></p>
+</td>
+</tr>
+<tr id="row19349325324"><th class="firstcol" valign="top" width="20.28%" id="mcps1.2.3.4.1"><p id="p1334920257216"><a id="p1334920257216"></a><a id="p1334920257216"></a>Description</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.72%" headers="mcps1.2.3.4.1 "><p id="p334919253217"><a id="p334919253217"></a><a id="p334919253217"></a>Searches parameters.</p>
+</td>
+</tr>
+<tr id="row1034914254220"><th class="firstcol" valign="top" width="20.28%" id="mcps1.2.3.5.1"><p id="p183491325127"><a id="p183491325127"></a><a id="p183491325127"></a>Note</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.72%" headers="mcps1.2.3.5.1 "><p id="p163495253211"><a id="p163495253211"></a><a id="p163495253211"></a>You are advised to retain the default value.</p>
+</td>
+</tr>
+<tr id="row12349125623"><th class="firstcol" valign="top" width="20.28%" id="mcps1.2.3.6.1"><p id="p113497252020"><a id="p113497252020"></a><a id="p113497252020"></a>Recommended Setting</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.72%" headers="mcps1.2.3.6.1 "><p id="p434952512219"><a id="p434952512219"></a><a id="p434952512219"></a>None</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Table  16</strong>  min_percentile</p>
+<p><a id="table94611033554"></a></p>
+<table><tbody><tr id="row775317331351"><th class="firstcol" valign="top" width="20.54%" id="mcps1.2.3.1.1"><p id="p475419333515"><a id="p475419333515"></a><a id="p475419333515"></a>Name</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.46%" headers="mcps1.2.3.1.1 "><p id="p175416337519"><a id="p175416337519"></a><a id="p175416337519"></a>Position for searching for the minimum number</p>
+</td>
+</tr>
+<tr id="row67544331511"><th class="firstcol" valign="top" width="20.54%" id="mcps1.2.3.2.1"><p id="p1475416336517"><a id="p1475416336517"></a><a id="p1475416336517"></a>Type</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.46%" headers="mcps1.2.3.2.1 "><p id="p87541233952"><a id="p87541233952"></a><a id="p87541233952"></a>enum</p>
+</td>
+</tr>
+<tr id="row1575412331250"><th class="firstcol" valign="top" width="20.54%" id="mcps1.2.3.3.1"><p id="p77541331356"><a id="p77541331356"></a><a id="p77541331356"></a>Value Range</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.46%" headers="mcps1.2.3.3.1 "><p id="p77547330513"><a id="p77547330513"></a><a id="p77547330513"></a>PERCENTILE_HIGH/PERCENTILE_MID/PERCENTILE_LOW</p>
+</td>
+</tr>
+<tr id="row3754193311518"><th class="firstcol" valign="top" width="20.54%" id="mcps1.2.3.4.1"><p id="p375412331457"><a id="p375412331457"></a><a id="p375412331457"></a>Description</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.46%" headers="mcps1.2.3.4.1 "><p id="p87541033253"><a id="p87541033253"></a><a id="p87541033253"></a>Determines the minimum number to be used. For example, if there are 100 numbers, the value <strong id="b1489518251710"><a id="b1489518251710"></a><a id="b1489518251710"></a>1.0</strong> indicates that number 0 (100 &#x2013; 100 x 1.0) is used as the minimum number, that is, the first smallest number.</p>
+</td>
+</tr>
+<tr id="row12754533350"><th class="firstcol" valign="top" width="20.54%" id="mcps1.2.3.5.1"><p id="p16754113316518"><a id="p16754113316518"></a><a id="p16754113316518"></a>Note</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.46%" headers="mcps1.2.3.5.1 "><p id="p3754113311511"><a id="p3754113311511"></a><a id="p3754113311511"></a><strong id="b108231828161815"><a id="b108231828161815"></a><a id="b108231828161815"></a>PERCENTILE_HIGH</strong>:<strong id="b1783942813187"><a id="b1783942813187"></a><a id="b1783942813187"></a> 1.0</strong></p>
+<p id="p207548331457"><a id="p207548331457"></a><a id="p207548331457"></a><strong id="b01831324141820"><a id="b01831324141820"></a><a id="b01831324141820"></a>PERCENTILE_MID</strong>:<strong id="b5183162419189"><a id="b5183162419189"></a><a id="b5183162419189"></a> 0.99999</strong></p>
+<p id="p575411339520"><a id="p575411339520"></a><a id="p575411339520"></a><strong id="b151201922121810"><a id="b151201922121810"></a><a id="b151201922121810"></a>PERCENTILE_LOW</strong>:<strong id="b912082210188"><a id="b912082210188"></a><a id="b912082210188"></a> 0.9999</strong></p>
+</td>
+</tr>
+<tr id="row47542331855"><th class="firstcol" valign="top" width="20.54%" id="mcps1.2.3.6.1"><p id="p1975418331653"><a id="p1975418331653"></a><a id="p1975418331653"></a>Recommended Setting</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.46%" headers="mcps1.2.3.6.1 "><p id="p6754103316510"><a id="p6754103316510"></a><a id="p6754103316510"></a>PERCENTILE_HIGH</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Table  17</strong>  max_percentile</p>
+<p><a id="table113051014619"></a></p>
+<table><tbody><tr id="row1257320863"><th class="firstcol" valign="top" width="20.630000000000003%" id="mcps1.2.3.1.1"><p id="p1957370666"><a id="p1957370666"></a><a id="p1957370666"></a>Name</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.36999999999999%" headers="mcps1.2.3.1.1 "><p id="p15573501614"><a id="p15573501614"></a><a id="p15573501614"></a>Position for searching for the maximum number</p>
+</td>
+</tr>
+<tr id="row35731508615"><th class="firstcol" valign="top" width="20.630000000000003%" id="mcps1.2.3.2.1"><p id="p165731803619"><a id="p165731803619"></a><a id="p165731803619"></a>Type</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.36999999999999%" headers="mcps1.2.3.2.1 "><p id="p3573120763"><a id="p3573120763"></a><a id="p3573120763"></a>enum</p>
+</td>
+</tr>
+<tr id="row457350864"><th class="firstcol" valign="top" width="20.630000000000003%" id="mcps1.2.3.3.1"><p id="p1357370562"><a id="p1357370562"></a><a id="p1357370562"></a>Value Range</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.36999999999999%" headers="mcps1.2.3.3.1 "><p id="p1557313015612"><a id="p1557313015612"></a><a id="p1557313015612"></a>PERCENTILE_HIGH/PERCENTILE_MID/PERCENTILE_LOW</p>
+</td>
+</tr>
+<tr id="row1257340862"><th class="firstcol" valign="top" width="20.630000000000003%" id="mcps1.2.3.4.1"><p id="p0573180968"><a id="p0573180968"></a><a id="p0573180968"></a>Description</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.36999999999999%" headers="mcps1.2.3.4.1 "><p id="p14573302065"><a id="p14573302065"></a><a id="p14573302065"></a>Determines the maximum number to be used. For example, if there are 100 numbers, the value <strong id="b1327695531811"><a id="b1327695531811"></a><a id="b1327695531811"></a>1.0</strong> indicates that number 0 (100 &#x2013; 100 x 1.0) is used as the maximum number, that is, the first largest number.</p>
+</td>
+</tr>
+<tr id="row25731406619"><th class="firstcol" valign="top" width="20.630000000000003%" id="mcps1.2.3.5.1"><p id="p95731502619"><a id="p95731502619"></a><a id="p95731502619"></a>Note</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.36999999999999%" headers="mcps1.2.3.5.1 "><p id="p65731601961"><a id="p65731601961"></a><a id="p65731601961"></a><strong id="b2497171218199"><a id="b2497171218199"></a><a id="b2497171218199"></a>PERCENTILE_HIGH</strong>:<strong id="b6497141212197"><a id="b6497141212197"></a><a id="b6497141212197"></a> 1.0</strong></p>
+<p id="p45731505617"><a id="p45731505617"></a><a id="p45731505617"></a><strong id="b5435191371913"><a id="b5435191371913"></a><a id="b5435191371913"></a>PERCENTILE_MID</strong>:<strong id="b1143517132192"><a id="b1143517132192"></a><a id="b1143517132192"></a> 0.99999</strong></p>
+<p id="p7573501619"><a id="p7573501619"></a><a id="p7573501619"></a><strong id="b81691014101919"><a id="b81691014101919"></a><a id="b81691014101919"></a>PERCENTILE_LOW</strong>:<strong id="b5169181431910"><a id="b5169181431910"></a><a id="b5169181431910"></a> 0.9999</strong></p>
+</td>
+</tr>
+<tr id="row157310018610"><th class="firstcol" valign="top" width="20.630000000000003%" id="mcps1.2.3.6.1"><p id="p14573201265"><a id="p14573201265"></a><a id="p14573201265"></a>Recommended Setting</p>
+</th>
+<td class="cellrowborder" valign="top" width="79.36999999999999%" headers="mcps1.2.3.6.1 "><p id="p1573707610"><a id="p1573707610"></a><a id="p1573707610"></a>PERCENTILE_MID</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Table  18</strong>  start_ratio, end_ratio, and step_ratio </p>
+<p><a id="table18552194621520"></a></p>
+<table><tbody><tr id="row17623204601518"><th class="firstcol" valign="top" width="21.51%" id="mcps1.2.3.1.1"><p id="p18653646101518"><a id="p18653646101518"></a><a id="p18653646101518"></a>Name</p>
+</th>
+<td class="cellrowborder" valign="top" width="78.49000000000001%" headers="mcps1.2.3.1.1 "><p id="p5716154641514"><a id="p5716154641514"></a><a id="p5716154641514"></a>See the Description.</p>
+</td>
+</tr>
+<tr id="row1174934661516"><th class="firstcol" valign="top" width="21.51%" id="mcps1.2.3.2.1"><p id="p478004681515"><a id="p478004681515"></a><a id="p478004681515"></a>Type</p>
+</th>
+<td class="cellrowborder" valign="top" width="78.49000000000001%" headers="mcps1.2.3.2.1 "><p id="p782554661515"><a id="p782554661515"></a><a id="p782554661515"></a>float</p>
+</td>
+</tr>
+<tr id="row785574691515"><th class="firstcol" valign="top" width="21.51%" id="mcps1.2.3.3.1"><p id="p988794617152"><a id="p988794617152"></a><a id="p988794617152"></a>Value Range</p>
+</th>
+<td class="cellrowborder" valign="top" width="78.49000000000001%" headers="mcps1.2.3.3.1 "><p id="p994164616154"><a id="p994164616154"></a><a id="p994164616154"></a>end_ratio &gt; start_ratio &gt; 0 and step_ratio &gt; 0 (If the input range is beyond the range that can be represented by the float type, the quantization precision of the model cannot be guaranteed.)</p>
+</td>
+</tr>
+<tr id="row199711463152"><th class="firstcol" valign="top" width="21.51%" id="mcps1.2.3.4.1"><p id="p1261247111512"><a id="p1261247111512"></a><a id="p1261247111512"></a>Description</p>
+</th>
+<td class="cellrowborder" valign="top" width="78.49000000000001%" headers="mcps1.2.3.4.1 "><a id="ul1958111261710"></a><a id="ul1958111261710"></a><ul id="ul1958111261710"><li><strong id="b0638125233018"><a id="b0638125233018"></a><a id="b0638125233018"></a>start_ratio</strong> indicates the search start. </li><li><strong id="b14607105814308"><a id="b14607105814308"></a><a id="b14607105814308"></a>end_ratio</strong> indicates the search end. </li><li><strong id="b1644122143110"><a id="b1644122143110"></a><a id="b1644122143110"></a>step_ratio</strong> indicates the search step. </li></ul>
+</td>
+</tr>
+<tr id="row8196947171516"><th class="firstcol" valign="top" width="21.51%" id="mcps1.2.3.5.1"><p id="p622720476156"><a id="p622720476156"></a><a id="p622720476156"></a>Note</p>
+</th>
+<td class="cellrowborder" valign="top" width="78.49000000000001%" headers="mcps1.2.3.5.1 "><p id="p17434633152913"><a id="p17434633152913"></a><a id="p17434633152913"></a>After <strong id="b1911055414214"><a id="b1911055414214"></a><a id="b1911055414214"></a>d_max </strong>and <strong id="b397045602117"><a id="b397045602117"></a><a id="b397045602117"></a>d_min </strong>are found in the algorithm, the ranges taken before and after <strong id="b1467672716223"><a id="b1467672716223"></a><a id="b1467672716223"></a>d_max </strong>and <strong id="b19817625142218"><a id="b19817625142218"></a><a id="b19817625142218"></a>d_min </strong>are determined based on <strong id="b03321307236"><a id="b03321307236"></a><a id="b03321307236"></a>start_ratio</strong> and <strong id="b2270155152319"><a id="b2270155152319"></a><a id="b2270155152319"></a>end_ratio</strong>. Then, the step incremented each time is determined by <strong id="b14989928192310"><a id="b14989928192310"></a><a id="b14989928192310"></a>step_ratio</strong>. For example: </p>
+<p id="p124351433142913"><a id="p124351433142913"></a><a id="p124351433142913"></a>If d_max = 100, start_ratio = 0.8, end_ratio = 1.2, and step_ratio = 0.01, the defined search range before and after <strong id="b38181063246"><a id="b38181063246"></a><a id="b38181063246"></a>d_max</strong> are 80 (100 x 0.8) and 120 (100 x 1.2) at a step of 1 (100 x 0.01). That is, there are 41 <strong id="b15584594256"><a id="b15584594256"></a><a id="b15584594256"></a>d_max</strong> search values in total.</p>
+</td>
+</tr>
+<tr id="row154991947171515"><th class="firstcol" valign="top" width="21.51%" id="mcps1.2.3.6.1"><p id="p953514473154"><a id="p953514473154"></a><a id="p953514473154"></a>Recommended Setting</p>
+</th>
+<td class="cellrowborder" valign="top" width="78.49000000000001%" headers="mcps1.2.3.6.1 "><p id="p1586522563012"><a id="p1586522563012"></a><a id="p1586522563012"></a>The following two sets of settings are recommended:</p>
+<a id="ul16572143831715"></a><a id="ul16572143831715"></a><ul id="ul16572143831715"><li>start_ratio = 0.7, end_ratio = 1.3, step_ratio = 0.01</li><li>start_ratio = 0.3, end_ratio = 1.7, step_ratio = 0.01</li></ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Table  19</strong>  batch_count</p>
+<p><a id="table157581695328"></a></p>
+<table><tbody><tr id="row2963159163214"><th class="firstcol" valign="top" width="21.25%" id="mcps1.2.3.1.1"><p id="p99632973211"><a id="p99632973211"></a><a id="p99632973211"></a>Name</p>
+</th>
+<td class="cellrowborder" valign="top" width="78.75%" headers="mcps1.2.3.1.1 "><p id="p396413917327"><a id="p396413917327"></a><a id="p396413917327"></a>Number of batches of images processed in the quantization calibration set</p>
+</td>
+</tr>
+<tr id="row12965119143220"><th class="firstcol" valign="top" width="21.25%" id="mcps1.2.3.2.1"><p id="p09658917320"><a id="p09658917320"></a><a id="p09658917320"></a>Type</p>
+</th>
+<td class="cellrowborder" valign="top" width="78.75%" headers="mcps1.2.3.2.1 "><p id="p199654993211"><a id="p199654993211"></a><a id="p199654993211"></a>uint32</p>
+</td>
+</tr>
+<tr id="row89655903211"><th class="firstcol" valign="top" width="21.25%" id="mcps1.2.3.3.1"><p id="p69651994321"><a id="p69651994321"></a><a id="p69651994321"></a>Value Range</p>
+</th>
+<td class="cellrowborder" valign="top" width="78.75%" headers="mcps1.2.3.3.1 "><p id="p1296518911326"><a id="p1296518911326"></a><a id="p1296518911326"></a>[0, UINT32_MAX)</p>
+</td>
+</tr>
+<tr id="row14965398328"><th class="firstcol" valign="top" width="21.25%" id="mcps1.2.3.4.1"><p id="p16965492329"><a id="p16965492329"></a><a id="p16965492329"></a>Description</p>
+</th>
+<td class="cellrowborder" valign="top" width="78.75%" headers="mcps1.2.3.4.1 "><p id="p12965109163219"><a id="p12965109163219"></a><a id="p12965109163219"></a>Determines the number of batches of images processed in the quantization calibration set.</p>
+</td>
+</tr>
+<tr id="row11965397326"><th class="firstcol" valign="top" width="21.25%" id="mcps1.2.3.5.1"><p id="p1796539173212"><a id="p1796539173212"></a><a id="p1796539173212"></a>Note</p>
+</th>
+<td class="cellrowborder" valign="top" width="78.75%" headers="mcps1.2.3.5.1 "><p id="p12965189163211"><a id="p12965189163211"></a><a id="p12965189163211"></a>If this parameter is not set or set to <strong id="b1462921782916"><a id="b1462921782916"></a><a id="b1462921782916"></a>0</strong>, all images in the calibration set are used. If the value is greater than <strong id="b19415106123320"><a id="b19415106123320"></a><a id="b19415106123320"></a>0</strong>, the smaller one in the total number of images in the calibration set path and the value of this parameter is used as the actual number of images in the calibration set. It is recommended that the number of images in the calibration set do not exceed 500.</p>
+</td>
+</tr>
+<tr id="row3965199103217"><th class="firstcol" valign="top" width="21.25%" id="mcps1.2.3.6.1"><p id="p99656912323"><a id="p99656912323"></a><a id="p99656912323"></a>Recommended Setting</p>
+</th>
+<td class="cellrowborder" valign="top" width="78.75%" headers="mcps1.2.3.6.1 "><p id="p1896549153213"><a id="p1896549153213"></a><a id="p1896549153213"></a>None</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Table  20</strong>  exclude_op</p>
+<p><a id="table452210171346"></a></p>
+<table><tbody><tr id="row27672017163410"><th class="firstcol" valign="top" width="21.07%" id="mcps1.2.3.1.1"><p id="p14768121783414"><a id="p14768121783414"></a><a id="p14768121783414"></a>Name</p>
+</th>
+<td class="cellrowborder" valign="top" width="78.93%" headers="mcps1.2.3.1.1 "><p id="p167681173344"><a id="p167681173344"></a><a id="p167681173344"></a>Quantization operator blacklist</p>
+</td>
+</tr>
+<tr id="row7768161783414"><th class="firstcol" valign="top" width="21.07%" id="mcps1.2.3.2.1"><p id="p97686178342"><a id="p97686178342"></a><a id="p97686178342"></a>Type</p>
+</th>
+<td class="cellrowborder" valign="top" width="78.93%" headers="mcps1.2.3.2.1 "><p id="p87681217143412"><a id="p87681217143412"></a><a id="p87681217143412"></a>string</p>
+</td>
+</tr>
+<tr id="row676811793412"><th class="firstcol" valign="top" width="21.07%" id="mcps1.2.3.3.1"><p id="p7768151733413"><a id="p7768151733413"></a><a id="p7768151733413"></a>Value Range</p>
+</th>
+<td class="cellrowborder" valign="top" width="78.93%" headers="mcps1.2.3.3.1 "><p id="p17768131717343"><a id="p17768131717343"></a><a id="p17768131717343"></a>Operator name</p>
+</td>
+</tr>
+<tr id="row10768317183415"><th class="firstcol" valign="top" width="21.07%" id="mcps1.2.3.4.1"><p id="p876819178343"><a id="p876819178343"></a><a id="p876819178343"></a>Description</p>
+</th>
+<td class="cellrowborder" valign="top" width="78.93%" headers="mcps1.2.3.4.1 "><p id="p5768161773414"><a id="p5768161773414"></a><a id="p5768161773414"></a>The operator indicated by this parameter is not quantified.</p>
+</td>
+</tr>
+<tr id="row3768131713348"><th class="firstcol" valign="top" width="21.07%" id="mcps1.2.3.5.1"><p id="p1876811175344"><a id="p1876811175344"></a><a id="p1876811175344"></a>Note</p>
+</th>
+<td class="cellrowborder" valign="top" width="78.93%" headers="mcps1.2.3.5.1 "><a id="ol1356631314190"></a><a id="ol1356631314190"></a><ol id="ol1356631314190"><li>Only Conv, FC, and DepthWiseConv operators are supported.</li><li>To blacklist multiple operators, multiple <strong id="b19321536193311"><a id="b19321536193311"></a><a id="b19321536193311"></a>exclude_op </strong>parameters need to be set. Each parameter occupies a line. For example:<p id="p162934601912"><a id="p162934601912"></a><a id="p162934601912"></a>exclude_op:&apos;aaa&apos;</p>
+<p id="p166461347131911"><a id="p166461347131911"></a><a id="p166461347131911"></a>exclude_op:&apos;bbb&apos;</p>
+</li></ol>
+</td>
+</tr>
+<tr id="row876851719347"><th class="firstcol" valign="top" width="21.07%" id="mcps1.2.3.6.1"><p id="p157681517133418"><a id="p157681517133418"></a><a id="p157681517133418"></a>Recommended Setting</p>
+</th>
+<td class="cellrowborder" valign="top" width="78.93%" headers="mcps1.2.3.6.1 "><p id="p3768161717342"><a id="p3768161717342"></a><a id="p3768161717342"></a>None</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="aipp-configuration.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: AIPP Configuration">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Quantization Configuration","level":"1.6.5.2","depth":3,"previous":{"title":"AIPP Configuration","level":"1.6.5.1","depth":3,"path":"aipp-configuration.md","ref":"aipp-configuration.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"imgUrl":"","topnav":[]},"plugins":["expandable-chapters","copy"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy":{},"expandableChapters":{"cssFile":["expandable-chapters-theme.css"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"website.css"}},"file":{"path":"quantization-configuration.md","mtime":"2019-04-12T05:03:17.536Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-12T05:03:22.999Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/clipboard.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/copy.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

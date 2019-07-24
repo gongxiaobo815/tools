@@ -1,0 +1,464 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Offline Model Conversion · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters-theme.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-copy/css/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="development-of-custom-operators.html" />
+    
+    
+    <link rel="prev" href="model-management.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="function-description.html">
+            
+                <a href="function-description.html">
+            
+                    
+                    Function Description
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="development-process-overview.html">
+            
+                <a href="development-process-overview.html">
+            
+                    
+                    Development Process Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="application-development.html">
+            
+                <a href="application-development.html">
+            
+                    
+                    Application Development
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="project-management.html">
+            
+                <a href="project-management.html">
+            
+                    
+                    Project Management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="graphical-service-orchestration.html">
+            
+                <a href="graphical-service-orchestration.html">
+            
+                    
+                    Graphical Service Orchestration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="model-management.html">
+            
+                <a href="model-management.html">
+            
+                    
+                    Model Management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.4" data-path="offline-model-conversion.html">
+            
+                <a href="offline-model-conversion.html">
+            
+                    
+                    Offline Model Conversion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="development-of-custom-operators.html">
+            
+                <a href="development-of-custom-operators.html">
+            
+                    
+                    Development of Custom Operators 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="dataset-management.html">
+            
+                <a href="dataset-management.html">
+            
+                    
+                    Dataset Management
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="performance-tuning.html">
+            
+                <a href="performance-tuning.html">
+            
+                    
+                    Performance Tuning
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="performance-profiler.html">
+            
+                <a href="performance-profiler.html">
+            
+                    
+                    Performance Profiler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="log-analysis.html">
+            
+                <a href="log-analysis.html">
+            
+                    
+                    Log Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="black-box.html">
+            
+                <a href="black-box.html">
+            
+                    
+                    Black Box
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Offline Model Conversion</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="offline-model-conversion">Offline Model Conversion<a id="EN-US_TOPIC_0136464857"></a></h1>
+<p>You can convert an open-source neural network model such as a Caffe or TensorFlow model into a model supported by the Huawei NPU.  <a href="#fig93846364505">Figure 1</a>  shows the overall solution.</p>
+<p><strong>Figure  1</strong>  Offline model conversion solution<a id="fig93846364505"></a><br><img src="figures/offline-model-conversion-solution.png" alt="" title="offline-model-conversion-solution"></p>
+<ul>
+<li>Offline Model Generation (OMG): offline model generation tool, which automatically selects a proper optimization policy to generate an offline model. </li>
+<li>Offline Model Inference Engine (OME): model inference execution engine, which efficiently executes operators for the neural network model. </li>
+</ul>
+<p><a href="#fig18402134225916">Figure 2</a>  describes the key technologies involved in offline model conversion.</p>
+<p><strong>Figure  2</strong>  Key technologies involved in offline model conversion<a id="fig18402134225916"></a><br><img src="figures/key-technologies-involved-in-offline-model-conversion.png" alt="" title="key-technologies-involved-in-offline-model-conversion"></p>
+<p>An optimal policy is automatically selected to generate an offline OMG model.</p>
+<p>Perform the following steps to convert a model:</p>
+<ol>
+<li><p>Right-click a project and choose  <strong>Convert Model</strong>  from the shortcut menu, or choose  <strong>Tools &gt; Convert Model</strong>  from the menu bar. The model conversion window is displayed.</p>
+<p>Mind Studio offline model conversion supports only Caffe and TensorFlow models.</p>
+</li>
+<li><p>You can enable 8-bit quantization. With the verification set input, faster inference is obtained at a low memory cost.</p>
+<p>See area 2 in  <a href="#fig1646920113190">Figure 3</a>.</p>
+<p><strong>Figure  3</strong>  Model conversion configuration<a id="fig1646920113190"></a><br><img src="figures/model-conversion-configuration.png" alt="" title="model-conversion-configuration"></p>
+</li>
+<li><p>Implement hardware-based image pre-processing during the input to the first layer in the NN, accelerating operation efficiency. </p>
+<p>See area 3 in  <a href="#fig1646920113190">Figure 3</a>.</p>
+</li>
+<li><p>You can encrypt a model by using hardware keys to support the intellectual property right of the model. </p>
+<p>See area 4 in  <a href="#fig1646920113190">Figure 3</a>.</p>
+<p>You can monitor the whole model conversion process in a visualized way.</p>
+<p>After successful conversion, a message is displayed indicating the storage space occupied by the model and its runtime memory usage, helping you to identify resource risks in advance.</p>
+<p>If the model conversion fails, you can view the operator analysis report automatically generated.</p>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="model-management.html" class="navigation navigation-prev " aria-label="Previous page: Model Management">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="development-of-custom-operators.html" class="navigation navigation-next " aria-label="Next page: Development of Custom Operators ">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Offline Model Conversion","level":"1.5.4","depth":2,"next":{"title":"Development of Custom Operators ","level":"1.5.5","depth":2,"path":"development-of-custom-operators.md","ref":"development-of-custom-operators.md","articles":[]},"previous":{"title":"Model Management","level":"1.5.3","depth":2,"path":"model-management.md","ref":"model-management.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"imgUrl":"","topnav":[]},"plugins":["expandable-chapters","copy"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy":{},"expandableChapters":{"cssFile":["expandable-chapters-theme.css"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"website.css"}},"file":{"path":"offline-model-conversion.md","mtime":"2019-04-12T02:53:00.952Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-12T02:53:03.486Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/clipboard.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/copy.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

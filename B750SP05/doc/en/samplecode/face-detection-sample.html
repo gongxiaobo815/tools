@@ -1,0 +1,927 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Face Detection Sample · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters-theme.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-copy/css/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ascendcamera.html" />
+    
+    
+    <link rel="prev" href="software-preparation.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="environment-preparation.html">
+            
+                <a href="environment-preparation.html">
+            
+                    
+                    Environment Preparation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="prerequisites.html">
+            
+                <a href="prerequisites.html">
+            
+                    
+                    Prerequisites
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="software-preparation.html">
+            
+                <a href="software-preparation.html">
+            
+                    
+                    Software Preparation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="face-detection-sample.html">
+            
+                <a href="face-detection-sample.html">
+            
+                    
+                    Face Detection Sample
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ascendcamera.html">
+            
+                <a href="ascendcamera.html">
+            
+                    
+                    Ascendcamera
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="principle.html">
+            
+                <a href="principle.html">
+            
+                    
+                    Principle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="deployment.html">
+            
+                <a href="deployment.html">
+            
+                    
+                    Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="running.html">
+            
+                <a href="running.html">
+            
+                    
+                    Running
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="saving-media-information-offline.html">
+            
+                <a href="saving-media-information-offline.html">
+            
+                    
+                    Saving Media Information Offline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="viewing-media-information-in-real-time.html">
+            
+                <a href="viewing-media-information-in-real-time.html">
+            
+                    
+                    Viewing Media Information in Real Time
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.2.1" data-path="playing-a-real-time-video-through-presenter-server.html">
+            
+                <a href="playing-a-real-time-video-through-presenter-server.html">
+            
+                    
+                    Playing a Real-Time Video Through Presenter Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2.2" data-path="playing-a-real-time-video-through-vlc.html">
+            
+                <a href="playing-a-real-time-video-through-vlc.html">
+            
+                    
+                    Playing a Real-Time Video Through VLC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="facial-recognition-sample.html">
+            
+                <a href="facial-recognition-sample.html">
+            
+                    
+                    Facial Recognition Sample
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="principle-0.html">
+            
+                <a href="principle-0.html">
+            
+                    
+                    Principle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="deployment-1.html">
+            
+                <a href="deployment-1.html">
+            
+                    
+                    Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="running-2.html">
+            
+                <a href="running-2.html">
+            
+                    
+                    Running
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="video-analysis-sample.html">
+            
+                <a href="video-analysis-sample.html">
+            
+                    
+                    Video Analysis Sample
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="principle-3.html">
+            
+                <a href="principle-3.html">
+            
+                    
+                    Principle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="deployment-4.html">
+            
+                <a href="deployment-4.html">
+            
+                    
+                    Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="running-5.html">
+            
+                <a href="running-5.html">
+            
+                    
+                    Running
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="network-connectivity.html">
+            
+                <a href="network-connectivity.html">
+            
+                    
+                    Network Connectivity
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="principle-6.html">
+            
+                <a href="principle-6.html">
+            
+                    
+                    Principle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="deployment-7.html">
+            
+                <a href="deployment-7.html">
+            
+                    
+                    Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="running-8.html">
+            
+                <a href="running-8.html">
+            
+                    
+                    Running
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="（advanced）-source-code-analysis-for-common-modules.html">
+            
+                <a href="（advanced）-source-code-analysis-for-common-modules.html">
+            
+                    
+                    （Advanced） Source Code Analysis for Common Modules
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="presenter.html">
+            
+                <a href="presenter.html">
+            
+                    
+                    Presenter
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1.1" data-path="presenter-server.html">
+            
+                <a href="presenter-server.html">
+            
+                    
+                    Presenter Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.2" data-path="presenter-agent.html">
+            
+                <a href="presenter-agent.html">
+            
+                    
+                    Presenter Agent
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="ezdvpp.html">
+            
+                <a href="ezdvpp.html">
+            
+                    
+                    EZDVPP
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="appendix.html">
+            
+                <a href="appendix.html">
+            
+                    
+                    Appendix
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="downloading-network-models.html">
+            
+                <a href="downloading-network-models.html">
+            
+                    
+                    Downloading Network Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="viewing-the-channel-to-which-a-camera-belongs.html">
+            
+                <a href="viewing-the-channel-to-which-a-camera-belongs.html">
+            
+                    
+                    Viewing the Channel to Which a Camera Belongs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="how-do-i-upload-files-to-the-host.html">
+            
+                <a href="how-do-i-upload-files-to-the-host.html">
+            
+                    
+                    How Do I Upload Files to the Host?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="disclaimer.html">
+            
+                <a href="disclaimer.html">
+            
+                    
+                    Disclaimer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Face Detection Sample</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="face-detection-sample">Face Detection Sample<a id="EN-US_TOPIC_0167289946"></a></h1>
+<h2 id="principle">Principle<a id="section2448105318293"></a></h2>
+<p>Developers can deploy the application on the Atlas 200 DK to collect camera data in real time and predict facial information in the video.  <a href="#fig261318405454">Figure 1</a>  shows the process.</p>
+<p><strong>Figure  1</strong>  Implementation process of the face detection sample<a id="fig261318405454"></a><br><img src="figures/implementation-process-of-the-face-detection-sample.png" alt="" title="implementation-process-of-the-face-detection-sample"></p>
+<h2 id="prerequisites">Prerequisites<a id="section412314183119"></a></h2>
+<p>Before using an open source application, ensure that:</p>
+<ul>
+<li>Mind Studio has been installed. For details, see  <a href="https://www.huawei.com/minisite/ascend/en/filedetail_1.html" target="_blank">Mind Studio Installation Guide</a>.</li>
+<li>The Atlas 200 DK developer board has been connected to Mind Studio, the cross compiler has been installed, the SD card has been prepared, and basic information has been configured. For details, see  <a href="https://www.huawei.com/minisite/ascend/en/filedetail_2.html" target="_blank">Atlas
+200 DK User Guide</a>.</li>
+<li><p>The Atlas 200 DK developer board has been connected to cameras.</p>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong><br>The Raspberry Pi v1.3 and v2.1 cameras are supported, which need to be connected to two 22-pin Pi Zero connectors.<br>The camera needs to be connected when the developer board is powered off.  </p>
+</blockquote>
+</li>
+<li><p>Google Chrome 67.0.3396.87 or later is available.</p>
+</li>
+</ul>
+<h2 id="software-preparation">Software Preparation<a id="section177411912193214"></a></h2>
+<p>Before running the application, obtain the source code package and configure the environment as follows.</p>
+<ol>
+<li><p>Obtain the source code package.</p>
+<p>Download all the code in the sample-facedetection repository at  <a href="https://github.com/Ascend/sample-facedetection" target="_blank">https://github.com/Ascend/sample-facedetection</a>  to any directory on Ubuntu Server where Mind Studio is located as the Mind Studio installation user, for example,  <em>/home/ascend/sample-facedetection/</em>.</p>
+</li>
+<li><p>Log in to Ubuntu Server where Mind Studio is located as the Mind Studio installation user and set the environment variable  <strong>DDK_HOME</strong>.</p>
+<p><strong>vim ~/.bashrc</strong></p>
+<p>Run the following commands to add the environment variables  <strong>DDK_HOME</strong>  and  <strong>LD_LIBRARY_PATH</strong>  to the last line:</p>
+<p><strong>export DDK_HOME=/home/XXX/tools/che/ddk/ddk</strong></p>
+<p><strong>export LD_LIBRARY_PATH=$DDK_HOME/uihost/lib</strong></p>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong>   </p>
+<ul>
+<li><strong>XXX</strong>  indicates the Mind Studio installation user, and  <strong>/home/XXX/tools</strong>  indicates the default installation path of the DDK.  </li>
+<li>If the environment variables have been added, skip this step.  </li>
+</ul>
+</blockquote>
+<p>Enter  <strong>:wq!</strong>  to save and exit.</p>
+<p>Run the following command for the environment variable to take effect:</p>
+<p><strong>source ~/.bashrc</strong></p>
+</li>
+</ol>
+<h2 id="deployment">Deployment<a id="section15718149133616"></a></h2>
+<ol>
+<li><p><a id="li206239341242"></a>If the Ubuntu system where Mind Studio is located is not connected to the network, prepare the model files by referring to this step. If the Ubuntu system where Mind Studio is located is connected to the network, the deployment script automatically downloads the model files, and you can ignore this operation.</p>
+<p>Download the model file  <strong>face_detection.om</strong>  used by the face detection application by referring to  <a href="#section193081336153717">Downloading Network Model</a>, and place the .om file in the root directory of the face detection application code, for example,  <em>home/ascend/sample-facedetection</em>.</p>
+</li>
+<li><p>Access the root directory where the face detection application code is located as the Mind Studio installation user, for example,  <em><strong>/home/ascend/sample-facedetection</strong></em>.</p>
+</li>
+<li><p>Run the deployment script to prepare the project environment, including compiling and deploying the ascenddk public library, downloading the network model, and configuring Presenter Server.</p>
+<p><strong>bash deploy.sh</strong> <em>host_ip</em> <em>model_mode</em></p>
+<ul>
+<li><em>host_ip</em>: For the Atlas 200 DK developer board, this parameter indicates the IP address of the developer board.</li>
+<li><em>model_mode</em>  indicates the deployment mode of the model file. The value can be  <strong>local</strong>  or  <strong>internet</strong>. The default setting is  <strong>internet</strong>.<ul>
+<li><strong>local</strong>: Indicates the local deployment mode. If the Ubuntu system where Mind Studio is located is not connected to the network, use the local mode. In this case, download the network model file to the root directory of the application code, that is,  <em><strong>sample-facedetection</strong></em>, by referring to  <a href="#li206239341242">1</a>.</li>
+<li><strong>internet</strong>: Indicates the online deployment mode. If the Ubuntu system where Mind Studio is located is connected to the network, use the Internet mode. In this case, download the model file online.</li>
+</ul>
+</li>
+</ul>
+<p>Example command:</p>
+<p><strong>bash deploy.sh 192.168.1.2 internet</strong></p>
+<p>When the message  <strong>Please choose one to show the presenter in browser&#xFF08;default: 127.0.0.1&#xFF09;:</strong>  is displayed, enter the IP address used for accessing the Presenter Server service in the browser. Generally, the IP address is the IP address for accessing the Mind Studio service.</p>
+<p>Select the IP address used by the browser to access the Presenter Server service in  <strong>Current environment valid ip list</strong>, as shown in  <a href="#fig184321447181017">Figure 2</a>.</p>
+<p><strong>Figure  2</strong>  Project deployment<a id="fig184321447181017"></a><br><img src="figures/project-deployment.png" alt="" title="project-deployment"></p>
+</li>
+<li><p>Start Presenter Server.</p>
+<p>Run the following command to start the Presenter Server program of the face detection application in the background:</p>
+<p><strong>python3 presenterserver/presenter_server.py --app face_detection &amp;</strong></p>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong><br><strong>presenter_server.py</strong>  is located in the  <strong>presenterserver</strong>  in the current directory. You can run the  <strong>python3 presenter_server.py -h</strong>  or  <strong>python3 presenter_server.py --help</strong>  command in this directory to view the usage method of  <strong>presenter_server.py</strong>.  </p>
+</blockquote>
+<p><a href="#fig69531305324">Figure 3</a>  shows that the presenter_server service is started successfully.</p>
+<p><strong>Figure  3</strong>  Starting the Presenter Server process<a id="fig69531305324"></a><br><img src="figures/starting-the-presenter-server-process.png" alt="" title="starting-the-presenter-server-process"></p>
+<p>Use the URL shown in the preceding figure to log in to Presenter Server &#xFF08;only the Chrome browser is supported&#xFF09;. The IP address is that entered in  <a href="#fig64391558352">Figure 4</a>  and the default port number is  <strong>7007</strong>. The following figure indicates that Presenter Server is started successfully.</p>
+<p><strong>Figure  4</strong>  Home page<a id="fig64391558352"></a><br><img src="figures/home-page.png" alt="" title="home-page"></p>
+</li>
+</ol>
+<h2 id="running">Running<a id="section10271726154420"></a></h2>
+<ol>
+<li><p>Run the face detection application.</p>
+<p>Run the following command in the  <strong>sample-facedetection</strong>  directory &#xFF08;for example,  <strong>/home/ascend/sample-facedetection</strong>&#xFF09; to start the face detection application:</p>
+<p><strong>bash run_facedetectionapp.sh</strong> <em>host_ip</em> <em>presenter_view_app_name camera_channel_name</em>  &amp;</p>
+<ul>
+<li><em>host_ip</em>: For the Atlas 200 DK developer board, this parameter indicates the IP address of the developer board.</li>
+<li><em>presenter_view_app_name</em>: Indicates  <strong>View Name</strong>  displayed on the Presenter Server page, which is user-defined.</li>
+<li><em>camera_channel_name</em>: Indicates the channel to which a camera belongs. The value can be  <strong>Channel-1</strong>  or  <strong>Channel-2</strong>. For details, see  <a href="#section29013915461">Viewing the Channel to Which a Camera Belongs</a>.</li>
+</ul>
+<p>Example command:</p>
+<p><strong>bash run_facedetectionapp.sh 192.168.1.2 video Channel-1 &amp;</strong></p>
+</li>
+<li><p>Use the URL that is displayed when you start the Presenter Server service to log in to the Presenter Server website &#xFF08;only the Chrome browser is supported&#xFF09;. For details, see  <a href="en-us_topic_0167289974.md#li499911453439">en-us_topic_0167289974.md#li499911453439</a>.</p>
+<p>Wait for Presenter Agent to transmit data to the server. Click  <strong>Refresh</strong>. When there is data, the icon in the  <strong>Status</strong>  column for the corresponding channel changes to green, as shown in  <a href="#fig113691556202312">Figure 5</a>.</p>
+<p><strong>Figure  5</strong>  Presenter Server page<a id="fig113691556202312"></a><br><img src="figures/presenter-server-page.png" alt="" title="presenter-server-page"></p>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong>   </p>
+<ul>
+<li>The Presenter Server of the face detection application supports a maximum of 10 channels at the same time &#xFF08;each  presenter_view_app_name  parameter corresponds to a channel&#xFF09;.  </li>
+<li>Due to hardware limitations, the maximum frame rate supported by each channel is 20fps,  a lower frame rate is automatically used when the network bandwidth is low.  </li>
+</ul>
+</blockquote>
+</li>
+<li><p>Click  <strong>image</strong>  or  <strong>video</strong>  in the  <strong>View Name</strong>  column and view the result. The confidence of the detected face is marked.</p>
+</li>
+</ol>
+<h2 id="follow-up-operations">Follow-up Operations<a id="section1092612277429"></a></h2>
+<ul>
+<li><p><strong>Stopping the Face Detection Application</strong></p>
+<p>The face detection application is running continually after being executed. To stop it, perform the following operation:</p>
+<p>Run the following command in the  <em><strong>/home/ascend/sample-facedetection</strong></em>  directory as the Mind Studio installation user:</p>
+<p><strong>bash stop_facedetectionapp.sh</strong> <em>host_ip</em></p>
+<p><em>host_ip</em>: For the Atlas 200 DK developer board, this parameter indicates the IP address of the developer board.For the Atlas 300 PCIe card, this parameter indicates the IP address of the PCIe card host.</p>
+<p>Example command:</p>
+<p><strong>bash stop_facedetectionapp.sh 192.168.1.2</strong></p>
+</li>
+<li><p><strong>Stopping the Presenter Server Service</strong></p>
+<p>The Presenter Server service is always in the running state after being started. To stop the Presenter Server service of the face detection application, perform the following operations:</p>
+<p>Run the following command to check the process of the Presenter Server service corresponding to the face detection application as the Mind Studio installation user:</p>
+<p><strong>ps -ef | grep presenter | grep face_detection</strong></p>
+<pre><code>ascend@ascend-HP-ProDesk-600-G4-PCI-MT:~/sample-facedetection$ ps -ef | grep presenter | grep face_detection
+ascend    7701  1615  0 14:21 pts/8    00:00:00 python3 presenterserver/presenter_server.py --app face_detection
+</code></pre><p>In the preceding information,  <em>7701</em>  indicates the process ID of the Presenter Server service corresponding to the face detection application.</p>
+<p>To stop the service, run the following command:</p>
+<p><strong>kill -9</strong> <em>7001</em></p>
+</li>
+</ul>
+<h2 id="downloading-network-model">Downloading Network Model<a id="section193081336153717"></a></h2>
+<p>The models used in the Ascend open source applications are converted models that adapt to the Ascend 310 chipset. For details about how to download this kind of models and the original network models of face detection application, see  <a href="#table0531392153">Table 1</a>. If you have a better model solution, you are welcome to share it at  <a href="https://github.com/Ascend/models" target="_blank">https://github.com/Ascend/models</a>.</p>
+<p><strong>Table  1</strong>  Models used in face detection applications</p>
+<p><a id="table0531392153"></a></p>
+<table><thead align="left"><tr id="row1154103991514"><th class="cellrowborder" valign="top" width="15.841584158415841%" id="mcps1.2.5.1.1"><p id="p195418397155"><a id="p195418397155"></a><a id="p195418397155"></a>Model Name</p>
+</th>
+<th class="cellrowborder" valign="top" width="21.782178217821784%" id="mcps1.2.5.1.2"><p id="p1054539151519"><a id="p1054539151519"></a><a id="p1054539151519"></a>Description</p>
+</th>
+<th class="cellrowborder" valign="top" width="28.71287128712871%" id="mcps1.2.5.1.3"><p id="p387083117108"><a id="p387083117108"></a><a id="p387083117108"></a>Model Download Path</p>
+</th>
+<th class="cellrowborder" valign="top" width="33.663366336633665%" id="mcps1.2.5.1.4"><p id="p35412397154"><a id="p35412397154"></a><a id="p35412397154"></a>Original Network Download Address</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row65414393159"><td class="cellrowborder" valign="top" width="15.841584158415841%" headers="mcps1.2.5.1.1 "><p id="p17544398153"><a id="p17544398153"></a><a id="p17544398153"></a>Network model for face detection</p>
+<p id="p84114461512"><a id="p84114461512"></a><a id="p84114461512"></a>(<strong id="b41111030191911"><a id="b41111030191911"></a><a id="b41111030191911"></a>face_detection.om</strong>)</p>
+</td>
+<td class="cellrowborder" valign="top" width="21.782178217821784%" headers="mcps1.2.5.1.2 "><p id="p169011731015"><a id="p169011731015"></a><a id="p169011731015"></a>This model is used in the <strong id="b15967719155417"><a id="b15967719155417"></a><a id="b15967719155417"></a>face detection</strong> application.</p>
+<p id="p1372429181516"><a id="p1372429181516"></a><a id="p1372429181516"></a>It is a network model converted from ResNet0-SSD300 model based on Caffe.</p>
+</td>
+<td class="cellrowborder" valign="top" width="28.71287128712871%" headers="mcps1.2.5.1.3 "><p id="p1569513572242"><a id="p1569513572242"></a><a id="p1569513572242"></a>Download the model from the <strong id="b028612482311"><a id="b028612482311"></a><a id="b028612482311"></a>computer_vision/object_detect/face_detection</strong> directory in the <a href="https://github.com/Ascend/models/" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/models/</a> repository.</p>
+<p id="p1787118315101"><a id="p1787118315101"></a><a id="p1787118315101"></a>For the version description, see the <strong id="b1012219832511"><a id="b1012219832511"></a><a id="b1012219832511"></a>README.md</strong> file in the current directory.</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.663366336633665%" headers="mcps1.2.5.1.4 "><p id="p1785381617217"><a id="p1785381617217"></a><a id="p1785381617217"></a>For details, see the <strong id="b1423252411265"><a id="b1423252411265"></a><a id="b1423252411265"></a>README.md</strong> file of the <strong id="b688544332614"><a id="b688544332614"></a><a id="b688544332614"></a>computer_vision/object_detect/face_detection</strong> directory in the <a href="https://github.com/Ascend/models/" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/models/</a> repository.</p>
+<p id="p1314312124919"><a id="p1314312124919"></a><a id="p1314312124919"></a><strong id="b1365251225519"><a id="b1365251225519"></a><a id="b1365251225519"></a>Precautions during model conversion:</strong></p>
+<p id="p53116302463"><a id="p53116302463"></a><a id="p53116302463"></a>During the conversion, a message is displayed indicating that the conversion fails. You only need to select <strong id="b55978299556"><a id="b55978299556"></a><a id="b55978299556"></a>SSDDetectionOutput </strong>from the drop-down list box for the last layer and click <strong id="b15597182918551"><a id="b15597182918551"></a><a id="b15597182918551"></a>Retry</strong>.</p>
+<p id="p109405475158"><a id="p109405475158"></a><a id="p109405475158"></a><a id="image13957135893610"></a><a id="image13957135893610"></a><span><img id="image13957135893610" src="figures/en-us_image_0167289961.png"></span></p>
+<p id="p179225194910"><a id="p179225194910"></a><a id="p179225194910"></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="viewing-the-channel-to-which-a-camera-belongs">Viewing the Channel to Which a Camera Belongs<a id="section29013915461"></a></h2>
+<p>To query the channel to which a camera belongs, perform the following steps:</p>
+<ol>
+<li><p>On the Mind Studio main menu, choose  <strong>Tools &gt; Atlas DK Configuration</strong>. The  <strong>Atlas DK Configuration</strong>  interface is displayed, as shown in  <a href="#fig1278807124918">Figure 6</a>.</p>
+<p><strong>Figure  6</strong>  Atlas 200 DK Configuration dialog box<a id="fig1278807124918"></a><br><img src="figures/atlas-200-dk-configuration-dialog-box.png" alt="" title="atlas-200-dk-configuration-dialog-box"></p>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong><br>If no Atlas DK connection exists on the configuration page, click  <strong>Add</strong>  to add a connection. For details, see the  <em>Atlas 200 Developer Kit User Guide</em>.  </p>
+</blockquote>
+</li>
+<li><p>Select the Atlas DK connection in use and click  <strong>Connect</strong>  to check the connection status of the Atlas DK, as shown in  <a href="#fig1178814714917">Figure 7</a>.</p>
+<p><strong>Figure  7</strong>  Atlas 200 DK status dialog box<a id="fig1178814714917"></a><br><img src="figures/atlas-200-dk-status-dialog-box.png" alt="" title="atlas-200-dk-status-dialog-box"></p>
+<p>In the preceding figure,  <strong>Camera2</strong>  is set to  <strong>Online</strong>, indicating that the channel to which that the current camera belongs is  <strong>Channel-2</strong>.</p>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="software-preparation.html" class="navigation navigation-prev " aria-label="Previous page: Software Preparation">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ascendcamera.html" class="navigation navigation-next " aria-label="Next page: Ascendcamera">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Face Detection Sample","level":"1.4","depth":1,"next":{"title":"Ascendcamera","level":"1.5","depth":1,"path":"ascendcamera.md","ref":"ascendcamera.md","articles":[{"title":"Principle","level":"1.5.1","depth":2,"path":"principle.md","ref":"principle.md","articles":[]},{"title":"Deployment","level":"1.5.2","depth":2,"path":"deployment.md","ref":"deployment.md","articles":[]},{"title":"Running","level":"1.5.3","depth":2,"path":"running.md","ref":"running.md","articles":[{"title":"Saving Media Information Offline","level":"1.5.3.1","depth":3,"path":"saving-media-information-offline.md","ref":"saving-media-information-offline.md","articles":[]},{"title":"Viewing Media Information in Real Time","level":"1.5.3.2","depth":3,"path":"viewing-media-information-in-real-time.md","ref":"viewing-media-information-in-real-time.md","articles":[{"title":"Playing a Real-Time Video Through Presenter Server","level":"1.5.3.2.1","depth":4,"path":"playing-a-real-time-video-through-presenter-server.md","ref":"playing-a-real-time-video-through-presenter-server.md","articles":[]},{"title":"Playing a Real-Time Video Through VLC","level":"1.5.3.2.2","depth":4,"path":"playing-a-real-time-video-through-vlc.md","ref":"playing-a-real-time-video-through-vlc.md","articles":[]}]}]}]},"previous":{"title":"Software Preparation","level":"1.3.2","depth":2,"path":"software-preparation.md","ref":"software-preparation.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"imgUrl":"","topnav":[]},"plugins":["expandable-chapters","copy"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy":{},"expandableChapters":{"cssFile":["expandable-chapters-theme.css"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"website.css"}},"file":{"path":"face-detection-sample.md","mtime":"2019-04-26T08:02:06.868Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-26T08:02:12.360Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/clipboard.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/copy.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

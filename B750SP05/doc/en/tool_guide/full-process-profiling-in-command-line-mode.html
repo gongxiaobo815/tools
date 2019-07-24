@@ -1,0 +1,1101 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Full-Process Profiling in Command Line Mode · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters-theme.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-copy/css/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="reference.html" />
+    
+    
+    <link rel="prev" href="ai-cpu-function.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="log-tool.html">
+            
+                <a href="log-tool.html">
+            
+                    
+                    Log Tool
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="log-overview.html">
+            
+                <a href="log-overview.html">
+            
+                    
+                    Log Overview
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="log-processing-mechanism.html">
+            
+                <a href="log-processing-mechanism.html">
+            
+                    
+                    Log Processing Mechanism
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="log-files.html">
+            
+                <a href="log-files.html">
+            
+                    
+                    Log Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="log-levels.html">
+            
+                <a href="log-levels.html">
+            
+                    
+                    Log Levels
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="log-format.html">
+            
+                <a href="log-format.html">
+            
+                    
+                    Log Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="log-configuration.html">
+            
+                <a href="log-configuration.html">
+            
+                    
+                    Log Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="instructions.html">
+            
+                <a href="instructions.html">
+            
+                    
+                    Instructions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="viewing-logs.html">
+            
+                <a href="viewing-logs.html">
+            
+                    
+                    Viewing Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="exporting-logs.html">
+            
+                <a href="exporting-logs.html">
+            
+                    
+                    Exporting Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="uploading-logs.html">
+            
+                <a href="uploading-logs.html">
+            
+                    
+                    Uploading Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="deleting-logs.html">
+            
+                <a href="deleting-logs.html">
+            
+                    
+                    Deleting Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="setting-the-log-level.html">
+            
+                <a href="setting-the-log-level.html">
+            
+                    
+                    Setting the Log Level
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="faqs.html">
+            
+                <a href="faqs.html">
+            
+                    
+                    FAQs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="what-do-i-do-if-no-log-file-is-generated-in-the-log-directory.html">
+            
+                <a href="what-do-i-do-if-no-log-file-is-generated-in-the-log-directory.html">
+            
+                    
+                    What Do I Do If No Log File Is Generated in the Log Directory?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="what-do-i-do-if-a-log-file-fails-to-be-uploaded-to-mind-studio-due-to-the-incorrect-format.html">
+            
+                <a href="what-do-i-do-if-a-log-file-fails-to-be-uploaded-to-mind-studio-due-to-the-incorrect-format.html">
+            
+                    
+                    What Do I Do If a Log File Fails to Be Uploaded to Mind Studio Due to the Incorrect Format?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="profiling.html">
+            
+                <a href="profiling.html">
+            
+                    
+                    Profiling
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="overview-0.html">
+            
+                <a href="overview-0.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="full-process-profiling-in-graphical-mode.html">
+            
+                <a href="full-process-profiling-in-graphical-mode.html">
+            
+                    
+                    Full-Process Profiling in Graphical Mode
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="configuring-data-to-be-profiled.html">
+            
+                <a href="configuring-data-to-be-profiled.html">
+            
+                    
+                    Configuring Data to Be Profiled
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="profiling-performance-data.html">
+            
+                <a href="profiling-performance-data.html">
+            
+                    
+                    Profiling Performance Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="viewing-performance-analysis-results.html">
+            
+                <a href="viewing-performance-analysis-results.html">
+            
+                    
+                    Viewing Performance Analysis Results
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.3.1" data-path="summary.html">
+            
+                <a href="summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3.2" data-path="timeline.html">
+            
+                <a href="timeline.html">
+            
+                    
+                    Timeline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3.3" data-path="control-cpu-function.html">
+            
+                <a href="control-cpu-function.html">
+            
+                    
+                    Control CPU Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3.4" data-path="ai-cpu-function.html">
+            
+                <a href="ai-cpu-function.html">
+            
+                    
+                    AI CPU Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="full-process-profiling-in-command-line-mode.html">
+            
+                <a href="full-process-profiling-in-command-line-mode.html">
+            
+                    
+                    Full-Process Profiling in Command Line Mode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="reference.html">
+            
+                <a href="reference.html">
+            
+                    
+                    Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="resetting-the-password-for-connecting-to-the-redis-service.html">
+            
+                <a href="resetting-the-password-for-connecting-to-the-redis-service.html">
+            
+                    
+                    Resetting the Password for Connecting to the Redis Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="script-list.html">
+            
+                <a href="script-list.html">
+            
+                    
+                    Script List
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="black-box.html">
+            
+                <a href="black-box.html">
+            
+                    
+                    Black Box 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="overview-1.html">
+            
+                <a href="overview-1.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="instructions-2.html">
+            
+                <a href="instructions-2.html">
+            
+                    
+                    Instructions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Full-Process Profiling in Command Line Mode</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="full-process-profiling-in-command-line-mode">Full-Process Profiling in Command Line Mode<a id="EN-US_TOPIC_0142657883"></a></h1>
+<p>To analyze performance data in command line mode, log in to the Mind Studio server as the Mind Studio installation user and run the commands in the script  <strong>~/tools/profiler/analysis/msvp/host/bin64/hiprof.pyc</strong>  to profile performance data. After successful profiling, you can view the performance analysis results in the command line window.</p>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong><br><strong>~/tools</strong>  is the default  <strong>toolpath</strong>  setting, which can be customized during Mind Studio installation. You can view the value of  <strong>toolpath </strong>in the  <strong>scripts/env.conf</strong>  file. You can run the  <strong>find / -name &apos;env.conf&apos;</strong>  command to view the location of the  <strong>env.conf</strong>  file in the  <strong>script </strong>directory.  </p>
+</blockquote>
+<h2 id="profiling-performance-data">Profiling performance data<a id="section144045398819"></a></h2>
+<p>The following uses the data on process orchestration as an example to describe how to profile the performance data.</p>
+<ol>
+<li>Log in to the Mind Studio server as the Mind Studio installation user.</li>
+<li>Go to the directory where the  <strong>hiprof.pyc</strong>  script is stored, for example  <strong>~/tools/profiler/analysis/msvp/host/bin64</strong>.</li>
+<li><p>Profile software and hardware data in sample-based mode and task-based mode respectively.</p>
+<p>In the following commands, change the value of  <strong>*_dir</strong>  as required. Make sure that the Mind Studio installation user can access this directory.  <strong>--ai_core_profiling_mode=sample-based</strong>  indicates that data is profiled in sample-based mode. Replace  <strong>x.x.x.x</strong>  with the IP address of the server where the host is located.</p>
+<p>After the commands are executed, the configuration parameters in the commands are saved in the  <strong>sample.ini</strong>  file by default. The file is saved in the directory specified by the  <strong>result_dir</strong>  parameter. For details about the configuration, see  <a href="#section1893632053018">sample.ini File</a>.</p>
+<ul>
+<li><p>Commands for profiling all software and hardware data in sample-based mode.</p>
+<p><strong>python hiprof.pyc --ip_address=x.x.x.x --ddk_dir=~/tools/che/ddk/ddk --app=/projects/MIND/out/main --app_dir=/projects/MIND/ --umode=MIND --result_dir=/home/ascend/tools/out --peripheral_profiling=nic,dvpp  --ai_cpu_profiling=on --RTS_Profiling=on --ai_core_profiling_mode=sample-based --ai_core_profiling=on --HIAI_Engine_Profiling=on --OME_Profiling=on --ctrl_cpu_profiling=on --profiling_mode=online --llc_bandwidth=on --ddr_profiling=on</strong></p>
+</li>
+<li><p>Commands for profiling all software and hardware data in task-based mode.</p>
+<p><strong>python hiprof.pyc --ip_address=x.x.x.x --ddk_dir=~/tools/che/ddk/ddk --app=/projects/MIND/out/main --app_dir=/projects/MIND/ --umode=MIND --result_dir=/home/ascend/tools/out --peripheral_profiling=nic,dvpp --ai_cpu_profiling=on --RTS_Profiling=on --ai_core_profiling_mode=task-based --ai_core_profiling=on --HIAI_Engine_Profiling=on --OME_Profiling=on --ctrl_cpu_profiling=on --profiling_mode=online --llc_bandwidth=on --ddr_profiling=on</strong></p>
+</li>
+<li><p>Commands with parameters for profiling data in task-based mode.</p>
+<p><strong>python hiprof.pyc --ip_address=x.x.x.x --ddk_dir=~/tools/che/ddk/ddk --app_dir=/projects/MIND --umode=MIND --result_dir=/home/ascend/tools/out  --ai_cpu_profiling=on --RTS_Profiling=on --ai_core_profiling=on --ctrl_cpu_profiling=on -- /projects/MIND/perfor/main Performace_Freespace_Road_FP16_1B_AIPP.json</strong></p>
+</li>
+</ul>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong><br>The  <strong>result_dir</strong>  path is used to store profiling results. Ensure that the Mind Studio installation user has the read and write permission on the path. You are advised to set this path to the directory under  <strong>~/tools/</strong>  or  <strong>/projects/</strong>.  </p>
+</blockquote>
+</li>
+</ol>
+<h2 id="viewing-performance-analysis-results">Viewing Performance Analysis Results<a id="section5226192613183"></a></h2>
+<ol>
+<li><p>Runtime API calls and Task Scheduler information</p>
+<p><strong>Figure  1</strong>  Runtime API calls<a id="fig124615301231"></a><br><img src="figures/runtime-api-calls.png" alt="" title="runtime-api-calls"></p>
+<p><strong>Figure  2</strong>  Task Scheduler<a id="fig14674228161719"></a><br><img src="figures/task-scheduler.png" alt="" title="task-scheduler"></p>
+</li>
+<li><p>Control CPU PMU Events</p>
+<p><strong>Figure  3</strong>  Control CPU PMU Events<a id="fig1653814610317"></a><br><img src="figures/control-cpu-pmu-events.png" alt="" title="control-cpu-pmu-events"></p>
+</li>
+<li><p>Control CPU Top Functions</p>
+<p><strong>Figure  4</strong>  Control CPU Top Functions<a id="fig1497511143"></a><br><img src="figures/control-cpu-top-functions.png" alt="" title="control-cpu-top-functions"></p>
+</li>
+<li><p>AI CPU PMU Events</p>
+<p><strong>Figure  5</strong>  AI CPU PMU Events<a id="fig1717193111417"></a><br><img src="figures/ai-cpu-pmu-events.png" alt="" title="ai-cpu-pmu-events"></p>
+</li>
+<li><p>AI CPU Top Function</p>
+<p><strong>Figure  6</strong>  AI CPU Top 2 Functions<a id="fig14167537151817"></a><br><img src="figures/ai-cpu-top-2-functions.png" alt="" title="ai-cpu-top-2-functions"></p>
+</li>
+<li><p>TS CPU PMU Events</p>
+<p><strong>Figure  7</strong>  TS CPU PMU Events<a id="fig19241165125119"></a><br><img src="figures/ts-cpu-pmu-events.png" alt="" title="ts-cpu-pmu-events"></p>
+</li>
+<li><p>AI Core data Matrices</p>
+<p><strong>Figure  8</strong>  AI Core data Matrices<a id="fig177401426201816"></a><br><img src="figures/ai-core-data-matrices.png" alt="" title="ai-core-data-matrices"></p>
+</li>
+<li><p>NIC Data</p>
+<p><strong>Figure  9</strong>  Nic Data<a id="fig815320461041"></a><br><img src="figures/nic-data.png" alt="" title="nic-data"></p>
+</li>
+<li><p>DVPP Data</p>
+<p><strong>Figure  10</strong>  Dvpp Data<a id="fig187025416414"></a><br><img src="figures/dvpp-data.png" alt="" title="dvpp-data"></p>
+</li>
+<li><p>HiAI Engine Data </p>
+<p><strong>Figure  11</strong>  HIAI Engine Information<a id="fig877315812518"></a><br><img src="figures/hiai-engine-information.png" alt="" title="hiai-engine-information"></p>
+</li>
+<li><p>OME Data</p>
+<p><strong>Figure  12</strong>  OME Information<a id="fig24769211758"></a><br><img src="figures/ome-information.png" alt="" title="ome-information"></p>
+</li>
+<li><p>LLC Data</p>
+<p><strong>Figure  13</strong>  LLC data<a id="fig366717542198"></a><br><img src="figures/llc-data.png" alt="" title="llc-data"></p>
+</li>
+<li><p>DDR Data</p>
+<p><strong>Figure  14</strong>  DDR area<a id="fig159731304204"></a><br><img src="figures/ddr-area-7.png" alt="" title="ddr-area-7"></p>
+</li>
+</ol>
+<h2 id="follow-up-operations">Follow-up Operations<a id="section1015110578198"></a></h2>
+<p>You can also import profiling results to Profiling on the profiling main page. The procedure is as follows:</p>
+<ol>
+<li><p>Go to  <a href="https://IP address of the Profiling server:8099" target="_blank">https://IP address of the Profiling server:8099</a>  using a browser. Log in to the Profiling page. The default account name is  <strong>msvpadmin</strong>  and the password is  <strong>Admin12#$</strong>. After login, choose  <strong>Import Results</strong>  from the  <strong>Analysis</strong>  drop-down list box on the upper left of the page, as shown in  <a href="#fig8231544163915">Figure 15</a>.</p>
+<p><strong>Figure  15</strong>  Choosing Import Results<a id="fig8231544163915"></a><br><img src="figures/choosing-import-results.png" alt="" title="choosing-import-results"></p>
+</li>
+<li><p>In the displayed dialog box as shown in  <a href="#fig1545163211218">Figure 16</a>, enter the path of the profiling result in the  <strong>Path </strong>text box. Press  <strong>Tab</strong>, and the device ID will be supplemented automatically. Then, click  <strong>OK</strong>.</p>
+<p>The value of  <strong>Path</strong>  must be the same as the value of  <strong>result_dir</strong>  in the command line.</p>
+<p><strong>Figure  16</strong>  Importing the profiling result <a id="fig1545163211218"></a><br><img src="figures/importing-the-profiling-result.png" alt="" title="importing-the-profiling-result"></p>
+</li>
+</ol>
+<h2 id="sampleini-file">sample.ini File<a id="section1893632053018"></a></h2>
+<p>The content of the  <strong>sample.ini</strong>  file is as follows:</p>
+<pre><code>[GENERAL]
+analysis_type=ai
+analysis_target=Launch Application
+result_dir=/home/ascend/tools/out
+umode=MIND
+profiling_mode=online
+HIAI_Engine_Profiling=on
+Framework_Profiling=on
+RTS_Profiling=on
+local_app_dir=/projects/MIND0126_02
+local_app=/projects/MIND0126_02/out/main
+app_parameters=
+cpu_profiling_interval=20
+ctrl_cpu_profiling=on
+ts_cpu_profiling=off
+ai_cpu_profiling=on
+ai_core_profiling=on
+ai_core_profiling_interval=10
+ai_core_profiling_mode=task-based
+peripheral_profiling=nic
+peripheral_profiling_interval=10
+llc_capacity=on
+llc_bandwidth=off
+llc_interval=100
+ddr_profiling=on
+ddr_interval=100
+ddr_master_id=3
+
+app_dir=/home/HwHiAiUser/HIAI_PROJECTS/66adc0ebcb506226f153262feb4f7c7c//MIND0126_02/out
+app=hiai_66adc0ebcb506226f153262feb4f7c7c_MIND0126_02_main
+ctrl_cpu_profiling_events=0x11,0x8
+ai_core_profiling_events=0x3,0x8,0x9,0xe,0x3a,0x3b,0x4a,0x49
+ai_cpu_profiling_events=0x11,0x8
+ts_cpu_profiling=off
+llc_profiling_events=hisi_l3c0_1/dsid0/,hisi_l3c0_1/dsid1/,hisi_l3c0_1/dsid2/,hisi_l3c0_1/dsid3/,hisi_l3c0_1/dsid4/,hisi_l3c0_1/dsid5/,hisi_l3c0_1/dsid6/,hisi_l3c0_1/dsid7/
+ddr_profiling_events=read,write
+stream_enabled=on
+cleanup_host_results=on
+cleanup_device_results=on
+ddk_dir=/home/ascend/tools/che/ddk/ddk
+llc_profiling=on
+job_id=b8380eea-236c-11e9-8354-286ed488e3a7
+devices=0
+</code></pre><p><a href="#table92981719105310">Table 1</a>  describes the key parameters.</p>
+<p><strong>Table  1</strong>  Key parameters</p>
+<p><a id="table92981719105310"></a></p>
+<table><thead align="left"><tr id="row203007193532"><th class="cellrowborder" valign="top" width="31.419999999999998%" id="mcps1.2.4.1.1"><p id="p1130011919533"><a id="p1130011919533"></a><a id="p1130011919533"></a>Parameter</p>
+</th>
+<th class="cellrowborder" valign="top" width="61.06%" id="mcps1.2.4.1.2"><p id="p1030018194532"><a id="p1030018194532"></a><a id="p1030018194532"></a>Description</p>
+</th>
+<th class="cellrowborder" valign="top" width="7.5200000000000005%" id="mcps1.2.4.1.3"><p id="p16780164212445"><a id="p16780164212445"></a><a id="p16780164212445"></a>Mandatory or Not</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row812801205110"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p1833242612575"><a id="p1833242612575"></a><a id="p1833242612575"></a>profiling_mode</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p17332826155713"><a id="p17332826155713"></a><a id="p17332826155713"></a>Profiling mode. The value <strong id="b1143981723618"><a id="b1143981723618"></a><a id="b1143981723618"></a>online </strong>indicates that the app runs on the host, while the value <strong id="b141911296368"><a id="b141911296368"></a><a id="b141911296368"></a>offline </strong>indicates that the app runs on the device.</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p1578014422445"><a id="p1578014422445"></a><a id="p1578014422445"></a>Yes</p>
+</td>
+</tr>
+<tr id="row1781414485117"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p1497092985711"><a id="p1497092985711"></a><a id="p1497092985711"></a>ddk_dir</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p997042920575"><a id="p997042920575"></a><a id="p997042920575"></a>DDK path. The path must exist.</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p278213422448"><a id="p278213422448"></a><a id="p278213422448"></a>Yes</p>
+</td>
+</tr>
+<tr id="row1540055211503"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p1597119291578"><a id="p1597119291578"></a><a id="p1597119291578"></a>umode</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p1636853400"><a id="p1636853400"></a><a id="p1636853400"></a>Project mode. The value <span class="parmvalue" id="parmvalue12785121614408"><a id="parmvalue12785121614408"></a><a id="parmvalue12785121614408"></a><b>MIND</b></span> indicates a Mind Studio project. To use Profiling to profile data, the value of<strong id="b711116488427"><a id="b711116488427"></a><a id="b711116488427"></a> profiling_mode</strong> must be <strong id="b3393253194210"><a id="b3393253194210"></a><a id="b3393253194210"></a>online</strong>.</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p20782204214444"><a id="p20782204214444"></a><a id="p20782204214444"></a>Yes</p>
+</td>
+</tr>
+<tr id="row934124818514"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p59037605913"><a id="p59037605913"></a><a id="p59037605913"></a>app_dir</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p178244155159"><a id="p178244155159"></a><a id="p178244155159"></a>In the command line, <strong id="b20474649124417"><a id="b20474649124417"></a><a id="b20474649124417"></a>app_dir </strong>must be set to the root directory of the executable file of the app in UI host (server where Mind Studio is located), for example, <span class="parmvalue" id="parmvalue88214919168"><a id="parmvalue88214919168"></a><a id="parmvalue88214919168"></a><b>--app_dir /projects/MIND0126_02</b></span>. This parameter is mandatory. The directory must exist on the UI host.</p>
+<p id="p17794162124619"><a id="p17794162124619"></a><a id="p17794162124619"></a>In <strong id="b183755594517"><a id="b183755594517"></a><a id="b183755594517"></a>sample.ini</strong>, the value of <strong id="b8977205834514"><a id="b8977205834514"></a><a id="b8977205834514"></a>app_dir</strong> is changed to the root directory of the executable file of the app on the host, for example, <span class="filepath" id="filepath9677633152818"><a id="filepath9677633152818"></a><a id="filepath9677633152818"></a><b>~/HIAI_PROJECTS/workspace_mind_studio/MIND0126_02/out</b></span>. In addition, the value of <strong id="b16652141894717"><a id="b16652141894717"></a><a id="b16652141894717"></a>local_app_dir</strong> in <strong id="b894805304610"><a id="b894805304610"></a><a id="b894805304610"></a>sample.ini</strong> is the same as the value of <strong id="b86201521194717"><a id="b86201521194717"></a><a id="b86201521194717"></a>app_dir </strong>in the command line.</p>
+<p id="p49030617593"><a id="p49030617593"></a><a id="p49030617593"></a></p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p97820425447"><a id="p97820425447"></a><a id="p97820425447"></a>Yes</p>
+</td>
+</tr>
+<tr id="row1776816457517"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p144871918175912"><a id="p144871918175912"></a><a id="p144871918175912"></a>app</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p10758157162911"><a id="p10758157162911"></a><a id="p10758157162911"></a>In the command line, the <strong id="b05021410175020"><a id="b05021410175020"></a><a id="b05021410175020"></a>app </strong>parameter must be set to the directory (including the app mane) of the executable file of the app on the UI host, for example, <span class="parmvalue" id="parmvalue44036434293"><a id="parmvalue44036434293"></a><a id="parmvalue44036434293"></a><b>--app /projects/MIND0126_02/out/main</b></span>. This parameter is mandatory. The directory must exist on the UI host.</p>
+<p id="p1548761818594"><a id="p1548761818594"></a><a id="p1548761818594"></a>In <strong id="b119014195019"><a id="b119014195019"></a><a id="b119014195019"></a>sample.ini</strong>, the value of <strong id="b65034815019"><a id="b65034815019"></a><a id="b65034815019"></a>app </strong>is changed to the name of the corresponding app on the host, for example, <span class="parmvalue" id="parmvalue18816173263120"><a id="parmvalue18816173263120"></a><a id="parmvalue18816173263120"></a><b>hiai_workspace_mind_studio_MIND0126_02_main</b></span>. In addition, the value of <strong id="b1766110366506"><a id="b1766110366506"></a><a id="b1766110366506"></a>local_app</strong> in <strong id="b9661936125017"><a id="b9661936125017"></a><a id="b9661936125017"></a>sample.ini</strong> is the same as the value of <strong id="b14676103610507"><a id="b14676103610507"></a><a id="b14676103610507"></a>app</strong> in the command line.</p>
+<div class="note" id="note1686923105211"><a id="note1686923105211"></a><a id="note1686923105211"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p15706218322"><a id="p15706218322"></a><a id="p15706218322"></a>In this example, the main function is used as the entry to data analysis. The absolute path of the main function is <strong id="b10303102965113"><a id="b10303102965113"></a><a id="b10303102965113"></a>/projects/profiling_test/app/main</strong>.</p>
+</div></div>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p1078213427449"><a id="p1078213427449"></a><a id="p1078213427449"></a>Yes</p>
+</td>
+</tr>
+<tr id="row2611104205114"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p6332142645718"><a id="p6332142645718"></a><a id="p6332142645718"></a>devices</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p1533252615713"><a id="p1533252615713"></a><a id="p1533252615713"></a>Device list. The default value is <strong id="b13132438105111"><a id="b13132438105111"></a><a id="b13132438105111"></a>0</strong>.</p>
+<p id="p1988012549492"><a id="p1988012549492"></a><a id="p1988012549492"></a>This parameter is required only in CCE scenarios.</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p16630101535811"><a id="p16630101535811"></a><a id="p16630101535811"></a>No</p>
+</td>
+</tr>
+<tr id="row330011193536"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p730011925316"><a id="p730011925316"></a><a id="p730011925316"></a>OME_Profiling</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p3300201945318"><a id="p3300201945318"></a><a id="p3300201945318"></a>Whether to enable OME profiling. The default setting is <strong id="b1210185275118"><a id="b1210185275118"></a><a id="b1210185275118"></a>OFF</strong>.</p>
+<p id="p643311610157"><a id="p643311610157"></a><a id="p643311610157"></a>In <strong id="b752245513299"><a id="b752245513299"></a><a id="b752245513299"></a>sample.ini</strong>, this item is displayed as <strong id="b424317365306"><a id="b424317365306"></a><a id="b424317365306"></a>Framework_Profiling</strong>.</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p27801042134410"><a id="p27801042134410"></a><a id="p27801042134410"></a>No</p>
+</td>
+</tr>
+<tr id="row430018192536"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p20300101915532"><a id="p20300101915532"></a><a id="p20300101915532"></a>HIAI_Engine_Profiling</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p1930019191532"><a id="p1930019191532"></a><a id="p1930019191532"></a>Whether to enable profiling for HiAI Engine. The default setting is <strong id="b13131213195213"><a id="b13131213195213"></a><a id="b13131213195213"></a>OFF</strong>.</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p8780204214444"><a id="p8780204214444"></a><a id="p8780204214444"></a>No</p>
+</td>
+</tr>
+<tr id="row16300419175313"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p1430019191532"><a id="p1430019191532"></a><a id="p1430019191532"></a>peripheral_profiling_interval</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p133001319155318"><a id="p133001319155318"></a><a id="p133001319155318"></a>Peripheral profiling interval. The value range is [1, 1000]. The default value is <strong id="b551225419536"><a id="b551225419536"></a><a id="b551225419536"></a>10</strong>.</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p11780134212443"><a id="p11780134212443"></a><a id="p11780134212443"></a>No</p>
+</td>
+</tr>
+<tr id="row1530081918539"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p330031910531"><a id="p330031910531"></a><a id="p330031910531"></a>peripheral_profiling</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p3300151910535"><a id="p3300151910535"></a><a id="p3300151910535"></a>Peripheral profiling mode: <strong id="b04521146145419"><a id="b04521146145419"></a><a id="b04521146145419"></a>dvpp</strong>, <strong id="b16904164745411"><a id="b16904164745411"></a><a id="b16904164745411"></a>nic</strong>, or both. A comma (,) must be used to separate them. This parameter is left blank by default.</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p12780114211442"><a id="p12780114211442"></a><a id="p12780114211442"></a>No</p>
+</td>
+</tr>
+<tr id="row51581415115517"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p1158101545512"><a id="p1158101545512"></a><a id="p1158101545512"></a>ctrl_cpu_profiling</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p315841545519"><a id="p315841545519"></a><a id="p315841545519"></a>Whether to enable profiling for the control CPU. The default setting is <strong id="b1636214295612"><a id="b1636214295612"></a><a id="b1636214295612"></a>OFF</strong>.</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p197801842174414"><a id="p197801842174414"></a><a id="p197801842174414"></a>No</p>
+</td>
+</tr>
+<tr id="row144216254559"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p6442725105518"><a id="p6442725105518"></a><a id="p6442725105518"></a>ts_cpu_profiling</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p134420258552"><a id="p134420258552"></a><a id="p134420258552"></a>Whether to enable profiling for the TS CPU. The default setting is <strong id="b193071971719"><a id="b193071971719"></a><a id="b193071971719"></a>OFF</strong>.</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p2780542124416"><a id="p2780542124416"></a><a id="p2780542124416"></a>No</p>
+</td>
+</tr>
+<tr id="row19442125115514"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p10442925155513"><a id="p10442925155513"></a><a id="p10442925155513"></a>ai_cpu_profiling</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p1944218258557"><a id="p1944218258557"></a><a id="p1944218258557"></a>Whether to enable profiling for the AI CPU. The default setting is <strong id="b156403515163"><a id="b156403515163"></a><a id="b156403515163"></a>OFF</strong>.</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p1878012422444"><a id="p1878012422444"></a><a id="p1878012422444"></a>No</p>
+</td>
+</tr>
+<tr id="row6322629135516"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p17322329165517"><a id="p17322329165517"></a><a id="p17322329165517"></a>ai_core_profiling</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p332214294555"><a id="p332214294555"></a><a id="p332214294555"></a>Whether to enable profiling for the AI core. The default setting is <strong id="b1817215272169"><a id="b1817215272169"></a><a id="b1817215272169"></a>OFF</strong>.</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p678016426443"><a id="p678016426443"></a><a id="p678016426443"></a>No</p>
+</td>
+</tr>
+<tr id="row113221529135514"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p1532242911552"><a id="p1532242911552"></a><a id="p1532242911552"></a>ai_core_profiling_mode</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p1432242916555"><a id="p1432242916555"></a><a id="p1432242916555"></a>AI core profiling mode. The value can be <strong id="b12122180485"><a id="b12122180485"></a><a id="b12122180485"></a>task-based</strong> or <strong id="b126226213811"><a id="b126226213811"></a><a id="b126226213811"></a>sample-based</strong>. In task-based mode, data is profiled by task. In sample-based mode, data is profiled by sample. The default setting is <strong id="b18920144296"><a id="b18920144296"></a><a id="b18920144296"></a>task-based</strong>.</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p87802420446"><a id="p87802420446"></a><a id="p87802420446"></a>No</p>
+</td>
+</tr>
+<tr id="row732272914559"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p2032362905520"><a id="p2032362905520"></a><a id="p2032362905520"></a>ai_core_profiling_interval</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p1732342995511"><a id="p1732342995511"></a><a id="p1732342995511"></a>Profiling interval when the AI core profiling mode is sample-based. The value range is [1, 1000]. The default value is <strong id="b19899235151210"><a id="b19899235151210"></a><a id="b19899235151210"></a>10</strong>.</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p1678044211446"><a id="p1678044211446"></a><a id="p1678044211446"></a>No</p>
+</td>
+</tr>
+<tr id="row34461015115713"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p14464158572"><a id="p14464158572"></a><a id="p14464158572"></a>RTS_Profiling</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p20447161585716"><a id="p20447161585716"></a><a id="p20447161585716"></a>Whether to enable RTS profiling. </p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p117806426449"><a id="p117806426449"></a><a id="p117806426449"></a>No</p>
+</td>
+</tr>
+<tr id="row1412832135719"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p2128621185713"><a id="p2128621185713"></a><a id="p2128621185713"></a>result_dir</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p1212872185716"><a id="p1212872185716"></a><a id="p1212872185716"></a>Directory of the result file. If it does not exist, create it. If it exists, change it to<strong id="b448851620181"><a id="b448851620181"></a><a id="b448851620181"></a> .old</strong>. The path must be an absolute path.</p>
+<p id="p525274571318"><a id="p525274571318"></a><a id="p525274571318"></a>The <span class="parmname" id="parmname2032517194279"><a id="parmname2032517194279"></a><a id="parmname2032517194279"></a><b>result_dir</b></span> path is used to store profiling results. Ensure that the Mind Studio installation user has the read and write permission on the path. You are advised to set this path to the directory under <span class="filepath" id="filepath1189314571919"><a id="filepath1189314571919"></a><a id="filepath1189314571919"></a><b>~/tools/</b></span> or <span class="filepath" id="filepath1119330174211"><a id="filepath1119330174211"></a><a id="filepath1119330174211"></a><b>/projects/</b></span>.</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p1878094210441"><a id="p1878094210441"></a><a id="p1878094210441"></a>No</p>
+</td>
+</tr>
+<tr id="row496912291570"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p12970192915713"><a id="p12970192915713"></a><a id="p12970192915713"></a>cpu_profiling_interval</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p1497042965715"><a id="p1497042965715"></a><a id="p1497042965715"></a>CPU profiling interval. This parameter is mandatory if the interval is required. The value range is [20, 1000]. The default value is <strong id="b842352706155443"><a id="b842352706155443"></a><a id="b842352706155443"></a>20</strong>.</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p10780742164416"><a id="p10780742164416"></a><a id="p10780742164416"></a>No</p>
+</td>
+</tr>
+<tr id="row422204105918"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p62217455920"><a id="p62217455920"></a><a id="p62217455920"></a>import</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p138185264425"><a id="p138185264425"></a><a id="p138185264425"></a>Imports profiling result file to the database by calling <strong id="b11621859132318"><a id="b11621859132318"></a><a id="b11621859132318"></a>mvsp_import.pyc</strong>. You need to configure the project file path. A profiling result file must be stored in a directory under <span class="filepath" id="filepath1311615313286"><a id="filepath1311615313286"></a><a id="filepath1311615313286"></a><b>Home directory of the Mind Studio installation user/tools/</b></span>. Otherwise, the file cannot be imported. This parameter is not saved in <strong id="b1969161112248"><a id="b1969161112248"></a><a id="b1969161112248"></a>sample.ini</strong>.</p>
+<p id="p1622844598"><a id="p1622844598"></a><a id="p1622844598"></a>The <b><span class="cmdname" id="cmdname1532133654217"><a id="cmdname1532133654217"></a><a id="cmdname1532133654217"></a>python hiprof.pyc</span></b> command can contain only the <strong id="b1335102615243"><a id="b1335102615243"></a><a id="b1335102615243"></a>import </strong>parameter.</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p1478264218442"><a id="p1478264218442"></a><a id="p1478264218442"></a>No</p>
+</td>
+</tr>
+<tr id="row172901395591"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p42904955918"><a id="p42904955918"></a><a id="p42904955918"></a>report</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p177691980138"><a id="p177691980138"></a><a id="p177691980138"></a>Prints the profiling result.</p>
+<p id="p1229013955916"><a id="p1229013955916"></a><a id="p1229013955916"></a>In the <b><span class="cmdname" id="cmdname474910718146"><a id="cmdname474910718146"></a><a id="cmdname474910718146"></a>python hiprof.pyc</span></b> command line, contain the <strong id="b938581262515"><a id="b938581262515"></a><a id="b938581262515"></a>report</strong> parameter and add the absolute path of the profiling result to be printed. for example, <strong id="b11895134510312"><a id="b11895134510312"></a><a id="b11895134510312"></a>python hiprof.pyc --report /projects/test/profiling_output/</strong></p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p47826421441"><a id="p47826421441"></a><a id="p47826421441"></a>No</p>
+</td>
+</tr>
+<tr id="row12941193818819"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p8486108191710"><a id="p8486108191710"></a><a id="p8486108191710"></a>llc_bandwidth</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p1941133811819"><a id="p1941133811819"></a><a id="p1941133811819"></a>Whether to enable read/write bandwidth profiling for the LLC. The default setting is <strong id="b10442833173315"><a id="b10442833173315"></a><a id="b10442833173315"></a>OFF</strong>. This parameter is mutually exclusive with <strong id="b16444175818355"><a id="b16444175818355"></a><a id="b16444175818355"></a>llc_capacity</strong>. Only one type of LLC data can be collected at a time.</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p6782842104412"><a id="p6782842104412"></a><a id="p6782842104412"></a>No</p>
+</td>
+</tr>
+<tr id="row191017414147"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p151010416149"><a id="p151010416149"></a><a id="p151010416149"></a>llc_capacity</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p1110124151413"><a id="p1110124151413"></a><a id="p1110124151413"></a>Used capacity of the LLC. The default setting is <strong id="b3259717123712"><a id="b3259717123712"></a><a id="b3259717123712"></a>OFF</strong>. This parameter is mutually exclusive with <strong id="b105401339183710"><a id="b105401339183710"></a><a id="b105401339183710"></a>llc_bandwidth</strong>. Only one type of LLC data can be collected at a time.</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p15782642164418"><a id="p15782642164418"></a><a id="p15782642164418"></a>No</p>
+</td>
+</tr>
+<tr id="row3203123119100"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p12037318104"><a id="p12037318104"></a><a id="p12037318104"></a>llc_interval</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p620311314108"><a id="p620311314108"></a><a id="p620311314108"></a>LLC profiling interval. This parameter is mandatory if the interval is required. The value range is [100, 1000]. The default value is <strong id="b1698111260396"><a id="b1698111260396"></a><a id="b1698111260396"></a>100</strong> (ms).</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p27821242124416"><a id="p27821242124416"></a><a id="p27821242124416"></a>No</p>
+</td>
+</tr>
+<tr id="row4460105894811"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p74601858144816"><a id="p74601858144816"></a><a id="p74601858144816"></a>ddr_profiling</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p5965548192412"><a id="p5965548192412"></a><a id="p5965548192412"></a>Whether to enable profiling for the DDR SDRAM. </p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p87821342114413"><a id="p87821342114413"></a><a id="p87821342114413"></a>No</p>
+</td>
+</tr>
+<tr id="row835113164913"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p1351143134911"><a id="p1351143134911"></a><a id="p1351143134911"></a>ddr_master_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p735115324915"><a id="p735115324915"></a><a id="p735115324915"></a>Whether to enable read/write bandwidth profiling for the AI CPU and control CPU core. This parameter is left blank by default. The value range is 0&#x2013;7. 0&#x2013;3 correspond to the core IDs of the control CPU. 4&#x2013;7 correspond to the core IDs of the AI CPU.</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p87821542184418"><a id="p87821542184418"></a><a id="p87821542184418"></a>No</p>
+</td>
+</tr>
+<tr id="row1630101211509"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p1630412185015"><a id="p1630412185015"></a><a id="p1630412185015"></a>ddr_interval</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p2063071235020"><a id="p2063071235020"></a><a id="p2063071235020"></a>DDR profiling interval. This parameter is mandatory if the interval is required. The value range is [100, 1000]. The default value is <strong id="b2069114506579"><a id="b2069114506579"></a><a id="b2069114506579"></a>100</strong> (ms).</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p1178264264419"><a id="p1178264264419"></a><a id="p1178264264419"></a>No</p>
+</td>
+</tr>
+<tr id="row05131026296"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p151413262915"><a id="p151413262915"></a><a id="p151413262915"></a>all</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p155148282914"><a id="p155148282914"></a><a id="p155148282914"></a>Whether to enable profiling for all performance. The default value is <strong id="b19976912172912"><a id="b19976912172912"></a><a id="b19976912172912"></a>OFF</strong>.</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p115145216296"><a id="p115145216296"></a><a id="p115145216296"></a>No</p>
+</td>
+</tr>
+<tr id="row1224582415151"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p7246142416152"><a id="p7246142416152"></a><a id="p7246142416152"></a>help</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p1246202471518"><a id="p1246202471518"></a><a id="p1246202471518"></a>Help information</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p8246102412153"><a id="p8246102412153"></a><a id="p8246102412153"></a>No</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong>   </p>
+<ul>
+<li>Ensure that all paths of  <strong>result_dir</strong>  have the 750 permission.  </li>
+<li>The input format of the operators with parameters is:  <strong>--  <em>Path where the app file is stored in the UI host (including the app name)</em>  para1 para2</strong>. (<strong>para1 para2</strong>  are the parameters of the app) For example: -<strong>- /projects/CCE/out/main para1 para2</strong>  If  <strong><em>Path where the app file is stored in the UI host (including the app name)</em>  para1 para2</strong>  is added to the command line for performance data profiling, this parameter must be placed at the end of the command line and the  <strong>--app</strong>  parameter must be deleted from the command line, otherwise, a parsing error occurs.  </li>
+<li>It is recommended that the DDR and LLC sampling intervals be not greater than the time required for program execution. Otherwise, data cannot be profiled.  </li>
+<li>If the profiling time is less than 1s, the  <strong>Control CPU Usage</strong>,  <strong>AI CPU Usage</strong>, and  <strong>TS CPU Usage</strong>  charts are not displayed.  </li>
+</ul>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ai-cpu-function.html" class="navigation navigation-prev " aria-label="Previous page: AI CPU Function">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="reference.html" class="navigation navigation-next " aria-label="Next page: Reference">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Full-Process Profiling in Command Line Mode","level":"1.3.3","depth":2,"next":{"title":"Reference","level":"1.3.4","depth":2,"path":"reference.md","ref":"reference.md","articles":[{"title":"Resetting the Password for Connecting to the Redis Service","level":"1.3.4.1","depth":3,"path":"resetting-the-password-for-connecting-to-the-redis-service.md","ref":"resetting-the-password-for-connecting-to-the-redis-service.md","articles":[]},{"title":"Script List","level":"1.3.4.2","depth":3,"path":"script-list.md","ref":"script-list.md","articles":[]}]},"previous":{"title":"AI CPU Function","level":"1.3.2.3.4","depth":4,"path":"ai-cpu-function.md","ref":"ai-cpu-function.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"imgUrl":"","topnav":[]},"plugins":["expandable-chapters","copy"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy":{},"expandableChapters":{"cssFile":["expandable-chapters-theme.css"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"website.css"}},"file":{"path":"full-process-profiling-in-command-line-mode.md","mtime":"2019-04-12T02:14:57.272Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-12T02:14:59.988Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/clipboard.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/copy.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1972 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>VPC老接口 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters-theme.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-copy/css/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="CMDLIST.html" />
+    
+    
+    <link rel="prev" href="VPC新接口.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="修订记录.html">
+            
+                <a href="修订记录.html">
+            
+                    
+                    修订记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="简介.html">
+            
+                <a href="简介.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="DVPP对外接口.html">
+            
+                <a href="DVPP对外接口.html">
+            
+                    
+                    DVPP对外接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="CreateDvppApi.html">
+            
+                <a href="CreateDvppApi.html">
+            
+                    
+                    CreateDvppApi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="DvppCtl.html">
+            
+                <a href="DvppCtl.html">
+            
+                    
+                    DvppCtl
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="VPC新接口.html">
+            
+                <a href="VPC新接口.html">
+            
+                    
+                    VPC新接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2.2" data-path="VPC老接口.html">
+            
+                <a href="VPC老接口.html">
+            
+                    
+                    VPC老接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="CMDLIST.html">
+            
+                <a href="CMDLIST.html">
+            
+                    
+                    CMDLIST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="VDEC.html">
+            
+                <a href="VDEC.html">
+            
+                    
+                    VDEC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.5" data-path="JPEGE.html">
+            
+                <a href="JPEGE.html">
+            
+                    
+                    JPEGE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6" data-path="JPEGD.html">
+            
+                <a href="JPEGD.html">
+            
+                    
+                    JPEGD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.7" data-path="PNGD.html">
+            
+                <a href="PNGD.html">
+            
+                    
+                    PNGD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.8" data-path="VENC.html">
+            
+                <a href="VENC.html">
+            
+                    
+                    VENC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.9" data-path="查询DVPP引擎能力.html">
+            
+                <a href="查询DVPP引擎能力.html">
+            
+                    
+                    查询DVPP引擎能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="DestroyDvppApi.html">
+            
+                <a href="DestroyDvppApi.html">
+            
+                    
+                    DestroyDvppApi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="异常处理.html">
+            
+                <a href="异常处理.html">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="附录.html">
+            
+                <a href="附录.html">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="入参结构体说明.html">
+            
+                <a href="入参结构体说明.html">
+            
+                    
+                    入参结构体说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="vpc_in_msg中的结构体.html">
+            
+                <a href="vpc_in_msg中的结构体.html">
+            
+                    
+                    vpc_in_msg中的结构体
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1.1" data-path="图像叠加结构体rawdata_overlay_config.html">
+            
+                <a href="图像叠加结构体rawdata_overlay_config.html">
+            
+                    
+                    图像叠加结构体rawdata_overlay_config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.2" data-path="图像拼接结构体rawdata_collage_config.html">
+            
+                <a href="图像拼接结构体rawdata_collage_config.html">
+            
+                    
+                    图像拼接结构体rawdata_collage_config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.3" data-path="Rdma通道结构体RDMACHANNEL.html">
+            
+                <a href="Rdma通道结构体RDMACHANNEL.html">
+            
+                    
+                    Rdma通道结构体RDMACHANNEL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.4" data-path="Vpc内部优化结构体VpcTurningReverse.html">
+            
+                <a href="Vpc内部优化结构体VpcTurningReverse.html">
+            
+                    
+                    Vpc内部优化结构体VpcTurningReverse
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="VpcUserImageConfigure中的结构体.html">
+            
+                <a href="VpcUserImageConfigure中的结构体.html">
+            
+                    
+                    VpcUserImageConfigure中的结构体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" data-path="vdec_in_msg中的结构体和类.html">
+            
+                <a href="vdec_in_msg中的结构体和类.html">
+            
+                    
+                    vdec_in_msg中的结构体和类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" data-path="IMAGE_CONFIG中的结构体.html">
+            
+                <a href="IMAGE_CONFIG中的结构体.html">
+            
+                    
+                    IMAGE_CONFIG中的结构体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.5" data-path="dvpp_engine_capability_stru中的结构体.html">
+            
+                <a href="dvpp_engine_capability_stru中的结构体.html">
+            
+                    
+                    dvpp_engine_capability_stru中的结构体
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="DVPP执行器工具使用说明.html">
+            
+                <a href="DVPP执行器工具使用说明.html">
+            
+                    
+                    DVPP执行器工具使用说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="环境准备.html">
+            
+                <a href="环境准备.html">
+            
+                    
+                    环境准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="DVPP执行器工具入参说明.html">
+            
+                <a href="DVPP执行器工具入参说明.html">
+            
+                    
+                    DVPP执行器工具入参说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3" data-path="VPC使用说明.html">
+            
+                <a href="VPC使用说明.html">
+            
+                    
+                    VPC使用说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.3.1" data-path="VPC基础功能.html">
+            
+                <a href="VPC基础功能.html">
+            
+                    
+                    VPC基础功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3.2" data-path="VPC-RawData-8K.html">
+            
+                <a href="VPC-RawData-8K.html">
+            
+                    
+                    VPC RawData 8K
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.4" data-path="CMDLIST使用说明.html">
+            
+                <a href="CMDLIST使用说明.html">
+            
+                    
+                    CMDLIST使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.5" data-path="VDEC使用说明.html">
+            
+                <a href="VDEC使用说明.html">
+            
+                    
+                    VDEC使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.6" data-path="VENC使用说明.html">
+            
+                <a href="VENC使用说明.html">
+            
+                    
+                    VENC使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.7" data-path="JPEGE使用说明.html">
+            
+                <a href="JPEGE使用说明.html">
+            
+                    
+                    JPEGE使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.8" data-path="JPEGD使用说明.html">
+            
+                <a href="JPEGD使用说明.html">
+            
+                    
+                    JPEGD使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.9" data-path="PNGD使用说明.html">
+            
+                <a href="PNGD使用说明.html">
+            
+                    
+                    PNGD使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="缩略语和术语一览.html">
+            
+                <a href="缩略语和术语一览.html">
+            
+                    
+                    缩略语和术语一览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="辅助功能接口.html">
+            
+                <a href="辅助功能接口.html">
+            
+                    
+                    辅助功能接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="不推荐使用接口列表.html">
+            
+                <a href="不推荐使用接口列表.html">
+            
+                    
+                    不推荐使用接口列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >VPC老接口</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="vpc&#x8001;&#x63A5;&#x53E3;">VPC&#x8001;&#x63A5;&#x53E3;<a id="ZH-CN_TOPIC_0161913627"></a></h1>
+<p><strong>&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;VPC&#x8001;&#x63A5;&#x53E3;&#x3002;</strong>VPC&#x8001;&#x63A5;&#x53E3;&#x529F;&#x80FD;&#xFF1A;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x5A92;&#x4F53;&#x56FE;&#x50CF;&#x8F6C;&#x6362;&#xFF0C;&#x5305;&#x62EC;&#x7F29;&#x653E;&#x3001;&#x8272;&#x57DF;&#x8F6C;&#x6362;&#x3001;&#x964D;bit&#x6570;&#x5904;&#x7406;&#x3001;&#x683C;&#x5F0F;&#x8F6C;&#x6362;&#x3001;&#x533A;&#x5757;&#x5207;&#x5272;&#xFF0C;&#x53E0;&#x52A0;&#x62FC;&#x63A5;&#xFF0C;CMDLIST&#x3002;</p>
+<ul>
+<li>VPC&#x8DEF;&#x6570;&#x65E0;&#x9650;&#x5236;&#xFF0C;&#x5176;&#x6027;&#x80FD;&#x6307;&#x6807;&#x5982;&#x4E0B;&#x8868;&#x3002;</li>
+</ul>
+<p>VPC&#x6027;&#x80FD;&#x7531;&#x4E8E;&#x6D89;&#x53CA;&#x5230;&#x62A0;&#x56FE;&#x3001;&#x7F29;&#x653E;&#x7B49;&#x4E0D;&#x540C;&#x7684;&#x573A;&#x666F;&#xFF0C;&#x5F53;&#x5904;&#x7406;&#x56FE;&#x7247;&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x5206;&#x8FA8;&#x7387;&#x6539;&#x53D8;&#x65F6;&#xFF0C;&#x6027;&#x80FD;&#x4F1A;&#x5BF9;&#x5E94;&#x6539;&#x53D8;&#x3002;&#x5F53;&#x5904;&#x7406;&#x8FC7;&#x7A0B;&#x4E2D;&#x56FE;&#x50CF;&#x5206;&#x8FA8;&#x7387;&#x90FD;&#x6CA1;&#x6709;&#x6BD4;&#x539F;&#x56FE;&#x5206;&#x8FA8;&#x7387;&#x5927;&#x65F6;&#xFF0C;&#x5178;&#x578B;&#x573A;&#x666F;&#x6027;&#x80FD;&#x6307;&#x6807;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><a id="table4179193581715"></a></p>
+<table><thead align="left"><tr id="row71901935201711"><th class="cellrowborder" valign="top" width="50%" id="mcps1.1.3.1.1"><p id="p1420115616174"><a id="p1420115616174"></a><a id="p1420115616174"></a>&#x573A;&#x666F;</p>
+</th>
+<th class="cellrowborder" valign="top" width="50%" id="mcps1.1.3.1.2"><p id="p2198435101713"><a id="p2198435101713"></a><a id="p2198435101713"></a>&#x603B;&#x5E27;&#x7387;</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row6202103521717"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.1.3.1.1 "><p id="p1420603516176"><a id="p1420603516176"></a><a id="p1420603516176"></a>1080p*32&#x8DEF;</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.1.3.1.2 "><p id="p420953531714"><a id="p420953531714"></a><a id="p420953531714"></a>1440fps</p>
+</td>
+</tr>
+<tr id="row202111435131714"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.1.3.1.1 "><p id="p417812431917"><a id="p417812431917"></a><a id="p417812431917"></a>4k*4&#x8DEF;</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.1.3.1.2 "><p id="p15218035101710"><a id="p15218035101710"></a><a id="p15218035101710"></a>360fps</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p>&#x5F53;&#x5904;&#x7406;&#x8FC7;&#x7A0B;&#x4E2D;&#x56FE;&#x50CF;&#x5206;&#x8FA8;&#x7387;&#x5927;&#x4E8E;&#x539F;&#x56FE;&#x5206;&#x8FA8;&#x7387;&#x65F6;&#xFF0C;&#x603B;&#x5E27;&#x7387;&#x8BA1;&#x7B97;&#x516C;&#x5F0F;&#x53C2;&#x8003;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>&#x603B;&#x5E27;&#x7387;=(3840*2160*360)/(W*H) fps</p>
+<p>&#x5176;&#x4E2D;&#xFF1A;W&#x548C;H&#x4E3A;VPC&#x5904;&#x7406;&#x8FC7;&#x7A0B;&#x4E2D;&#x6700;&#x5927;&#x7684;&#x5BBD;&#x5EA6;&#x548C;&#x9AD8;&#x5EA6;&#xFF0C;&#x4F8B;&#x5982;1080p&#x62A0;&#x56FE;&#x5230;960*540&#xFF0C;&#x518D;&#x7F29;&#x653E;&#x5230;3840*2160&#xFF0C;&#x6B64;&#x65F6;W&#x4E3A;3840&#xFF0C;H&#x4E3A;2160&#x3002;</p>
+<p>&#x5728;&#x5904;&#x7406;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x7F29;&#x5C0F;&#x6BD4;&#x4F8B;&#x7684;&#x589E;&#x5927;&#x4F1A;&#x5BFC;&#x81F4;VPC&#x5904;&#x7406;&#x6027;&#x80FD;&#x6709;&#x7565;&#x5FAE;&#x4E0B;&#x964D;&#x3002;</p>
+<ul>
+<li><p>VPC&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x56FE;&#x50CF;&#x5BBD;&#x9AD8;&#x9650;&#x5236;&#xFF1A;</p>
+<ul>
+<li>&#x8F93;&#x5165;&#x56FE;&#x50CF;&#x5BBD;&#x9AD8;&#x90FD;&#x9700;&#x8981;2&#x5BF9;&#x9F50;&#xFF08;&#x5076;&#x6570;&#xFF09;&#x3002;</li>
+<li><p>&#x8F93;&#x51FA;&#x56FE;&#x50CF;&#x5BBD;&#x9AD8;&#x90FD;&#x9700;&#x8981;2&#x5BF9;&#x9F50;&#xFF08;&#x5076;&#x6570;&#xFF09;&#x3002;</p>
+<blockquote>
+<p><img src="public_sys-resources/icon-notice.gif" alt=""> <strong>&#x6CE8;&#x610F;&#xFF1A;</strong><br>&#x6B64;&#x5904;&#x6240;&#x8BF4;&#x7684;&#x56FE;&#x50CF;&#x5BBD;&#x9AD8;&#x662F;&#x6307;&#x56FE;&#x7247;&#x7684;&#x6709;&#x6548;&#x533A;&#x57DF;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x5BF9;&#x4E8E;&#x9001;&#x8FDB;VPC&#x7684;&#x5185;&#x5B58;&#x9700;&#x8981;128*16&#x5BF9;&#x9F50;&#x3002;  </p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>VPC&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x56FE;&#x50CF;&#x5185;&#x5B58;&#x9650;&#x5236;&#xFF1A;</p>
+<ul>
+<li><p>VPC&#x8F93;&#x5165;&#x5185;&#x5B58;&#x9650;&#x5236;</p>
+<ul>
+<li>&#x8F93;&#x5165;&#x6570;&#x636E;&#x5730;&#x5740;&#xFF08;os&#x865A;&#x62DF;&#x5730;&#x5740;&#xFF09;&#xFF1A;128&#x5B57;&#x8282;&#x5BF9;&#x9F50;&#x3002;</li>
+<li>&#x8F93;&#x5165;&#x56FE;&#x50CF;&#x5BBD;&#x5EA6;&#x5185;&#x5B58;&#x9650;&#x5236;&#xFF1A;128&#x5B57;&#x8282;&#x5BF9;&#x9F50;&#x3002;</li>
+<li>&#x8F93;&#x5165;&#x56FE;&#x50CF;&#x9AD8;&#x5EA6;&#x5185;&#x5B58;&#x9650;&#x5236;&#xFF1A;16&#x5B57;&#x8282;&#x5BF9;&#x9F50;&#x3002;</li>
+</ul>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>&#x8BF4;&#x660E;&#xFF1A;</strong><br>&#x5BF9;&#x4E8E;yuv400sp&#x683C;&#x5F0F;&#x56FE;&#x7247;&#xFF0C;&#x9700;&#x8981;&#x8C03;&#x7528;&#x65B9;&#x7533;&#x8BF7;&#x548C;yuv420sp&#x683C;&#x5F0F;&#x76F8;&#x540C;&#x5927;&#x5C0F;&#x7684;&#x7A7A;&#x95F4;&#xFF0C;&#x5373;&#xFF1A;width_align_128*high_align_16*1.5&#x3002;  </p>
+</blockquote>
+</li>
+<li><p>VPC&#x8F93;&#x51FA;&#x5185;&#x5B58;&#x9650;&#x5236;</p>
+<ul>
+<li>&#x8F93;&#x51FA;&#x6570;&#x636E;&#x5730;&#x5740;&#xFF08;os&#x865A;&#x62DF;&#x5730;&#x5740;&#xFF09;&#xFF1A;128&#x5B57;&#x8282;&#x5BF9;&#x9F50;&#x3002;</li>
+<li>&#x8F93;&#x51FA;&#x56FE;&#x50CF;&#x5BBD;&#x5185;&#x5B58;&#x9650;&#x5236;&#xFF1A;128&#x5B57;&#x8282;&#x5BF9;&#x9F50;&#x3002;</li>
+<li>&#x8F93;&#x51FA;&#x56FE;&#x50CF;&#x9AD8;&#x5185;&#x5B58;&#x9650;&#x5236;&#xFF1A;16&#x5B57;&#x8282;&#x5BF9;&#x9F50;&#x3002;</li>
+</ul>
+</li>
+<li><p>&#x540C;&#x4E00;&#x6B21;&#x4EFB;&#x52A1;&#x7684;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x533A;&#x7684;&#x865A;&#x62DF;&#x5730;&#x5740;&#x5E94;&#x8BE5;&#x5728;&#x540C;&#x4E00;4G&#x7A7A;&#x95F4;&#x3002;</p>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>&#x8BF4;&#x660E;&#xFF1A;</strong><br>&#x5728;&#x4F7F;&#x7528;VPC&#x5B9E;&#x73B0;&#x56FE;&#x50CF;&#x88C1;&#x526A;&#x4E0E;&#x7F29;&#x653E;&#x65F6;&#xFF0C;&#x5171;&#x9700;&#x8981;&#x8C03;&#x7528;&#x4E24;&#x6B21;DvppCtl&#xFF0C;&#x7B2C;&#x4E00;&#x6B21;&#x8C03;&#x7528;&#x7684;&#x8F93;&#x5165;&#x53C2;&#x6570;&#x4E3A;resize_param_in_msg&#xFF0C;&#x8F93;&#x51FA;&#x53C2;&#x6570;&#x4E3A;resize_param_out_msg&#xFF0C;&#x7B2C;&#x4E8C;&#x6B21;&#x8C03;&#x7528;&#x7684;&#x8F93;&#x5165;&#x53C2;&#x6570;&#x4E3A;vpc_in_msg&#xFF0C;&#x8F93;&#x51FA;&#x53C2;&#x6570;&#x4E3A;vpc_out_msg&#xFF0C;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x8BF7;&#x53C2;&#x89C1;<a href="#section1386651145017">&#x5165;&#x53C2;&#xFF1A;resize_param_in_msg</a>~<a href="#section972263915211">&#x51FA;&#x53C2;&#xFF1A;vpc_out_msg</a>&#x3002;  </p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="&#x5165;&#x53C2;&#xFF1A;resizeparaminmsg">&#x5165;&#x53C2;&#xFF1A;resize_param_in_msg<a id="section1386651145017"></a></h2>
+<p><a id="table1131218498173"></a></p>
+<table><thead align="left"><tr id="row166091349101714"><th class="cellrowborder" valign="top" width="32.323232323232325%" id="mcps1.1.4.1.1"><p id="p6609104917171"><a id="p6609104917171"></a><a id="p6609104917171"></a>&#x6210;&#x5458;&#x53D8;&#x91CF;</p>
+</th>
+<th class="cellrowborder" valign="top" width="32.55555555555556%" id="mcps1.1.4.1.2"><p id="p860924910174"><a id="p860924910174"></a><a id="p860924910174"></a>&#x8BF4;&#x660E;</p>
+</th>
+<th class="cellrowborder" valign="top" width="35.12121212121212%" id="mcps1.1.4.1.3"><p id="p16609449161715"><a id="p16609449161715"></a><a id="p16609449161715"></a>&#x53D6;&#x503C;&#x8303;&#x56F4;</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row136091149101717"><td class="cellrowborder" valign="top" width="32.323232323232325%" headers="mcps1.1.4.1.1 "><p id="p160915498176"><a id="p160915498176"></a><a id="p160915498176"></a>int src_width</p>
+</td>
+<td class="cellrowborder" valign="top" width="32.55555555555556%" headers="mcps1.1.4.1.2 "><p id="p17609114910173"><a id="p17609114910173"></a><a id="p17609114910173"></a>&#x539F;&#x56FE;&#x7684;&#x5BBD;&#x5EA6;&#xFF08;2&#x5BF9;&#x9F50;&#xFF09;&#x3002;</p>
+<div class="notice" id="note108623115820"><a id="note108623115820"></a><a id="note108623115820"></a><span class="noticetitle"> &#x6CE8;&#x610F;&#xFF1A; </span><div class="noticebody"><p id="p2861310586"><a id="p2861310586"></a><a id="p2861310586"></a>&#x539F;&#x56FE;&#x6307;&#x56FE;&#x7247;&#x7684;&#x6709;&#x6548;&#x533A;&#x57DF;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x5BF9;&#x4E8E;&#x9001;&#x8FDB;VPC&#x7684;&#x5185;&#x5B58;&#x9700;&#x8981;128*16&#x5BF9;&#x9F50;&#x3002;</p>
+</div></div>
+</td>
+<td class="cellrowborder" valign="top" width="35.12121212121212%" headers="mcps1.1.4.1.3 "><p id="p5609184921713"><a id="p5609184921713"></a><a id="p5609184921713"></a>&#x6700;&#x5C0F;&#x5206;&#x8FA8;&#x7387;&#xFF1A;</p>
+<a id="ul17686194162716"></a><a id="ul17686194162716"></a><ul id="ul17686194162716"><li>128&#xFF08;&#x6765;&#x6E90;VDEC&#xFF09;</li><li>16&#xFF08;&#x6765;&#x6E90;&#x975E;VDEC&#xFF09;</li></ul>
+<p id="p7328111512467"><a id="p7328111512467"></a><a id="p7328111512467"></a>&#x6700;&#x5927;&#x5206;&#x8FA8;&#x7387;&#xFF1A;</p>
+<p id="p136091149121711"><a id="p136091149121711"></a><a id="p136091149121711"></a>4096</p>
+<p id="p6545123114311"><a id="p6545123114311"></a><a id="p6545123114311"></a>&#x5FC5;&#x586B;</p>
+</td>
+</tr>
+<tr id="row2610194921720"><td class="cellrowborder" valign="top" width="32.323232323232325%" headers="mcps1.1.4.1.1 "><p id="p7610104951715"><a id="p7610104951715"></a><a id="p7610104951715"></a>int src_high</p>
+</td>
+<td class="cellrowborder" valign="top" width="32.55555555555556%" headers="mcps1.1.4.1.2 "><p id="p661054913171"><a id="p661054913171"></a><a id="p661054913171"></a>&#x539F;&#x56FE;&#x7684;&#x9AD8;&#x5EA6;&#xFF08;2&#x5BF9;&#x9F50;&#xFF09;&#x3002;</p>
+<div class="notice" id="note14781731145918"><a id="note14781731145918"></a><a id="note14781731145918"></a><span class="noticetitle"> &#x6CE8;&#x610F;&#xFF1A; </span><div class="noticebody"><p id="p78543116592"><a id="p78543116592"></a><a id="p78543116592"></a>&#x539F;&#x56FE;&#x6307;&#x56FE;&#x7247;&#x7684;&#x6709;&#x6548;&#x533A;&#x57DF;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x5BF9;&#x4E8E;&#x9001;&#x8FDB;VPC&#x7684;&#x5185;&#x5B58;&#x9700;&#x8981;128*16&#x5BF9;&#x9F50;&#x3002;</p>
+</div></div>
+</td>
+<td class="cellrowborder" valign="top" width="35.12121212121212%" headers="mcps1.1.4.1.3 "><p id="p19610164941711"><a id="p19610164941711"></a><a id="p19610164941711"></a>&#x6700;&#x5C0F;&#x5206;&#x8FA8;&#x7387;&#xFF1A;</p>
+<a id="ul8525516112818"></a><a id="ul8525516112818"></a><ul id="ul8525516112818"><li>128&#xFF08;&#x6765;&#x6E90;VDEC&#xFF09;</li><li>16&#xFF08;&#x6765;&#x6E90;&#x975E;VDEC&#xFF09;</li></ul>
+<p id="p5610144911171"><a id="p5610144911171"></a><a id="p5610144911171"></a>&#x6700;&#x5927;&#x5206;&#x8FA8;&#x7387;&#xFF1A;</p>
+<p id="p2821611194611"><a id="p2821611194611"></a><a id="p2821611194611"></a>4096</p>
+<p id="p13571220104319"><a id="p13571220104319"></a><a id="p13571220104319"></a>&#x5FC5;&#x586B;</p>
+</td>
+</tr>
+<tr id="row166102049151719"><td class="cellrowborder" valign="top" width="32.323232323232325%" headers="mcps1.1.4.1.1 "><p id="p10610184991720"><a id="p10610184991720"></a><a id="p10610184991720"></a>int hmax</p>
+</td>
+<td class="cellrowborder" valign="top" width="32.55555555555556%" headers="mcps1.1.4.1.2 "><p id="p7610949121710"><a id="p7610949121710"></a><a id="p7610949121710"></a>&#x4E0E;&#x539F;&#x70B9;&#x5728;&#x6C34;&#x5E73;&#x65B9;&#x5411;&#x7684;&#x6700;&#x5927;&#x504F;&#x79FB;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="35.12121212121212%" headers="mcps1.1.4.1.3 "><p id="p961094911718"><a id="p961094911718"></a><a id="p961094911718"></a>&#x5947;&#x6570;&#xFF0C;&#x5177;&#x4F53;&#x53C2;&#x89C1;<a href="#section975210188521">&#x5165;&#x53C2;&#xFF1A;vpc_in_msg</a>&#x3002;</p>
+</td>
+</tr>
+<tr id="row13610194918172"><td class="cellrowborder" valign="top" width="32.323232323232325%" headers="mcps1.1.4.1.1 "><p id="p06113494176"><a id="p06113494176"></a><a id="p06113494176"></a>int hmin</p>
+</td>
+<td class="cellrowborder" valign="top" width="32.55555555555556%" headers="mcps1.1.4.1.2 "><p id="p274414441569"><a id="p274414441569"></a><a id="p274414441569"></a>&#x4E0E;&#x539F;&#x70B9;&#x5728;&#x6C34;&#x5E73;&#x65B9;&#x5411;&#x7684;&#x6700;&#x5C0F;&#x504F;&#x79FB;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="35.12121212121212%" headers="mcps1.1.4.1.3 "><p id="p116111249141719"><a id="p116111249141719"></a><a id="p116111249141719"></a>&#x5076;&#x6570;&#xFF0C;&#x5177;&#x4F53;&#x53C2;&#x89C1;<a href="#section975210188521">&#x5165;&#x53C2;&#xFF1A;vpc_in_msg</a>&#x3002;</p>
+</td>
+</tr>
+<tr id="row1861104951713"><td class="cellrowborder" valign="top" width="32.323232323232325%" headers="mcps1.1.4.1.1 "><p id="p1761144991710"><a id="p1761144991710"></a><a id="p1761144991710"></a>int vmax</p>
+</td>
+<td class="cellrowborder" valign="top" width="32.55555555555556%" headers="mcps1.1.4.1.2 "><p id="p7415155165615"><a id="p7415155165615"></a><a id="p7415155165615"></a>&#x4E0E;&#x539F;&#x70B9;&#x5728;&#x5782;&#x76F4;&#x65B9;&#x5411;&#x7684;&#x6700;&#x5927;&#x504F;&#x79FB;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="35.12121212121212%" headers="mcps1.1.4.1.3 "><p id="p10611174971715"><a id="p10611174971715"></a><a id="p10611174971715"></a>&#x5947;&#x6570;&#xFF0C;&#x5177;&#x4F53;&#x53C2;&#x89C1;<a href="#section975210188521">&#x5165;&#x53C2;&#xFF1A;vpc_in_msg</a>&#x3002;</p>
+</td>
+</tr>
+<tr id="row46111349151710"><td class="cellrowborder" valign="top" width="32.323232323232325%" headers="mcps1.1.4.1.1 "><p id="p186114496177"><a id="p186114496177"></a><a id="p186114496177"></a>int vmin</p>
+</td>
+<td class="cellrowborder" valign="top" width="32.55555555555556%" headers="mcps1.1.4.1.2 "><p id="p18611184917177"><a id="p18611184917177"></a><a id="p18611184917177"></a>&#x4E0E;&#x539F;&#x70B9;&#x5728;&#x5782;&#x76F4;&#x65B9;&#x5411;&#x7684;&#x6700;&#x5C0F;&#x504F;&#x79FB;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="35.12121212121212%" headers="mcps1.1.4.1.3 "><p id="p1761164961710"><a id="p1761164961710"></a><a id="p1761164961710"></a>&#x5076;&#x6570;&#xFF0C;&#x5177;&#x4F53;&#x53C2;&#x89C1;<a href="#section975210188521">&#x5165;&#x53C2;&#xFF1A;vpc_in_msg</a>&#x3002;</p>
+</td>
+</tr>
+<tr id="row1861144913171"><td class="cellrowborder" valign="top" width="32.323232323232325%" headers="mcps1.1.4.1.1 "><p id="p561254981710"><a id="p561254981710"></a><a id="p561254981710"></a>int dest_width</p>
+</td>
+<td class="cellrowborder" valign="top" width="32.55555555555556%" headers="mcps1.1.4.1.2 "><p id="p8612124910174"><a id="p8612124910174"></a><a id="p8612124910174"></a>&#x8F93;&#x51FA;&#x56FE;&#x50CF;&#x5BBD;&#x5EA6;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="35.12121212121212%" headers="mcps1.1.4.1.3 "><p id="p36124497176"><a id="p36124497176"></a><a id="p36124497176"></a>&#x5076;&#x6570;&#x3002;</p>
+</td>
+</tr>
+<tr id="row126121491179"><td class="cellrowborder" valign="top" width="32.323232323232325%" headers="mcps1.1.4.1.1 "><p id="p56126490179"><a id="p56126490179"></a><a id="p56126490179"></a>int dest_high</p>
+</td>
+<td class="cellrowborder" valign="top" width="32.55555555555556%" headers="mcps1.1.4.1.2 "><p id="p1761218496177"><a id="p1761218496177"></a><a id="p1761218496177"></a>&#x8F93;&#x51FA;&#x56FE;&#x50CF;&#x9AD8;&#x5EA6;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="35.12121212121212%" headers="mcps1.1.4.1.3 "><p id="p1961224911711"><a id="p1961224911711"></a><a id="p1961224911711"></a>&#x5076;&#x6570;&#x3002;</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="&#x51FA;&#x53C2;&#xFF1A;resizeparamoutmsg">&#x51FA;&#x53C2;&#xFF1A;resize_param_out_msg<a id="section1361763718514"></a></h2>
+<p><a id="table7978257154320"></a></p>
+<table><thead align="left"><tr id="row11152155844317"><th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.1.4.1.1"><p id="p51521958104317"><a id="p51521958104317"></a><a id="p51521958104317"></a>&#x6210;&#x5458;&#x53D8;&#x91CF;</p>
+</th>
+<th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.1.4.1.2"><p id="p181521587436"><a id="p181521587436"></a><a id="p181521587436"></a>&#x8BF4;&#x660E;</p>
+</th>
+<th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.1.4.1.3"><p id="p13152558124317"><a id="p13152558124317"></a><a id="p13152558124317"></a>&#x53D6;&#x503C;&#x8303;&#x56F4;</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row31521158104317"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p7153258124318"><a id="p7153258124318"></a><a id="p7153258124318"></a>int dest_width_stride</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p8153185804315"><a id="p8153185804315"></a><a id="p8153185804315"></a>&#x8F93;&#x51FA;&#x56FE;&#x50CF;&#x7684;&#x5BBD;&#x5EA6;&#x5BF9;&#x9F50;&#x503C;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p121531358184320"><a id="p121531358184320"></a><a id="p121531358184320"></a>128</p>
+</td>
+</tr>
+<tr id="row415355818436"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p0153858104317"><a id="p0153858104317"></a><a id="p0153858104317"></a>int dest_high_stride</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p5153145812435"><a id="p5153145812435"></a><a id="p5153145812435"></a>&#x8F93;&#x51FA;&#x56FE;&#x50CF;&#x7684;&#x9AD8;&#x5EA6;&#x5BF9;&#x9F50;&#x503C;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p5153105810431"><a id="p5153105810431"></a><a id="p5153105810431"></a>16</p>
+</td>
+</tr>
+<tr id="row5153958194318"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p1215375814310"><a id="p1215375814310"></a><a id="p1215375814310"></a>int hmax</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p71531558144310"><a id="p71531558144310"></a><a id="p71531558144310"></a>&#x4E0E;&#x539F;&#x70B9;&#x5728;&#x6C34;&#x5E73;&#x65B9;&#x5411;&#x7684;&#x6700;&#x5927;&#x504F;&#x79FB;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p20153258204312"><a id="p20153258204312"></a><a id="p20153258204312"></a>&#x5947;&#x6570;&#xFF0C;&#x5177;&#x4F53;&#x53C2;&#x89C1;<a href="#section975210188521">&#x5165;&#x53C2;&#xFF1A;vpc_in_msg</a>&#x3002;</p>
+</td>
+</tr>
+<tr id="row20153135874312"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p11153195834316"><a id="p11153195834316"></a><a id="p11153195834316"></a>int hmin</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p215313586431"><a id="p215313586431"></a><a id="p215313586431"></a>&#x4E0E;&#x539F;&#x70B9;&#x5728;&#x6C34;&#x5E73;&#x65B9;&#x5411;&#x7684;&#x6700;&#x5C0F;&#x504F;&#x79FB;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p01541258144319"><a id="p01541258144319"></a><a id="p01541258144319"></a>&#x5076;&#x6570;&#xFF0C;&#x5177;&#x4F53;&#x53C2;&#x89C1;<a href="#section975210188521">&#x5165;&#x53C2;&#xFF1A;vpc_in_msg</a>&#x3002;</p>
+</td>
+</tr>
+<tr id="row111541358144312"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p91541158144311"><a id="p91541158144311"></a><a id="p91541158144311"></a>int vmax</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p7154135812437"><a id="p7154135812437"></a><a id="p7154135812437"></a>&#x4E0E;&#x539F;&#x70B9;&#x5728;&#x5782;&#x76F4;&#x65B9;&#x5411;&#x7684;&#x6700;&#x5927;&#x504F;&#x79FB;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p1215445817438"><a id="p1215445817438"></a><a id="p1215445817438"></a>&#x5947;&#x6570;&#xFF0C;&#x5177;&#x4F53;&#x53C2;&#x89C1;<a href="#section975210188521">&#x5165;&#x53C2;&#xFF1A;vpc_in_msg</a>&#x3002;</p>
+</td>
+</tr>
+<tr id="row4154858164312"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p1015465813430"><a id="p1015465813430"></a><a id="p1015465813430"></a>int vmin</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p4154558134310"><a id="p4154558134310"></a><a id="p4154558134310"></a>&#x4E0E;&#x539F;&#x70B9;&#x5728;&#x5782;&#x76F4;&#x65B9;&#x5411;&#x7684;&#x6700;&#x5C0F;&#x504F;&#x79FB;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p697413135919"><a id="p697413135919"></a><a id="p697413135919"></a>&#x5076;&#x6570;&#xFF0C;&#x5177;&#x4F53;&#x53C2;&#x89C1;<a href="#section975210188521">&#x5165;&#x53C2;&#xFF1A;vpc_in_msg</a>&#x3002;</p>
+</td>
+</tr>
+<tr id="row1154058194317"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p215545814313"><a id="p215545814313"></a><a id="p215545814313"></a>double hinc</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p91551858174314"><a id="p91551858174314"></a><a id="p91551858174314"></a>&#x6C34;&#x5E73;&#x7F29;&#x653E;&#x7CFB;&#x6570;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p10155358174316"><a id="p10155358174316"></a><a id="p10155358174316"></a>&#x5177;&#x4F53;&#x53C2;&#x89C1;<a href="#section975210188521">&#x5165;&#x53C2;&#xFF1A;vpc_in_msg</a>&#x3002;</p>
+</td>
+</tr>
+<tr id="row18155105818433"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p3155155816435"><a id="p3155155816435"></a><a id="p3155155816435"></a>double vinc</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p111551358154318"><a id="p111551358154318"></a><a id="p111551358154318"></a>&#x5782;&#x76F4;&#x7F29;&#x653E;&#x7CFB;&#x6570;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p61551658114311"><a id="p61551658114311"></a><a id="p61551658114311"></a>&#x5177;&#x4F53;&#x53C2;&#x89C1;<a href="#section975210188521">&#x5165;&#x53C2;&#xFF1A;vpc_in_msg</a>&#x3002;</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="&#x5165;&#x53C2;&#xFF1A;vpcinmsg">&#x5165;&#x53C2;&#xFF1A;vpc_in_msg<a id="section975210188521"></a></h2>
+<p><a id="table2484886"></a></p>
+<table><thead align="left"><tr id="row32559554"><th class="cellrowborder" valign="top" width="17.62%" id="mcps1.1.4.1.1"><p id="p20078207"><a id="p20078207"></a><a id="p20078207"></a>&#x6210;&#x5458;&#x53D8;&#x91CF;</p>
+</th>
+<th class="cellrowborder" valign="top" width="37.71%" id="mcps1.1.4.1.2"><p id="p15722052"><a id="p15722052"></a><a id="p15722052"></a>&#x8BF4;&#x660E;</p>
+</th>
+<th class="cellrowborder" valign="top" width="44.67%" id="mcps1.1.4.1.3"><p id="p65526714"><a id="p65526714"></a><a id="p65526714"></a>&#x53D6;&#x503C;&#x8303;&#x56F4;</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row52869519"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p54572624"><a id="p54572624"></a><a id="p54572624"></a>int format</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p58306455"><a id="p58306455"></a><a id="p58306455"></a>&#x56FE;&#x50CF;&#x683C;&#x5F0F;&#xFF0C;&#x8C03;&#x7528;&#x65B9;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x5B9A;&#x4E49;&#xFF0C;&#x53EA;&#x8981;&#x540E;&#x9762;&#x7684;&#x6570;&#x5B57;&#x5BF9;&#x5E94;&#x6B63;&#x786E;&#x5373;&#x53EF;&#x3002;&#x4F8B;&#x5982;&#xFF1A;yuv420_semi_plannar&#x5BF9;&#x5E94;&#x7684;&#x662F;0&#xFF0C;&#x8C03;&#x7528;&#x65B9;&#x58F0;&#x660E;&#x4E3A;yuv420sp&#xFF0C;&#x90A3;&#x4E48;&#x4E5F;&#x5FC5;&#x987B;&#x5BF9;&#x5E94;&#x4E3A;0&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p25494807"><a id="p25494807"></a><a id="p25494807"></a>yuv420_semi_plannar = 0,//0</p>
+<p id="p194318019233"><a id="p194318019233"></a><a id="p194318019233"></a>yuv400_semi_plannar = 0,//0</p>
+<p id="p28126672"><a id="p28126672"></a><a id="p28126672"></a>yuv422_semi_plannar,//1</p>
+<p id="p51813463"><a id="p51813463"></a><a id="p51813463"></a>yuv444_semi_plannar,//2</p>
+<p id="p63667988"><a id="p63667988"></a><a id="p63667988"></a>yuv422_packed,//3</p>
+<p id="p36140984"><a id="p36140984"></a><a id="p36140984"></a>yuv444_packed,//4</p>
+<p id="p56833404"><a id="p56833404"></a><a id="p56833404"></a>rgb888_packed,//5</p>
+<p id="p41738593"><a id="p41738593"></a><a id="p41738593"></a>xrgb8888_packed,//6</p>
+<p id="p27119578"><a id="p27119578"></a><a id="p27119578"></a>&#x5FC5;&#x586B;</p>
+</td>
+</tr>
+<tr id="row42749614"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p40166689"><a id="p40166689"></a><a id="p40166689"></a>int&#xFF1A;rank</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p32276348"><a id="p32276348"></a><a id="p32276348"></a>&#x56FE;&#x50CF;&#x6392;&#x5217;&#x65B9;&#x5F0F;&#xFF0C;&#x8C03;&#x7528;&#x65B9;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x5B9A;&#x4E49;&#xFF0C;&#x53EA;&#x8981;&#x540E;&#x9762;&#x7684;&#x6570;&#x5B57;&#x5BF9;&#x5E94;&#x6B63;&#x786E;&#x5373;&#x53EF;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p66110346"><a id="p66110346"></a><a id="p66110346"></a>&#x5177;&#x4F53;&#x53C2;&#x89C1;<a href="#table1864161418388">&#x8868;1</a></p>
+<p id="p53337801"><a id="p53337801"></a><a id="p53337801"></a>&#x5FC5;&#x586B;</p>
+</td>
+</tr>
+<tr id="row10278168"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p27225255"><a id="p27225255"></a><a id="p27225255"></a>int&#xFF1A;bitwidth</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p57762035"><a id="p57762035"></a><a id="p57762035"></a>&#x4F4D;&#x6DF1;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;8bit&#x3002;10bit&#x53EA;&#x6709;&#x5728;&#x56FE;&#x50CF;&#x683C;&#x5F0F;&#x4E3A;YUV/YVU420 Semi-Planar&#x4E14;&#x4E3A;HFBC&#x538B;&#x7F29;&#x573A;&#x666F;&#x4E0B;&#x4F7F;&#x7528;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p48213219"><a id="p48213219"></a><a id="p48213219"></a>8&#x6216;&#x8005;10</p>
+<p id="p31265788"><a id="p31265788"></a><a id="p31265788"></a>&#x9009;&#x586B;</p>
+</td>
+</tr>
+<tr id="row12956639"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p42854864"><a id="p42854864"></a><a id="p42854864"></a>int&#xFF1A;cvdr_or_rdma</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p48691998"><a id="p48691998"></a><a id="p48691998"></a>&#x8F93;&#x5165;&#x56FE;&#x50CF;&#x8D70;CVDR&#x901A;&#x9053;&#x8FD8;&#x662F;RDMA&#xFF0C;&#x9ED8;&#x8BA4;&#x8D70;CVDR&#x901A;&#x9053;&#xFF0C;RDMA&#x901A;&#x9053;&#x7684;&#x8F93;&#x5165;&#x4EC5;&#x4E3A;VDEC&#x8F93;&#x51FA;&#x7684;HFBC&#x683C;&#x5F0F;&#x6570;&#x636E;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p51737776"><a id="p51737776"></a><a id="p51737776"></a>CVDR&#xFF1A;1&#xFF0C;RDMA&#xFF1A;0&#x3002;</p>
+<p id="p62986807"><a id="p62986807"></a><a id="p62986807"></a>&#x9009;&#x586B;</p>
+</td>
+</tr>
+<tr id="row30010351"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p14919362"><a id="p14919362"></a><a id="p14919362"></a>int&#xFF1A;width</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p508818"><a id="p508818"></a><a id="p508818"></a>&#x8F93;&#x5165;&#x539F;&#x56FE;&#x50CF;&#x5BBD;&#x5EA6;&#xFF0C;2&#x5BF9;&#x9F50;&#xFF08;&#x5076;&#x6570;&#xFF09;&#x3002;</p>
+<div class="notice" id="note11679471002"><a id="note11679471002"></a><a id="note11679471002"></a><span class="noticetitle"> &#x6CE8;&#x610F;&#xFF1A; </span><div class="noticebody"><p id="p101712047103"><a id="p101712047103"></a><a id="p101712047103"></a>&#x539F;&#x56FE;&#x6307;&#x56FE;&#x7247;&#x7684;&#x6709;&#x6548;&#x533A;&#x57DF;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x5BF9;&#x4E8E;&#x9001;&#x8FDB;VPC&#x7684;&#x5185;&#x5B58;&#x9700;&#x8981;128*16&#x5BF9;&#x9F50;&#x3002;</p>
+</div></div>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p41214278"><a id="p41214278"></a><a id="p41214278"></a>&#x6700;&#x5C0F;&#x5206;&#x8FA8;&#x7387;&#xFF1A;</p>
+<a id="ul12156162811464"></a><a id="ul12156162811464"></a><ul id="ul12156162811464"><li>128&#xFF08;&#x6765;&#x6E90;VDEC&#xFF09;&#x3002;</li><li>16&#xFF08;&#x6765;&#x6E90;&#x975E;VDEC&#xFF09;&#x3002;</li></ul>
+<p id="p47546751"><a id="p47546751"></a><a id="p47546751"></a>&#x6700;&#x5927;&#x5206;&#x8FA8;&#x7387;&#xFF1A;</p>
+<p id="p25267580"><a id="p25267580"></a><a id="p25267580"></a>4096</p>
+<p id="p26081629"><a id="p26081629"></a><a id="p26081629"></a>&#x5FC5;&#x586B;</p>
+</td>
+</tr>
+<tr id="row33408077"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p21699748"><a id="p21699748"></a><a id="p21699748"></a>int&#xFF1A;high</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p12849126"><a id="p12849126"></a><a id="p12849126"></a>&#x8F93;&#x5165;&#x539F;&#x56FE;&#x50CF;&#x9AD8;&#x5EA6;&#xFF0C;2&#x5BF9;&#x9F50;&#xFF08;&#x5076;&#x6570;&#xFF09;&#x3002;</p>
+<div class="notice" id="note13429752102"><a id="note13429752102"></a><a id="note13429752102"></a><span class="noticetitle"> &#x6CE8;&#x610F;&#xFF1A; </span><div class="noticebody"><p id="p5436952604"><a id="p5436952604"></a><a id="p5436952604"></a>&#x539F;&#x56FE;&#x6307;&#x56FE;&#x7247;&#x7684;&#x6709;&#x6548;&#x533A;&#x57DF;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x5BF9;&#x4E8E;&#x9001;&#x8FDB;VPC&#x7684;&#x5185;&#x5B58;&#x9700;&#x8981;128*16&#x5BF9;&#x9F50;&#x3002;</p>
+</div></div>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p34146301"><a id="p34146301"></a><a id="p34146301"></a>&#x6700;&#x5C0F;&#x5206;&#x8FA8;&#x7387;&#xFF1A;</p>
+<a id="ul376393574619"></a><a id="ul376393574619"></a><ul id="ul376393574619"><li>128&#xFF08;&#x6765;&#x6E90;VDEC&#xFF09;&#x3002;</li><li>16&#xFF08;&#x6765;&#x6E90;&#x975E;VDEC&#xFF09;&#x3002;</li></ul>
+<p id="p62374365"><a id="p62374365"></a><a id="p62374365"></a>&#x6700;&#x5927;&#x5206;&#x8FA8;&#x7387;&#xFF1A;</p>
+<p id="p24498377"><a id="p24498377"></a><a id="p24498377"></a>4096</p>
+<p id="p19158806"><a id="p19158806"></a><a id="p19158806"></a>&#x5FC5;&#x586B;</p>
+</td>
+</tr>
+<tr id="row38211534"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p8126535"><a id="p8126535"></a><a id="p8126535"></a>int&#xFF1A;stride</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p54269597"><a id="p54269597"></a><a id="p54269597"></a>&#x56FE;&#x50CF;&#x6B65;&#x957F;&#x3002;</p>
+<div class="notice" id="note157804599512"><a id="note157804599512"></a><a id="note157804599512"></a><span class="noticetitle"> &#x6CE8;&#x610F;&#xFF1A; </span><div class="noticebody"><p id="p17172013469"><a id="p17172013469"></a><a id="p17172013469"></a>&#x5BF9;&#x4E8E;&#x4E0D;&#x540C;&#x8F93;&#x5165;&#x683C;&#x5F0F;&#xFF0C;&#x5176;stride&#x4E0D;&#x540C;&#x3002;</p>
+</div></div>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p12211165818140"><a id="p12211165818140"></a><a id="p12211165818140"></a>yuv400sp&#x3001;yuv420sp&#x3001;yuv422sp&#x3001;yuv444sp&#xFF1A;width&#x5BF9;&#x9F50;&#x5230;128&#x3002;</p>
+<p id="p1247995581915"><a id="p1247995581915"></a><a id="p1247995581915"></a>yuv422packed&#xFF1A;width * 2&#x540E;&#x5BF9;&#x9F50;&#x5230;128</p>
+<p id="p174091317101816"><a id="p174091317101816"></a><a id="p174091317101816"></a>yuv444packed&#x3001;rgb888&#xFF1A;width * 3&#x540E;&#x5BF9;&#x9F50;&#x5230;128</p>
+<p id="p135471546111810"><a id="p135471546111810"></a><a id="p135471546111810"></a>xrgb8888&#xFF1A;width * 4&#x540E;&#x5BF9;&#x9F50;&#x5230;128</p>
+<p id="p65207344"><a id="p65207344"></a><a id="p65207344"></a>&#x5FC5;&#x586B;</p>
+</td>
+</tr>
+<tr id="row49995190"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p23078612"><a id="p23078612"></a><a id="p23078612"></a>double&#xFF1A;hinc</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p57428258"><a id="p57428258"></a><a id="p57428258"></a>&#x6C34;&#x5E73;&#x653E;&#x5927;&#x500D;&#x6570;&#xFF0C;aicore&#x8F93;&#x51FA;&#x901A;&#x9053;&#x914D;&#x7F6E;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p21177288"><a id="p21177288"></a><a id="p21177288"></a>[0.03125, 1) or (1, 4]</p>
+<p id="p56377868"><a id="p56377868"></a><a id="p56377868"></a>&#x7F29;&#x653E;&#x7CFB;&#x6570;&#x914D;&#x7F6E;&#xFF0C;&#x8D85;&#x51FA;&#x914D;&#x7F6E;&#x8303;&#x56F4;&#xFF0C;VPC&#x4F1A;&#x63D0;&#x793A;&#x51FA;&#x9519;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x8981;&#x7F29;&#x653E;&#x586B;1&#x3002;</p>
+<p id="p37638767"><a id="p37638767"></a><a id="p37638767"></a>&#x5FC5;&#x586B;</p>
+</td>
+</tr>
+<tr id="row3204586"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p58244917"><a id="p58244917"></a><a id="p58244917"></a>double&#xFF1A;vinc</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p20217812"><a id="p20217812"></a><a id="p20217812"></a>&#x5782;&#x76F4;&#x653E;&#x5927;&#x500D;&#x6570;&#xFF0C;aicore&#x8F93;&#x51FA;&#x901A;&#x9053;&#x914D;&#x7F6E;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p27030064"><a id="p27030064"></a><a id="p27030064"></a>[0.03125, 1) or (1, 4]</p>
+<p id="p41943984"><a id="p41943984"></a><a id="p41943984"></a>&#x7F29;&#x653E;&#x7CFB;&#x6570;&#x914D;&#x7F6E;&#xFF0C;&#x8D85;&#x51FA;&#x914D;&#x7F6E;&#x8303;&#x56F4;&#xFF0C;VPC&#x4F1A;&#x63D0;&#x793A;&#x51FA;&#x9519;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x8981;&#x7F29;&#x653E;&#x586B;1&#x3002;</p>
+<p id="p41951536"><a id="p41951536"></a><a id="p41951536"></a>&#x5FC5;&#x586B;</p>
+</td>
+</tr>
+<tr id="row42019505"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p48136739"><a id="p48136739"></a><a id="p48136739"></a>double&#xFF1A;jpeg_hinc</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p6761773"><a id="p6761773"></a><a id="p6761773"></a>&#x6C34;&#x5E73;&#x653E;&#x5927;&#x500D;&#x6570;&#xFF0C;jpege&#x8F93;&#x51FA;&#x901A;&#x9053;&#x914D;&#x7F6E;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p10832760"><a id="p10832760"></a><a id="p10832760"></a>[0.03125, 1) or (1, 4]</p>
+<p id="p30385981"><a id="p30385981"></a><a id="p30385981"></a>&#x7F29;&#x653E;&#x7CFB;&#x6570;&#x914D;&#x7F6E;&#xFF0C;&#x8D85;&#x51FA;&#x914D;&#x7F6E;&#x8303;&#x56F4;&#xFF0C;VPC&#x4F1A;&#x63D0;&#x793A;&#x51FA;&#x9519;&#x3002;</p>
+<p id="p5038380"><a id="p5038380"></a><a id="p5038380"></a>&#x9009;&#x586B;(&#x76EE;&#x524D;&#x4E0D;&#x9002;&#x7528;)</p>
+</td>
+</tr>
+<tr id="row45345420"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p49100399"><a id="p49100399"></a><a id="p49100399"></a>double&#xFF1A;jpeg_vinc</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p17709391"><a id="p17709391"></a><a id="p17709391"></a>&#x5782;&#x76F4;&#x653E;&#x5927;&#x500D;&#x6570;&#xFF0C;jpege&#x8F93;&#x51FA;&#x901A;&#x9053;&#x914D;&#x7F6E;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p25174547"><a id="p25174547"></a><a id="p25174547"></a>[0.03125, 1) or (1, 4]</p>
+<p id="p25244334"><a id="p25244334"></a><a id="p25244334"></a>&#x7F29;&#x653E;&#x7CFB;&#x6570;&#x914D;&#x7F6E;&#xFF0C;&#x8D85;&#x51FA;&#x914D;&#x7F6E;&#x8303;&#x56F4;&#xFF0C;VPC&#x4F1A;&#x63D0;&#x793A;&#x51FA;&#x9519;&#x3002;</p>
+<p id="p25872420"><a id="p25872420"></a><a id="p25872420"></a>&#x9009;&#x586B;(&#x76EE;&#x524D;&#x4E0D;&#x9002;&#x7528;)</p>
+</td>
+</tr>
+<tr id="row31525188"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p3403442"><a id="p3403442"></a><a id="p3403442"></a>int&#xFF1A;hmax</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p7243425"><a id="p7243425"></a><a id="p7243425"></a>&#x4E0E;&#x539F;&#x70B9;&#x5728;&#x6C34;&#x5E73;&#x65B9;&#x5411;&#x7684;&#x6700;&#x5927;&#x504F;&#x79FB;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p49846585"><a id="p49846585"></a><a id="p49846585"></a>&#x6B64;&#x503C;&#x5FC5;&#x987B;&#x4E3A;&#x5947;&#x6570;,&#x5982;&#x679C;&#x4E0D;&#x7528;&#x88C1;&#x526A;,&#x6B64;&#x503C;&#x914D;&#x7F6E;&#x6210;&#x8F93;&#x5165;&#x5BBD;&#x5EA6;-1&#x3002;</p>
+<p id="p45966083"><a id="p45966083"></a><a id="p45966083"></a>&#x5FC5;&#x586B;</p>
+</td>
+</tr>
+<tr id="row11041569"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p21951873"><a id="p21951873"></a><a id="p21951873"></a>int&#xFF1A;hmin</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p33271298"><a id="p33271298"></a><a id="p33271298"></a>&#x4E0E;&#x539F;&#x70B9;&#x5728;&#x6C34;&#x5E73;&#x65B9;&#x5411;&#x7684;&#x6700;&#x5C0F;&#x504F;&#x79FB;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p10620619"><a id="p10620619"></a><a id="p10620619"></a>&#x6B64;&#x503C;&#x5FC5;&#x987B;&#x4E3A;&#x5076;&#x6570;&#x3002;</p>
+<p id="p28476715"><a id="p28476715"></a><a id="p28476715"></a>&#x5982;&#x679C;&#x4E0D;&#x7528;&#x88C1;&#x526A;&#xFF0C;&#x6B64;&#x503C;&#x914D;&#x7F6E;&#x6210;0&#x3002;</p>
+<p id="p54963845"><a id="p54963845"></a><a id="p54963845"></a>&#x5FC5;&#x586B;</p>
+</td>
+</tr>
+<tr id="row24912564"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p4651802"><a id="p4651802"></a><a id="p4651802"></a>int&#xFF1A;vmax</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p41251652"><a id="p41251652"></a><a id="p41251652"></a>&#x4E0E;&#x539F;&#x70B9;&#x5728;&#x5782;&#x76F4;&#x65B9;&#x5411;&#x7684;&#x6700;&#x5927;&#x504F;&#x79FB;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p6989711499"><a id="p6989711499"></a><a id="p6989711499"></a>&#x6B64;&#x503C;&#x5FC5;&#x987B;&#x4E3A;&#x5947;&#x6570;&#x3002;</p>
+<p id="p53049498"><a id="p53049498"></a><a id="p53049498"></a>&#x5982;&#x679C;&#x4E0D;&#x7528;&#x88C1;&#x526A;&#xFF0C;&#x6B64;&#x503C;&#x914D;&#x7F6E;&#x6210;&#x8F93;&#x5165;&#x5BBD;&#x5EA6;-1&#x3002;</p>
+<p id="p7683442"><a id="p7683442"></a><a id="p7683442"></a>&#x5FC5;&#x586B;</p>
+</td>
+</tr>
+<tr id="row2042118"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p31193837"><a id="p31193837"></a><a id="p31193837"></a>int&#xFF1A;vmin</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p43672889"><a id="p43672889"></a><a id="p43672889"></a>&#x4E0E;&#x539F;&#x70B9;&#x5728;&#x5782;&#x76F4;&#x65B9;&#x5411;&#x7684;&#x6700;&#x5C0F;&#x504F;&#x79FB;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p47843154"><a id="p47843154"></a><a id="p47843154"></a>&#x6B64;&#x503C;&#x5FC5;&#x987B;&#x4E3A;&#x5076;&#x6570;&#x3002;</p>
+<p id="p27935207"><a id="p27935207"></a><a id="p27935207"></a>&#x5982;&#x679C;&#x4E0D;&#x7528;&#x88C1;&#x526A;&#xFF0C;&#x6B64;&#x503C;&#x914D;&#x7F6E;&#x6210;0&#x3002;</p>
+</td>
+</tr>
+<tr id="row50090271"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p30780169"><a id="p30780169"></a><a id="p30780169"></a>int&#xFF1A;out_width</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p10165751"><a id="p10165751"></a><a id="p10165751"></a>&#x8F93;&#x51FA;&#x56FE;&#x50CF;&#x5BBD;&#x5EA6;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p1767381425"><a id="p1767381425"></a><a id="p1767381425"></a>&#x6B64;&#x503C;&#x5FC5;&#x987B;&#x4E3A;&#x5076;&#x6570;(2&#x5BF9;&#x9F50;)&#x3002;</p>
+<p id="p18119506"><a id="p18119506"></a><a id="p18119506"></a>&#x5F53;&#x4F7F;&#x7528;&#x667A;&#x80FD;&#x6307;&#x9488;&#x7533;&#x8BF7;&#x8F93;&#x51FA;buffer&#x65F6;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x586B;&#xFF0C;&#x5F53;&#x4F7F;&#x7528;&#x81EA;&#x5DF1;&#x7533;&#x8BF7;&#x7684;&#x5185;&#x5B58;&#x4F5C;&#x4E3A;&#x8F93;&#x51FA;buffer&#x65F6;&#xFF0C;&#x5FC5;&#x586B;&#x3002;</p>
+</td>
+</tr>
+<tr id="row58393857"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p32281965"><a id="p32281965"></a><a id="p32281965"></a>int&#xFF1A;out_high</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p64702333"><a id="p64702333"></a><a id="p64702333"></a>&#x8F93;&#x51FA;&#x56FE;&#x50CF;&#x9AD8;&#x5EA6;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p6397593"><a id="p6397593"></a><a id="p6397593"></a>&#x6B64;&#x503C;&#x5FC5;&#x987B;&#x4E3A;&#x5076;&#x6570;(2&#x5BF9;&#x9F50;)&#x3002;</p>
+<p id="p122336441523"><a id="p122336441523"></a><a id="p122336441523"></a>&#x5F53;&#x4F7F;&#x7528;&#x667A;&#x80FD;&#x6307;&#x9488;&#x7533;&#x8BF7;&#x8F93;&#x51FA;buffer&#x65F6;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x586B;&#xFF0C;&#x5F53;&#x4F7F;&#x7528;&#x81EA;&#x5DF1;&#x7533;&#x8BF7;&#x7684;&#x5185;&#x5B58;&#x4F5C;&#x4E3A;&#x8F93;&#x51FA;buffer&#x65F6;&#xFF0C;&#x5FC5;&#x586B;&#x3002;</p>
+</td>
+</tr>
+<tr id="row48443050"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p31573016"><a id="p31573016"></a><a id="p31573016"></a>int&#xFF1A;h_stride</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p687914108312"><a id="p687914108312"></a><a id="p687914108312"></a>&#x56FE;&#x50CF;&#x9AD8;&#x5EA6;&#x6B65;&#x957F;&#xFF0C;&#x540C;int&#xFF1A;stride&#x63CF;&#x8FF0;&#x3002;&#x6B64;&#x503C;&#x65E0;&#x9700;&#x914D;&#x7F6E;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p1422101115312"><a id="p1422101115312"></a><a id="p1422101115312"></a>&#x6B64;&#x503C;&#x9ED8;&#x8BA4;&#x4E3A;16&#xFF0C;&#x5373;&#x9ED8;&#x8BA4;&#x8F93;&#x5165;&#x9AD8;&#x5EA6;&#x4E3A;16&#x5BF9;&#x9F50;&#x3002;</p>
+<p id="p1422131110315"><a id="p1422131110315"></a><a id="p1422131110315"></a>&#x9009;&#x586B;</p>
+</td>
+</tr>
+<tr id="row33372188"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p18792716"><a id="p18792716"></a><a id="p18792716"></a>char* in_buffer</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p45815008"><a id="p45815008"></a><a id="p45815008"></a>&#x8F93;&#x5165;buffer&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p20028161"><a id="p20028161"></a><a id="p20028161"></a>&#x8C03;&#x7528;&#x65B9;&#x9700;&#x4FDD;&#x8BC1;&#x8F93;&#x5165;buffer&#x7684;&#x5927;&#x5C0F;&#x4E0E;in message&#x4E2D;&#x914D;&#x7F6E;&#x7684;&#x957F;&#x5EA6;&#x4E0E;&#x5BBD;&#x5EA6;&#x4E00;&#x81F4;&#xFF0C;&#x5373;&#xFF1A;&#x5982;&#x679C;&#x8F93;&#x5165;&#x662F;yuv420 semi planner nv12&#x683C;&#x5F0F;&#x7684;&#x56FE;&#x7247;&#xFF0C;&#x5176;&#x56FE;&#x50CF;&#x5927;&#x5C0F;&#x4E3A;&#xFF1A;&#x5BBD;*&#x9AD8;*1.5&#xFF0C;&#x800C;&#x8F93;&#x5165;&#x7684;buffer&#x5927;&#x5C0F;&#x4E0E;&#x5982;&#x4E0A;&#x8BA1;&#x7B97;&#x7ED3;&#x679C;&#x4E0D;&#x7B26;&#xFF0C;&#x5219;&#x4F1A;&#x5BFC;&#x81F4;VPC&#x8C03;&#x7528;&#x5931;&#x8D25;&#x3002;</p>
+<p id="p46035721"><a id="p46035721"></a><a id="p46035721"></a>&#x5FC5;&#x586B;</p>
+</td>
+</tr>
+<tr id="row11668310"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p5609031"><a id="p5609031"></a><a id="p5609031"></a>int&#xFF1A;in_buffer_size</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p51678398"><a id="p51678398"></a><a id="p51678398"></a>&#x8F93;&#x5165;buffer&#x5927;&#x5C0F;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p25200672"><a id="p25200672"></a><a id="p25200672"></a>&#x6B64;&#x503C;&#x7528;&#x6765;&#x8FDB;&#x884C;&#x8F93;&#x5165;buffer&#x6821;&#x9A8C;&#x3002;</p>
+<p id="p25479462"><a id="p25479462"></a><a id="p25479462"></a>&#x5FC5;&#x586B;</p>
+</td>
+</tr>
+<tr id="row27988567"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p52481483"><a id="p52481483"></a><a id="p52481483"></a>shared_ptr&lt;AutoBuffer&gt; auto_out_buffer_1</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p23141731"><a id="p23141731"></a><a id="p23141731"></a>&#x8F93;&#x51FA;buffer1&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p62540936"><a id="p62540936"></a><a id="p62540936"></a>&#x4F7F;&#x7528;VPC&#x57FA;&#x7840;&#x529F;&#x80FD;&#xFF08;&#x88C1;&#x526A;&#xFF0C;&#x7F29;&#x653E;&#xFF09;&#x9700;&#x8981;&#x914D;&#x7F6E;&#x6B64;buffer&#xFF0C;&#x6B64;buffer&#x4E3A;&#x8C03;&#x7528;&#x65B9;&#x7533;&#x8BF7;&#x667A;&#x80FD;&#x6307;&#x9488;&#x5F53;&#x505A;&#x53C2;&#x6570;&#x4F20;&#x5165;DVPP&#x3002;</p>
+<p id="p25997514"><a id="p25997514"></a><a id="p25997514"></a>&#x4E0E;&#x4E0B;&#x4E00;&#x4E2A;&#x53C2;&#x6570;out_buffer&#x9009;&#x586B;&#x4E00;&#x4E2A;&#x5373;&#x53EF;&#x3002;</p>
+</td>
+</tr>
+<tr id="row205443563514"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p20302185012301"><a id="p20302185012301"></a><a id="p20302185012301"></a>char* out_buffer</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p230275033012"><a id="p230275033012"></a><a id="p230275033012"></a>&#x8F93;&#x51FA;buffer&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p10302135019305"><a id="p10302135019305"></a><a id="p10302135019305"></a>&#x6B64;buffer&#x4E3A;&#x8C03;&#x7528;&#x65B9;&#x7533;&#x8BF7;&#x7684;&#x5185;&#x5B58;&#xFF0C;&#x9700;&#x4FDD;&#x8BC1;&#x9996;&#x5730;&#x5740;128&#x5BF9;&#x9F50;&#xFF0C;&#x4E14;&#x4FDD;&#x8BC1;&#x7533;&#x8BF7;&#x7684;&#x5185;&#x5B58;&#x5728;4G&#x7A7A;&#x95F4;&#x5185;&#xFF0C;&#x4E0E;&#x4E0A;&#x4E00;&#x4E2A;&#x53C2;&#x6570;auto_out_buffer_1&#x9009;&#x586B;&#x4E00;&#x4E2A;&#x5373;&#x53EF;&#x3002;</p>
+</td>
+</tr>
+<tr id="row32651041"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p27488663"><a id="p27488663"></a><a id="p27488663"></a>int&#xFF1A;out_buffer_1_size</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p11989201"><a id="p11989201"></a><a id="p11989201"></a>&#x8F93;&#x51FA;buffer1&#x5927;&#x5C0F;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p31601207"><a id="p31601207"></a><a id="p31601207"></a>&#x6B64;&#x503C;&#x7528;&#x6765;&#x8FDB;&#x884C;&#x8F93;&#x51FA;buffer&#x6821;&#x9A8C;&#x3002;</p>
+<p id="p1714501167"><a id="p1714501167"></a><a id="p1714501167"></a>&#x5982;&#x679C;&#x91C7;&#x7528;shared_ptr&lt;AutoBuffer&gt; auto_out_buffer_1&#x7533;&#x8BF7;&#x8F93;&#x51FA;&#x5185;&#x5B58;&#x5219;&#x9009;&#x586B;&#xFF0C;&#x5982;&#x679C;&#x91C7;&#x7528; char* out_buffer&#x7533;&#x8BF7;&#x8F93;&#x51FA;&#x5185;&#x5B58;&#x5219;&#x5FC5;&#x586B;&#x3002;</p>
+</td>
+</tr>
+<tr id="row247619579143"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p7478135715146"><a id="p7478135715146"></a><a id="p7478135715146"></a>shared_ptr&lt;AutoBuffer&gt; auto_out_buffer_2</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p18478205771411"><a id="p18478205771411"></a><a id="p18478205771411"></a>&#x6B64;&#x667A;&#x80FD;&#x6307;&#x9488;&#x4E3A;vpc&#x53CC;&#x901A;&#x9053;&#x7684;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x901A;&#x9053;&#x8F93;&#x51FA;&#xFF0C;&#x4E3A;&#x9884;&#x7559;&#x63A5;&#x53E3;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p114783579149"><a id="p114783579149"></a><a id="p114783579149"></a>--</p>
+</td>
+</tr>
+<tr id="row8921102161513"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p1592219213158"><a id="p1592219213158"></a><a id="p1592219213158"></a>int&#xFF1A;out_buffer_2_size</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p1389675412166"><a id="p1389675412166"></a><a id="p1389675412166"></a>&#x6B64;buffersize&#x4E3A;</p>
+<p id="p48923548166"><a id="p48923548166"></a><a id="p48923548166"></a>auto_out_buffer_2&#x667A;&#x80FD;&#x6307;&#x9488;</p>
+<p id="p39222261515"><a id="p39222261515"></a><a id="p39222261515"></a>&#x8F93;&#x51FA;buffer2&#x5927;&#x5C0F;&#xFF0C;&#x4E3A;&#x9884;&#x7559;&#x63A5;&#x53E3;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p8922824151"><a id="p8922824151"></a><a id="p8922824151"></a>--</p>
+</td>
+</tr>
+<tr id="row50257313"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p44310522"><a id="p44310522"></a><a id="p44310522"></a>int&#xFF1A;use_flag</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p2171223143614"><a id="p2171223143614"></a><a id="p2171223143614"></a>&#x4F7F;&#x7528;vpc&#x529F;&#x80FD;&#x7684;&#x6807;&#x5FD7;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p2071282412364"><a id="p2071282412364"></a><a id="p2071282412364"></a>0&#xFF1A;vpc&#x3002;</p>
+<p id="p1271514248364"><a id="p1271514248364"></a><a id="p1271514248364"></a>1&#xFF1A;vpcrawdata8k&#x3002;</p>
+<p id="p32382491"><a id="p32382491"></a><a id="p32382491"></a>&#x9ED8;&#x8BA4;&#x4E3A;0&#x3002;</p>
+<p id="p53649474"><a id="p53649474"></a><a id="p53649474"></a>&#x9009;&#x586B;</p>
+</td>
+</tr>
+<tr id="row13083223"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p53108166"><a id="p53108166"></a><a id="p53108166"></a>rawdata_overlay_config: overlay[4]</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p1881055154115"><a id="p1881055154115"></a><a id="p1881055154115"></a>Rawdata&#x53E0;&#x52A0;&#x7ED3;&#x6784;&#x4F53;&#xFF0C;&#x4E3B;&#x8981;&#x5305;&#x62EC;&#x6587;&#x5B57;&#x56FE;&#x7247;&#x548C;&#x56FE;&#x50CF;&#x56FE;&#x7247;&#x7684;&#x5BBD;&#x5EA6;&#x3001;&#x9AD8;&#x5EA6;&#x3001;stride&#x3001;&#x56FE;&#x50CF;&#x7C7B;&#x578B;&#x3001;&#x56FE;&#x50CF;&#x683C;&#x5F0F;&#x3001;&#x4F4D;&#x5BBD;&#x3001;&#x5185;&#x5B58;&#x5730;&#x5740;&#x7B49;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p13458121"><a id="p13458121"></a><a id="p13458121"></a>&#x8BE6;&#x60C5;&#x8BF7;&#x53C2;&#x89C1;<a href="&#x56FE;&#x50CF;&#x53E0;&#x52A0;&#x7ED3;&#x6784;&#x4F53;rawdata_overlay_config.html">&#x56FE;&#x50CF;&#x53E0;&#x52A0;&#x7ED3;&#x6784;&#x4F53;rawdata_overlay_config</a>&#x3002;</p>
+</td>
+</tr>
+<tr id="row16365997"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p50577374"><a id="p50577374"></a><a id="p50577374"></a>rawdata_collage_config: collage</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p077713169420"><a id="p077713169420"></a><a id="p077713169420"></a>Rawdata&#x62FC;&#x63A5;&#x7ED3;&#x6784;&#x4F53;&#xFF0C;&#x4E3B;&#x8981;&#x5305;&#x62EC;&#x53E0;&#x52A0;&#x540E;&#x7684;&#x6587;&#x5B57;&#x56FE;&#x50CF;&#x56FE;&#x7247;&#x7ECF;&#x8FC7;VPC&#x7F29;&#x653E;&#x540E;&#x7684;&#x5BBD;&#x5EA6;&#x3001;&#x9AD8;&#x5EA6;&#x3001;&#x62FC;&#x63A5;&#x683C;&#x5F0F;&#x3001;&#x8F93;&#x51FA;&#x5730;&#x5740;&#x7B49;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p4543699498"><a id="p4543699498"></a><a id="p4543699498"></a>&#x8BE6;&#x60C5;&#x8BF7;&#x53C2;&#x89C1;<a href="&#x56FE;&#x50CF;&#x62FC;&#x63A5;&#x7ED3;&#x6784;&#x4F53;rawdata_collage_config.html">&#x56FE;&#x50CF;&#x62FC;&#x63A5;&#x7ED3;&#x6784;&#x4F53;rawdata_collage_config</a>&#x3002;</p>
+</td>
+</tr>
+<tr id="row13621238595"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p10420170111018"><a id="p10420170111018"></a><a id="p10420170111018"></a>RDMACHANNEL rdma;</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p1542012061017"><a id="p1542012061017"></a><a id="p1542012061017"></a>rdma&#x53C2;&#x6570;&#x4E3A;HFBC&#x6570;&#x636E;&#x4E13;&#x7528;&#x914D;&#x7F6E;&#x7ED3;&#x6784;&#x4F53;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p1142030171017"><a id="p1142030171017"></a><a id="p1142030171017"></a>&#x5177;&#x4F53;&#x8BF7;&#x53C2;&#x89C1;<a href="Rdma&#x901A;&#x9053;&#x7ED3;&#x6784;&#x4F53;RDMACHANNEL.html">Rdma&#x901A;&#x9053;&#x7ED3;&#x6784;&#x4F53;RDMACHANNEL</a>&#x3002;</p>
+</td>
+</tr>
+<tr id="row91859501597"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p18738210321"><a id="p18738210321"></a><a id="p18738210321"></a>VpcTurningReverse turningReverse1</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p10422180131016"><a id="p10422180131016"></a><a id="p10422180131016"></a>Vpc&#x4F18;&#x5316;&#x9884;&#x7559;&#x63A5;&#x53E3;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p1342215013107"><a id="p1342215013107"></a><a id="p1342215013107"></a>--</p>
+</td>
+</tr>
+<tr id="row8678145312918"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p3422160101012"><a id="p3422160101012"></a><a id="p3422160101012"></a>bool isVpcUseTurning1</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p72511041153510"><a id="p72511041153510"></a><a id="p72511041153510"></a>&#x6807;&#x5FD7;&#x662F;&#x5426;&#x4F7F;&#x7528;Vpc&#x4F18;&#x5316;&#xFF0C;&#x9884;&#x7559;&#x63A5;&#x53E3;&#xFF0C;&#x6B64;&#x6807;&#x5FD7;&#x4E0E;turningReverse1&#x914D;&#x5408;&#x4F7F;&#x7528;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p4986152312389"><a id="p4986152312389"></a><a id="p4986152312389"></a>--</p>
+</td>
+</tr>
+<tr id="row2125125711313"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p7731998144"><a id="p7731998144"></a><a id="p7731998144"></a>VpcTurningReverse turningReverse2</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p11731169171415"><a id="p11731169171415"></a><a id="p11731169171415"></a>Vpc&#x4F18;&#x5316;&#x9884;&#x7559;&#x63A5;&#x53E3;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p3731169121412"><a id="p3731169121412"></a><a id="p3731169121412"></a>--</p>
+</td>
+</tr>
+<tr id="row20529141121410"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p1073289111410"><a id="p1073289111410"></a><a id="p1073289111410"></a>bool isVpcUseTurning2</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p1732159181410"><a id="p1732159181410"></a><a id="p1732159181410"></a>&#x6807;&#x5FD7;&#x662F;&#x5426;&#x4F7F;&#x7528;Vpc&#x4F18;&#x5316;&#xFF0C;&#x9884;&#x7559;&#x63A5;&#x53E3;&#xFF0C;&#x6B64;&#x6807;&#x5FD7;&#x4E0E;turningReverse2&#x914D;&#x5408;&#x4F7F;&#x7528;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p873212915144"><a id="p873212915144"></a><a id="p873212915144"></a>--</p>
+</td>
+</tr>
+<tr id="row1245865135415"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p91642004539"><a id="p91642004539"></a><a id="p91642004539"></a>string *yuvscaler_paraset</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p1816419035316"><a id="p1816419035316"></a><a id="p1816419035316"></a>yuvscaler_paraset&#x6307;&#x9488;&#x63A5;&#x6536;VPC&#x6EE4;&#x6CE2;&#x53C2;&#x6570;&#x96C6;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;&#x548C;&#x6587;&#x4EF6;&#x540D;&#x6570;&#x7EC4;&#x3002;</p>
+<div class="note" id="note12341711174412"><a id="note12341711174412"></a><a id="note12341711174412"></a><span class="notetitle"> &#x8BF4;&#x660E;&#xFF1A; </span><div class="notebody"><a id="ul1601028124711"></a><a id="ul1601028124711"></a><ul id="ul1601028124711"><li>&#x53C2;&#x6570;&#x96C6;&#x987B;&#x5728;Device&#x8BBE;&#x5907;&#x4E0A;&#x3002;</li><li>&#x8BF7;&#x786E;&#x4FDD;&#x4F20;&#x5165;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x662F;&#x6B63;&#x786E;&#x8DEF;&#x5F84;&#x3002;</li></ul>
+</div></div>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p51649025310"><a id="p51649025310"></a><a id="p51649025310"></a>&#x53C2;&#x6570;&#x96C6;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x4E3A;device&#x4FA7;&#x7684;&#x7EDD;&#x5BF9;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF0B;&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x5982;{&quot;/home/HwHiAiUser/matrix/YUVScaler_pra.h&quot;}&#x3002;</p>
+<p id="p12564173094615"><a id="p12564173094615"></a><a id="p12564173094615"></a></p>
+</td>
+</tr>
+<tr id="row1159753185217"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p1416418020533"><a id="p1416418020533"></a><a id="p1416418020533"></a>unsigned int yuvscaler_paraset_size</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p6164106533"><a id="p6164106533"></a><a id="p6164106533"></a>yuvscaler_paraset&#x6307;&#x9488;&#x6307;&#x5411;&#x7684;string&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x4E2A;&#x6570;&#xFF08;&#x9ED8;&#x8BA4;&#x4E3A;1&#xFF09;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p716412017534"><a id="p716412017534"></a><a id="p716412017534"></a>yuvscaler_paraset_size&lt;=10</p>
+</td>
+</tr>
+<tr id="row1456994975218"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p316417035312"><a id="p316417035312"></a><a id="p316417035312"></a>unsigned int index</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.71%" headers="mcps1.1.4.1.2 "><p id="p216418025319"><a id="p216418025319"></a><a id="p216418025319"></a>index&#x53D8;&#x91CF;&#x5BF9;&#x5E94;yuvscaler_paraset&#x7684;&#x6570;&#x7EC4;&#x7D22;&#x5F15;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.67%" headers="mcps1.1.4.1.3 "><p id="p116411011536"><a id="p116411011536"></a><a id="p116411011536"></a>0&lt;=index&lt;10</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="&#x51FA;&#x53C2;&#xFF1A;vpcoutmsg">&#x51FA;&#x53C2;&#xFF1A;vpc_out_msg<a id="section972263915211"></a></h2>
+<p>&#x6682;&#x65E0;&#xFF0C;&#x5176;&#x4E2D;&#x8F93;&#x51FA;&#x56FE;&#x7247;&#x5728;vpc_in_msg&#x4E2D;&#x7684;auto_out_buffer_1&#x4E2D;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x8BFB;&#x53D6;&#x8BE5;&#x5185;&#x5B58;&#x83B7;&#x53D6;&#x56FE;&#x7247;&#x3002;</p>
+<p><strong>&#x8868; 1</strong>  &#x8F93;&#x5165;&#x56FE;&#x7247;&#x683C;&#x5F0F;&#x4E0E;&#x8F93;&#x51FA;&#x56FE;&#x7247;&#x683C;&#x5F0F;&#x5BF9;&#x5E94;rank&#x914D;&#x7F6E;&#x8868;</p>
+<p><a id="table1864161418388"></a></p>
+<table><thead align="left"><tr id="row52458145385"><th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.1"><p id="p92451214133815"><a id="p92451214133815"></a><a id="p92451214133815"></a>&#x8F93;&#x5165;&#x56FE;&#x7247;&#x683C;&#x5F0F;</p>
+</th>
+<th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.2"><p id="p1124612145387"><a id="p1124612145387"></a><a id="p1124612145387"></a>VPC&#x7684;rank&#x53C2;&#x6570;&#x914D;&#x7F6E;</p>
+</th>
+<th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.3"><p id="p424619143382"><a id="p424619143382"></a><a id="p424619143382"></a>&#x8F93;&#x51FA;&#x56FE;&#x7247;&#x683C;&#x5F0F;</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row324612148389"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p5246131473816"><a id="p5246131473816"></a><a id="p5246131473816"></a>YUV420sp  NV12</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p12462014183814"><a id="p12462014183814"></a><a id="p12462014183814"></a>NV12 = 0</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p6246314133810"><a id="p6246314133810"></a><a id="p6246314133810"></a>YUV420sp  NV21</p>
+</td>
+</tr>
+<tr id="row624610141381"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p1524641483812"><a id="p1524641483812"></a><a id="p1524641483812"></a>YUV420sp  NV21</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p11246121473819"><a id="p11246121473819"></a><a id="p11246121473819"></a>NV21 = 1</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p172461814203820"><a id="p172461814203820"></a><a id="p172461814203820"></a>YUV420sp  NV21</p>
+</td>
+</tr>
+<tr id="row162461114153819"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p1024615141383"><a id="p1024615141383"></a><a id="p1024615141383"></a>YUV420sp  NV12</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p42461314173811"><a id="p42461314173811"></a><a id="p42461314173811"></a>NV12 = 1</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p1924641463817"><a id="p1924641463817"></a><a id="p1924641463817"></a>YUV420sp  NV12</p>
+</td>
+</tr>
+<tr id="row172465144384"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p924601412381"><a id="p924601412381"></a><a id="p924601412381"></a>YUV420sp  NV21</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p32465143380"><a id="p32465143380"></a><a id="p32465143380"></a>NV21 = 0</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p824621417386"><a id="p824621417386"></a><a id="p824621417386"></a>YUV420sp  NV12</p>
+</td>
+</tr>
+<tr id="row1689511423912"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p1495044512913"><a id="p1495044512913"></a><a id="p1495044512913"></a>YUV422sp  NV16</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p196216457920"><a id="p196216457920"></a><a id="p196216457920"></a>NV16 = 1</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p20974184510911"><a id="p20974184510911"></a><a id="p20974184510911"></a>YUV420sp  NV12</p>
+</td>
+</tr>
+<tr id="row6884739596"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p189901645391"><a id="p189901645391"></a><a id="p189901645391"></a>YUV422sp  NV61</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p19993451399"><a id="p19993451399"></a><a id="p19993451399"></a>NV61 = 0</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p4914461193"><a id="p4914461193"></a><a id="p4914461193"></a>YUV420sp  NV12</p>
+</td>
+</tr>
+<tr id="row112461614133812"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p1124661463816"><a id="p1124661463816"></a><a id="p1124661463816"></a>YUV422sp  NV16</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p202482014143814"><a id="p202482014143814"></a><a id="p202482014143814"></a>NV16 = 0</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p224821415383"><a id="p224821415383"></a><a id="p224821415383"></a>YUV420sp  NV21</p>
+</td>
+</tr>
+<tr id="row1924841433811"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p1424810145381"><a id="p1424810145381"></a><a id="p1424810145381"></a>YUV422sp  NV61</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p125151493813"><a id="p125151493813"></a><a id="p125151493813"></a>NV61 = 1</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p15251161419389"><a id="p15251161419389"></a><a id="p15251161419389"></a>YUV420sp  NV21</p>
+</td>
+</tr>
+<tr id="row7343111617616"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p17293636663"><a id="p17293636663"></a><a id="p17293636663"></a>YUV444sp  444spUV</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p1330515364610"><a id="p1330515364610"></a><a id="p1330515364610"></a>444spUV = 1</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p13171936069"><a id="p13171936069"></a><a id="p13171936069"></a>YUV420sp  NV12</p>
+</td>
+</tr>
+<tr id="row143450161763"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p63351636063"><a id="p63351636063"></a><a id="p63351636063"></a>YUV444sp  444spVU</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p134917365611"><a id="p134917365611"></a><a id="p134917365611"></a>444spVU= 0</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p136214361168"><a id="p136214361168"></a><a id="p136214361168"></a>YUV420sp  NV12</p>
+</td>
+</tr>
+<tr id="row425171463812"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p925121443819"><a id="p925121443819"></a><a id="p925121443819"></a>YUV444sp  444spUV</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p8251111420386"><a id="p8251111420386"></a><a id="p8251111420386"></a>444spUV = 0</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p192511814123817"><a id="p192511814123817"></a><a id="p192511814123817"></a>YUV420sp  NV21</p>
+</td>
+</tr>
+<tr id="row1625118143386"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p1925151412383"><a id="p1925151412383"></a><a id="p1925151412383"></a>YUV444sp  444spVU</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p625101433816"><a id="p625101433816"></a><a id="p625101433816"></a>444spVU= 1</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p1425131411381"><a id="p1425131411381"></a><a id="p1425131411381"></a>YUV420sp  NV21</p>
+</td>
+</tr>
+<tr id="row7252111419386"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p525221423819"><a id="p525221423819"></a><a id="p525221423819"></a>YUV422packet YUYV</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p1625211141381"><a id="p1625211141381"></a><a id="p1625211141381"></a>YUYV = 2</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p5252171463820"><a id="p5252171463820"></a><a id="p5252171463820"></a>YUV420sp  NV12</p>
+</td>
+</tr>
+<tr id="row82524141383"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p1225211413381"><a id="p1225211413381"></a><a id="p1225211413381"></a>YUV422packet YVYU</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p725221416383"><a id="p725221416383"></a><a id="p725221416383"></a>YVYU = 3</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p13252141414382"><a id="p13252141414382"></a><a id="p13252141414382"></a>YUV420sp  NV21</p>
+</td>
+</tr>
+<tr id="row325231410381"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p152527143388"><a id="p152527143388"></a><a id="p152527143388"></a>YUV422packet UYVY</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p32521014153810"><a id="p32521014153810"></a><a id="p32521014153810"></a>UYVY = 4</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p152525147382"><a id="p152525147382"></a><a id="p152525147382"></a>YUV420sp  NV12</p>
+</td>
+</tr>
+<tr id="row625271413816"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p1252914173810"><a id="p1252914173810"></a><a id="p1252914173810"></a>YUV444packet YUV</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p6252614183815"><a id="p6252614183815"></a><a id="p6252614183815"></a>YUV = 5</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p13252514143814"><a id="p13252514143814"></a><a id="p13252514143814"></a>YUV420sp  NV12</p>
+</td>
+</tr>
+<tr id="row192522014123810"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p15252191414381"><a id="p15252191414381"></a><a id="p15252191414381"></a>RGB888 RGB</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p32521214133814"><a id="p32521214133814"></a><a id="p32521214133814"></a>RGB = 6</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p1925271493818"><a id="p1925271493818"></a><a id="p1925271493818"></a>YUV420sp  NV12</p>
+</td>
+</tr>
+<tr id="row125213141387"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p19252914193813"><a id="p19252914193813"></a><a id="p19252914193813"></a>RGB888 BGR</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p5254191443818"><a id="p5254191443818"></a><a id="p5254191443818"></a>BGR = 7</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p6254914193810"><a id="p6254914193810"></a><a id="p6254914193810"></a>YUV420sp  NV21</p>
+</td>
+</tr>
+<tr id="row1325410144389"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p122541146386"><a id="p122541146386"></a><a id="p122541146386"></a>RGB888 RGB</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p12254151413387"><a id="p12254151413387"></a><a id="p12254151413387"></a>BGR = 7</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p925441443814"><a id="p925441443814"></a><a id="p925441443814"></a>YUV420sp  NV21</p>
+</td>
+</tr>
+<tr id="row425418146384"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p1025411433819"><a id="p1025411433819"></a><a id="p1025411433819"></a>RGB888 BGR</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p1325431419382"><a id="p1325431419382"></a><a id="p1325431419382"></a>RGB = 6</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p0254191416382"><a id="p0254191416382"></a><a id="p0254191416382"></a>YUV420sp  NV12</p>
+</td>
+</tr>
+<tr id="row9254101416380"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p1425414145384"><a id="p1425414145384"></a><a id="p1425414145384"></a>XRGB8888 RGBA</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p19254214203817"><a id="p19254214203817"></a><a id="p19254214203817"></a>RGBA = 8</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p102558145386"><a id="p102558145386"></a><a id="p102558145386"></a>YUV420sp  NV12</p>
+</td>
+</tr>
+<tr id="row8255151416388"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p18255151463816"><a id="p18255151463816"></a><a id="p18255151463816"></a>XRGB8888 RGBA</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p625571463818"><a id="p625571463818"></a><a id="p625571463818"></a>BGRA = 9</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p1225581443818"><a id="p1225581443818"></a><a id="p1225581443818"></a>YUV420sp  NV21</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="&#x8C03;&#x7528;&#x793A;&#x4F8B;">&#x8C03;&#x7528;&#x793A;&#x4F8B;<a id="section948810214544"></a></h2>
+<ul>
+<li><p>VPC&#x57FA;&#x7840;&#x529F;&#x80FD;&#x8C03;&#x7528;&#x793A;&#x4F8B;</p>
+<p>gXxxxx&#x4E3A;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;&#x53C2;&#x6570;&#x914D;&#x7F6E;&#x4E0E;VPC&#x8C03;&#x7528;&#x5206;&#x4E3A;&#x4E24;&#x4E2A;&#x9636;&#x6BB5;&#x3002;</p>
+<p>Step1&#xFF1A;&#x901A;&#x8FC7;DVPP_CTL_TOOL_CASE_GET_RESIZE_PARAM&#x547D;&#x4EE4;&#x5B57;&#x8C03;&#x7528;DvppCtl&#xFF0C;&#x83B7;&#x53D6;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;DvppCtl&#x7684;&#x5165;&#x53C2;&#x4E3A;resize_paramo_in_msg&#xFF0C;&#x51FA;&#x53C2;&#x4E3A;resize_param_out_msg&#x3002;&#x5373;&#x901A;&#x8FC7;resize_param_in_msg&#x5C06;&#x539F;&#x59CB;&#x56FE;&#x7247;&#x7684;&#x5BBD;&#x9AD8;&#xFF0C;&#x88C1;&#x526A;&#x533A;&#x57DF;(hmax,hmin,vamx,vmin)&#xFF0C;&#x4EE5;&#x53CA;&#x8F93;&#x51FA;&#x5BBD;&#x9AD8;&#x7B49;&#x53C2;&#x6570;&#x4F20;&#x7ED9;DVPP&#xFF0C;DVPP&#x901A;&#x8FC7;&#x8BA1;&#x7B97;&#x5C06;&#x91CD;&#x65B0;&#x751F;&#x6210;&#x7684;&#x88C1;&#x526A;&#x533A;&#x57DF;(hmax,hmin,vamx,vmin)&#x4EE5;&#x53CA;&#x7F29;&#x653E;&#x6BD4;(hinc,vinc)&#x8FD4;&#x56DE;&#x7ED9;&#x8C03;&#x7528;&#x65B9;&#x3002;</p>
+<p>Step2&#xFF1A;&#x8C03;&#x7528;&#x65B9;&#x5C06;&#x7B2C;&#x4E00;&#x6B65;&#x8FD4;&#x56DE;&#x7684;&#x53C2;&#x6570;&#x901A;&#x8FC7;vpc_in_msg&#x7ED3;&#x6784;&#x4F53;&#x4F20;&#x9012;&#x7ED9;DVPP&#xFF0C;&#x5E76;&#x5C06;DvppCtl&#x8C03;&#x7528;&#x547D;&#x4EE4;&#x5B57;&#x6539;&#x4E3A;DVPP_CTL_VPC_PROC&#xFF0C;&#x6267;&#x884C;&#x5E76;&#x83B7;&#x5F97;&#x5904;&#x7406;&#x7ED3;&#x679C;&#x3002;</p>
+<pre><code>    dvppapi_ctl_msg dvppApiCtlMsg;
+    vpc_in_msg vpcInMsg;
+    resize_param_in_msg resize_in_param;
+    resize_param_out_msg resize_out_param;
+    resize_in_param.src_width = gWidth;
+    resize_in_param.src_high = gHigh;
+    resize_in_param.hmax = gHmax;
+    resize_in_param.hmin = gHmin;
+    resize_in_param.vmax = gVmax;
+    resize_in_param.vmin = gVmin;
+    resize_in_param.dest_width = floor(gHinc * (gHmax - gHmin + 1) + 0.5);
+    resize_in_param.dest_high = floor(gVinc * (gVmax - gVmin + 1) + 0.5);
+    printf(&quot;width  =%d\n&quot;, gWidth);
+    printf(&quot;high   =%d\n&quot;, gHigh);
+    printf(&quot;hmax   =%d\n&quot;, gHmax);
+    printf(&quot;hmin   =%d\n&quot;, gHmin);
+    printf(&quot;vmax   =%d\n&quot;, gVmax);
+    printf(&quot;vmin   =%d\n&quot;, gVmin);
+    printf(&quot;out width   =%d\n&quot;, resize_in_param.dest_width);
+    printf(&quot;out hight   =%d\n&quot;, resize_in_param.dest_high );
+
+    dvppApiCtlMsg.in = (void *)(&amp;resize_in_param);
+    dvppApiCtlMsg.out = (void *)(&amp;resize_out_param);
+    IDVPPAPI *pidvppapi = NULL;
+    CreateDvppApi(pidvppapi);
+    if (DvppCtl(pidvppapi, DVPP_CTL_TOOL_CASE_GET_RESIZE_PARAM, &amp;dvppApiCtlMsg) != 0) {
+        printf(&quot;call DVPP_CTL_TOOL_CASE_GET_RESIZE_PARAM process faild!\n&quot;);
+        DestroyDvppApi(pidvppapi);
+        return;
+    }
+
+    int bufferSize        = 0;
+    vpcInMsg.format       = gFormat;
+    vpcInMsg.cvdr_or_rdma = gcvdr_or_rdma;
+    vpcInMsg.bitwidth = gBitwidth;
+    vpcInMsg.rank = gRank;
+    vpcInMsg.width = gWidth;
+    vpcInMsg.high = gHigh;
+    vpcInMsg.stride = gStride;
+    vpcInMsg.hmax = resize_out_param.hmax;
+    vpcInMsg.hmin = resize_out_param.hmin;
+    vpcInMsg.vmax = resize_out_param.vmax;
+    vpcInMsg.vmin = resize_out_param.vmin;
+    vpcInMsg.vinc = resize_out_param.vinc;
+    vpcInMsg.hinc = resize_out_param.hinc;
+    printf(&quot;resize_out_param.hinc = %lf\n&quot;, resize_out_param.hinc);
+    printf(&quot;resize_out_param.vinc = %lf\n&quot;, resize_out_param.vinc);
+    printf(&quot;resize_out_param.hmax = %d\n&quot;, resize_out_param.hmax);
+    printf(&quot;resize_out_param.hmin = %d\n&quot;, resize_out_param.hmin);
+    printf(&quot;resize_out_param.vmax = %d\n&quot;, resize_out_param.vmax);
+    printf(&quot;resize_out_param.vmin = %d\n&quot;, resize_out_param.vmin);
+
+    printf(&quot;format =%d\n&quot;, vpcInMsg.format);
+    printf(&quot;rank   =%d\n&quot;, vpcInMsg.rank);
+    printf(&quot;width  =%d\n&quot;, vpcInMsg.width);
+    printf(&quot;high   =%d\n&quot;, vpcInMsg.high);
+    printf(&quot;stride =%d\n&quot;, vpcInMsg.stride);
+    printf(&quot;hmax   =%d\n&quot;, vpcInMsg.hmax);
+    printf(&quot;hmin   =%d\n&quot;, vpcInMsg.hmin);
+    printf(&quot;vmax   =%d\n&quot;, vpcInMsg.vmax);
+    printf(&quot;vmin   =%d\n&quot;, vpcInMsg.vmin);
+    printf(&quot;vinc   =%F\n&quot;, vpcInMsg.vinc);
+    printf(&quot;hinc   =%F\n&quot;, vpcInMsg.hinc);
+    if (vpcInMsg.cvdr_or_rdma == 0) {
+        printf(&quot;rdma channel\n&quot;);
+        int buffersize ;
+        char * payloadY ;
+        char * payloadC ;
+        char * headY ;
+        char * headC ;
+        FILE * rdmaimage = fopen(in_file_name, &quot;rb&quot;);
+
+        if (vpcInMsg.bitwidth == 10) {
+            buffersize                        = vpcInMsg.width  * vpcInMsg.high * 2 + 512 * 1024;
+            payloadY                          = (char*)memalign(128, buffersize);
+            headY                             = payloadY + vpcInMsg.width  * vpcInMsg.high * 2;
+            headC                             = headY + 256 * 1024;
+            vpcInMsg.rdma.luma_payload_addr   = (long)payloadY;
+            vpcInMsg.rdma.chroma_payload_addr = (long)payloadY + 640;
+        } else {
+            buffersize                        = vpcInMsg.width * vpcInMsg.high * 1.5 + 512 * 1024;
+            payloadY                          = (char*)memalign(128, buffersize);
+            payloadC                          = payloadY + vpcInMsg.width * vpcInMsg.high;
+            headY                             = payloadC + vpcInMsg.width * vpcInMsg.high / 2;
+            headC                             = headY + 256 * 1024;
+            vpcInMsg.rdma.luma_payload_addr   = (long)payloadY;
+            vpcInMsg.rdma.chroma_payload_addr = (long)payloadC;
+        }
+
+        fread(payloadY, 1, buffersize, rdmaimage);
+        vpcInMsg.rdma.luma_head_addr        = (long)headY;
+        vpcInMsg.rdma.chroma_head_addr      = (long)headC;
+        vpcInMsg.rdma.luma_head_stride      = vpcInMsg.stride;
+        vpcInMsg.rdma.chroma_head_stride    = vpcInMsg.stride;
+        vpcInMsg.rdma.luma_payload_stride   = gpYStride;
+        vpcInMsg.rdma.chroma_payload_stride = gpUVStride;
+        fclose(rdmaimage);
+        printf(&quot;luma payload stride= %d\n&quot;, vpcInMsg.rdma.luma_payload_stride );
+        printf(&quot;chroma payload stride= %d\n&quot;, vpcInMsg.rdma.chroma_payload_stride );
+    } else {
+        alloc_buffer(vpcInMsg.width, vpcInMsg.high, vpcInMsg.stride, bufferSize);
+        if (open_image(in_file_name, vpcInMsg.width, vpcInMsg.high, vpcInMsg.stride) != 0) {
+            printf(&quot;open file failed~\n&quot;);
+            free(in_buffer);
+            return;
+        }
+        vpcInMsg.in_buffer      = in_buffer;
+        vpcInMsg.in_buffer_size = bufferSize;
+    }
+    //alloc in and out buffer
+    shared_ptr&lt;AutoBuffer&gt; auto_out_buffer = make_shared&lt;AutoBuffer&gt;();
+    vpcInMsg.auto_out_buffer_1             = auto_out_buffer;
+    dvppApiCtlMsg.in                       = (void *)(&amp;vpcInMsg);
+    dvppApiCtlMsg.in_size                  = sizeof(vpc_in_msg);
+
+    if (pidvppapi != NULL) {
+
+        for (int i = 0; i &lt; gLoop; i++) {
+            if (DvppCtl(pidvppapi, DVPP_CTL_VPC_PROC, &amp;dvppApiCtlMsg) != 0) {
+                printf(&quot;call dvppctl process faild!\n&quot;);
+                DestroyDvppApi(pidvppapi);
+                free(in_buffer);
+                return;
+            }
+        }
+
+    } else {
+        printf(&quot;pidvppapi is null!\n&quot;);
+    }
+
+    free(in_buffer);
+
+    FILE *fp = NULL;
+    fp = fopen(out_file_name, &quot;wb+&quot;);
+    if (fp == NULL) {
+        printf(&quot;open file %s failed~\n&quot;, out_file_name);
+        free(in_buffer);
+        return;
+    }
+
+    fwrite(vpcInMsg.auto_out_buffer_1-&gt;getBuffer(), 1, vpcInMsg.auto_out_buffer_1-&gt;getBufferSize(), fp);
+    fflush(fp);
+    fclose(fp);
+    DestroyDvppApi(pidvppapi);
+    return;
+</code></pre></li>
+<li><p>RawData8k&#x57FA;&#x7840;&#x529F;&#x80FD;&#x8C03;&#x7528;&#x793A;&#x4F8B;</p>
+<p>&#x53C2;&#x6570;&#x914D;&#x7F6E;&#xFF1A;</p>
+<pre><code>    dvppapi_ctl_msg dvppApiCtlMsg;
+    vpc_in_msg vpcInMsg;
+    vpcInMsg.width = gWidth;
+    vpcInMsg.high = gHigh;
+    vpcInMsg.stride = gStride;
+    vpcInMsg.out_width = gOutWidth;
+    vpcInMsg.out_high = gOutHigh;
+    printf(&quot;width     =%d\n&quot;, vpcInMsg.width);
+    printf(&quot;high      =%d\n&quot;, vpcInMsg.high);
+    printf(&quot;stride    =%d\n&quot;, vpcInMsg.stride);
+    printf(&quot;out_width =%d\n&quot;, vpcInMsg.out_width);
+    printf(&quot;out_high  =%d\n&quot;, vpcInMsg.out_high);
+    //alloc in and out buffer
+    char *in_buffer = (char *)malloc(vpcInMsg.width * vpcInMsg.high * 1.5);
+    if (in_buffer = NULL) {
+        printf(&quot;malloc fail\n&quot;);
+        return;
+    }
+
+    shared_ptr&lt;AutoBuffer&gt; auto_out_buffer = make_shared&lt;AutoBuffer&gt;();
+    FILE *yuvimage = fopen(in_file_name, &quot;rb&quot;);
+    if (yuvimage == NULL) {
+        printf(&quot;no such file!,file_name=[%s]\n&quot;, in_file_name);
+        free(in_buffer);
+        return;
+    } else {
+        fread(in_buffer, 1, vpcInMsg.width * vpcInMsg.high * 3 / 2, yuvimage);
+    }
+
+    vpcInMsg.rank = gRank;
+    vpcInMsg.in_buffer = in_buffer;
+    vpcInMsg.in_buffer_size = vpcInMsg.width * vpcInMsg.high * 1.5;
+    vpcInMsg.auto_out_buffer_1 = auto_out_buffer;
+    vpcInMsg.use_flag = 1;
+    dvppApiCtlMsg.in = (void *)(&amp;vpcInMsg);
+    dvppApiCtlMsg.in_size = sizeof(vpc_in_msg);
+    IDVPPAPI *pidvppapi = NULL;
+    CreateDvppApi(pidvppapi);
+    if (pidvppapi != NULL) {
+        if (DvppCtl(pidvppapi, DVPP_CTL_VPC_PROC, &amp;dvppApiCtlMsg) != 0) {
+            printf(&quot;call dvppctl process faild!\n&quot;);
+            DestroyDvppApi(pidvppapi);
+            free(in_buffer);
+            fclose(yuvimage);
+            return;
+        }
+    } else {
+        printf(&quot;pidvppapi is null!\n&quot;);
+    }
+
+    DestroyDvppApi(pidvppapi);
+    FILE *fp = NULL;
+    fp = fopen(out_file_name, &quot;wb+&quot;);
+    if (fp != NULL) {
+        fwrite(vpcInMsg.auto_out_buffer_1-&gt;getBuffer(), 1, vpcInMsg.auto_out_buffer_1-&gt;getBufferSize(), fp);
+        fflush(fp);
+        fclose(fp);
+    } else {
+        fclose(yuvimage);
+        return;
+    }
+
+    free(in_buffer);
+    fclose(yuvimage);
+    return;
+</code></pre></li>
+<li><p>Rawdata&#x53E0;&#x52A0;&#x57FA;&#x7840;&#x529F;&#x80FD;&#x8C03;&#x7528;&#x5B9E;&#x4F8B;</p>
+<pre><code>    dvppapi_ctl_msg dvppApiCtlMsg;
+    vpc_in_msg vpcInMsg;
+    //&#x914D;&#x7F6E;RawData&#x53E0;&#x52A0;&#x53C2;&#x6570;
+    vpcInMsg.use_flag = 2;
+    vpcInMsg.overlay.image_type = 0;
+    vpcInMsg.overlay.image_rank_type = 0;
+    vpcInMsg.overlay.bit_width = 8;
+    vpcInMsg.overlay.in_width_image = 1000;
+    vpcInMsg.overlay.in_high_image = 1000;
+    vpcInMsg.overlay.in_width_text = 500;
+    vpcInMsg.overlay.in_high_text = 390;
+    vpcInMsg.overlay.image_width_stride = 2;
+    vpcInMsg.overlay.image_high_stride = 2;
+    vpcInMsg.overlay.text_width_stride = 2;
+    vpcInMsg.overlay.text_high_stride = 2;
+    vpcInMsg.overlay.in_buffer_image = NULL;
+    vpcInMsg.overlay.in_buffer_text = NULL;
+    vpcInMsg.overlay.auto_overlay_out_buffer = make_shared&lt;AutoBuffer&gt;();
+    //&#x521D;&#x59CB;&#x5316;&#x56FE;&#x50CF;&#x5185;&#x5B58;
+    if(NULL == (vpcInMsg.overlay.in_buffer_image = (char*)malloc(vpcInMsg.overlay.in_width_image*vpcInMsg.overlay.in_high_image*3/2)))    {
+        printf(&quot;in_buffer_image alloc failed!\n&quot;);
+        return ;
+    }
+    //&#x6253;&#x5F00;&#x56FE;&#x7247;&#x81F3;&#x7533;&#x8BF7;&#x7684;&#x5185;&#x5B58;&#x4E2D;
+    char image_file[50] = &quot;yuv_data_0&quot;;
+    FILE * yuvimage = fopen(image_file,&quot;rb&quot;);
+    if(NULL == yuvimage)    {
+        printf(&quot;VPC_TEST: yuv image open faild!&quot;);
+        return ;
+    }    else    {
+        fread(vpcInMsg.overlay.in_buffer_image, 1,vpcInMsg.overlay.in_width_image*vpcInMsg.overlay.in_high_image*3/2,yuvimage);
+        fclose(yuvimage);
+        yuvimage = NULL;
+}
+
+    //&#x521D;&#x59CB;&#x5316;&#x6587;&#x5B57;&#x5185;&#x5B58;
+    if(NULL == (vpcInMsg.overlay.in_buffer_text = (char*)malloc(vpcInMsg.overlay.in_width_text*vpcInMsg.overlay.in_high_text*3/2)))    {
+        printf(&quot;in_buffer_text alloc failed!&quot;);
+        free(vpcInMsg.overlay.in_buffer_image);
+        return ;
+    }
+
+    //&#x6253;&#x5F00;text&#x56FE;&#x7247;&#x81F3;&#x7533;&#x8BF7;&#x7684;&#x5185;&#x5B58;&#x4E2D;
+    char text_file[50] = &quot;text_0&quot;;
+    FILE * yuvtext = fopen(text_file,&quot;rb&quot;);
+    if(NULL == yuvtext)    {
+        printf(&quot;VPC_TEST: yuv text image open faild!&quot;);
+        free(vpcInMsg.overlay.in_buffer_image);
+        return ;
+    }    else    {
+        fread(vpcInMsg.overlay.in_buffer_text, 1,vpcInMsg.overlay.in_width_text*vpcInMsg.overlay.in_high_text*3/2, yuvtext);
+        fclose(yuvtext);
+        yuvtext = NULL;
+    }
+
+    dvppApiCtlMsg.in = (void*)(&amp;vpcInMsg);
+    dvppApiCtlMsg.in_size = sizeof(vpc_in_msg);
+    IDVPPAPI *pidvppapi = NULL;
+    CreateDvppApi(pidvppapi);
+    if(pidvppapi!=NULL)    {
+        if(DvppCtl(pidvppapi,DVPP_CTL_VPC_PROC,&amp;dvppApiCtlMsg)!= 0)        {
+            printf(&quot;call dvppctl process faild!\n&quot;);
+            DestroyDvppApi(pidvppapi);
+            free(vpcInMsg.overlay.in_buffer_image);
+            free(vpcInMsg.overlay.in_buffer_text);
+            return ;
+        }
+        DestroyDvppApi(pidvppapi);
+        FILE * fp   = fopen(&quot;./out_overlay_image_share&quot;,&quot;wb+&quot;);
+        fwrite(vpcInMsg.overlay.auto_overlay_out_buffer-&gt;getBuffer(),1,vpcInMsg.overlay.in_width_image*vpcInMsg.overlay.in_high_image*3/2,fp);
+        fflush(fp);
+        fclose(fp);
+        fp=NULL;
+        return ;
+    }    else    {
+        printf(&quot;pidvppapi is null!\n&quot;);
+        return ;
+    }
+    if(NULL != vpcInMsg.overlay.in_buffer_image)    {
+        free(vpcInMsg.overlay.in_buffer_image);
+        vpcInMsg.overlay.in_buffer_image = NULL;
+    }
+    if(NULL != vpcInMsg.overlay.in_buffer_text)    {
+        free(vpcInMsg.overlay.in_buffer_text);
+        vpcInMsg.overlay.in_buffer_text = NULL;
+    }
+</code></pre></li>
+<li><p>Rawdata&#x62FC;&#x63A5;&#x57FA;&#x7840;&#x529F;&#x80FD;&#x8C03;&#x7528;&#x5B9E;&#x4F8B;</p>
+<pre><code>    dvppapi_ctl_msg dvppApiCtlMsg;
+    vpc_in_msg vpcInMsg;
+     //&#x914D;&#x7F6E;RawData&#x62FC;&#x63A5;&#x53C2;&#x6570;
+    vpcInMsg.use_flag = 3;
+    vpcInMsg.collage.image_type = 0;
+    vpcInMsg.collage.image_rank_type = 0;
+    vpcInMsg.collage.bit_width = 8;
+    vpcInMsg.collage.in_width = 1000;
+    vpcInMsg.collage.in_high = 1000;
+    vpcInMsg.collage.width_stride = 2;
+    vpcInMsg.collage.high_stride = 2;
+    vpcInMsg.collage.collage_type = 0;
+    vpcInMsg.collage.auto_out_buffer = make_shared&lt;AutoBuffer&gt;();
+    char image_file[4][50] = {&quot;yuv_data_0&quot;,&quot;yuv_data_1&quot;,&quot;yuv_data_2&quot;,&quot;yuv_data_3&quot;};
+    //&#x521D;&#x59CB;&#x5316;&#x56FE;&#x50CF;&#x5185;&#x5B58;without stride************begin************
+    for(int i=0; i&lt;4; i++) {
+        if(NULL == (vpcInMsg.collage.in_buffer[i] = (char*)malloc(vpcInMsg.collage.in_width*                                        vpcInMsg.collage.in_high*3/2)))
+        {
+            printf(&quot;in_buffer_image alloc failed!\n&quot;);
+            for(int j=0; j&lt;i; j++) {
+                free(vpcInMsg.collage.in_buffer[j]);
+            }
+            return ;
+        }
+        //&#x6253;&#x5F00;&#x56FE;&#x7247;&#x81F3;&#x7533;&#x8BF7;&#x7684;&#x5185;&#x5B58;&#x4E2D;
+        FILE * yuvimage = fopen(image_file[i],&quot;rb&quot;);
+        if(NULL == yuvimage)        {
+            printf(&quot;PVC_TEST: yuv image open faild!&quot;);
+            return ;
+        }        else        {
+            fread(vpcInMsg.collage.in_buffer[i], 1,vpcInMsg.collage.in_width*
+                  vpcInMsg.collage.in_high*3/2,yuvimage);
+            fclose(yuvimage);
+            yuvimage = NULL;
+        }
+    }
+
+    dvppApiCtlMsg.in = (void*)(&amp;vpcInMsg);
+    dvppApiCtlMsg.in_size = sizeof(vpc_in_msg);
+    IDVPPAPI *pidvppapi = NULL;
+    CreateDvppApi(pidvppapi);
+    if(pidvppapi!=NULL)    {
+        if(DvppCtl(pidvppapi,DVPP_CTL_VPC_PROC,&amp;dvppApiCtlMsg)!= 0)        {
+            printf(&quot;call dvppctl process faild!\n&quot;);
+            DestroyDvppApi(pidvppapi);
+            for(int i=0; i&lt;4; i++) {
+                free(vpcInMsg.collage.in_buffer[i]);
+            }
+            return ;
+        }
+        DestroyDvppApi(pidvppapi);
+        FILE * fp   = fopen(&quot;./out_collage_image_share&quot;,&quot;wb+&quot;);
+        fwrite(vpcInMsg.collage.auto_out_buffer-&gt;getBuffer(),1,vpcInMsg.collage.in_width*vpcInMsg.collage.in_high*6,fp);
+        fflush(fp);
+        fclose(fp);
+        fp=NULL;
+        return ;
+    }    else    {
+        printf(&quot;pidvppapi is null!\n&quot;);
+        return ;
+    }
+    for(int i=0; i&lt;4; i++) {
+        if(NULL != vpcInMsg.collage.in_buffer[i])        {
+            free(vpcInMsg.collage.in_buffer[i]);
+            vpcInMsg.collage.in_buffer[i] = NULL;
+        }
+    }
+</code></pre></li>
+<li><p>VPCAPI&#x8C03;&#x7528;</p>
+<pre><code>IDVPPAPI *pidvppapi = NULL;
+CreateDvppApi(pidvppapi);
+if(pidvppapi!=NULL)
+{
+ if(0 != DvppCtl(pidvppapi,DVPP_CTL_VPC_PROC,&amp;dvppApiCtlMsg))
+ {
+  printf(&quot;call dvppctl process faild!\n&quot;);
+  DestroyDvppApi(pidvppapi);
+  return -1;
+ }
+}
+else
+printf(&quot;pidvppapi is null!\n&quot;);
+DestroyDvppApi(pidvppapi);
+</code></pre></li>
+<li><p>VPC Resize&#x53C2;&#x6570;&#x914D;&#x7F6E;&#x83B7;&#x53D6;&#x529F;&#x80FD;&#x8C03;&#x7528;&#x793A;&#x4F8B;</p>
+<p>gXxxxx&#x4E3A;&#x914D;&#x7F6E;&#x53C2;&#x6570;</p>
+<pre><code>dvppapi_ctl_msg dvppApiCtlMsg;
+vpc_in_msg vpcInMsg;
+resize_param_in_msg resize_in_param;
+resize_param_out_msg resize_out_param;
+resize_in_param.src_width = gWidth;
+resize_in_param.src_high = gHigh;
+resize_in_param.hmax = gHmax;
+resize_in_param.hmin = gHmin;
+resize_in_param.vmax = gVmax;
+resize_in_param.vmin = gVmin;
+resize_in_param.dest_width = floor(gHinc * (gHmax - gHmin + 1) + 0.5);
+resize_in_param.dest_high = floor(gVinc * (gVmax - gVmin + 1) + 0.5);
+dvppApiCtlMsg.in = (void *)(&amp;resize_in_param);
+dvppApiCtlMsg.out = (void *)(&amp;resize_out_param);
+IDVPPAPI *pidvppapi = NULL;
+CreateDvppApi(pidvppapi);
+if (0 != DvppCtl(pidvppapi, DVPP_CTL_TOOL_CASE_GET_RESIZE_PARAM, &amp;dvppApiCtlMsg))
+{
+  printf(&quot;call dvppctl process faild!\n&quot;);
+  DestroyDvppApi(pidvppapi);
+  return;
+}
+int bufferSize = 0;
+vpcInMsg.format = gFormat;
+vpcInMsg.cvdr_or_rdma = gcvdr_or_rdma;
+vpcInMsg.bitwidth = gBitwidth;
+vpcInMsg.rank = gRank;
+vpcInMsg.width = gWidth;
+vpcInMsg.high = gHigh;
+vpcInMsg.stride = gStride;
+vpcInMsg.hmax = resize_out_param.hmax;
+vpcInMsg.hmin = resize_out_param.hmin;
+vpcInMsg.vmax = resize_out_param.vmax;
+vpcInMsg.vmin = resize_out_param.vmin;
+vpcInMsg.vinc = resize_out_param.vinc;
+vpcInMsg.hinc = resize_out_param.hinc;
+</code></pre></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="VPC新接口.html" class="navigation navigation-prev " aria-label="Previous page: VPC新接口">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="CMDLIST.html" class="navigation navigation-next " aria-label="Next page: CMDLIST">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"VPC老接口","level":"1.4.2.2","depth":3,"next":{"title":"CMDLIST","level":"1.4.2.3","depth":3,"path":"CMDLIST.md","ref":"CMDLIST.md","articles":[]},"previous":{"title":"VPC新接口","level":"1.4.2.1","depth":3,"path":"VPC新接口.md","ref":"VPC新接口.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"imgUrl":"","topnav":[]},"plugins":["expandable-chapters","copy"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy":{},"expandableChapters":{"cssFile":["expandable-chapters-theme.css"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"website.css"}},"file":{"path":"VPC老接口.md","mtime":"2019-04-11T22:26:07.904Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-11T22:26:10.379Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/clipboard.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/copy.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

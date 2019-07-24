@@ -1,0 +1,944 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>图像叠加结构体rawdata_overlay_config · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters-theme.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-copy/css/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="图像拼接结构体rawdata_collage_config.html" />
+    
+    
+    <link rel="prev" href="vpc_in_msg中的结构体.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="修订记录.html">
+            
+                <a href="修订记录.html">
+            
+                    
+                    修订记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="简介.html">
+            
+                <a href="简介.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="DVPP对外接口.html">
+            
+                <a href="DVPP对外接口.html">
+            
+                    
+                    DVPP对外接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="CreateDvppApi.html">
+            
+                <a href="CreateDvppApi.html">
+            
+                    
+                    CreateDvppApi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="DvppCtl.html">
+            
+                <a href="DvppCtl.html">
+            
+                    
+                    DvppCtl
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="VPC新接口.html">
+            
+                <a href="VPC新接口.html">
+            
+                    
+                    VPC新接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="VPC老接口.html">
+            
+                <a href="VPC老接口.html">
+            
+                    
+                    VPC老接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="CMDLIST.html">
+            
+                <a href="CMDLIST.html">
+            
+                    
+                    CMDLIST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="VDEC.html">
+            
+                <a href="VDEC.html">
+            
+                    
+                    VDEC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.5" data-path="JPEGE.html">
+            
+                <a href="JPEGE.html">
+            
+                    
+                    JPEGE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6" data-path="JPEGD.html">
+            
+                <a href="JPEGD.html">
+            
+                    
+                    JPEGD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.7" data-path="PNGD.html">
+            
+                <a href="PNGD.html">
+            
+                    
+                    PNGD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.8" data-path="VENC.html">
+            
+                <a href="VENC.html">
+            
+                    
+                    VENC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.9" data-path="查询DVPP引擎能力.html">
+            
+                <a href="查询DVPP引擎能力.html">
+            
+                    
+                    查询DVPP引擎能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="DestroyDvppApi.html">
+            
+                <a href="DestroyDvppApi.html">
+            
+                    
+                    DestroyDvppApi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="异常处理.html">
+            
+                <a href="异常处理.html">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="附录.html">
+            
+                <a href="附录.html">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="入参结构体说明.html">
+            
+                <a href="入参结构体说明.html">
+            
+                    
+                    入参结构体说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="vpc_in_msg中的结构体.html">
+            
+                <a href="vpc_in_msg中的结构体.html">
+            
+                    
+                    vpc_in_msg中的结构体
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.1.1.1" data-path="图像叠加结构体rawdata_overlay_config.html">
+            
+                <a href="图像叠加结构体rawdata_overlay_config.html">
+            
+                    
+                    图像叠加结构体rawdata_overlay_config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.2" data-path="图像拼接结构体rawdata_collage_config.html">
+            
+                <a href="图像拼接结构体rawdata_collage_config.html">
+            
+                    
+                    图像拼接结构体rawdata_collage_config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.3" data-path="Rdma通道结构体RDMACHANNEL.html">
+            
+                <a href="Rdma通道结构体RDMACHANNEL.html">
+            
+                    
+                    Rdma通道结构体RDMACHANNEL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.1.4" data-path="Vpc内部优化结构体VpcTurningReverse.html">
+            
+                <a href="Vpc内部优化结构体VpcTurningReverse.html">
+            
+                    
+                    Vpc内部优化结构体VpcTurningReverse
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="VpcUserImageConfigure中的结构体.html">
+            
+                <a href="VpcUserImageConfigure中的结构体.html">
+            
+                    
+                    VpcUserImageConfigure中的结构体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" data-path="vdec_in_msg中的结构体和类.html">
+            
+                <a href="vdec_in_msg中的结构体和类.html">
+            
+                    
+                    vdec_in_msg中的结构体和类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" data-path="IMAGE_CONFIG中的结构体.html">
+            
+                <a href="IMAGE_CONFIG中的结构体.html">
+            
+                    
+                    IMAGE_CONFIG中的结构体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.5" data-path="dvpp_engine_capability_stru中的结构体.html">
+            
+                <a href="dvpp_engine_capability_stru中的结构体.html">
+            
+                    
+                    dvpp_engine_capability_stru中的结构体
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="DVPP执行器工具使用说明.html">
+            
+                <a href="DVPP执行器工具使用说明.html">
+            
+                    
+                    DVPP执行器工具使用说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="环境准备.html">
+            
+                <a href="环境准备.html">
+            
+                    
+                    环境准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="DVPP执行器工具入参说明.html">
+            
+                <a href="DVPP执行器工具入参说明.html">
+            
+                    
+                    DVPP执行器工具入参说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3" data-path="VPC使用说明.html">
+            
+                <a href="VPC使用说明.html">
+            
+                    
+                    VPC使用说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.3.1" data-path="VPC基础功能.html">
+            
+                <a href="VPC基础功能.html">
+            
+                    
+                    VPC基础功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3.2" data-path="VPC-RawData-8K.html">
+            
+                <a href="VPC-RawData-8K.html">
+            
+                    
+                    VPC RawData 8K
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.4" data-path="CMDLIST使用说明.html">
+            
+                <a href="CMDLIST使用说明.html">
+            
+                    
+                    CMDLIST使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.5" data-path="VDEC使用说明.html">
+            
+                <a href="VDEC使用说明.html">
+            
+                    
+                    VDEC使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.6" data-path="VENC使用说明.html">
+            
+                <a href="VENC使用说明.html">
+            
+                    
+                    VENC使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.7" data-path="JPEGE使用说明.html">
+            
+                <a href="JPEGE使用说明.html">
+            
+                    
+                    JPEGE使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.8" data-path="JPEGD使用说明.html">
+            
+                <a href="JPEGD使用说明.html">
+            
+                    
+                    JPEGD使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.9" data-path="PNGD使用说明.html">
+            
+                <a href="PNGD使用说明.html">
+            
+                    
+                    PNGD使用说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="缩略语和术语一览.html">
+            
+                <a href="缩略语和术语一览.html">
+            
+                    
+                    缩略语和术语一览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="辅助功能接口.html">
+            
+                <a href="辅助功能接口.html">
+            
+                    
+                    辅助功能接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="不推荐使用接口列表.html">
+            
+                <a href="不推荐使用接口列表.html">
+            
+                    
+                    不推荐使用接口列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >图像叠加结构体rawdata_overlay_config</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x56FE;&#x50CF;&#x53E0;&#x52A0;&#x7ED3;&#x6784;&#x4F53;rawdataoverlayconfig">&#x56FE;&#x50CF;&#x53E0;&#x52A0;&#x7ED3;&#x6784;&#x4F53;rawdata_overlay_config<a id="ZH-CN_TOPIC_0162572889"></a></h1>
+<p><a id="table13799151174817"></a></p>
+<table><thead align="left"><tr id="row147012184813"><th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.1.4.1.1"><p id="p11751220486"><a id="p11751220486"></a><a id="p11751220486"></a>&#x6210;&#x5458;&#x53D8;&#x91CF;</p>
+</th>
+<th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.1.4.1.2"><p id="p9791224817"><a id="p9791224817"></a><a id="p9791224817"></a>&#x8BF4;&#x660E;</p>
+</th>
+<th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.1.4.1.3"><p id="p972122486"><a id="p972122486"></a><a id="p972122486"></a>&#x53D6;&#x503C;&#x8303;&#x56F4;</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row174124486"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p1371812204818"><a id="p1371812204818"></a><a id="p1371812204818"></a>int&#xFF1A;  image_type</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p771112134817"><a id="p771112134817"></a><a id="p771112134817"></a>&#x56FE;&#x50CF;&#x7C7B;&#x578B;&#x3001;&#x56FE;&#x50CF;&#x56FE;&#x7247;&#x548C;&#x6587;&#x5B57;&#x56FE;&#x7247;&#x7684;&#x56FE;&#x50CF;&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x4E3A;&#x201C;yuv420_semi_plannar&#x201D;</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p17781216481"><a id="p17781216481"></a><a id="p17781216481"></a>0</p>
+<p id="p137812184813"><a id="p137812184813"></a><a id="p137812184813"></a>(yuv420_semi_plannar)</p>
+</td>
+</tr>
+<tr id="row17741211484"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p157712184818"><a id="p157712184818"></a><a id="p157712184818"></a>int&#xFF1A;  image_rank_type</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p1751294810"><a id="p1751294810"></a><a id="p1751294810"></a>&#x56FE;&#x50CF;&#x683C;&#x5F0F;(NV12&#x6216;NV21)&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p671212154812"><a id="p671212154812"></a><a id="p671212154812"></a>0&#x6216;1&#xFF1B;</p>
+<p id="p18718121486"><a id="p18718121486"></a><a id="p18718121486"></a>0&#x5BF9;&#x5E94;NV12&#xFF1B;1&#x5BF9;&#x5E94;NV21&#x3002;</p>
+</td>
+</tr>
+<tr id="row37812194813"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p1672122483"><a id="p1672122483"></a><a id="p1672122483"></a>int&#xFF1A; bit_width</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p16717126489"><a id="p16717126489"></a><a id="p16717126489"></a>&#x4F4D;&#x6DF1;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p7771244820"><a id="p7771244820"></a><a id="p7771244820"></a>&#x5FC5;&#x987B;&#x4E3A;8&#x3002;</p>
+</td>
+</tr>
+<tr id="row57181210483"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p127151213485"><a id="p127151213485"></a><a id="p127151213485"></a>int&#xFF1A;  in_width_image</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p77151224813"><a id="p77151224813"></a><a id="p77151224813"></a>&#x56FE;&#x50CF;&#x56FE;&#x7247;&#x5BBD;&#x5EA6;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p1574122488"><a id="p1574122488"></a><a id="p1574122488"></a>&#x5FC5;&#x987B;&#x5728;[16, 4096]&#x533A;&#x95F4;&#x8303;&#x56F4;&#x5185;&#xFF0C;&#x5FC5;&#x987B;&#x4E3A;&#x5076;&#x6570;&#x3002;</p>
+</td>
+</tr>
+<tr id="row19712126489"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p107181212482"><a id="p107181212482"></a><a id="p107181212482"></a>int&#xFF1A;  in_high_image</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p157161264813"><a id="p157161264813"></a><a id="p157161264813"></a>&#x56FE;&#x50CF;&#x56FE;&#x7247;&#x9AD8;&#x5EA6;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p5711216489"><a id="p5711216489"></a><a id="p5711216489"></a>&#x5FC5;&#x987B;&#x5728;[16, 4096]&#x533A;&#x95F4;&#x8303;&#x56F4;&#x5185;&#xFF0C;&#x5FC5;&#x987B;&#x4E3A;&#x5076;&#x6570;&#x3002;</p>
+</td>
+</tr>
+<tr id="row1871612114810"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p5781294818"><a id="p5781294818"></a><a id="p5781294818"></a>int&#xFF1A;  in_width_text</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p107181224813"><a id="p107181224813"></a><a id="p107181224813"></a>&#x6587;&#x5B57;&#x56FE;&#x7247;&#x5BBD;&#x5EA6;&#xFF0C;&#x6587;&#x5B57;&#x56FE;&#x7247;&#x7684;&#x5BBD;&#x5EA6;&#x5FC5;&#x987B;&#x5C0F;&#x4E8E;&#x56FE;&#x50CF;&#x56FE;&#x7247;&#x7684;&#x5BBD;&#x5EA6;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p10716129489"><a id="p10716129489"></a><a id="p10716129489"></a>&#x5FC5;&#x987B;&#x5728;[16, 4096]&#x533A;&#x95F4;&#x8303;&#x56F4;&#x5185;&#xFF0C;&#x5FC5;&#x987B;&#x4E3A;&#x5076;&#x6570;&#x3002;</p>
+</td>
+</tr>
+<tr id="row17161214816"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p37212154816"><a id="p37212154816"></a><a id="p37212154816"></a>int&#xFF1A; in_high_text</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p3771218484"><a id="p3771218484"></a><a id="p3771218484"></a>&#x6587;&#x5B57;&#x56FE;&#x7247;&#x9AD8;&#x5EA6;&#xFF0C;&#x6587;&#x5B57;&#x56FE;&#x7247;&#x7684;&#x9AD8;&#x5EA6;&#x5FC5;&#x987B;&#x5C0F;&#x4E8E;&#x56FE;&#x50CF;&#x56FE;&#x7247;&#x7684;&#x9AD8;&#x5EA6;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p147712174817"><a id="p147712174817"></a><a id="p147712174817"></a>&#x5FC5;&#x987B;&#x5728;[16, 4096]&#x533A;&#x95F4;&#x8303;&#x56F4;&#x5185;&#xFF0C;&#x5FC5;&#x987B;&#x4E3A;&#x5076;&#x6570;&#x3002;</p>
+</td>
+</tr>
+<tr id="row177201294813"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p16731204816"><a id="p16731204816"></a><a id="p16731204816"></a>int&#xFF1A;  image_width_stride</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p187412104812"><a id="p187412104812"></a><a id="p187412104812"></a>&#x56FE;&#x50CF;&#x56FE;&#x7247;&#x5BBD;&#x5EA6;&#x6B65;&#x957F;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p177812144810"><a id="p177812144810"></a><a id="p177812144810"></a>&#x56FE;&#x50CF;&#x6570;&#x636E;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x7684;stride&#xFF0C;&#x5982;&#x679C;&#x56FE;&#x50CF;&#x5728;&#x5185;&#x5B58;&#x6CA1;&#x6709;&#x8FDB;&#x884C;&#x5BF9;&#x9F50;&#xFF0C;&#x56FE;&#x50CF;&#x56FE;&#x7247;&#x5BBD;&#x5EA6;&#x6B65;&#x957F;&#x548C;&#x56FE;&#x50CF;&#x56FE;&#x7247;&#x7684;&#x5BBD;&#x5EA6;&#x4E00;&#x81F4;&#xFF1B;&#x5426;&#x5219;&#x6309;&#x5BF9;&#x9F50;&#x6570;&#x5B57;&#x586B;&#x5199;&#x3002;</p>
+</td>
+</tr>
+<tr id="row471412184813"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p371712134816"><a id="p371712134816"></a><a id="p371712134816"></a>int&#xFF1A;  image_high_stride</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p147312154816"><a id="p147312154816"></a><a id="p147312154816"></a>&#x56FE;&#x50CF;&#x56FE;&#x7247;&#x9AD8;&#x5EA6;&#x6B65;&#x957F;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p1271912134816"><a id="p1271912134816"></a><a id="p1271912134816"></a>&#x56FE;&#x50CF;&#x6570;&#x636E;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x7684;stride&#xFF0C;&#x5982;&#x679C;&#x56FE;&#x50CF;&#x5728;&#x5185;&#x5B58;&#x6CA1;&#x6709;&#x8FDB;&#x884C;&#x5BF9;&#x9F50;&#xFF0C;&#x56FE;&#x50CF;&#x56FE;&#x7247;&#x9AD8;&#x5EA6;&#x6B65;&#x957F;&#x548C;&#x56FE;&#x50CF;&#x56FE;&#x7247;&#x7684;&#x9AD8;&#x5EA6;&#x4E00;&#x81F4;&#xFF1B;&#x5426;&#x5219;&#x6309;&#x5BF9;&#x9F50;&#x6570;&#x5B57;&#x586B;&#x5199;&#x3002;</p>
+</td>
+</tr>
+<tr id="row2071812194810"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p15719125485"><a id="p15719125485"></a><a id="p15719125485"></a>int&#xFF1A;  text_width_stride</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p14771220481"><a id="p14771220481"></a><a id="p14771220481"></a>&#x6587;&#x5B57;&#x56FE;&#x7247;&#x5BBD;&#x5EA6;&#x6B65;&#x957F;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p0741218481"><a id="p0741218481"></a><a id="p0741218481"></a>&#x56FE;&#x50CF;&#x6570;&#x636E;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x7684;stride&#xFF0C;&#x5982;&#x679C;&#x56FE;&#x50CF;&#x5728;&#x5185;&#x5B58;&#x6CA1;&#x6709;&#x8FDB;&#x884C;&#x5BF9;&#x9F50;&#xFF0C;&#x6587;&#x5B57;&#x56FE;&#x7247;&#x5BBD;&#x5EA6;&#x6B65;&#x957F;&#x548C;&#x6587;&#x5B57;&#x56FE;&#x7247;&#x7684;&#x5BBD;&#x5EA6;&#x4E00;&#x81F4;&#xFF1B;&#x5426;&#x5219;&#x6309;&#x5BF9;&#x9F50;&#x6570;&#x5B57;&#x586B;&#x5199;&#x3002;</p>
+</td>
+</tr>
+<tr id="row1977127488"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p271112184817"><a id="p271112184817"></a><a id="p271112184817"></a>int&#xFF1A;  text_high_stride</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p10751284816"><a id="p10751284816"></a><a id="p10751284816"></a>&#x6587;&#x5B57;&#x56FE;&#x7247;&#x9AD8;&#x5EA6;&#x6B65;&#x957F;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p7721234810"><a id="p7721234810"></a><a id="p7721234810"></a>&#x56FE;&#x50CF;&#x6570;&#x636E;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x7684;stride&#xFF0C;&#x5982;&#x679C;&#x56FE;&#x50CF;&#x5728;&#x5185;&#x5B58;&#x6CA1;&#x6709;&#x8FDB;&#x884C;&#x5BF9;&#x9F50;&#xFF0C;&#x6587;&#x5B57;&#x56FE;&#x7247;&#x9AD8;&#x5EA6;&#x6B65;&#x957F;&#x548C;&#x6587;&#x5B57;&#x56FE;&#x7247;&#x7684;&#x9AD8;&#x5EA6;&#x4E00;&#x81F4;&#xFF1B;&#x5426;&#x5219;&#x6309;&#x5BF9;&#x9F50;&#x6570;&#x5B57;&#x586B;&#x5199;&#x3002;</p>
+</td>
+</tr>
+<tr id="row17710126481"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p18711218486"><a id="p18711218486"></a><a id="p18711218486"></a>char *&#xFF1A;in_buffer_image</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p3781211484"><a id="p3781211484"></a><a id="p3781211484"></a>&#x56FE;&#x50CF;&#x56FE;&#x7247;&#x8F93;&#x5165;buffer&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p1761284819"><a id="p1761284819"></a><a id="p1761284819"></a>&#x8C03;&#x7528;&#x65B9;&#x9700;&#x4FDD;&#x8BC1;&#x56FE;&#x50CF;&#x56FE;&#x7247;&#x8F93;&#x5165;buffer&#x7684;&#x5927;&#x5C0F;&#x4E0E;&#x56FE;&#x50CF;&#x56FE;&#x7247;&#x5206;&#x522B;&#x6309;&#x7167;image_width_stride&#x548C;image_high_stride&#x5BF9;&#x9F50;&#x540E;&#x7684;&#x5BBD;&#x5EA6;&#x548C;&#x9AD8;&#x5EA6;&#x4E00;&#x81F4;&#xFF1B;</p>
+<p id="p13741219486"><a id="p13741219486"></a><a id="p13741219486"></a>&#x5BF9;&#x4E8E;yuv420 semi planner nv12&#x683C;&#x5F0F;&#x7684;&#x56FE;&#x7247;&#xFF0C;&#x56FE;&#x50CF;&#x56FE;&#x7247;&#x7684;&#x5927;&#x5C0F;&#x4E3A;&#xFF1A;(&#x5BF9;&#x9F50;&#x540E;&#x7684;&#x5BBD;)*(&#x5BF9;&#x9F50;&#x540E;&#x7684;&#x9AD8;)*1.5&#xFF0C;&#x800C;&#x8F93;&#x5165;&#x7684;buffer&#x5927;&#x5C0F;&#x4E0E;&#x5982;&#x4E0A;&#x8BA1;&#x7B97;&#x7ED3;&#x679C;&#x4E0D;&#x7B26;&#xFF0C;&#x5219;&#x4F1A;&#x5BFC;&#x81F4;VPC&#x8C03;&#x7528;&#x5931;&#x8D25;&#x3002;</p>
+</td>
+</tr>
+<tr id="row117181218484"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p14712128483"><a id="p14712128483"></a><a id="p14712128483"></a>char *&#xFF1A;in_buffer_text</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p277123488"><a id="p277123488"></a><a id="p277123488"></a>&#x6587;&#x5B57;&#x56FE;&#x7247;&#x8F93;&#x5165;buffer&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p6714128481"><a id="p6714128481"></a><a id="p6714128481"></a>&#x8C03;&#x7528;&#x65B9;&#x9700;&#x4FDD;&#x8BC1;&#x6587;&#x5B57;&#x56FE;&#x7247;&#x8F93;&#x5165;buffer&#x7684;&#x5927;&#x5C0F;&#x4E0E;&#x6587;&#x5B57;&#x56FE;&#x7247;&#x5206;&#x522B;&#x6309;&#x7167;text_width_stride&#x548C;text_high_stride&#x5BF9;&#x9F50;&#x540E;&#x7684;&#x5BBD;&#x5EA6;&#x548C;&#x9AD8;&#x5EA6;&#x4E00;&#x81F4;&#xFF1B;</p>
+<p id="p7712125483"><a id="p7712125483"></a><a id="p7712125483"></a>&#x5BF9;&#x4E8E;yuv420 semi planner nv12&#x683C;&#x5F0F;&#x7684;&#x56FE;&#x7247;&#xFF0C;&#x6587;&#x5B57;&#x56FE;&#x7247;&#x7684;&#x5927;&#x5C0F;&#x4E3A;&#xFF1A;(&#x5BF9;&#x9F50;&#x540E;&#x7684;&#x5BBD;)*(&#x5BF9;&#x9F50;&#x540E;&#x7684;&#x9AD8;)*1.5&#xFF0C;&#x800C;&#x8F93;&#x5165;&#x7684;buffer&#x5927;&#x5C0F;&#x4E0E;&#x5982;&#x4E0A;&#x8BA1;&#x7B97;&#x7ED3;&#x679C;&#x4E0D;&#x7B26;&#xFF0C;&#x5219;&#x4F1A;&#x5BFC;&#x81F4;VPC&#x8C03;&#x7528;&#x5931;&#x8D25;&#x3002;</p>
+</td>
+</tr>
+<tr id="row147181214812"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p19701213486"><a id="p19701213486"></a><a id="p19701213486"></a>shared_ptr&lt;AutoBuffer&gt; auto_overlay_out_buffer</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p19717129486"><a id="p19717129486"></a><a id="p19717129486"></a>&#x53E0;&#x52A0;&#x540E;&#x7684;&#x8F93;&#x51FA;buffer&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p157121213484"><a id="p157121213484"></a><a id="p157121213484"></a>&#x6B64;buffer&#x4E3A;&#x8C03;&#x7528;&#x65B9;&#x7533;&#x8BF7;&#x667A;&#x80FD;&#x6307;&#x9488;&#x5F53;&#x505A;&#x53C2;&#x6570;&#x4F20;&#x5165;VPC&#x3002;</p>
+<p id="p16751264815"><a id="p16751264815"></a><a id="p16751264815"></a>&#x5FC5;&#x586B;</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="vpc_in_msg中的结构体.html" class="navigation navigation-prev " aria-label="Previous page: vpc_in_msg中的结构体">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="图像拼接结构体rawdata_collage_config.html" class="navigation navigation-next " aria-label="Next page: 图像拼接结构体rawdata_collage_config">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"图像叠加结构体rawdata_overlay_config","level":"1.6.1.1.1","depth":4,"next":{"title":"图像拼接结构体rawdata_collage_config","level":"1.6.1.1.2","depth":4,"path":"图像拼接结构体rawdata_collage_config.md","ref":"图像拼接结构体rawdata_collage_config.md","articles":[]},"previous":{"title":"vpc_in_msg中的结构体","level":"1.6.1.1","depth":3,"path":"vpc_in_msg中的结构体.md","ref":"vpc_in_msg中的结构体.md","articles":[{"title":"图像叠加结构体rawdata_overlay_config","level":"1.6.1.1.1","depth":4,"path":"图像叠加结构体rawdata_overlay_config.md","ref":"图像叠加结构体rawdata_overlay_config.md","articles":[]},{"title":"图像拼接结构体rawdata_collage_config","level":"1.6.1.1.2","depth":4,"path":"图像拼接结构体rawdata_collage_config.md","ref":"图像拼接结构体rawdata_collage_config.md","articles":[]},{"title":"Rdma通道结构体RDMACHANNEL","level":"1.6.1.1.3","depth":4,"path":"Rdma通道结构体RDMACHANNEL.md","ref":"Rdma通道结构体RDMACHANNEL.md","articles":[]},{"title":"Vpc内部优化结构体VpcTurningReverse","level":"1.6.1.1.4","depth":4,"path":"Vpc内部优化结构体VpcTurningReverse.md","ref":"Vpc内部优化结构体VpcTurningReverse.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"imgUrl":"","topnav":[]},"plugins":["expandable-chapters","copy"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy":{},"expandableChapters":{"cssFile":["expandable-chapters-theme.css"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"website.css"}},"file":{"path":"图像叠加结构体rawdata_overlay_config.md","mtime":"2019-04-11T22:26:07.920Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-11T22:26:10.379Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/clipboard.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/copy.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

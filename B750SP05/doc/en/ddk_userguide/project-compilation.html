@@ -1,0 +1,911 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Project Compilation · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters-theme.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-copy/css/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="project-running.html" />
+    
+    
+    <link rel="prev" href="code-implementation.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="ddk-sample-overview.html">
+            
+                <a href="ddk-sample-overview.html">
+            
+                    
+                    DDK Sample Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="tvm.html">
+            
+                <a href="tvm.html">
+            
+                    
+                    tvm
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="project-description.html">
+            
+                <a href="project-description.html">
+            
+                    
+                    Project Description
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="project-path.html">
+            
+                <a href="project-path.html">
+            
+                    
+                    Project Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="project-import.html">
+            
+                <a href="project-import.html">
+            
+                    
+                    Project Import
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="sample-data-generation.html">
+            
+                <a href="sample-data-generation.html">
+            
+                    
+                    Sample Data GeneratIon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="code-implementation.html">
+            
+                <a href="code-implementation.html">
+            
+                    
+                    Code Implementation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.6" data-path="project-compilation.html">
+            
+                <a href="project-compilation.html">
+            
+                    
+                    Project Compilation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="project-running.html">
+            
+                <a href="project-running.html">
+            
+                    
+                    Project Running 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="output-verification.html">
+            
+                <a href="output-verification.html">
+            
+                    
+                    Output Verification
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="fasterrcnn_vgg16_asic.html">
+            
+                <a href="fasterrcnn_vgg16_asic.html">
+            
+                    
+                    fasterrcnn_vgg16_asic
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="project-description-0.html">
+            
+                <a href="project-description-0.html">
+            
+                    
+                    Project Description
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="project-path-1.html">
+            
+                <a href="project-path-1.html">
+            
+                    
+                    Project Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="project-import-2.html">
+            
+                <a href="project-import-2.html">
+            
+                    
+                    Project Import
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="data-input.html">
+            
+                <a href="data-input.html">
+            
+                    
+                    Data Input
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="code-implementation-3.html">
+            
+                <a href="code-implementation-3.html">
+            
+                    
+                    Code Implementation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="project-compilation-4.html">
+            
+                <a href="project-compilation-4.html">
+            
+                    
+                    Project Compilation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="project-running-5.html">
+            
+                <a href="project-running-5.html">
+            
+                    
+                    Project Running
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="output-verification-6.html">
+            
+                <a href="output-verification-6.html">
+            
+                    
+                    Output Verification
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="classify_net_asic.html">
+            
+                <a href="classify_net_asic.html">
+            
+                    
+                    classify_net_asic
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="project-description-7.html">
+            
+                <a href="project-description-7.html">
+            
+                    
+                    Project Description
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="project-path-8.html">
+            
+                <a href="project-path-8.html">
+            
+                    
+                    Project Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="project-import-9.html">
+            
+                <a href="project-import-9.html">
+            
+                    
+                    Project Import
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="data-input-10.html">
+            
+                <a href="data-input-10.html">
+            
+                    
+                    Data Input
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="code-implementation-11.html">
+            
+                <a href="code-implementation-11.html">
+            
+                    
+                    Code Implementation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="project-compilation-12.html">
+            
+                <a href="project-compilation-12.html">
+            
+                    
+                    Project Compilation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="project-running-13.html">
+            
+                <a href="project-running-13.html">
+            
+                    
+                    Project Running 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="output-verification-14.html">
+            
+                <a href="output-verification-14.html">
+            
+                    
+                    Output Verification
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="detection_ssd.html">
+            
+                <a href="detection_ssd.html">
+            
+                    
+                    detection_ssd 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="project-description-15.html">
+            
+                <a href="project-description-15.html">
+            
+                    
+                    Project Description
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="project-path-16.html">
+            
+                <a href="project-path-16.html">
+            
+                    
+                    Project Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="project-import-17.html">
+            
+                <a href="project-import-17.html">
+            
+                    
+                    Project Import
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="data-input-18.html">
+            
+                <a href="data-input-18.html">
+            
+                    
+                    Data Input
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="code-implementation-19.html">
+            
+                <a href="code-implementation-19.html">
+            
+                    
+                    Code Implementation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="project-compilation-20.html">
+            
+                <a href="project-compilation-20.html">
+            
+                    
+                    Project Compilation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="project-running-21.html">
+            
+                <a href="project-running-21.html">
+            
+                    
+                    Project Running 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="output-verification-22.html">
+            
+                <a href="output-verification-22.html">
+            
+                    
+                    Output Verification
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="dvpp.html">
+            
+                <a href="dvpp.html">
+            
+                    
+                    dvpp
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="project-description-23.html">
+            
+                <a href="project-description-23.html">
+            
+                    
+                    Project Description
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="sample-code-path.html">
+            
+                <a href="sample-code-path.html">
+            
+                    
+                    Sample code path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="data-input-24.html">
+            
+                <a href="data-input-24.html">
+            
+                    
+                    Data Input
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="code-implementation-25.html">
+            
+                <a href="code-implementation-25.html">
+            
+                    
+                    Code Implementation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="project-compilation-26.html">
+            
+                <a href="project-compilation-26.html">
+            
+                    
+                    Project Compilation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="project-running-27.html">
+            
+                <a href="project-running-27.html">
+            
+                    
+                    Project Running 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="output-verification-28.html">
+            
+                <a href="output-verification-28.html">
+            
+                    
+                    Output Verification
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Project Compilation</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="project-compilation">Project Compilation<a id="EN-US_TOPIC_0158976970"></a></h1>
+<p>A TE operator is automatically compiled when the project is running. The following uses the sign operator in the sample project as an example.</p>
+<ol>
+<li><p>Select the sample project and choose  <strong>Run &gt; Edit Run Configuration...</strong>  from the menu bar. The  <strong>Run Configurations </strong>dialog box is displayed, as shown in  <a href="#en-us_topic_0147129132_en-us_topic_0136383601_fig10329181818383">Figure 1</a>.</p>
+<p><strong>Figure  1</strong>  Run Configurations dialog box<a id="en-us_topic_0147129132_en-us_topic_0136383601_fig10329181818383"></a><br><img src="figures/run-configurations-dialog-box.png" alt="" title="run-configurations-dialog-box"></p>
+</li>
+<li><p>Configure the of TE parameters.</p>
+<p>The TE run configurations consist of three tab pages.</p>
+<p><strong>Table  1</strong>  Description of TE configuration parameters</p>
+<p><a id="en-us_topic_0147129132_en-us_topic_0136383601_table917494065211"></a></p>
+<table><thead align="left"><tr id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_row17176140205212"><th class="cellrowborder" valign="top" id="mcps1.2.4.1.1"><p id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p1717614402520"><a id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p1717614402520"></a><a id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p1717614402520"></a>Configuration Area</p>
+</th>
+<th class="cellrowborder" colspan="2" valign="top" id="mcps1.2.4.1.2"><p id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p11943118195818"><a id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p11943118195818"></a><a id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p11943118195818"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_row17176194045219"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p17176184065214"><a id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p17176184065214"></a><a id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p17176184065214"></a>Target</p>
+</td>
+<td class="cellrowborder" colspan="2" valign="top" headers="mcps1.2.4.1.2 "><p id="p161771254195511"><a id="p161771254195511"></a><a id="p161771254195511"></a>Specifies the information of the run target.</p>
+<a id="ul39181811165611"></a><a id="ul39181811165611"></a><ul id="ul39181811165611"><li>For an ASIC project, enter the IP address of the host.</li><li>For an Atlas DK project, enter the IP address of the developer board.</li></ul>
+</td>
+</tr>
+<tr id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_row101771640135216"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p917811403528"><a id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p917811403528"></a><a id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p917811403528"></a>Input</p>
+</td>
+<td class="cellrowborder" colspan="2" valign="top" headers="mcps1.2.4.1.2 "><p id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p13178140145219"><a id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p13178140145219"></a><a id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p13178140145219"></a>Describes the input and output data of the operator.</p>
+<a id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_ul15107535145715"></a><a id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_ul15107535145715"></a><ul id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_ul15107535145715"><li><span class="parmname" id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_parmname410763511579"><a id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_parmname410763511579"></a><a id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_parmname410763511579"></a><b>Custom Operator Name</b></span>:<p id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p617814019523"><a id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p617814019523"></a><a id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p617814019523"></a>name of a single operator. After a project is created, the name is automatically displayed.</p>
+</li><li><strong id="b106525154381"><a id="b106525154381"></a><a id="b106525154381"></a>INPUT_PARAM</strong>: description of the input data. You can add a maximum of 20 data records.<p id="p279442412447"><a id="p279442412447"></a><a id="p279442412447"></a><strong id="b31521025183819"><a id="b31521025183819"></a><a id="b31521025183819"></a>Input0</strong>: first input data</p>
+<p id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p1910805413109"><a id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p1910805413109"></a><a id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p1910805413109"></a><strong id="b9371162623819"><a id="b9371162623819"></a><a id="b9371162623819"></a>File Path</strong>: input data file. Select the binary input data file built in <a href="sample-data-generation.html">Sample Data GeneratIon</a>.</p>
+</li><li><strong id="b10777162803817"><a id="b10777162803817"></a><a id="b10777162803817"></a>OUTPUT_PARAM</strong>: description of the output data. You can add a maximum of 10 records.<p id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p17181632181414"><a id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p17181632181414"></a><a id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p17181632181414"></a><strong id="b1994903363811"><a id="b1994903363811"></a><a id="b1994903363811"></a>Output0</strong>: first output data</p>
+<a id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_ul17514105152"></a><a id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_ul17514105152"></a><ul id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_ul17514105152"><li><strong id="b3152193510383"><a id="b3152193510383"></a><a id="b3152193510383"></a>File Path</strong>: output data file. The default file is the <strong id="b215293511385"><a id="b215293511385"></a><a id="b215293511385"></a>out0.data</strong> file relative to the <strong id="b10152535183819"><a id="b10152535183819"></a><a id="b10152535183819"></a>output </strong>folder.</li><li><strong id="b1818310421382"><a id="b1818310421382"></a><a id="b1818310421382"></a>Data Size</strong>: size of the output data, in bytes</li><li><strong id="b96211743163820"><a id="b96211743163820"></a><a id="b96211743163820"></a>Data Type</strong>: output data type, <strong id="b1662117436383"><a id="b1662117436383"></a><a id="b1662117436383"></a>float16</strong> or <strong id="b12621143153818"><a id="b12621143153818"></a><a id="b12621143153818"></a>float32</strong>.</li></ul>
+</li></ul>
+</td>
+</tr>
+<tr id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_row7364811195314"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p7178194065211"><a id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p7178194065211"></a><a id="en-us_topic_0147129132_en-us_topic_0146038192_en-us_topic_0136383601_p7178194065211"></a>Verify</p>
+</td>
+<td class="cellrowborder" colspan="2" valign="top" headers="mcps1.2.4.1.2 "><p id="p26450306111"><a id="p26450306111"></a><a id="p26450306111"></a>Provides parameters for checking whether the output of the running parameter configuration in the <strong id="b674124810385"><a id="b674124810385"></a><a id="b674124810385"></a>Run Configurations</strong> dialog box is consistent with the expected result. Parameters on this tab page are optional. If they are not set, the system does not check the correctness of output data during running.</p>
+<p id="en-us_topic_0136383601_p3932152716545"><a id="en-us_topic_0136383601_p3932152716545"></a><a id="en-us_topic_0136383601_p3932152716545"></a><a href="#en-us_topic_0147129132_fig19404158142410">Figure 3</a> shows the configuration example. The configuration items are described as follows:</p>
+<a id="en-us_topic_0136383601_ul383142415218"></a><a id="en-us_topic_0136383601_ul383142415218"></a><ul id="en-us_topic_0136383601_ul383142415218"><li><strong id="b18839124963818"><a id="b18839124963818"></a><a id="b18839124963818"></a>EXPECT_PARAM</strong>: expected result of the user, which is used to check the output result. The number of data records must be the same as the number of output data records. A maximum of 10 data records can be entered.<p id="en-us_topic_0136383601_p1779071714180"><a id="en-us_topic_0136383601_p1779071714180"></a><a id="en-us_topic_0136383601_p1779071714180"></a><strong id="b53551150123813"><a id="b53551150123813"></a><a id="b53551150123813"></a>Expect0</strong>: first verification data</p>
+<p id="en-us_topic_0136383601_p191333211816"><a id="en-us_topic_0136383601_p191333211816"></a><a id="en-us_topic_0136383601_p191333211816"></a><strong id="b143711848395"><a id="b143711848395"></a><a id="b143711848395"></a>File Path</strong>: data verification file. You are not allowed to manually edit the file path.</p>
+</li></ul>
+<a id="en-us_topic_0136383601_ul123537566562"></a><a id="en-us_topic_0136383601_ul123537566562"></a><ul id="en-us_topic_0136383601_ul123537566562"><li><strong id="b1954376153910"><a id="b1954376153910"></a><a id="b1954376153910"></a>Precision Deviation</strong>: allowed precision deviation. The value range is [0, 1). The default value is <strong id="b85439653915"><a id="b85439653915"></a><a id="b85439653915"></a>0.2</strong>. A smaller value indicates higher precision.</li><li><strong id="b41991311123917"><a id="b41991311123917"></a><a id="b41991311123917"></a>Statistical Discrepancy</strong>: percentage of data whose precision deviation does not meet the threshold in the entire data set. The value range is (0, 1). The default value is <strong id="b1519971183911"><a id="b1519971183911"></a><a id="b1519971183911"></a>0.2</strong>. A smaller value indicates higher precision.</li></ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Figure  2</strong>  Configuration example of the Input tab page<a id="en-us_topic_0147129132_en-us_topic_0136383601_fig9804812123917"></a><br><img src="figures/configuration-example-of-the-input-tab-page.png" alt="" title="configuration-example-of-the-input-tab-page"></p>
+<p><strong>Figure  3</strong>  Configuration example of the Verify tab page<a id="en-us_topic_0147129132_fig19404158142410"></a><br><img src="figures/configuration-example-of-the-verify-tab-page.png" alt="" title="configuration-example-of-the-verify-tab-page"></p>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong><br>Tensor Engine performs data verification only after the following requirements are met: (1) The number of parameters in the  <strong>EXPECT_PARAM</strong>  area are the same as that in the  <strong>OUTPUT_PARAM</strong>  area in the  <strong>Run Configurations</strong>  dialog box. (2) No configuration option on the  <strong>Verify</strong>  tab page is left blank.  </p>
+</blockquote>
+</li>
+<li><p>After the configuration is complete, click  <strong>Save</strong>.</p>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="code-implementation.html" class="navigation navigation-prev " aria-label="Previous page: Code Implementation">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="project-running.html" class="navigation navigation-next " aria-label="Next page: Project Running ">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Project Compilation","level":"1.3.6","depth":2,"next":{"title":"Project Running ","level":"1.3.7","depth":2,"path":"project-running.md","ref":"project-running.md","articles":[]},"previous":{"title":"Code Implementation","level":"1.3.5","depth":2,"path":"code-implementation.md","ref":"code-implementation.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"imgUrl":"","topnav":[]},"plugins":["expandable-chapters","copy"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy":{},"expandableChapters":{"cssFile":["expandable-chapters-theme.css"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"website.css"}},"file":{"path":"project-compilation.md","mtime":"2019-04-11T16:23:38.256Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-11T16:23:40.851Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/clipboard.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/copy.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

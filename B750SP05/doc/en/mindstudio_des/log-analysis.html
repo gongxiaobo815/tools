@@ -1,0 +1,458 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Log Analysis · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters-theme.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-copy/css/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="black-box.html" />
+    
+    
+    <link rel="prev" href="performance-profiler.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="function-description.html">
+            
+                <a href="function-description.html">
+            
+                    
+                    Function Description
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="development-process-overview.html">
+            
+                <a href="development-process-overview.html">
+            
+                    
+                    Development Process Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="application-development.html">
+            
+                <a href="application-development.html">
+            
+                    
+                    Application Development
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="project-management.html">
+            
+                <a href="project-management.html">
+            
+                    
+                    Project Management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="graphical-service-orchestration.html">
+            
+                <a href="graphical-service-orchestration.html">
+            
+                    
+                    Graphical Service Orchestration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="model-management.html">
+            
+                <a href="model-management.html">
+            
+                    
+                    Model Management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="offline-model-conversion.html">
+            
+                <a href="offline-model-conversion.html">
+            
+                    
+                    Offline Model Conversion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="development-of-custom-operators.html">
+            
+                <a href="development-of-custom-operators.html">
+            
+                    
+                    Development of Custom Operators 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="dataset-management.html">
+            
+                <a href="dataset-management.html">
+            
+                    
+                    Dataset Management
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="performance-tuning.html">
+            
+                <a href="performance-tuning.html">
+            
+                    
+                    Performance Tuning
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="performance-profiler.html">
+            
+                <a href="performance-profiler.html">
+            
+                    
+                    Performance Profiler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.2" data-path="log-analysis.html">
+            
+                <a href="log-analysis.html">
+            
+                    
+                    Log Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="black-box.html">
+            
+                <a href="black-box.html">
+            
+                    
+                    Black Box
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Log Analysis</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="log-analysis">Log Analysis<a id="EN-US_TOPIC_0136465003"></a></h1>
+<p>Mind Studio provides a system-wide log collection and analysis solution for the NPU platform, improving the efficiency of locating runtime algorithm problems. A unified log format is adopted. Visualized analysis of cross-platform logs and runtime diagnosis runs in Web mode, improving the usability of the log analysis system.</p>
+<p><a href="#fig19001158112719">Figure 1</a>  shows the principle of log analysis of Mind Studio.</p>
+<p><strong>Figure  1</strong>  Principle diagram of log analysis<a id="fig19001158112719"></a><br><img src="figures/principle-diagram-of-log-analysis.png" alt="" title="principle-diagram-of-log-analysis"></p>
+<ul>
+<li>The device generates log and transfers log through the HDC channel.</li>
+<li>The host dumps and compresses logs.</li>
+<li>Mind Studio parses and displays logs.</li>
+<li>Logs stored on the host can be exported.</li>
+</ul>
+<p>Currently, logs of the following modules are supported: Dlog, Slog, IDE-daemon-host, IDE-daemon-device, Log-agent-host, HCCL, Framework, HiAI Engine, DVPP, Runtime, CCE, HDC, Driver, MDC, DEVMM, and Kernel.</p>
+<ul>
+<li>Slog: system logs</li>
+<li>HiAI Engine: model</li>
+<li>HCCL: Huawei collection communication library, which provides APIs for operations such as reduce and gather</li>
+<li>MDC: self-driving, including regulation control, space perception, monitoring, and positioning</li>
+<li>DEVMM: device memory management</li>
+<li>Kernel: system kernel</li>
+</ul>
+<p>Logs reported by each module are displayed in the IDE in a centralized manner.</p>
+<p>Output logs can be filtered by module, time, log type, and keyword. You can import offline logs for analysis. You can also export unfiltered logs and filtered logs.</p>
+<p><a href="#fig398810519388">Figure 2</a>  shows the log analysis result.</p>
+<p><strong>Figure  2</strong>  Log analysis<a id="fig398810519388"></a><br><img src="figures/log-analysis.png" alt="" title="log-analysis"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="performance-profiler.html" class="navigation navigation-prev " aria-label="Previous page: Performance Profiler">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="black-box.html" class="navigation navigation-next " aria-label="Next page: Black Box">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Log Analysis","level":"1.6.2","depth":2,"next":{"title":"Black Box","level":"1.6.3","depth":2,"path":"black-box.md","ref":"black-box.md","articles":[]},"previous":{"title":"Performance Profiler","level":"1.6.1","depth":2,"path":"performance-profiler.md","ref":"performance-profiler.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"imgUrl":"","topnav":[]},"plugins":["expandable-chapters","copy"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy":{},"expandableChapters":{"cssFile":["expandable-chapters-theme.css"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"website.css"}},"file":{"path":"log-analysis.md","mtime":"2019-04-12T02:53:00.940Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-12T02:53:03.486Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/clipboard.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/copy.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

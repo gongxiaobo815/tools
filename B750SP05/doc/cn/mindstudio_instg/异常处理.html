@@ -1,0 +1,901 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>异常处理 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters-theme.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-copy/css/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="FAQ.html" />
+    
+    
+    <link rel="prev" href="升级操作.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="简介.html">
+            
+                <a href="简介.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="隐私声明.html">
+            
+                <a href="隐私声明.html">
+            
+                    
+                    隐私声明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="关于第三方内容.html">
+            
+                <a href="关于第三方内容.html">
+            
+                    
+                    关于第三方内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="关于第三方工具.html">
+            
+                <a href="关于第三方工具.html">
+            
+                    
+                    关于第三方工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="关于个人数据.html">
+            
+                <a href="关于个人数据.html">
+            
+                    
+                    关于个人数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="环境准备.html">
+            
+                <a href="环境准备.html">
+            
+                    
+                    环境准备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="服务器端.html">
+            
+                <a href="服务器端.html">
+            
+                    
+                    服务器端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="服务器端环境要求.html">
+            
+                <a href="服务器端环境要求.html">
+            
+                    
+                    服务器端环境要求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="配置普通用户.html">
+            
+                <a href="配置普通用户.html">
+            
+                    
+                    配置普通用户
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="配置源.html">
+            
+                <a href="配置源.html">
+            
+                    
+                    配置源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="安装依赖.html">
+            
+                <a href="安装依赖.html">
+            
+                    
+                    安装依赖
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="客户端.html">
+            
+                <a href="客户端.html">
+            
+                    
+                    客户端
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="软件包准备.html">
+            
+                <a href="软件包准备.html">
+            
+                    
+                    软件包准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="安装Mind-Studio.html">
+            
+                <a href="安装Mind-Studio.html">
+            
+                    
+                    安装Mind Studio
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="软件完整性校验.html">
+            
+                <a href="软件完整性校验.html">
+            
+                    
+                    软件完整性校验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="安装.html">
+            
+                <a href="安装.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="引导安装.html">
+            
+                <a href="引导安装.html">
+            
+                    
+                    引导安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="手动安装.html">
+            
+                <a href="手动安装.html">
+            
+                    
+                    手动安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3" data-path="验证安装结果.html">
+            
+                <a href="验证安装结果.html">
+            
+                    
+                    验证安装结果
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="常用操作.html">
+            
+                <a href="常用操作.html">
+            
+                    
+                    常用操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="启动Mind-Studio.html">
+            
+                <a href="启动Mind-Studio.html">
+            
+                    
+                    启动Mind Studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" data-path="停止Mind-Studio.html">
+            
+                <a href="停止Mind-Studio.html">
+            
+                    
+                    停止Mind Studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.3" data-path="卸载Mind-Studio.html">
+            
+                <a href="卸载Mind-Studio.html">
+            
+                    
+                    卸载Mind Studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.4" data-path="查询Mind-Studio版本.html">
+            
+                <a href="查询Mind-Studio版本.html">
+            
+                    
+                    查询Mind Studio版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.5" data-path="配置openpgp公钥.html">
+            
+                <a href="配置openpgp公钥.html">
+            
+                    
+                    配置openpgp公钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.6" data-path="修改用户密码.html">
+            
+                <a href="修改用户密码.html">
+            
+                    
+                    修改用户密码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.7" data-path="修改IP地址.html">
+            
+                <a href="修改IP地址.html">
+            
+                    
+                    修改IP地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="版本升级.html">
+            
+                <a href="版本升级.html">
+            
+                    
+                    版本升级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="升级准备.html">
+            
+                <a href="升级准备.html">
+            
+                    
+                    升级准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="升级操作.html">
+            
+                <a href="升级操作.html">
+            
+                    
+                    升级操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.3" data-path="异常处理.html">
+            
+                <a href="异常处理.html">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="FAQ.html">
+            
+                <a href="FAQ.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="Mind-Studio安装时执行apt-get-update命令检查源配置出错.html">
+            
+                <a href="Mind-Studio安装时执行apt-get-update命令检查源配置出错.html">
+            
+                    
+                    Mind Studio安装时执行apt-get update命令检查源配置出错
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="安装依赖过程中提示Software-cycler（for-python）decorator（for-python）xxx-error.html">
+            
+                <a href="安装依赖过程中提示Software-cycler（for-python）decorator（for-python）xxx-error.html">
+            
+                    
+                    安装依赖过程中提示Software cycler（for python）decorator（for python）xxx error
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="Mind-Studio安装过程中报错.html">
+            
+                <a href="Mind-Studio安装过程中报错.html">
+            
+                    
+                    Mind Studio安装过程中报错
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="Mind-Studio无法正常启动.html">
+            
+                <a href="Mind-Studio无法正常启动.html">
+            
+                    
+                    Mind Studio无法正常启动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="Mind-Studio安装失败.html">
+            
+                <a href="Mind-Studio安装失败.html">
+            
+                    
+                    Mind Studio安装失败
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="卸载过程中MongoDB服务停止失败.html">
+            
+                <a href="卸载过程中MongoDB服务停止失败.html">
+            
+                    
+                    卸载过程中MongoDB服务停止失败
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="Mind-Studio不支持开机自启动.html">
+            
+                <a href="Mind-Studio不支持开机自启动.html">
+            
+                    
+                    Mind Studio不支持开机自启动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="Profiling安装失败.html">
+            
+                <a href="Profiling安装失败.html">
+            
+                    
+                    Profiling安装失败
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="软件包完整性校验返回WARNING或-FAIL.html">
+            
+                <a href="软件包完整性校验返回WARNING或-FAIL.html">
+            
+                    
+                    软件包完整性校验返回WARNING或 FAIL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="联机帮助无法查看文档.html">
+            
+                <a href="联机帮助无法查看文档.html">
+            
+                    
+                    联机帮助无法查看文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="开源第三方库说明.html">
+            
+                <a href="开源第三方库说明.html">
+            
+                    
+                    开源第三方库说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >异常处理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5F02;&#x5E38;&#x5904;&#x7406;">&#x5F02;&#x5E38;&#x5904;&#x7406;<a id="ZH-CN_TOPIC_0142803515"></a></h1>
+<p>&#x82E5;&#x5347;&#x7EA7;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#xFF0C;&#x5347;&#x7EA7;&#x754C;&#x9762;&#x5C06;&#x5F39;&#x51FA;&#x9519;&#x8BEF;&#x63D0;&#x793A;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5728;&#x201C;~/upgradeLogForMindStudio&#x201C;&#x76EE;&#x5F55;&#x4E2D;&#x67E5;&#x770B;&#x5F02;&#x5E38;&#x4FE1;&#x606F;&#x3002;&#x5347;&#x7EA7;&#x6D41;&#x7A0B;&#x5206;&#x522B;&#x5BF9;&#x5E94;&#x5982;&#x4E0B;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#xFF1A;</p>
+<p><strong>&#x8868; 1</strong>  &#x5347;&#x7EA7;&#x6D41;&#x7A0B;&#x76F8;&#x5173;&#x7684;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;</p>
+<p><a id="zh-cn_topic_0136383539_table1943615501617"></a></p>
+<table><thead align="left"><tr id="zh-cn_topic_0136383539_row643675015619"><th class="cellrowborder" valign="top" width="35.63%" id="mcps1.2.3.1.1"><p id="zh-cn_topic_0136383539_p1143618501066"><a id="zh-cn_topic_0136383539_p1143618501066"></a><a id="zh-cn_topic_0136383539_p1143618501066"></a>&#x65E5;&#x5FD7;&#x6587;&#x4EF6;</p>
+</th>
+<th class="cellrowborder" valign="top" width="64.37%" id="mcps1.2.3.1.2"><p id="zh-cn_topic_0136383539_p643715501466"><a id="zh-cn_topic_0136383539_p643715501466"></a><a id="zh-cn_topic_0136383539_p643715501466"></a>&#x8BF4;&#x660E;</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="zh-cn_topic_0136383539_row116483541863"><td class="cellrowborder" valign="top" width="35.63%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0136383539_p9650145418613"><a id="zh-cn_topic_0136383539_p9650145418613"></a><a id="zh-cn_topic_0136383539_p9650145418613"></a>stopMindStudio.log</p>
+</td>
+<td class="cellrowborder" valign="top" width="64.37%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0136383539_p1965010549614"><a id="zh-cn_topic_0136383539_p1965010549614"></a><a id="zh-cn_topic_0136383539_p1965010549614"></a>&#x8BB0;&#x5F55;&#x4E86;&#x5728;&#x505C;&#x6B62;Mind Studio &#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x76F8;&#x5173;&#x65E5;&#x5FD7;&#xFF0C;&#x5355;&#x72EC;&#x5347;&#x7EA7;Mind Studio&#x548C;Atlas 200 DK&#x5F00;&#x53D1;&#x677F;&#x90FD;&#x4F1A;&#x751F;&#x6210;&#x8BE5;&#x6587;&#x4EF6;&#x3002;</p>
+</td>
+</tr>
+<tr id="zh-cn_topic_0136383539_row14437850465"><td class="cellrowborder" valign="top" width="35.63%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0136383539_p543714501466"><a id="zh-cn_topic_0136383539_p543714501466"></a><a id="zh-cn_topic_0136383539_p543714501466"></a>upgradeMindStudio.log</p>
+</td>
+<td class="cellrowborder" valign="top" width="64.37%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0136383539_p1343719501466"><a id="zh-cn_topic_0136383539_p1343719501466"></a><a id="zh-cn_topic_0136383539_p1343719501466"></a>&#x8BB0;&#x5F55;&#x4E86;&#x5378;&#x8F7D;&#x539F;&#x6709;Mind Studio&#x3001;&#x4FDD;&#x5B58;&#x7528;&#x6237;&#x6570;&#x636E;&#x3001;&#x5B89;&#x88C5;&#x65B0;&#x7684;Mind Studio&#x3001;&#x6062;&#x590D;&#x7528;&#x6237;&#x6570;&#x636E;&#x3001;&#x5B89;&#x88C5;DDK&#x8FC7;&#x7A0B;&#x7684;&#x76F8;&#x5173;&#x65E5;&#x5FD7;&#x3002;</p>
+</td>
+</tr>
+<tr id="zh-cn_topic_0136383539_row114378504613"><td class="cellrowborder" valign="top" width="35.63%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0136383539_p2043795019615"><a id="zh-cn_topic_0136383539_p2043795019615"></a><a id="zh-cn_topic_0136383539_p2043795019615"></a>upgradeMini.log</p>
+</td>
+<td class="cellrowborder" valign="top" width="64.37%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0136383539_p114376501761"><a id="zh-cn_topic_0136383539_p114376501761"></a><a id="zh-cn_topic_0136383539_p114376501761"></a>&#x8BB0;&#x5F55;&#x4E86;&#x4F20;&#x8F93;&#x5305;&#x81F3;Atlas 200 DK&#x5F00;&#x53D1;&#x677F;&#xFF0C;&#x91CD;&#x542F;Atlas 200 DK&#x5F00;&#x53D1;&#x677F;&#x8FC7;&#x7A0B;&#x7684;&#x76F8;&#x5173;&#x65E5;&#x5FD7;&#x3002;</p>
+</td>
+</tr>
+<tr id="zh-cn_topic_0136383539_row184371450765"><td class="cellrowborder" valign="top" width="35.63%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0136383539_p114374501167"><a id="zh-cn_topic_0136383539_p114374501167"></a><a id="zh-cn_topic_0136383539_p114374501167"></a>startMindStudio.log</p>
+</td>
+<td class="cellrowborder" valign="top" width="64.37%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0136383539_p643714505615"><a id="zh-cn_topic_0136383539_p643714505615"></a><a id="zh-cn_topic_0136383539_p643714505615"></a>&#x8BB0;&#x5F55;&#x4E86;&#x542F;&#x52A8;Mind Studio&#x8FC7;&#x7A0B;&#x4E2D;&#x7684;&#x76F8;&#x5173;&#x65E5;&#x5FD7;&#xFF0C;&#x5355;&#x72EC;&#x5347;&#x7EA7;Mind Studio&#x548C;Atlas 200 DK&#x5F00;&#x53D1;&#x677F;&#x90FD;&#x4F1A;&#x751F;&#x6210;&#x8BE5;&#x6587;&#x4EF6;&#x3002;</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<ul>
+<li>&#x82E5;&#x5347;&#x7EA7;&#x8FC7;&#x7A0B;&#x4E2D;&#x51FA;&#x73B0;&#x201C;Unpacking package failed&#x201D;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF0C;&#x67E5;&#x770B;&#x201C;/tmp&#x201C;&#x76EE;&#x5F55;&#x4E0B;&#x662F;&#x5426;&#x5B58;&#x5728;upgradeassembly&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5982;&#x679C;&#x5B58;&#x5728;&#xFF0C;&#x624B;&#x52A8;&#x5220;&#x9664;upgradeassembly&#x6587;&#x4EF6;&#x5939;&#x540E;&#x518D;&#x6B21;&#x91CD;&#x8BD5;&#x5347;&#x7EA7;&#x529F;&#x80FD;&#x3002;</li>
+<li>&#x82E5;&#x5347;&#x7EA7;&#x8FC7;&#x7A0B;&#x4E2D;&#x53EA;&#x6709;stopMindStudio.log&#x6587;&#x4EF6;&#xFF0C;&#x5219;&#x68C0;&#x67E5;&#x65E5;&#x5FD7;&#x5185;&#x5BB9;&#x5E76;&#x4FEE;&#x590D;&#x540E;&#x91CD;&#x542F;Mind Studio&#x5F00;&#x59CB;&#x91CD;&#x65B0;&#x5347;&#x7EA7;&#x3002;</li>
+<li><p>&#x82E5;&#x53EA;&#x6709;upgradeMindStudio.log&#x6587;&#x4EF6;&#x800C;&#x6CA1;&#x6709;startMindStudio.log&#x6587;&#x4EF6;&#xFF0C;&#x5219;&#x5728;&#x201C;~/upgrade/scripts&#x201C;&#x4E2D;&#x8F93;&#x5165;  <strong>bash mind_studio.sh rollback</strong>&#x8FDB;&#x884C;&#x56DE;&#x6EDA;&#x64CD;&#x4F5C;&#xFF0C;&#x6062;&#x590D;&#x5230;&#x539F;&#x6765;&#x7248;&#x672C;&#x540E;&#xFF0C;&#x9009;&#x62E9;&#x91CD;&#x65B0;&#x542F;&#x52A8;&#x5E76;&#x6267;&#x884C;&#x5347;&#x7EA7;&#x64CD;&#x4F5C;&#x3002;</p>
+</li>
+<li><p>&#x82E5;&#x53EA;&#x6709;<strong>startMindStudio.log</strong>&#x6587;&#x4EF6;&#xFF0C;&#x53EA;&#x9700;&#x5728;&#x539F;&#x6765;&#x5B89;&#x88C5;&#x76EE;&#x5F55;&#x91CD;&#x542F;Mind Studio&#x5373;&#x53EF;&#x5B8C;&#x6210;&#x5347;&#x7EA7;&#x8FC7;&#x7A0B;&#x3002;</p>
+</li>
+<li><p>Atlas 200 Developer Kit&#x5F00;&#x53D1;&#x677F;&#x5347;&#x7EA7;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x4F1A;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x811A;&#x672C;&#xFF0C;&#x811A;&#x672C;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#xFF08;&#x5F53;&#x9519;&#x8BEF;&#x65F6;&#x4F1A;&#x5728;&#x9875;&#x9762;&#x4E0A;&#x663E;&#x793A;&#xFF09;&#x8BF4;&#x660E;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>&#x8FD4;&#x56DE;&#x503C;0&#x8868;&#x793A;&#x811A;&#x672C;&#x6267;&#x884C;&#x6210;&#x529F;&#x3002;</li>
+<li>&#x8FD4;&#x56DE;&#x503C;1&#x8868;&#x793A;Atlas 200 Developer Kit&#x5F00;&#x8005;&#x677F;&#x4E0A;sd&#x5361;&#x7A7A;&#x95F4;&#x4E0D;&#x8DB3;&#xFF0C;&#x5728;&#x9875;&#x9762;&#x663E;&#x793A;&#x3002;</li>
+<li>&#x8FD4;&#x56DE;&#x503C;2&#x8868;&#x793A;&#x811A;&#x672C;&#x89E3;&#x538B;&#x7F29;&#x5931;&#x8D25;&#xFF0C;&#x5728;&#x9875;&#x9762;&#x663E;&#x793A;&#x3002;</li>
+<li><p>&#x5176;&#x4ED6;&#x8FD4;&#x56DE;&#x503C;&#x8868;&#x793A;&#x5F53;&#x524D;&#x672A;&#x5B9A;&#x4E49;&#xFF0C;&#x5728;&#x9875;&#x9762;&#x663E;&#x793A;&#x3002;</p>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>&#x8BF4;&#x660E;&#xFF1A;</strong><br>&#x8BF7;&#x786E;&#x4FDD;Atlas 200 Developer Kit&#x5F00;&#x53D1;&#x677F;&#x91CD;&#x542F;&#x540E;&#x80FD;&#x591F;&#x6062;&#x590D;IP&#x5730;&#x5740;&#xFF0C;&#x82E5;&#x4E0D;&#x80FD;&#x6062;&#x590D;&#xFF0C;&#x5219;&#x624B;&#x52A8;&#x914D;&#x7F6E;IP&#x3002;Atlas 200 Developer Kit&#x5F00;&#x53D1;&#x677F;&#x5347;&#x7EA7;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;&#xFF0C;&#x4FDD;&#x5B58;&#x5728;&#x201C;~/upgradeLogForMindStudio&#x201C;&#x76EE;&#x5F55;&#x4E0B;&#x7684;<strong>upgradeMini.log</strong>&#x6587;&#x4EF6;&#x4E2D;&#x3002;  </p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="升级操作.html" class="navigation navigation-prev " aria-label="Previous page: 升级操作">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="FAQ.html" class="navigation navigation-next " aria-label="Next page: FAQ">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"异常处理","level":"1.7.3","depth":2,"next":{"title":"FAQ","level":"1.8","depth":1,"path":"FAQ.md","ref":"FAQ.md","articles":[{"title":"Mind Studio安装时执行apt-get update命令检查源配置出错","level":"1.8.1","depth":2,"path":"Mind-Studio安装时执行apt-get-update命令检查源配置出错.md","ref":"Mind-Studio安装时执行apt-get-update命令检查源配置出错.md","articles":[]},{"title":"安装依赖过程中提示Software cycler（for python）decorator（for python）xxx error","level":"1.8.2","depth":2,"path":"安装依赖过程中提示Software-cycler（for-python）decorator（for-python）xxx-error.md","ref":"安装依赖过程中提示Software-cycler（for-python）decorator（for-python）xxx-error.md","articles":[]},{"title":"Mind Studio安装过程中报错","level":"1.8.3","depth":2,"path":"Mind-Studio安装过程中报错.md","ref":"Mind-Studio安装过程中报错.md","articles":[]},{"title":"Mind Studio无法正常启动","level":"1.8.4","depth":2,"path":"Mind-Studio无法正常启动.md","ref":"Mind-Studio无法正常启动.md","articles":[]},{"title":"Mind Studio安装失败","level":"1.8.5","depth":2,"path":"Mind-Studio安装失败.md","ref":"Mind-Studio安装失败.md","articles":[]},{"title":"卸载过程中MongoDB服务停止失败","level":"1.8.6","depth":2,"path":"卸载过程中MongoDB服务停止失败.md","ref":"卸载过程中MongoDB服务停止失败.md","articles":[]},{"title":"Mind Studio不支持开机自启动","level":"1.8.7","depth":2,"path":"Mind-Studio不支持开机自启动.md","ref":"Mind-Studio不支持开机自启动.md","articles":[]},{"title":"Profiling安装失败","level":"1.8.8","depth":2,"path":"Profiling安装失败.md","ref":"Profiling安装失败.md","articles":[]},{"title":"软件包完整性校验返回WARNING或 FAIL","level":"1.8.9","depth":2,"path":"软件包完整性校验返回WARNING或-FAIL.md","ref":"软件包完整性校验返回WARNING或-FAIL.md","articles":[]},{"title":"联机帮助无法查看文档","level":"1.8.10","depth":2,"path":"联机帮助无法查看文档.md","ref":"联机帮助无法查看文档.md","articles":[]}]},"previous":{"title":"升级操作","level":"1.7.2","depth":2,"path":"升级操作.md","ref":"升级操作.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"imgUrl":"","topnav":[]},"plugins":["expandable-chapters","copy"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy":{},"expandableChapters":{"cssFile":["expandable-chapters-theme.css"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"website.css"}},"file":{"path":"异常处理.md","mtime":"2019-04-12T06:45:26.836Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-12T06:45:29.431Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/clipboard.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/copy.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

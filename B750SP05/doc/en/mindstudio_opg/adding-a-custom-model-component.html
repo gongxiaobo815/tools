@@ -1,0 +1,1260 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Adding a Custom Model Component · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters-theme.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-copy/css/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="encrypting-and-decrypting-a-custom-model.html" />
+    
+    
+    <link rel="prev" href="using-the-ui.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="function-description.html">
+            
+                <a href="function-description.html">
+            
+                    
+                    Function Description
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="user-management.html">
+            
+                <a href="user-management.html">
+            
+                    
+                    User Management
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="logging-in.html">
+            
+                <a href="logging-in.html">
+            
+                    
+                    Logging In
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="resetting-the-password.html">
+            
+                <a href="resetting-the-password.html">
+            
+                    
+                    Resetting the Password
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="changing-the-password.html">
+            
+                <a href="changing-the-password.html">
+            
+                    
+                    Changing the Password
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="logging-out.html">
+            
+                <a href="logging-out.html">
+            
+                    
+                    Logging Out
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="querying-security-logs.html">
+            
+                <a href="querying-security-logs.html">
+            
+                    
+                    Querying Security Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="project-management.html">
+            
+                <a href="project-management.html">
+            
+                    
+                    Project Management
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="overview-0.html">
+            
+                <a href="overview-0.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="basic-operations.html">
+            
+                <a href="basic-operations.html">
+            
+                    
+                    Basic Operations
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="creating-deleting-a-project.html">
+            
+                <a href="creating-deleting-a-project.html">
+            
+                    
+                    Creating/Deleting a Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="uploading-downloading-a-project.html">
+            
+                <a href="uploading-downloading-a-project.html">
+            
+                    
+                    Uploading/Downloading a Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="creating-deleting-a-file.html">
+            
+                <a href="creating-deleting-a-file.html">
+            
+                    
+                    Creating/Deleting a File
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="uploading-a-file-folder.html">
+            
+                <a href="uploading-a-file-folder.html">
+            
+                    
+                    Uploading a File/Folder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.5" data-path="opening-a-project.html">
+            
+                <a href="opening-a-project.html">
+            
+                    
+                    Opening a Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6" data-path="closing-a-project.html">
+            
+                <a href="closing-a-project.html">
+            
+                    
+                    Closing a Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.7" data-path="compiling-a-project.html">
+            
+                <a href="compiling-a-project.html">
+            
+                    
+                    Compiling a Project 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.8" data-path="running-a-project.html">
+            
+                <a href="running-a-project.html">
+            
+                    
+                    Running a Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.9" data-path="supported-file-formats.html">
+            
+                <a href="supported-file-formats.html">
+            
+                    
+                    Supported File Formats
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="dataset-management.html">
+            
+                <a href="dataset-management.html">
+            
+                    
+                    Dataset Management
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="overview-1.html">
+            
+                <a href="overview-1.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="dataset-management-in-the-projects-explorer-window.html">
+            
+                <a href="dataset-management-in-the-projects-explorer-window.html">
+            
+                    
+                    Dataset Management in the Projects Explorer Window
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="viewing-the-datasets.html">
+            
+                <a href="viewing-the-datasets.html">
+            
+                    
+                    Viewing the Datasets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="importing-a-dataset.html">
+            
+                <a href="importing-a-dataset.html">
+            
+                    
+                    Importing a Dataset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="viewing-the-dataset-properties.html">
+            
+                <a href="viewing-the-dataset-properties.html">
+            
+                    
+                    Viewing the Dataset Properties
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="generating-a-cpp-file.html">
+            
+                <a href="generating-a-cpp-file.html">
+            
+                    
+                    Generating a .cpp File
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.5" data-path="selecting-images.html">
+            
+                <a href="selecting-images.html">
+            
+                    
+                    Selecting Images
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.6" data-path="deleting-a-custom-dataset.html">
+            
+                <a href="deleting-a-custom-dataset.html">
+            
+                    
+                    Deleting a Custom Dataset
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="dataset-management-in-the-model-zoo-explorer-window.html">
+            
+                <a href="dataset-management-in-the-model-zoo-explorer-window.html">
+            
+                    
+                    Dataset Management in the Model Zoo Explorer Window
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="viewing-the-datasets-2.html">
+            
+                <a href="viewing-the-datasets-2.html">
+            
+                    
+                    Viewing the Datasets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="copying-a-path.html">
+            
+                <a href="copying-a-path.html">
+            
+                    
+                    Copying a Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" data-path="refreshing.html">
+            
+                <a href="refreshing.html">
+            
+                    
+                    Refreshing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="model-management.html">
+            
+                <a href="model-management.html">
+            
+                    
+                    Model Management
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="overview-3.html">
+            
+                <a href="overview-3.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="model-conversion.html">
+            
+                <a href="model-conversion.html">
+            
+                    
+                    Model Conversion
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="using-the-ui.html">
+            
+                <a href="using-the-ui.html">
+            
+                    
+                    Using the UI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.2.1.1" data-path="adding-a-custom-model-component.html">
+            
+                <a href="adding-a-custom-model-component.html">
+            
+                    
+                    Adding a Custom Model Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.1.2" data-path="encrypting-and-decrypting-a-custom-model.html">
+            
+                <a href="encrypting-and-decrypting-a-custom-model.html">
+            
+                    
+                    Encrypting and Decrypting a Custom Model 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="using-command-lines.html">
+            
+                <a href="using-command-lines.html">
+            
+                    
+                    Using Command Lines
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.2.1" data-path="convert-model-using-the-omg-command.html">
+            
+                <a href="convert-model-using-the-omg-command.html">
+            
+                    
+                    Convert Model Using the omg Command
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="model-management-in-the-projects-explorer-window.html">
+            
+                <a href="model-management-in-the-projects-explorer-window.html">
+            
+                    
+                    Model Management in the Projects Explorer Window
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="viewing-the-models.html">
+            
+                <a href="viewing-the-models.html">
+            
+                    
+                    Viewing the Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" data-path="adding-a-caffe-model-component.html">
+            
+                <a href="adding-a-caffe-model-component.html">
+            
+                    
+                    Adding a Caffe Model Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.3" data-path="viewing-model-properties.html">
+            
+                <a href="viewing-model-properties.html">
+            
+                    
+                    Viewing Model Properties
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.4" data-path="viewing-the-network-structure-of-a-model.html">
+            
+                <a href="viewing-the-network-structure-of-a-model.html">
+            
+                    
+                    Viewing the Network Structure of a Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.5" data-path="deleting-a-model-component.html">
+            
+                <a href="deleting-a-model-component.html">
+            
+                    
+                    Deleting a Model Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="model-management-in-the-model-zoo-explorer-window.html">
+            
+                <a href="model-management-in-the-model-zoo-explorer-window.html">
+            
+                    
+                    Model Management in the Model Zoo Explorer Window
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.4.1" data-path="viewing-the-models-4.html">
+            
+                <a href="viewing-the-models-4.html">
+            
+                    
+                    Viewing the Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.2" data-path="adding-a-custom-model-component-5.html">
+            
+                <a href="adding-a-custom-model-component-5.html">
+            
+                    
+                    Adding a Custom Model Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.3" data-path="copying-a-path-6.html">
+            
+                <a href="copying-a-path-6.html">
+            
+                    
+                    Copying a Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.4" data-path="refreshing-a-folder.html">
+            
+                <a href="refreshing-a-folder.html">
+            
+                    
+                    Refreshing a Folder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.5" data-path="importing-an-offline-model.html">
+            
+                <a href="importing-an-offline-model.html">
+            
+                    
+                    Importing an Offline Model 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="reference.html">
+            
+                <a href="reference.html">
+            
+                    
+                    Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.5.1" data-path="aipp-configuration.html">
+            
+                <a href="aipp-configuration.html">
+            
+                    
+                    AIPP Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.2" data-path="quantization-configuration.html">
+            
+                <a href="quantization-configuration.html">
+            
+                    
+                    Quantization Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Adding a Custom Model Component</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="adding-a-custom-model-component">Adding a Custom Model Component<a id="EN-US_TOPIC_0144442632"></a></h1>
+<p>You can add a custom model component in either of the following ways:</p>
+<ul>
+<li>In the orchestration window of the .mind file, choose  <strong>Tool &gt; My Models</strong>.</li>
+<li>Right-click a project and choose  <strong>Convert Model...</strong>  from the shortcut menu, or choose  <strong>Tools &gt; Convert Model...</strong>  on the GUI.</li>
+</ul>
+<p>The following describes the two ways.</p>
+<h2 id="adding-a-custom-model-component-in-the-new-model-dialog-box">Adding a Custom Model Component in the New Model Dialog Box<a id="en-us_topic_0136383733_section75441131122120"></a></h2>
+<ol>
+<li><p>Click  <img src="figures/en-us_image_0157401322.png" alt="">  on the right of<strong> My Models</strong>  to add a custom model component, as shown in  <a href="#en-us_topic_0136383733_fig528071319317">Figure 1</a>.</p>
+<p><strong>Figure  1</strong>  Adding a custom model<a id="en-us_topic_0136383733_fig528071319317"></a><br><img src="figures/adding-a-custom-model.png" alt="" title="adding-a-custom-model"></p>
+</li>
+<li><p>The  <strong>New Model</strong>  window is displayed, as shown in  <a href="#en-us_topic_0136383733_fig1932112172810">Figure 2</a>.</p>
+<p><strong>Figure  2</strong>  New Model dialog box<a id="en-us_topic_0136383733_fig1932112172810"></a><br><img src="figures/new-model-dialog-box.png" alt="" title="new-model-dialog-box"></p>
+<p>Select  <strong>Caffe</strong>,  <strong>Tensorflow</strong>, or  <strong>OfflineModel</strong>  from the  <strong>Model type</strong>  drop-down list box.</p>
+<ul>
+<li><strong>Caffe</strong>: The model file and weight file must be configured.</li>
+<li><strong>Tensorflow</strong>: The model file must be configured.</li>
+<li><strong>OfflineModel</strong>: At least one model path &#xFF08;device model path or emulator model path&#xFF09; must be configured.</li>
+</ul>
+</li>
+<li><p>Click  <img src="figures/en-us_image_0157401463.png" alt="">  on the right of  <strong>Model File</strong>  to select a model file.</p>
+<p>See  <a href="#en-us_topic_0136383733_fig1279451812240">Figure 3</a>.</p>
+<p><strong>Figure  3</strong>  Selecting a model file<a id="en-us_topic_0136383733_fig1279451812240"></a><br><img src="figures/selecting-a-model-file.png" alt="" title="selecting-a-model-file"></p>
+<ul>
+<li>The name of the model file is automatically filled in the  <strong>Model Name</strong>  text box. After selecting a model file, you can change the model name as required.</li>
+<li>The tool parses the model file and obtains the default  <strong>Input Shape</strong>  of the model. &#xFF08;A TensorFlow model or a model with a custom layer does not support parsing. In this case, you can enter the content in the  <strong>Input Shape</strong>  text box. The format of a Caffe model is<strong> input_name:n,c,h,w</strong>. The format of a TensorFlow model is  <strong>input_name:n,h,w,c</strong>. Multiple inputs need to be separated by semicolons (;&#xFF09;. For example:  <strong>data1:1,3,224,224;data2:1,3,32,32</strong></li>
+</ul>
+</li>
+<li><p>After you select a model file, the  <img src="figures/en-us_image_0157401470.png" alt="">  button is displayed on the right of  <strong>Model File</strong>. Click this button. The original network structure of the model is displayed. You can set the layer which needs to be reported. &#xFF08;After conversion, the output of the selected layer is directly used as the output of the offline model.&#xFF09; If  <strong>Report </strong>is set to  <strong>Yes</strong>  for a layer, the layer turns green. See  <a href="#en-us_topic_0136383733_fig1120762375714">Figure 4</a>.</p>
+<p><strong>Figure  4</strong>  Model network structure<a id="en-us_topic_0136383733_fig1120762375714"></a><br><img src="figures/model-network-structure.png" alt="" title="model-network-structure"></p>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong><br>Currently, the  <img src="figures/en-us_image_0160830178.png" alt="">  button is displayed on the right of  <strong>Model File</strong>  only after you select a Caffe model file. This button is not displayed when a TensorFlow model file is selected.  </p>
+</blockquote>
+</li>
+<li><p>Set  <strong>Quantization</strong>  to  <strong>On</strong>. Then you can perform quantization settings.</p>
+<p>You can select  <strong>IMAGE</strong>  or  <strong>BINARY</strong>  from the  <strong>Input Type</strong>  drop-down list box.</p>
+<ul>
+<li>If you select<strong> IMAGE</strong>, image folders are available to  <strong>Images File</strong>.</li>
+<li>If you select  <strong>BINARY</strong>, bin files are available to  <strong>Images File</strong>.</li>
+</ul>
+<p>You are advised to select a maximum of 50 images for quantization. Otherwise, the process may time out due to too long quantization time &#xFF08;3 hours&#xFF09;. See  <a href="#en-us_topic_0136383733_fig327015515813">Figure 5</a>.</p>
+<p><strong>Figure  5</strong>  Quantization configuration<a id="en-us_topic_0136383733_fig327015515813"></a><br><img src="figures/quantization-configuration.png" alt="" title="quantization-configuration"></p>
+</li>
+<li><p>Click  <strong>Advanced</strong>  to set  <strong>Image Format</strong>,  <strong>Mean Less[R][G][B]</strong>, and  <strong>Standard Deviation</strong>. Then, click  <strong>ok</strong>  to make the settings take effect, as shown in  <a href="#en-us_topic_0136383733_fig1130223145813">Figure 6</a>.</p>
+<p><strong>Figure  6</strong>  Advanced quantization configuration<a id="en-us_topic_0136383733_fig1130223145813"></a><br><img src="figures/advanced-quantization-configuration.png" alt="" title="advanced-quantization-configuration"></p>
+<p>If the quantization switch is turned on, you can view the configuration information about quantization parameters in the  <strong>convertModel.log</strong>  file of the corresponding project after the model conversion is complete. For details about the quantization configuration, see  <a href="quantization-configuration.html">Quantization Configuration</a>.</p>
+</li>
+<li><p>Click  <strong>Optional Options</strong>. More options can be configured, as shown in  <a href="#en-us_topic_0136383733_fig18427125518589">Figure 7</a>.</p>
+<p><strong>Figure  7</strong>  Optional Options<a id="en-us_topic_0136383733_fig18427125518589"></a><br><img src="figures/optional-options.png" alt="" title="optional-options"></p>
+<p><a href="#en-us_topic_0136383733_table20355231172415">Table 1</a>  lists the configuration parameters.</p>
+<p><strong>Table  1</strong>  Parameter description of the Optional Options area</p>
+<p><a id="en-us_topic_0136383733_table20355231172415"></a></p>
+<table><thead align="left"><tr id="en-us_topic_0136383733_row935517313245"><th class="cellrowborder" valign="top" width="32.9%" id="mcps1.2.3.1.1"><p id="en-us_topic_0136383733_p13355831172417"><a id="en-us_topic_0136383733_p13355831172417"></a><a id="en-us_topic_0136383733_p13355831172417"></a>Parameter</p>
+</th>
+<th class="cellrowborder" valign="top" width="67.10000000000001%" id="mcps1.2.3.1.2"><p id="en-us_topic_0136383733_p7355631192413"><a id="en-us_topic_0136383733_p7355631192413"></a><a id="en-us_topic_0136383733_p7355631192413"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="en-us_topic_0136383733_row14355431122414"><td class="cellrowborder" valign="top" width="32.9%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0136383733_p13551031192410"><a id="en-us_topic_0136383733_p13551031192410"></a><a id="en-us_topic_0136383733_p13551031192410"></a><strong id="en-us_topic_0136383733_b2810145410298"><a id="en-us_topic_0136383733_b2810145410298"></a><a id="en-us_topic_0136383733_b2810145410298"></a>Operator Plugin Path</strong></p>
+</td>
+<td class="cellrowborder" valign="top" width="67.10000000000001%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0136383733_p83551331102411"><a id="en-us_topic_0136383733_p83551331102411"></a><a id="en-us_topic_0136383733_p83551331102411"></a>Operator plug-in path.</p>
+<p id="en-us_topic_0136383733_p756204118256"><a id="en-us_topic_0136383733_p756204118256"></a><a id="en-us_topic_0136383733_p756204118256"></a>If there are custom development operators for the imported model, you need to import them to the path.</p>
+</td>
+</tr>
+<tr id="row330468173"><td class="cellrowborder" valign="top" width="32.9%" headers="mcps1.2.3.1.1 "><p id="p1404611178"><a id="p1404611178"></a><a id="p1404611178"></a><strong id="en-us_topic_0136383733_b8583173192710"><a id="en-us_topic_0136383733_b8583173192710"></a><a id="en-us_topic_0136383733_b8583173192710"></a>Input Image Preprocess</strong></p>
+</td>
+<td class="cellrowborder" valign="top" width="67.10000000000001%" headers="mcps1.2.3.1.2 "><p id="p1434641712"><a id="p1434641712"></a><a id="p1434641712"></a>Advanced image preprocessing (AIPP) configuration. This parameter is enabled by default. You can disable it if you do not need to set it. If this parameter is enabled, you can view the parameter settings in the <strong id="b1827694675216"><a id="b1827694675216"></a><a id="b1827694675216"></a>convertModel.log</strong> file in the corresponding project directory after model conversion is complete.</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383733_row9356183122412"><td class="cellrowborder" valign="top" width="32.9%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0136383733_p7356631112417"><a id="en-us_topic_0136383733_p7356631112417"></a><a id="en-us_topic_0136383733_p7356631112417"></a>Input Image Format</p>
+</td>
+<td class="cellrowborder" valign="top" width="67.10000000000001%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0136383733_p1796414920273"><a id="en-us_topic_0136383733_p1796414920273"></a><a id="en-us_topic_0136383733_p1796414920273"></a>Input image format. The default format is<strong id="b382384725214"><a id="b382384725214"></a><a id="b382384725214"></a> YUV420SP_U8</strong>.</p>
+<p id="en-us_topic_0136383733_p7356173110249"><a id="en-us_topic_0136383733_p7356173110249"></a><a id="en-us_topic_0136383733_p7356173110249"></a>Options: <strong id="b179265015213"><a id="b179265015213"></a><a id="b179265015213"></a>YUV420SP_U8</strong>, <strong id="b1979285012525"><a id="b1979285012525"></a><a id="b1979285012525"></a>XRGB8888_U8</strong>, and <strong id="b37921050165212"><a id="b37921050165212"></a><a id="b37921050165212"></a>RGB888_U8</strong>.</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383733_row10356193132411"><td class="cellrowborder" valign="top" width="32.9%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0136383733_p235643120248"><a id="en-us_topic_0136383733_p235643120248"></a><a id="en-us_topic_0136383733_p235643120248"></a>Input Image Size[W|H]</p>
+</td>
+<td class="cellrowborder" valign="top" width="67.10000000000001%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0136383733_p16922188182811"><a id="en-us_topic_0136383733_p16922188182811"></a><a id="en-us_topic_0136383733_p16922188182811"></a>Input image size. The default value is obtained based on the 128-pixel aligned width and 16-pixel aligned height of the input layer in the model file.</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383733_row735612314247"><td class="cellrowborder" valign="top" width="32.9%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0136383733_p7356143182412"><a id="en-us_topic_0136383733_p7356143182412"></a><a id="en-us_topic_0136383733_p7356143182412"></a>Image Format Conversion</p>
+</td>
+<td class="cellrowborder" valign="top" width="67.10000000000001%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0136383733_p11356143152410"><a id="en-us_topic_0136383733_p11356143152410"></a><a id="en-us_topic_0136383733_p11356143152410"></a>Color gamut conversion. This function is enabled by default.</p>
+<p id="en-us_topic_0136383733_p145231143175116"><a id="en-us_topic_0136383733_p145231143175116"></a><a id="en-us_topic_0136383733_p145231143175116"></a>This function needs to be enabled when the format of the input image is different from that of the model processing file.</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383733_row1235693110249"><td class="cellrowborder" valign="top" width="32.9%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0136383733_p835620314242"><a id="en-us_topic_0136383733_p835620314242"></a><a id="en-us_topic_0136383733_p835620314242"></a>Model Image Format</p>
+</td>
+<td class="cellrowborder" valign="top" width="67.10000000000001%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0136383733_p2140841182817"><a id="en-us_topic_0136383733_p2140841182817"></a><a id="en-us_topic_0136383733_p2140841182817"></a>Format of the model processing image. The default format is<strong id="b124805215534"><a id="b124805215534"></a><a id="b124805215534"></a> BGR888_U8</strong>.</p>
+<p id="en-us_topic_0136383733_p8801354162815"><a id="en-us_topic_0136383733_p8801354162815"></a><a id="en-us_topic_0136383733_p8801354162815"></a>Options: <strong id="b610518111532"><a id="b610518111532"></a><a id="b610518111532"></a>YUV444SP_U8</strong>, <strong id="b810561116537"><a id="b810561116537"></a><a id="b810561116537"></a>YVU444SP_U8</strong>, <strong id="b171051117539"><a id="b171051117539"></a><a id="b171051117539"></a>RGB888_U8</strong>,<strong id="b810551145316"><a id="b810551145316"></a><a id="b810551145316"></a> BGR888_U8</strong>, and <strong id="b610581115316"><a id="b610581115316"></a><a id="b610581115316"></a>GRAY</strong></p>
+<p id="en-us_topic_0136383733_p1435613132415"><a id="en-us_topic_0136383733_p1435613132415"></a><a id="en-us_topic_0136383733_p1435613132415"></a>An option can be selected after color gamut conversion is enabled.</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383733_row635693119242"><td class="cellrowborder" valign="top" width="32.9%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0136383733_p1356123182418"><a id="en-us_topic_0136383733_p1356123182418"></a><a id="en-us_topic_0136383733_p1356123182418"></a>Crop Start Loc[W|H]</p>
+</td>
+<td class="cellrowborder" valign="top" width="67.10000000000001%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0136383733_p1735653110243"><a id="en-us_topic_0136383733_p1735653110243"></a><a id="en-us_topic_0136383733_p1735653110243"></a>Start position of image cropping. This parameter is disabled by default. After enabling it, you can set the start position.</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383733_row1343419181294"><td class="cellrowborder" valign="top" width="32.9%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0136383733_p6435101813296"><a id="en-us_topic_0136383733_p6435101813296"></a><a id="en-us_topic_0136383733_p6435101813296"></a>Mean Less</p>
+</td>
+<td class="cellrowborder" valign="top" width="67.10000000000001%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0136383733_p162041033102915"><a id="en-us_topic_0136383733_p162041033102915"></a><a id="en-us_topic_0136383733_p162041033102915"></a>Mean reduction values. The mean reduction function is enabled by default.</p>
+<p id="en-us_topic_0136383733_p17435918142918"><a id="en-us_topic_0136383733_p17435918142918"></a><a id="en-us_topic_0136383733_p17435918142918"></a>The default values of the three channels are <strong id="b332416360537"><a id="b332416360537"></a><a id="b332416360537"></a>104</strong>, <strong id="b1832453675317"><a id="b1832453675317"></a><a id="b1832453675317"></a>117</strong>, and <strong id="b7324636175318"><a id="b7324636175318"></a><a id="b7324636175318"></a>123</strong>, respectively.</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383733_row2730133718293"><td class="cellrowborder" valign="top" width="32.9%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0136383733_p1973133772920"><a id="en-us_topic_0136383733_p1973133772920"></a><a id="en-us_topic_0136383733_p1973133772920"></a>Multiplying Factor</p>
+</td>
+<td class="cellrowborder" valign="top" width="67.10000000000001%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0136383733_p16731113742914"><a id="en-us_topic_0136383733_p16731113742914"></a><a id="en-us_topic_0136383733_p16731113742914"></a>Multiplication coefficient (standard deviation or reciprocal of (Max &#x2013; Min)). This parameter is disabled by default.</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383733_row1689871543018"><td class="cellrowborder" valign="top" width="32.9%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0136383733_p689851512307"><a id="en-us_topic_0136383733_p689851512307"></a><a id="en-us_topic_0136383733_p689851512307"></a><strong id="en-us_topic_0136383733_b2655822163019"><a id="en-us_topic_0136383733_b2655822163019"></a><a id="en-us_topic_0136383733_b2655822163019"></a>Encryption</strong></p>
+</td>
+<td class="cellrowborder" valign="top" width="67.10000000000001%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0136383733_p14612130153019"><a id="en-us_topic_0136383733_p14612130153019"></a><a id="en-us_topic_0136383733_p14612130153019"></a>Whether to enable encryption. If the switch is turned on, encryption is performed. Otherwise, encryption is not performed.</p>
+<p id="en-us_topic_0136383733_p1066483343013"><a id="en-us_topic_0136383733_p1066483343013"></a><a id="en-us_topic_0136383733_p1066483343013"></a>For details, see <a href="encrypting-and-decrypting-a-custom-model.html">Encrypting and Decrypting a Custom Model</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong><br>When a model is converted in the scenario where  <strong>Input Image Preprocess</strong>  is enabled during model conversion,<strong> Input Image Format</strong>  is set to  <strong>XRGB8888_U8 </strong>or  <strong>RGB888_U8</strong>, and  <strong>Image Format Conversion</strong>  is disabled, the image imported to the data set should be in NHWC format.  </p>
+</blockquote>
+</li>
+<li><p>After the configuration is complete, click  <strong>ok</strong>  to create a model. However, there is a 3-hour running time limit on this operation. If the model conversion cannot be completed within 3 hours, the conversion process ends.</p>
+<p>After a model is successfully created, a dialog box indicating conversion success is displayed, as shown in  <a href="#en-us_topic_0136383733_fig7721113942914">Figure 8</a>. You can also view the model path &#xFF08;the path of the model running on the device is displayed by default&#xFF09; and file size.</p>
+<p><strong>Figure  8</strong>  Successful model conversion<a id="en-us_topic_0136383733_fig7721113942914"></a><br><img src="figures/successful-model-conversion.png" alt="" title="successful-model-conversion"></p>
+<p>If the operation fails and the<strong> Error Report </strong>dialog box is displayed, see 4 &quot;Offline Model Conversion&quot; in the  <a href="https://www.huawei.com/minisite/ascend/en/filedetail_19.html" target="_blank">Mind Studio Quick Start</a>.</p>
+<p>After a model is added successfully, a custom model component is displayed under  <strong>My Models</strong>. You can drag it for subsequent orchestration, as shown in  <a href="#en-us_topic_0136383733_fig19561318114214">Figure 9</a>.</p>
+<p><strong>Figure  9</strong>  Custom model component<a id="en-us_topic_0136383733_fig19561318114214"></a><br><img src="figures/custom-model-component.png" alt="" title="custom-model-component"></p>
+<p>Click the  <strong>Model Zoo </strong>tab on the right. You can view the custom model component in  <strong>model-zoo &gt; my-model</strong>, as shown in  <a href="#en-us_topic_0136383733_fig4984228164519">Figure 10</a>.</p>
+<p><strong>Figure  10</strong>  Model file generated after conversion<a id="en-us_topic_0136383733_fig4984228164519"></a><br><img src="figures/model-file-generated-after-conversion.png" alt="" title="model-file-generated-after-conversion"></p>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong><br><strong>resnet18.om</strong>  is the model file generated after conversion.  </p>
+</blockquote>
+</li>
+</ol>
+<h2 id="adding-a-custom-model-component-by-model-conversion">Adding a Custom Model Component by Model Conversion<a id="en-us_topic_0136383733_section141973369179"></a></h2>
+<ol>
+<li>On the  <strong>Projects Explorer </strong>tab page, select the project whose model needs to be converted.</li>
+<li><p>Right-click the project and choose  <strong>Convert Model...</strong>  from the shortcut menu, or choose  <strong>Tools &gt; Convert Model...</strong>  on the GUI.</p>
+<p>The  <strong>Convert Model </strong>dialog box is displayed, as shown in  <a href="#en-us_topic_0136383733_fig131801125019">Figure 11</a>.</p>
+<p><strong>Figure  11</strong>  Convert Model dialog box<a id="en-us_topic_0136383733_fig131801125019"></a><br><img src="figures/convert-model-dialog-box.png" alt="" title="convert-model-dialog-box"></p>
+</li>
+<li><p>Parameters on the  <strong>Convert Model</strong>  window are the same as those on the<strong> New Model</strong>  window. For details, see  <a href="#en-us_topic_0136383733_section75441131122120">Adding a Custom Model Component in the New Model Dialog Box</a>.</p>
+</li>
+<li>After the configuration is complete, click  <strong>ok</strong>  to convert the model.</li>
+<li><p>After a model is successfully converted, a dialog box indicating conversion success is displayed, as shown in  <a href="#en-us_topic_0136383733_fig10806835203216">Figure 12</a>. You can also view the model path &#xFF08;the path of the model running on the device is displayed by default&#xFF09; and file size.</p>
+<p><strong>Figure  12</strong>  Successful conversion dialog box<a id="en-us_topic_0136383733_fig10806835203216"></a><br><img src="figures/successful-conversion-dialog-box.png" alt="" title="successful-conversion-dialog-box"></p>
+<p>If the operation fails and the  <strong>Error Report </strong>dialog box is displayed, see 4 &quot;Offline Model Conversion&quot; in the  <a href="https://www.huawei.com/minisite/ascend/en/filedetail_19.html" target="_blank">Mind Studio Quick Start</a>.</p>
+</li>
+<li><p>After the model is converted successfully, you can view the custom model component in  <strong>model-zoo &gt; offline-model</strong>, as shown in  <a href="#en-us_topic_0136383733_fig7762132717585">Figure 13</a>.</p>
+<p><strong>Figure  13</strong>  Model file generated after conversion<a id="en-us_topic_0136383733_fig7762132717585"></a><br><img src="figures/model-file-generated-after-conversion-1.png" alt="" title="model-file-generated-after-conversion-1"></p>
+</li>
+<li><p>You can add a converted model component to the custom model component folder for subsequent drag-and-drop orchestration.</p>
+<ol>
+<li><p>Choose  <strong>tool &gt; My Models</strong>  and click  <strong>+</strong>. The dialog box for creating a component is displayed.  <a href="#table1977416484429">Table 2</a>  describes the parameters in the dialog box.  <a href="#en-us_topic_0136383733_fig13371123643">Figure 14</a>  shows the  <strong>New Model</strong>  dialog box.</p>
+<p><strong>Figure  14</strong>  Adding a custom model component<a id="en-us_topic_0136383733_fig13371123643"></a><br><img src="figures/adding-a-custom-model-component.png" alt="" title="adding-a-custom-model-component"></p>
+<p><strong>Table  2</strong>  Parameters in the New Model dialog box</p>
+<p><a id="table1977416484429"></a></p>
+<table><thead align="left"><tr id="row87756483423"><th class="cellrowborder" valign="top" width="36.980000000000004%" id="mcps1.2.3.1.1"><p id="p1577534816425"><a id="p1577534816425"></a><a id="p1577534816425"></a>Parameter</p>
+</th>
+<th class="cellrowborder" valign="top" width="63.019999999999996%" id="mcps1.2.3.1.2"><p id="p19775134864212"><a id="p19775134864212"></a><a id="p19775134864212"></a>Value</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row57751148124210"><td class="cellrowborder" valign="top" width="36.980000000000004%" headers="mcps1.2.3.1.1 "><p id="p977511486423"><a id="p977511486423"></a><a id="p977511486423"></a><span class="parmname" id="parmname188721688439"><a id="parmname188721688439"></a><a id="parmname188721688439"></a><b>Model Type</b></span></p>
+</td>
+<td class="cellrowborder" valign="top" width="63.019999999999996%" headers="mcps1.2.3.1.2 "><p id="p77751748174214"><a id="p77751748174214"></a><a id="p77751748174214"></a>Select <span class="parmvalue" id="parmvalue10223151991814"><a id="parmvalue10223151991814"></a><a id="parmvalue10223151991814"></a><b>OfflineModel</b></span>.</p>
+</td>
+</tr>
+<tr id="row18775184812422"><td class="cellrowborder" valign="top" width="36.980000000000004%" headers="mcps1.2.3.1.1 "><p id="p1977514817426"><a id="p1977514817426"></a><a id="p1977514817426"></a><span class="parmname" id="parmname15681145431"><a id="parmname15681145431"></a><a id="parmname15681145431"></a><b>Model Path</b></span></p>
+</td>
+<td class="cellrowborder" valign="top" width="63.019999999999996%" headers="mcps1.2.3.1.2 "><p id="p177753486429"><a id="p177753486429"></a><a id="p177753486429"></a>Select the converted .om model file in the custom board <span class="parmname" id="parmname12523513144520"><a id="parmname12523513144520"></a><a id="parmname12523513144520"></a><b>device</b></span>.</p>
+<p id="p1033154174612"><a id="p1033154174612"></a><a id="p1033154174612"></a>Click the left <a id="image8726188174710"></a><a id="image8726188174710"></a><span><img id="image8726188174710" src="figures/en-us_image_0155561229.png"></span> to select a model from the <strong id="b16797815162019"><a id="b16797815162019"></a><a id="b16797815162019"></a>model-zoo &gt; offline-model</strong> directory. The right <a id="image1872617818471"></a><a id="image1872617818471"></a><span><img id="image1872617818471" src="figures/en-us_image_0155561230.png"></span> indicates selecting a model from the local client.</p>
+</td>
+</tr>
+<tr id="row577518488422"><td class="cellrowborder" valign="top" width="36.980000000000004%" headers="mcps1.2.3.1.1 "><p id="p95991143184312"><a id="p95991143184312"></a><a id="p95991143184312"></a><span class="parmname" id="parmname1475414118448"><a id="parmname1475414118448"></a><a id="parmname1475414118448"></a><b>Model Name</b></span></p>
+</td>
+<td class="cellrowborder" valign="top" width="63.019999999999996%" headers="mcps1.2.3.1.2 "><p id="p13351433174519"><a id="p13351433174519"></a><a id="p13351433174519"></a>The value is automatically filled based on the model file name.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong><br>An encrypted model cannot be added.  </p>
+</blockquote>
+<p>Click  <strong>OK</strong>.</p>
+</li>
+<li><p>Click  <strong>select</strong>  to add the converted offline model to the custom model component group.</p>
+</li>
+</ol>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="using-the-ui.html" class="navigation navigation-prev " aria-label="Previous page: Using the UI">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="encrypting-and-decrypting-a-custom-model.html" class="navigation navigation-next " aria-label="Next page: Encrypting and Decrypting a Custom Model ">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Adding a Custom Model Component","level":"1.6.2.1.1","depth":4,"next":{"title":"Encrypting and Decrypting a Custom Model ","level":"1.6.2.1.2","depth":4,"path":"encrypting-and-decrypting-a-custom-model.md","ref":"encrypting-and-decrypting-a-custom-model.md","articles":[]},"previous":{"title":"Using the UI","level":"1.6.2.1","depth":3,"path":"using-the-ui.md","ref":"using-the-ui.md","articles":[{"title":"Adding a Custom Model Component","level":"1.6.2.1.1","depth":4,"path":"adding-a-custom-model-component.md","ref":"adding-a-custom-model-component.md","articles":[]},{"title":"Encrypting and Decrypting a Custom Model ","level":"1.6.2.1.2","depth":4,"path":"encrypting-and-decrypting-a-custom-model.md","ref":"encrypting-and-decrypting-a-custom-model.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"imgUrl":"","topnav":[]},"plugins":["expandable-chapters","copy"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy":{},"expandableChapters":{"cssFile":["expandable-chapters-theme.css"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"website.css"}},"file":{"path":"adding-a-custom-model-component.md","mtime":"2019-04-12T05:03:11.176Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-12T05:03:22.999Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/clipboard.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/copy.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

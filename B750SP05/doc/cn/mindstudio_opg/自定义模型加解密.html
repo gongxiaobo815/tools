@@ -1,0 +1,1098 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>自定义模型加解密 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters-theme.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-copy/css/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="通过命令方式.html" />
+    
+    
+    <link rel="prev" href="新增自定义模型组件.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="概述.html">
+            
+                <a href="概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="简介.html">
+            
+                <a href="简介.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="功能说明.html">
+            
+                <a href="功能说明.html">
+            
+                    
+                    功能说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="用户管理.html">
+            
+                <a href="用户管理.html">
+            
+                    
+                    用户管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="用户登录.html">
+            
+                <a href="用户登录.html">
+            
+                    
+                    用户登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="重置密码.html">
+            
+                <a href="重置密码.html">
+            
+                    
+                    重置密码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="修改密码.html">
+            
+                <a href="修改密码.html">
+            
+                    
+                    修改密码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="用户退出.html">
+            
+                <a href="用户退出.html">
+            
+                    
+                    用户退出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="安全日志查询.html">
+            
+                <a href="安全日志查询.html">
+            
+                    
+                    安全日志查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="工程管理.html">
+            
+                <a href="工程管理.html">
+            
+                    
+                    工程管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="简介-0.html">
+            
+                <a href="简介-0.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="基本操作.html">
+            
+                <a href="基本操作.html">
+            
+                    
+                    基本操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="工程创建-删除.html">
+            
+                <a href="工程创建-删除.html">
+            
+                    
+                    工程创建/删除
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="工程导入-导出.html">
+            
+                <a href="工程导入-导出.html">
+            
+                    
+                    工程导入/导出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="新建-删除文件.html">
+            
+                <a href="新建-删除文件.html">
+            
+                    
+                    新建/删除文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="文件-文件夹上传.html">
+            
+                <a href="文件-文件夹上传.html">
+            
+                    
+                    文件/文件夹上传
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.5" data-path="打开项目.html">
+            
+                <a href="打开项目.html">
+            
+                    
+                    打开项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.6" data-path="关闭项目.html">
+            
+                <a href="关闭项目.html">
+            
+                    
+                    关闭项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.7" data-path="工程编译.html">
+            
+                <a href="工程编译.html">
+            
+                    
+                    工程编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.8" data-path="工程运行.html">
+            
+                <a href="工程运行.html">
+            
+                    
+                    工程运行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.9" data-path="支持的文件格式.html">
+            
+                <a href="支持的文件格式.html">
+            
+                    
+                    支持的文件格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="数据集管理.html">
+            
+                <a href="数据集管理.html">
+            
+                    
+                    数据集管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="简介-1.html">
+            
+                <a href="简介-1.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="Projects-Explorer窗口的数据集管理.html">
+            
+                <a href="Projects-Explorer窗口的数据集管理.html">
+            
+                    
+                    Projects Explorer窗口的数据集管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="数据集展示.html">
+            
+                <a href="数据集展示.html">
+            
+                    
+                    数据集展示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="数据集导入.html">
+            
+                <a href="数据集导入.html">
+            
+                    
+                    数据集导入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="数据集属性展示.html">
+            
+                <a href="数据集属性展示.html">
+            
+                    
+                    数据集属性展示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="生成cpp文件.html">
+            
+                <a href="生成cpp文件.html">
+            
+                    
+                    生成cpp文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.5" data-path="挑选图片.html">
+            
+                <a href="挑选图片.html">
+            
+                    
+                    挑选图片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.6" data-path="删除自定义数据集.html">
+            
+                <a href="删除自定义数据集.html">
+            
+                    
+                    删除自定义数据集
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="Model-Zoo-Explorer窗口的数据集管理.html">
+            
+                <a href="Model-Zoo-Explorer窗口的数据集管理.html">
+            
+                    
+                    Model Zoo Explorer窗口的数据集管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="数据集展示-2.html">
+            
+                <a href="数据集展示-2.html">
+            
+                    
+                    数据集展示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="Copy-Path功能.html">
+            
+                <a href="Copy-Path功能.html">
+            
+                    
+                    Copy Path功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" data-path="Refresh功能.html">
+            
+                <a href="Refresh功能.html">
+            
+                    
+                    Refresh功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="模型管理.html">
+            
+                <a href="模型管理.html">
+            
+                    
+                    模型管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="简介-3.html">
+            
+                <a href="简介-3.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="模型转换.html">
+            
+                <a href="模型转换.html">
+            
+                    
+                    模型转换
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="通过UI方式.html">
+            
+                <a href="通过UI方式.html">
+            
+                    
+                    通过UI方式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1.1" data-path="新增自定义模型组件.html">
+            
+                <a href="新增自定义模型组件.html">
+            
+                    
+                    新增自定义模型组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.2.1.2" data-path="自定义模型加解密.html">
+            
+                <a href="自定义模型加解密.html">
+            
+                    
+                    自定义模型加解密
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="通过命令方式.html">
+            
+                <a href="通过命令方式.html">
+            
+                    
+                    通过命令方式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.2.1" data-path="使用omg命令转换模型.html">
+            
+                <a href="使用omg命令转换模型.html">
+            
+                    
+                    使用omg命令转换模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="Projects-Explorer窗口的模型管理.html">
+            
+                <a href="Projects-Explorer窗口的模型管理.html">
+            
+                    
+                    Projects Explorer窗口的模型管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="模型展示.html">
+            
+                <a href="模型展示.html">
+            
+                    
+                    模型展示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" data-path="新增Caffe模型组件.html">
+            
+                <a href="新增Caffe模型组件.html">
+            
+                    
+                    新增Caffe模型组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.3" data-path="模型属性展示.html">
+            
+                <a href="模型属性展示.html">
+            
+                    
+                    模型属性展示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.4" data-path="模型网络结构查看.html">
+            
+                <a href="模型网络结构查看.html">
+            
+                    
+                    模型网络结构查看
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.5" data-path="模型组件删除.html">
+            
+                <a href="模型组件删除.html">
+            
+                    
+                    模型组件删除
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="Model-Zoo-Explorer窗口的模型管理.html">
+            
+                <a href="Model-Zoo-Explorer窗口的模型管理.html">
+            
+                    
+                    Model Zoo Explorer窗口的模型管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.4.1" data-path="模型展示-4.html">
+            
+                <a href="模型展示-4.html">
+            
+                    
+                    模型展示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.2" data-path="新增自定义模型组件-5.html">
+            
+                <a href="新增自定义模型组件-5.html">
+            
+                    
+                    新增自定义模型组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.3" data-path="Copy-Path功能-6.html">
+            
+                <a href="Copy-Path功能-6.html">
+            
+                    
+                    Copy Path功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.4" data-path="Refresh功能-7.html">
+            
+                <a href="Refresh功能-7.html">
+            
+                    
+                    Refresh功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.5" data-path="离线模型导入.html">
+            
+                <a href="离线模型导入.html">
+            
+                    
+                    离线模型导入
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="参考.html">
+            
+                <a href="参考.html">
+            
+                    
+                    参考
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.5.1" data-path="AIPP配置说明.html">
+            
+                <a href="AIPP配置说明.html">
+            
+                    
+                    AIPP配置说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.2" data-path="量化配置.html">
+            
+                <a href="量化配置.html">
+            
+                    
+                    量化配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >自定义模型加解密</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x81EA;&#x5B9A;&#x4E49;&#x6A21;&#x578B;&#x52A0;&#x89E3;&#x5BC6;">&#x81EA;&#x5B9A;&#x4E49;&#x6A21;&#x578B;&#x52A0;&#x89E3;&#x5BC6;<a id="ZH-CN_TOPIC_0144442633"></a></h1>
+<p>&#x6A21;&#x578B;&#x52A0;&#x5BC6;&#x529F;&#x80FD;&#x8BA9;&#x6A21;&#x578B;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x5BF9;&#x6301;&#x6709;&#x7684;&#x6A21;&#x578B;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#xFF0C;&#x4ECE;&#x800C;&#x8FBE;&#x5230;&#x63A7;&#x5236;&#x6A21;&#x578B;&#x4F7F;&#x7528;&#x6743;&#x7684;&#x76EE;&#x7684;&#x3002;&#x6A21;&#x578B;&#x5F00;&#x53D1;&#x8005;&#x901A;&#x8FC7;&#x52A0;&#x5BC6;&#x529F;&#x80FD;&#x83B7;&#x53D6;&#x52A0;&#x5BC6;&#x540E;&#x7684;&#x79BB;&#x7EBF;&#x6A21;&#x578B;&#x548C;&#x79D8;&#x94A5;&#xFF0C;&#x540C;&#x65F6;&#x6301;&#x6709;&#x52A0;&#x5BC6;&#x540E;&#x6A21;&#x578B;&#x548C;&#x79D8;&#x94A5;&#x7684;&#x7528;&#x6237;&#x624D;&#x80FD;&#x6B63;&#x5E38;&#x4F7F;&#x7528;&#x6A21;&#x578B;&#x3002;</p>
+<p>&#x52A0;&#x5BC6;&#x7684;&#x6A21;&#x578B;&#x4EC5;&#x53EA;&#x652F;&#x6301;&#x5728;&#x201C;Target&#x201C;&#x4E3A;&#x201C;ASIC&#x201C;&#x6216;&#x201C;Atlas DK&#x201C;&#x7684;Mind&#x5DE5;&#x7A0B;&#x4E2D;&#x8FD0;&#x884C;&#x3002;</p>
+<h2 id="&#x6A21;&#x578B;&#x52A0;&#x5BC6;">&#x6A21;&#x578B;&#x52A0;&#x5BC6;<a id="zh-cn_topic_0136383717_section1187715426269"></a></h2>
+<ol>
+<li>&#x9009;&#x62E9;&#x5DE5;&#x7A0B;&#xFF0C;&#x5728;Tools&#x83DC;&#x5355;&#x9009;&#x62E9;&#x201C;Convert Model&#x201C;&#xFF0C;&#x6216;&#x8005;&#x5355;&#x51FB;&#x5F00;&#x53D1;&#x754C;&#x9762;&#x4E2D;tool&#x9875;&#x7B7E;&#x4E2D;&#x201C;My Models&#x201C;&#x7684;<img src="figures/zh-cn_image_0144572514.png" alt="">&#x3002;</li>
+<li><p>&#x5355;&#x51FB;&#x201C;Optional Options&#x201C;&#xFF0C;&#x5728;&#x5F39;&#x51FA;&#x7684;&#x754C;&#x9762;&#x4E2D;&#x6FC0;&#x6D3B;Encryption&#x9009;&#x9879;&#xFF0C;&#x5982;<a href="#fig19574141220436">&#x56FE;1</a>&#x6240;&#x793A;&#x3002;</p>
+<p><strong>&#x56FE; 1</strong>  &#x6FC0;&#x6D3B;Encryption&#x9009;&#x9879;<a id="fig19574141220436"></a><br><img src="figures/&#x6FC0;&#x6D3B;Encryption&#x9009;&#x9879;.png" alt="" title="&#x6FC0;&#x6D3B;Encryption&#x9009;&#x9879;"></p>
+</li>
+<li><p>&#x8F93;&#x5165;&#x5BC6;&#x7801;&#xFF0C;&#x52A0;&#x5BC6;&#x7CFB;&#x7EDF;&#x4F1A;&#x7528;&#x8BE5;&#x5BC6;&#x7801;&#x751F;&#x6210;&#x552F;&#x4E00;&#x7684;key&#xFF0C;&#x4F5C;&#x4E3A;&#x52A0;&#x5BC6;&#x7684;&#x8F93;&#x5165;&#x4E4B;&#x4E00;&#x3002;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x8BE5;Workspace&#x66FE;&#x7ECF;&#x8F93;&#x5165;&#x8FC7;&#x5BC6;&#x7801;&#xFF0C;&#x5219;&#x9ED8;&#x8BA4;&#x7528;&#x4E0A;&#x6B21;&#x7684;&#x5BC6;&#x7801;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x53D6;&#x6D88;&#x8BE5;&#x9009;&#x9879;&#x8F93;&#x5165;&#x65B0;&#x5BC6;&#x7801;&#xFF0C;&#x5982;<a href="#fig1081813125514">&#x56FE;2</a>&#x6240;&#x793A;&#x3002;</p>
+<p><strong>&#x56FE; 2</strong>  &#x4F7F;&#x7528;&#x4E0A;&#x6B21;&#x5BC6;&#x7801;<a id="fig1081813125514"></a><br><img src="figures/&#x4F7F;&#x7528;&#x4E0A;&#x6B21;&#x5BC6;&#x7801;.png" alt="" title="&#x4F7F;&#x7528;&#x4E0A;&#x6B21;&#x5BC6;&#x7801;"></p>
+</li>
+<li><p>&#x4E0A;&#x4F20;ISV&#x786C;&#x4EF6;&#x5BC6;&#x94A5;&#x3001;ISV&#x8BC1;&#x4E66;&#x4EE5;&#x53CA;ISV&#x79C1;&#x94A5;&#xFF0C;&#x5982;<a href="#fig128882313559">&#x56FE;3</a>&#x6240;&#x793A;&#x3002;</p>
+<p><strong>&#x56FE; 3</strong>  &#x4E0A;&#x4F20;&#x5BC6;&#x94A5;&#x3001;&#x8BC1;&#x4E66;&#x4EE5;&#x53CA;&#x79C1;&#x94A5;<a id="fig128882313559"></a><br><img src="figures/&#x4E0A;&#x4F20;&#x5BC6;&#x94A5;-&#x8BC1;&#x4E66;&#x4EE5;&#x53CA;&#x79C1;&#x94A5;.png" alt="" title="&#x4E0A;&#x4F20;&#x5BC6;&#x94A5;-&#x8BC1;&#x4E66;&#x4EE5;&#x53CA;&#x79C1;&#x94A5;"></p>
+</li>
+<li><p>&#x6A21;&#x578B;&#x8F6C;&#x6362;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x4F1A;&#x751F;&#x6210;&#x52A0;&#x5BC6;&#x540E;&#x7684;&#x6A21;&#x578B;&#x6587;&#x4EF6;&#x3001;&#x52A0;&#x5BC6;&#x540E;&#x7684;&#x7528;&#x4E8E;&#x89E3;&#x5BC6;&#x6A21;&#x578B;&#x6587;&#x4EF6;&#x7684;PASSCODE&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x6A21;&#x578B;&#x8F6C;&#x6362;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x754C;&#x9762;&#x4F1A;&#x5F39;&#x51FA;&#x63D0;&#x793A;&#x6846;&#xFF0C;&#x63D0;&#x793A;&#x8F6C;&#x6362;&#x6210;&#x529F;&#xFF0C;&#x5E76;&#x5728;&#x201C;Offline Model Path&#x201C;&#x5904;&#x63D0;&#x793A;&#x52A0;&#x5BC6;&#x540E;&#x7684;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x5982;<a href="#fig95581616551">&#x56FE;4</a>&#x6240;&#x793A;&#x3002;</p>
+<p><strong>&#x56FE; 4</strong>  &#x6A21;&#x578B;&#x8F6C;&#x6362;&#x6210;&#x529F;<a id="fig95581616551"></a><br><img src="figures/&#x6A21;&#x578B;&#x8F6C;&#x6362;&#x6210;&#x529F;.png" alt="" title="&#x6A21;&#x578B;&#x8F6C;&#x6362;&#x6210;&#x529F;"></p>
+<p>&#x767B;&#x5F55;Mind Studio&#x5DE5;&#x5177;&#x6240;&#x5728;&#x7684;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5728;&#x201C;Offline Model Path&#x201C;&#x5904;&#x7684;&#x8DEF;&#x5F84;&#x4E0B;&#x53EF;&#x67E5;&#x770B;&#x52A0;&#x5BC6;&#x540E;&#x7684;&#x6A21;&#x578B;&#x6587;&#x4EF6;&#x3001;&#x52A0;&#x5BC6;&#x540E;&#x7684;&#x7528;&#x4E8E;&#x89E3;&#x5BC6;&#x6A21;&#x578B;&#x6587;&#x4EF6;&#x7684;PASSCODE&#x6587;&#x4EF6;&#x3002;</p>
+</li>
+</ol>
+<h2 id="&#x6A21;&#x578B;&#x89E3;&#x5BC6;">&#x6A21;&#x578B;&#x89E3;&#x5BC6;<a id="zh-cn_topic_0136383717_section878181682720"></a></h2>
+<ol>
+<li>&#x628A;&#x52A0;&#x5BC6;&#x540E;&#x7684;&#x79BB;&#x7EBF;&#x6A21;&#x578B;&#x6DFB;&#x52A0;&#x5230;&#x53EF;&#x62D6;&#x62C9;&#x7EC4;&#x4EF6;&#x4E2D;&#x3002;</li>
+<li><p>&#x628A;&#x79BB;&#x7EBF;&#x6A21;&#x578B;&#x62D6;&#x5230;&#x7F16;&#x6392;&#x754C;&#x9762;&#x4E2D;&#xFF0C;&#x5355;&#x51FB;&#x6FC0;&#x6D3B;&#x6A21;&#x578B;&#x5C5E;&#x6027;&#x5C55;&#x793A;&#x754C;&#x9762;&#xFF0C;&#x5982;<a href="#fig36471910135515">&#x56FE;5</a>&#x6240;&#x793A;&#x3002;</p>
+<p><strong>&#x56FE; 5</strong>  &#x6A21;&#x578B;&#x5C5E;&#x6027;&#x5C55;&#x793A;&#x9875;&#x9762;<a id="fig36471910135515"></a><br><img src="figures/&#x6A21;&#x578B;&#x5C5E;&#x6027;&#x5C55;&#x793A;&#x9875;&#x9762;.png" alt="" title="&#x6A21;&#x578B;&#x5C5E;&#x6027;&#x5C55;&#x793A;&#x9875;&#x9762;"></p>
+</li>
+<li><p>&#x6253;&#x5F00;Decryption&#x5F00;&#x5173;&#xFF0C;&#x9009;&#x62E9;Passcode&#x6587;&#x4EF6;&#xFF0C;&#x89E3;&#x5BC6;&#x540E;&#xFF0C;&#x53EF;&#x8FDB;&#x884C;&#x6B63;&#x5E38;&#x5F00;&#x53D1;&#x3002;</p>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="新增自定义模型组件.html" class="navigation navigation-prev " aria-label="Previous page: 新增自定义模型组件">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="通过命令方式.html" class="navigation navigation-next " aria-label="Next page: 通过命令方式">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"自定义模型加解密","level":"1.6.2.1.2","depth":4,"next":{"title":"通过命令方式","level":"1.6.2.2","depth":3,"path":"通过命令方式.md","ref":"通过命令方式.md","articles":[{"title":"使用omg命令转换模型","level":"1.6.2.2.1","depth":4,"path":"使用omg命令转换模型.md","ref":"使用omg命令转换模型.md","articles":[]}]},"previous":{"title":"新增自定义模型组件","level":"1.6.2.1.1","depth":4,"path":"新增自定义模型组件.md","ref":"新增自定义模型组件.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"imgUrl":"","topnav":[]},"plugins":["expandable-chapters","copy"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy":{},"expandableChapters":{"cssFile":["expandable-chapters-theme.css"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"website.css"}},"file":{"path":"自定义模型加解密.md","mtime":"2019-04-11T22:36:21.216Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-11T22:36:24.719Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/clipboard.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/copy.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

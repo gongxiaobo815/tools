@@ -1,0 +1,1101 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>全流程Profiling（命令行方式） · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters-theme.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-copy/css/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="参考.html" />
+    
+    
+    <link rel="prev" href="AI-CPU-Function分析.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="日志工具.html">
+            
+                <a href="日志工具.html">
+            
+                    
+                    日志工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="简介.html">
+            
+                <a href="简介.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="日志概述.html">
+            
+                <a href="日志概述.html">
+            
+                    
+                    日志概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="日志处理机制介绍.html">
+            
+                <a href="日志处理机制介绍.html">
+            
+                    
+                    日志处理机制介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="日志文件介绍.html">
+            
+                <a href="日志文件介绍.html">
+            
+                    
+                    日志文件介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="日志级别介绍.html">
+            
+                <a href="日志级别介绍.html">
+            
+                    
+                    日志级别介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="日志记录格式介绍.html">
+            
+                <a href="日志记录格式介绍.html">
+            
+                    
+                    日志记录格式介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="日志配置介绍.html">
+            
+                <a href="日志配置介绍.html">
+            
+                    
+                    日志配置介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="基本操作.html">
+            
+                <a href="基本操作.html">
+            
+                    
+                    基本操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="日志查看.html">
+            
+                <a href="日志查看.html">
+            
+                    
+                    日志查看
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="日志导出.html">
+            
+                <a href="日志导出.html">
+            
+                    
+                    日志导出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="日志上传.html">
+            
+                <a href="日志上传.html">
+            
+                    
+                    日志上传
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="日志删除.html">
+            
+                <a href="日志删除.html">
+            
+                    
+                    日志删除
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="日志级别设置.html">
+            
+                <a href="日志级别设置.html">
+            
+                    
+                    日志级别设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="常见问题.html">
+            
+                <a href="常见问题.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="日志目录没有生成日志文件.html">
+            
+                <a href="日志目录没有生成日志文件.html">
+            
+                    
+                    日志目录没有生成日志文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="日志文件错误无法上传Mind-Studio.html">
+            
+                <a href="日志文件错误无法上传Mind-Studio.html">
+            
+                    
+                    日志文件错误无法上传Mind Studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Profiling.html">
+            
+                <a href="Profiling.html">
+            
+                    
+                    Profiling
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="简介-0.html">
+            
+                <a href="简介-0.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="全流程Profiling（图形化方式）.html">
+            
+                <a href="全流程Profiling（图形化方式）.html">
+            
+                    
+                    全流程Profiling（图形化方式）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="配置需采集的数据.html">
+            
+                <a href="配置需采集的数据.html">
+            
+                    
+                    配置需采集的数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="采集性能数据.html">
+            
+                <a href="采集性能数据.html">
+            
+                    
+                    采集性能数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="展示性能分析数据.html">
+            
+                <a href="展示性能分析数据.html">
+            
+                    
+                    展示性能分析数据
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.3.1" data-path="Summary分析.html">
+            
+                <a href="Summary分析.html">
+            
+                    
+                    Summary分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3.2" data-path="Timeline分析.html">
+            
+                <a href="Timeline分析.html">
+            
+                    
+                    Timeline分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3.3" data-path="Control-CPU-Function分析.html">
+            
+                <a href="Control-CPU-Function分析.html">
+            
+                    
+                    Control CPU Function分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3.4" data-path="AI-CPU-Function分析.html">
+            
+                <a href="AI-CPU-Function分析.html">
+            
+                    
+                    AI CPU Function分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="全流程Profiling（命令行方式）.html">
+            
+                <a href="全流程Profiling（命令行方式）.html">
+            
+                    
+                    全流程Profiling（命令行方式）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="参考.html">
+            
+                <a href="参考.html">
+            
+                    
+                    参考
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="重置连接redis服务的密码.html">
+            
+                <a href="重置连接redis服务的密码.html">
+            
+                    
+                    重置连接redis服务的密码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="脚本清单.html">
+            
+                <a href="脚本清单.html">
+            
+                    
+                    脚本清单
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="黑匣子异常信息获取.html">
+            
+                <a href="黑匣子异常信息获取.html">
+            
+                    
+                    黑匣子异常信息获取
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="简介-1.html">
+            
+                <a href="简介-1.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="基本操作-2.html">
+            
+                <a href="基本操作-2.html">
+            
+                    
+                    基本操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >全流程Profiling（命令行方式）</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5168;&#x6D41;&#x7A0B;profiling&#xFF08;&#x547D;&#x4EE4;&#x884C;&#x65B9;&#x5F0F;&#xFF09;">&#x5168;&#x6D41;&#x7A0B;Profiling&#xFF08;&#x547D;&#x4EE4;&#x884C;&#x65B9;&#x5F0F;&#xFF09;<a id="ZH-CN_TOPIC_0142657883"></a></h1>
+<p>&#x82E5;&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x884C;&#x65B9;&#x5F0F;&#x5206;&#x6790;&#x6027;&#x80FD;&#x6570;&#x636E;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;Mind Studio&#x5B89;&#x88C5;&#x7528;&#x6237;&#x767B;&#x5F55;Mind Studio&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x6267;&#x884C;&#x201C;~/tools/profiler/analysis/msvp/host/bin64/hiprof.pyc&#x201C;&#x811A;&#x672C;&#x4E2D;&#x7684;&#x547D;&#x4EE4;&#x91C7;&#x96C6;&#x6027;&#x80FD;&#x6570;&#x636E;&#xFF0C;&#x91C7;&#x96C6;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x53EF;&#x76F4;&#x63A5;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x7A97;&#x53E3;&#x67E5;&#x770B;&#x6027;&#x80FD;&#x5206;&#x6790;&#x7ED3;&#x679C;&#x3002;</p>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>&#x8BF4;&#x660E;&#xFF1A;</strong><br>&#x201C;~/tools&#x201C;&#x662F;&#x9ED8;&#x8BA4;&#x7684;toolpath&#x8DEF;&#x5F84;&#xFF0C;&#x8BE5;&#x8DEF;&#x5F84;&#x53EF;&#x5728;&#x5B89;&#x88C5;Mind Studio&#x65F6;&#x7531;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5728;&#x201C;scripts/env.conf&#x201C;&#x6587;&#x4EF6;&#x901A;&#x8FC7;toolpath&#x53C2;&#x6570;&#x67E5;&#x770B;&#x5B9E;&#x9645;&#x8DEF;&#x5F84;&#x3002;&#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<strong>find / -name &apos;env.conf&apos;</strong>&#x547D;&#x4EE4;&#x67E5;&#x770B;script&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x201C;env.conf&#x201C;&#x6587;&#x4EF6;&#x7684;&#x4F4D;&#x7F6E;&#x3002;  </p>
+</blockquote>
+<h2 id="&#x91C7;&#x96C6;&#x6027;&#x80FD;&#x6570;&#x636E;">&#x91C7;&#x96C6;&#x6027;&#x80FD;&#x6570;&#x636E;<a id="section144045398819"></a></h2>
+<p>&#x4EE5;&#x4E0B;&#x91C7;&#x96C6;&#x6570;&#x636E;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x5747;&#x4EE5;&#x6D41;&#x7A0B;&#x7F16;&#x6392;&#x7C7B;&#x578B;&#x7684;&#x6027;&#x80FD;&#x6570;&#x636E;&#x91C7;&#x96C6;&#x4E3A;&#x4F8B;&#x3002;</p>
+<ol>
+<li>&#x4EE5;Mind Studio&#x5B89;&#x88C5;&#x7528;&#x6237;&#x767B;&#x5F55;&#x5230;Mind Studio&#x7684;&#x540E;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x3002;</li>
+<li>&#x5207;&#x6362;&#x81F3;&#x201C;hiprof.pyc&#x201C;&#x811A;&#x672C;&#x6240;&#x5728;&#x76EE;&#x5F55;&#xFF0C;&#x5982;&#x201C;~/tools/profiler/analysis/msvp/host/bin64&#x201C;&#x3002;</li>
+<li><p>&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#xFF0C;&#x5206;&#x522B;&#x5728;sample-based&#x6A21;&#x5F0F;&#x4E0B;&#x3001;task-based&#x6A21;&#x5F0F;&#x4E0B;&#x91C7;&#x96C6;&#x8F6F;&#x4EF6;&#x3001;&#x786C;&#x4EF6;&#x6A21;&#x5757;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x5728;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x4E2D;&#xFF0C;&#x201C;*_dir&#x201C;&#x53C2;&#x6570;&#x503C;&#x9700;&#x8981;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x4FEE;&#x6539;&#x76EE;&#x5F55;&#x4E14;Mind Studio&#x5B89;&#x88C5;&#x7528;&#x6237;&#x53EF;&#x8BBF;&#x95EE;&#x8BE5;&#x76EE;&#x5F55;&#xFF0C;&#x201C;--ai_core_profiling_mode=sample-based&#x201C;&#x8868;&#x793A;sample-based &#x6A21;&#x5F0F;&#x3002;&#x201C;x.x.x.x&#x201C;&#x9700;&#x66FF;&#x6362;&#x4E3A;Host&#x6240;&#x5728;&#x670D;&#x52A1;&#x5668;&#x7684;IP&#x5730;&#x5740;&#x3002;</p>
+<p>&#x6267;&#x884C;&#x547D;&#x4EE4;&#x540E;&#xFF0C;&#x547D;&#x4EE4;&#x4E2D;&#x7684;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x9ED8;&#x8BA4;&#x4FDD;&#x5B58;&#x5728;&#x201C;sample.ini&#x201C;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x8BE5;&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x5728;result_dir&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x7684;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x5173;&#x4E8E;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x7684;&#x8BE6;&#x7EC6;&#x89E3;&#x91CA;&#x8BF7;&#x53C2;&#x89C1;<a href="#section1893632053018">sample.ini&#x6587;&#x4EF6;</a>&#x3002;</p>
+<ul>
+<li><p>&#x5728;sample-based&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x91C7;&#x96C6;&#x6240;&#x6709;&#x8F6F;&#x4EF6;&#x3001;&#x786C;&#x4EF6;&#x6A21;&#x5757;&#x6570;&#x636E;&#x3002;</p>
+<p><strong>python hiprof.pyc --ip_address=x.x.x.x --ddk_dir=~/tools/che/ddk/ddk --app=/projects/MIND/out/main --app_dir=/projects/MIND/ --umode=MIND --result_dir=/home/ascend/tools/out --peripheral_profiling=nic,dvpp  --ai_cpu_profiling=on --RTS_Profiling=on --ai_core_profiling_mode=sample-based --ai_core_profiling=on --HIAI_Engine_Profiling=on --OME_Profiling=on --ctrl_cpu_profiling=on --profiling_mode=online --llc_bandwidth=on --ddr_profiling=on</strong></p>
+</li>
+<li><p>&#x5728;task-based&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x91C7;&#x96C6;&#x6240;&#x6709;&#x8F6F;&#x4EF6;&#x3001;&#x786C;&#x4EF6;&#x6A21;&#x5757;&#x6570;&#x636E;&#x3002;</p>
+<p><strong>python hiprof.pyc --ip_address=x.x.x.x --ddk_dir=~/tools/che/ddk/ddk --app=/projects/MIND/out/main --app_dir=/projects/MIND/ --umode=MIND --result_dir=/home/ascend/tools/out --peripheral_profiling=nic,dvpp --ai_cpu_profiling=on --RTS_Profiling=on --ai_core_profiling_mode=task-based --ai_core_profiling=on --HIAI_Engine_Profiling=on --OME_Profiling=on --ctrl_cpu_profiling=on --profiling_mode=online --llc_bandwidth=on --ddr_profiling=on</strong></p>
+</li>
+<li><p>&#x5728;task-based&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x6267;&#x884C;&#x5E26;&#x53C2;&#x6570;&#x7684;&#x547D;&#x4EE4;&#x91C7;&#x96C6;profiling&#x6570;&#x636E;&#x3002;</p>
+<p><strong>python hiprof.pyc --ip_address=x.x.x.x --ddk_dir=~/tools/che/ddk/ddk --app_dir=/projects/MIND --umode=MIND --result_dir=/home/ascend/tools/out  --ai_cpu_profiling=on --RTS_Profiling=on --ai_core_profiling=on --ctrl_cpu_profiling=on -- /projects/MIND/perfor/main Performace_Freespace_Road_FP16_1B_AIPP.json</strong></p>
+</li>
+</ul>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>&#x8BF4;&#x660E;&#xFF1A;</strong><br>&#x5728;&#x201C;result_dir&#x201C;&#x5904;&#x914D;&#x7F6E;&#x7684;&#x8DEF;&#x5F84;&#x7528;&#x4E8E;&#x5B58;&#x653E;&#x91C7;&#x96C6;&#x7ED3;&#x679C;&#xFF0C;&#x9700;&#x786E;&#x4FDD;Mind Studio&#x5B89;&#x88C5;&#x7528;&#x6237;&#x5BF9;&#x6B64;&#x8DEF;&#x5F84;&#x6709;&#x53EF;&#x8BFB;&#x53EF;&#x5199;&#x7684;&#x6743;&#x9650;&#xFF0C;&#x5EFA;&#x8BAE;&#x5C06;&#x8BE5;&#x8DEF;&#x5F84;&#x914D;&#x7F6E;&#x4E3A;&#x201C;~/tools/&#x201C;&#x4E0B;&#x7684;&#x76EE;&#x5F55;&#x6216;&#x8005;&#x201C;/projects/&#x201C;&#x3002;  </p>
+</blockquote>
+</li>
+</ol>
+<h2 id="&#x5C55;&#x793A;&#x6027;&#x80FD;&#x5206;&#x6790;&#x7ED3;&#x679C;">&#x5C55;&#x793A;&#x6027;&#x80FD;&#x5206;&#x6790;&#x7ED3;&#x679C;<a id="section5226192613183"></a></h2>
+<ol>
+<li><p>&#x663E;&#x793A;Runtime&#x7684;API&#x8C03;&#x7528;&#x4FE1;&#x606F;&#x548C;Task Scheduler&#x7684;&#x4EFB;&#x52A1;&#x8C03;&#x5EA6;&#x4FE1;&#x606F;&#x3002;</p>
+<p><strong>&#x56FE; 1</strong>  Runtime&#x6570;&#x636E;&#x91C7;&#x96C6;&#x7ED3;&#x679C;<a id="fig124615301231"></a><br><img src="figures/Runtime&#x6570;&#x636E;&#x91C7;&#x96C6;&#x7ED3;&#x679C;.png" alt="" title="Runtime&#x6570;&#x636E;&#x91C7;&#x96C6;&#x7ED3;&#x679C;"></p>
+<p><strong>&#x56FE; 2</strong>  Task Scheduler&#x4EFB;&#x52A1;&#x8C03;&#x5EA6;&#x4FE1;&#x606F;<a id="fig14674228161719"></a><br><img src="figures/Task-Scheduler&#x4EFB;&#x52A1;&#x8C03;&#x5EA6;&#x4FE1;&#x606F;.png" alt="" title="Task-Scheduler&#x4EFB;&#x52A1;&#x8C03;&#x5EA6;&#x4FE1;&#x606F;"></p>
+</li>
+<li><p>Control CPU PMU Events</p>
+<p><strong>&#x56FE; 3</strong>  Control CPU&#x91C7;&#x96C6;&#x4E8B;&#x4EF6;&#x7ED3;&#x679C;<a id="fig1653814610317"></a><br><img src="figures/Control-CPU&#x91C7;&#x96C6;&#x4E8B;&#x4EF6;&#x7ED3;&#x679C;.png" alt="" title="Control-CPU&#x91C7;&#x96C6;&#x4E8B;&#x4EF6;&#x7ED3;&#x679C;"></p>
+</li>
+<li><p>Control CPU Top Functions</p>
+<p><strong>&#x56FE; 4</strong>  Control CPU&#x70ED;&#x70B9;&#x51FD;&#x6570;<a id="fig1497511143"></a><br><img src="figures/Control-CPU&#x70ED;&#x70B9;&#x51FD;&#x6570;.png" alt="" title="Control-CPU&#x70ED;&#x70B9;&#x51FD;&#x6570;"></p>
+</li>
+<li><p>AI CPU PMU Events</p>
+<p><strong>&#x56FE; 5</strong>  AI CPU&#x91C7;&#x96C6;&#x4E8B;&#x4EF6;&#x7ED3;&#x679C;&#x7EDF;&#x8BA1;<a id="fig1717193111417"></a><br><img src="figures/AI-CPU&#x91C7;&#x96C6;&#x4E8B;&#x4EF6;&#x7ED3;&#x679C;&#x7EDF;&#x8BA1;.png" alt="" title="AI-CPU&#x91C7;&#x96C6;&#x4E8B;&#x4EF6;&#x7ED3;&#x679C;&#x7EDF;&#x8BA1;"></p>
+</li>
+<li><p>AI CPU Top Function</p>
+<p><strong>&#x56FE; 6</strong>  AI CPU&#x70ED;&#x70B9;&#x51FD;&#x6570;<a id="fig14167537151817"></a><br><img src="figures/AI-CPU&#x70ED;&#x70B9;&#x51FD;&#x6570;.png" alt="" title="AI-CPU&#x70ED;&#x70B9;&#x51FD;&#x6570;"></p>
+</li>
+<li><p>TS CPU PMU Events</p>
+<p><strong>&#x56FE; 7</strong>  TS CPU&#x91C7;&#x96C6;&#x4E8B;&#x4EF6;&#x7ED3;&#x679C;&#x7EDF;&#x8BA1;<a id="fig19241165125119"></a><br><img src="figures/TS-CPU&#x91C7;&#x96C6;&#x4E8B;&#x4EF6;&#x7ED3;&#x679C;&#x7EDF;&#x8BA1;.png" alt="" title="TS-CPU&#x91C7;&#x96C6;&#x4E8B;&#x4EF6;&#x7ED3;&#x679C;&#x7EDF;&#x8BA1;"></p>
+</li>
+<li><p>AI Core&#x6570;&#x636E;&#x4FE1;&#x606F;</p>
+<p><strong>&#x56FE; 8</strong>  AI Core&#x6570;&#x636E;&#x4FE1;&#x606F;<a id="fig177401426201816"></a><br><img src="figures/AI-Core&#x6570;&#x636E;&#x4FE1;&#x606F;.png" alt="" title="AI-Core&#x6570;&#x636E;&#x4FE1;&#x606F;"></p>
+</li>
+<li><p>Nic&#x6570;&#x636E;</p>
+<p><strong>&#x56FE; 9</strong>  Nic&#x7ED3;&#x679C;&#x6570;&#x636E;&#x5C55;&#x793A;<a id="fig815320461041"></a><br><img src="figures/Nic&#x7ED3;&#x679C;&#x6570;&#x636E;&#x5C55;&#x793A;.png" alt="" title="Nic&#x7ED3;&#x679C;&#x6570;&#x636E;&#x5C55;&#x793A;"></p>
+</li>
+<li><p>Dvpp&#x6570;&#x636E;</p>
+<p><strong>&#x56FE; 10</strong>  Dvpp&#x6570;&#x636E;&#x5C55;&#x793A;<a id="fig187025416414"></a><br><img src="figures/Dvpp&#x6570;&#x636E;&#x5C55;&#x793A;.png" alt="" title="Dvpp&#x6570;&#x636E;&#x5C55;&#x793A;"></p>
+</li>
+<li><p>HiAI Engine&#x6570;&#x636E;&#x4FE1;&#x606F;</p>
+<p><strong>&#x56FE; 11</strong>  HiAI Engine&#x6570;&#x636E;&#x5C55;&#x793A;<a id="fig877315812518"></a><br><img src="figures/HiAI-Engine&#x6570;&#x636E;&#x5C55;&#x793A;.png" alt="" title="HiAI-Engine&#x6570;&#x636E;&#x5C55;&#x793A;"></p>
+</li>
+<li><p>OME&#x6570;&#x636E;&#x4FE1;&#x606F;</p>
+<p><strong>&#x56FE; 12</strong>  OME&#x7ED3;&#x679C;&#x6570;&#x636E;&#x5C55;&#x793A;<a id="fig24769211758"></a><br><img src="figures/OME&#x7ED3;&#x679C;&#x6570;&#x636E;&#x5C55;&#x793A;.png" alt="" title="OME&#x7ED3;&#x679C;&#x6570;&#x636E;&#x5C55;&#x793A;"></p>
+</li>
+<li><p>LLC&#x4FE1;&#x606F;</p>
+<p><strong>&#x56FE; 13</strong>  LLC&#x6570;&#x636E;<a id="fig366717542198"></a><br><img src="figures/LLC&#x6570;&#x636E;.png" alt="" title="LLC&#x6570;&#x636E;"></p>
+</li>
+<li><p>DDR&#x4FE1;&#x606F;</p>
+<p><strong>&#x56FE; 14</strong>  DDR&#x6570;&#x636E;<a id="fig159731304204"></a><br><img src="figures/DDR&#x6570;&#x636E;-2.png" alt="" title="DDR&#x6570;&#x636E;-2"></p>
+</li>
+</ol>
+<h2 id="&#x540E;&#x7EED;&#x5904;&#x7406;">&#x540E;&#x7EED;&#x5904;&#x7406;<a id="section1015110578198"></a></h2>
+<p>&#x91C7;&#x96C6;&#x6210;&#x529F;&#x7684;&#x7ED3;&#x679C;&#x6570;&#x636E;&#x4E5F;&#x53EF;&#x5BFC;&#x5165;&#x5230;Profiling UI&#x9875;&#x9762;&#x4E0A;&#x5C55;&#x793A;&#xFF0C;&#x64CD;&#x4F5C;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ol>
+<li><p>&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x5730;&#x5740;&#x680F;&#x8F93;&#x5165;<a href="https://profiling&#x5B89;&#x88C5;&#x670D;&#x52A1;&#x5668;IP&#x5730;&#x5740;:8099" target="_blank">https://profiling&#x5B89;&#x88C5;&#x670D;&#x52A1;&#x5668;IP&#x5730;&#x5740;:8099</a>&#xFF0C;&#x767B;&#x5F55;Profiling UI&#x5C55;&#x793A;&#x754C;&#x9762;&#xFF0C;&#x9ED8;&#x8BA4;&#x5E10;&#x53F7;/&#x5BC6;&#x7801;&#x662F;msvpadmin/Admin12#$&#xFF0C;&#x767B;&#x5F55;&#x540E;&#x5355;&#x51FB;&#x9875;&#x9762;&#x4E0A;&#x65B9;&#x201C;Analysis&#x201C;&#x56FE;&#x6807;&#xFF0C;&#x5355;&#x51FB;&#x4E0B;&#x62C9;&#x83DC;&#x5355;&#x201C;Import Results&#x201C;&#xFF0C;&#x5982;<a href="#fig8231544163915">&#x56FE;15</a>&#x6240;&#x793A;&#x3002;</p>
+<p><strong>&#x56FE; 15</strong>  &#x9009;&#x62E9;&#x83DC;&#x5355;<a id="fig8231544163915"></a><br><img src="figures/&#x9009;&#x62E9;&#x83DC;&#x5355;.png" alt="" title="&#x9009;&#x62E9;&#x83DC;&#x5355;"></p>
+</li>
+<li><p>&#x5728;&#x5F39;&#x51FA;&#x7684;&#x5BF9;&#x8BDD;&#x6846;&#x201C;Path&#x201C;&#x680F;&#x4E2D;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#x884C;&#x91C7;&#x96C6;&#x7ED3;&#x679C;&#x6240;&#x5728;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x5355;&#x51FB;&#x201C;OK&#x201C;&#xFF0C;&#x5982;<a href="#fig1545163211218">&#x56FE;16</a>&#x6240;&#x793A;&#x3002;</p>
+<p>&#x201C;Path&#x201C;&#x53C2;&#x6570;&#x5904;&#x7684;&#x8DEF;&#x5F84;&#x9700;&#x8981;&#x4E0E;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x201C;result_dir&#x201C;&#x53C2;&#x6570;&#x5904;&#x7684;&#x8DEF;&#x5F84;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#x3002;</p>
+<p><strong>&#x56FE; 16</strong>  &#x5BFC;&#x5165;&#x91C7;&#x96C6;&#x6570;&#x636E;<a id="fig1545163211218"></a><br><img src="figures/&#x5BFC;&#x5165;&#x91C7;&#x96C6;&#x6570;&#x636E;.png" alt="" title="&#x5BFC;&#x5165;&#x91C7;&#x96C6;&#x6570;&#x636E;"></p>
+</li>
+</ol>
+<h2 id="sampleini&#x6587;&#x4EF6;">sample.ini&#x6587;&#x4EF6;<a id="section1893632053018"></a></h2>
+<p>sample.ini&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x6837;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>[GENERAL]
+analysis_type=ai
+analysis_target=Launch Application
+result_dir=/home/ascend/tools/out
+umode=MIND
+profiling_mode=online
+HIAI_Engine_Profiling=on
+Framework_Profiling=on
+RTS_Profiling=on
+local_app_dir=/projects/MIND0126_02
+local_app=/projects/MIND0126_02/out/main
+app_parameters=
+cpu_profiling_interval=20
+ctrl_cpu_profiling=on
+ts_cpu_profiling=off
+ai_cpu_profiling=on
+ai_core_profiling=on
+ai_core_profiling_interval=10
+ai_core_profiling_mode=task-based
+peripheral_profiling=nic
+peripheral_profiling_interval=10
+llc_capacity=on
+llc_bandwidth=off
+llc_interval=100
+ddr_profiling=on
+ddr_interval=100
+ddr_master_id=3
+
+app_dir=/home/HwHiAiUser/HIAI_PROJECTS/66adc0ebcb506226f153262feb4f7c7c//MIND0126_02/out
+app=hiai_66adc0ebcb506226f153262feb4f7c7c_MIND0126_02_main
+ctrl_cpu_profiling_events=0x11,0x8
+ai_core_profiling_events=0x3,0x8,0x9,0xe,0x3a,0x3b,0x4a,0x49
+ai_cpu_profiling_events=0x11,0x8
+ts_cpu_profiling=off
+llc_profiling_events=hisi_l3c0_1/dsid0/,hisi_l3c0_1/dsid1/,hisi_l3c0_1/dsid2/,hisi_l3c0_1/dsid3/,hisi_l3c0_1/dsid4/,hisi_l3c0_1/dsid5/,hisi_l3c0_1/dsid6/,hisi_l3c0_1/dsid7/
+ddr_profiling_events=read,write
+stream_enabled=on
+cleanup_host_results=on
+cleanup_device_results=on
+ddk_dir=/home/ascend/tools/che/ddk/ddk
+llc_profiling=on
+job_id=b8380eea-236c-11e9-8354-286ed488e3a7
+devices=0
+</code></pre><p>&#x5173;&#x952E;&#x53C2;&#x6570;&#x7684;&#x542B;&#x4E49;&#x5982;<a href="#table92981719105310">&#x8868;1</a>&#x6240;&#x793A;&#x3002;</p>
+<p><strong>&#x8868; 1</strong>  &#x5173;&#x952E;&#x53C2;&#x6570;&#x8BF4;&#x660E;</p>
+<p><a id="table92981719105310"></a></p>
+<table><thead align="left"><tr id="row203007193532"><th class="cellrowborder" valign="top" width="31.419999999999998%" id="mcps1.2.4.1.1"><p id="p1130011919533"><a id="p1130011919533"></a><a id="p1130011919533"></a>&#x53C2;&#x6570;</p>
+</th>
+<th class="cellrowborder" valign="top" width="61.06%" id="mcps1.2.4.1.2"><p id="p1030018194532"><a id="p1030018194532"></a><a id="p1030018194532"></a>&#x8BF4;&#x660E;</p>
+</th>
+<th class="cellrowborder" valign="top" width="7.5200000000000005%" id="mcps1.2.4.1.3"><p id="p16780164212445"><a id="p16780164212445"></a><a id="p16780164212445"></a>&#x662F;&#x5426;&#x5FC5;&#x9009;</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row812801205110"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p1833242612575"><a id="p1833242612575"></a><a id="p1833242612575"></a>profiling_mode</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p17332826155713"><a id="p17332826155713"></a><a id="p17332826155713"></a>&#x8868;&#x793A;profiling&#x91C7;&#x96C6;&#x6A21;&#x5F0F;&#xFF0C;&#x914D;&#x7F6E;&#x4E3A;online&#x4E3A;&#x5728;host&#x4E0A;&#x8FD0;&#x884C;app&#xFF0C;&#x914D;&#x7F6E;&#x4E3A;offline&#x4E3A;&#x5728;device&#x4E0A;&#x8FD0;&#x884C;app&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p1578014422445"><a id="p1578014422445"></a><a id="p1578014422445"></a>&#x662F;</p>
+</td>
+</tr>
+<tr id="row1781414485117"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p1497092985711"><a id="p1497092985711"></a><a id="p1497092985711"></a>ddk_dir</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p997042920575"><a id="p997042920575"></a><a id="p997042920575"></a>&#x8868;&#x793A;ddk&#x8DEF;&#x5F84;&#xFF08;&#x6B64;&#x8DEF;&#x5F84;&#x987B;&#x5B58;&#x5728;&#xFF09;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p278213422448"><a id="p278213422448"></a><a id="p278213422448"></a>&#x662F;</p>
+</td>
+</tr>
+<tr id="row1540055211503"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p1597119291578"><a id="p1597119291578"></a><a id="p1597119291578"></a>umode</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p1636853400"><a id="p1636853400"></a><a id="p1636853400"></a>&#x8868;&#x793A;&#x5DE5;&#x7A0B;&#x6A21;&#x5F0F;&#xFF0C;&#x914D;&#x7F6E;&#x4E3A;<span class="parmvalue" id="parmvalue12785121614408"><a id="parmvalue12785121614408"></a><a id="parmvalue12785121614408"></a>&#x201C;MIND&#x201D;</span>&#x8868;&#x793A;&#x901A;&#x8FC7;Mind Studio&#x5DE5;&#x5177;&#x521B;&#x5EFA;&#x7684;&#x5DE5;&#x7A0B;&#xFF0C;&#x4F7F;&#x7528;Profiling&#x7CFB;&#x7EDF;&#x91C7;&#x96C6;&#x6570;&#x636E;&#xFF0C;&#x6B64;&#x65F6;profiling_mode&#x987B;&#x4E3A;online&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p20782204214444"><a id="p20782204214444"></a><a id="p20782204214444"></a>&#x662F;</p>
+</td>
+</tr>
+<tr id="row934124818514"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p59037605913"><a id="p59037605913"></a><a id="p59037605913"></a>app_dir</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p178244155159"><a id="p178244155159"></a><a id="p178244155159"></a>&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#xFF0C;app_dir&#x53C2;&#x6570;&#x503C;&#x9700;&#x914D;&#x7F6E;&#x4E3A;app&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x5728;UI host&#xFF08;&#x6307;Mind Studio&#x6240;&#x5728;&#x7684;&#x670D;&#x52A1;&#x5668;&#xFF09;&#x5B58;&#x50A8;&#x6839;&#x76EE;&#x5F55;&#xFF0C;&#x6B64;&#x9009;&#x9879;&#x7528;&#x6237;&#x5FC5;&#x987B;&#x8F93;&#x5165;&#x800C;&#x4E14;&#x6B64;&#x8DEF;&#x5F84;&#x9700;&#x786E;&#x5B9E;&#x5728; UI host&#x4E0A;&#x5B58;&#x5728;&#xFF0C;&#x4F8B;&#x5982;<span class="parmvalue" id="parmvalue88214919168"><a id="parmvalue88214919168"></a><a id="parmvalue88214919168"></a>&#x201C;--app_dir /projects/MIND0126_02&#x201D;</span>&#x3002;</p>
+<p id="p17794162124619"><a id="p17794162124619"></a><a id="p17794162124619"></a>&#x5728;sample.ini&#x4E2D;&#xFF0C;app_dir&#x53C2;&#x6570;&#x503C;&#x4F1A;&#x88AB;&#x4FEE;&#x6539;&#x4E3A;&#x5BF9;&#x5E94;Host&#x4E0A;&#x7684;app&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x7684;&#x6839;&#x8DEF;&#x5F84;&#xFF0C;&#x4F8B;&#x5982;<span class="filepath" id="filepath9677633152818"><a id="filepath9677633152818"></a><a id="filepath9677633152818"></a>&#x201C;~/HIAI_PROJECTS/workspace_mind_studio/MIND0126_02/out&#x201D;</span>&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x5728;sample.ini&#x4E2D;&#xFF0C;local_app_dir&#x53C2;&#x6570;&#x503C;&#x4E0E;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x7684;app_dir&#x53C2;&#x6570;&#x503C;&#x4E00;&#x81F4;&#x3002;</p>
+<p id="p49030617593"><a id="p49030617593"></a><a id="p49030617593"></a></p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p97820425447"><a id="p97820425447"></a><a id="p97820425447"></a>&#x662F;</p>
+</td>
+</tr>
+<tr id="row1776816457517"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p144871918175912"><a id="p144871918175912"></a><a id="p144871918175912"></a>app</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p10758157162911"><a id="p10758157162911"></a><a id="p10758157162911"></a>&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#xFF0C;app&#x53C2;&#x6570;&#x9700;&#x914D;&#x7F6E;&#x4E3A;app&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x5728;UI host&#x5B58;&#x50A8;&#x76EE;&#x5F55;&#xFF08;&#x81F3;app&#x540D;&#x5B57;&#xFF09;&#xFF0C;&#x6B64;&#x9009;&#x9879;&#x7528;&#x6237;&#x5FC5;&#x987B;&#x8F93;&#x5165;&#x800C;&#x4E14;&#x6B64;&#x8DEF;&#x5F84;&#x9700;&#x786E;&#x5B9E;&#x5728; UI host&#x4E0A;&#x5B58;&#x5728;&#xFF0C;&#x4F8B;&#x5982;<span class="parmvalue" id="parmvalue44036434293"><a id="parmvalue44036434293"></a><a id="parmvalue44036434293"></a>&#x201C;--app /projects/MIND0126_02/out/main&#x201D;</span>&#x3002;</p>
+<p id="p1548761818594"><a id="p1548761818594"></a><a id="p1548761818594"></a>&#x5728;sample.ini&#x4E2D;&#xFF0C;app&#x53C2;&#x6570;&#x503C;&#x4F1A;&#x88AB;&#x4FEE;&#x6539;&#x4E3A;&#x5BF9;&#x5E94;Host&#x4E0A;&#x7684;app&#x540D;&#x79F0;&#xFF0C;&#x4F8B;&#x5982;<span class="parmvalue" id="parmvalue18816173263120"><a id="parmvalue18816173263120"></a><a id="parmvalue18816173263120"></a>&#x201C;hiai_workspace_mind_studio_MIND0126_02_main&#x201D;</span>&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x5728;sample.ini&#x4E2D;&#xFF0C;local_app&#x53C2;&#x6570;&#x503C;&#x4E0E;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x7684;app&#x53C2;&#x6570;&#x503C;&#x4E00;&#x81F4;&#x3002;</p>
+<div class="note" id="note1686923105211"><a id="note1686923105211"></a><a id="note1686923105211"></a><span class="notetitle"> &#x8BF4;&#x660E;&#xFF1A; </span><div class="notebody"><p id="p15706218322"><a id="p15706218322"></a><a id="p15706218322"></a>&#x6B64;&#x5904;&#x4E3E;&#x4F8B;&#x4E2D;&#x7684;main&#x51FD;&#x6570;&#x7684;&#x7528;&#x4E8E;&#x6570;&#x636E;&#x5206;&#x6790;&#x7684;&#x4EE3;&#x7801;&#x5165;&#x53E3;&#xFF0C;&#x201C;/projects/profiling_test/app/main&#x201D;&#x662F;main&#x51FD;&#x6570;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x3002;</p>
+</div></div>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p1078213427449"><a id="p1078213427449"></a><a id="p1078213427449"></a>&#x662F;</p>
+</td>
+</tr>
+<tr id="row2611104205114"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p6332142645718"><a id="p6332142645718"></a><a id="p6332142645718"></a>devices</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p1533252615713"><a id="p1533252615713"></a><a id="p1533252615713"></a>&#x8868;&#x793A;device&#x5217;&#x8868;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;0&#x3002;</p>
+<p id="p1988012549492"><a id="p1988012549492"></a><a id="p1988012549492"></a>&#x53EA;&#x5728;CCE&#x573A;&#x666F;&#x9700;&#x8981;&#x8F93;&#x5165;&#x8BE5;&#x53C2;&#x6570;&#x503C;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p16630101535811"><a id="p16630101535811"></a><a id="p16630101535811"></a>&#x5426;</p>
+</td>
+</tr>
+<tr id="row330011193536"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p730011925316"><a id="p730011925316"></a><a id="p730011925316"></a>OME_Profiling</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p3300201945318"><a id="p3300201945318"></a><a id="p3300201945318"></a>&#x8868;&#x793A;OME&#x6A21;&#x5757;&#x5F00;&#x5173;&#x3002;&#x914D;&#x7F6E;on&#x4E3A;&#x5F00;&#x542F;&#x91C7;&#x96C6;&#xFF0C;&#x914D;&#x7F6E;off&#x4E3A;&#x4E0D;&#x91C7;&#x96C6;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;off&#x3002;</p>
+<p id="p643311610157"><a id="p643311610157"></a><a id="p643311610157"></a>&#x5728;sample.ini&#x4E2D;&#xFF0C;&#x8BE5;&#x91C7;&#x96C6;&#x9879;&#x7684;&#x540D;&#x79F0;&#x4E3A;Framework_Profiling&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p27801042134410"><a id="p27801042134410"></a><a id="p27801042134410"></a>&#x5426;</p>
+</td>
+</tr>
+<tr id="row430018192536"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p20300101915532"><a id="p20300101915532"></a><a id="p20300101915532"></a>HIAI_Engine_Profiling</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p1930019191532"><a id="p1930019191532"></a><a id="p1930019191532"></a>&#x8868;&#x793A;HiAI Engine&#x6A21;&#x5757;&#x5F00;&#x5173;&#xFF0C;&#x914D;&#x7F6E;on&#x4E3A;&#x5F00;&#x542F;&#x91C7;&#x96C6;&#xFF0C;&#x914D;&#x7F6E;off&#x4E3A;&#x4E0D;&#x91C7;&#x96C6;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;off&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p8780204214444"><a id="p8780204214444"></a><a id="p8780204214444"></a>&#x5426;</p>
+</td>
+</tr>
+<tr id="row16300419175313"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p1430019191532"><a id="p1430019191532"></a><a id="p1430019191532"></a>peripheral_profiling_interval</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p133001319155318"><a id="p133001319155318"></a><a id="p133001319155318"></a>&#x4E3A;&#x5916;&#x8BBE;&#x91C7;&#x6837;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#xFF0C;&#x987B;&#x4F4D;&#x4E8E;[1,1000]&#x4E4B;&#x5185;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;10&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p11780134212443"><a id="p11780134212443"></a><a id="p11780134212443"></a>&#x5426;</p>
+</td>
+</tr>
+<tr id="row1530081918539"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p330031910531"><a id="p330031910531"></a><a id="p330031910531"></a>peripheral_profiling</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p3300151910535"><a id="p3300151910535"></a><a id="p3300151910535"></a>&#x4EE3;&#x8868;&#x5916;&#x8BBE;&#x91C7;&#x96C6;&#x65B9;&#x5F0F;&#xFF0C;&#x53EF;&#x4E3A;&#x7A7A;&#x3002;dvpp&#x6216;nic&#x6216;&#x8005;&#x4E8C;&#x8005;&#x7686;&#x9009;&#xFF0C;&#x9700;&#x7528;&#x9017;&#x53F7;&#x5206;&#x9694;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;&#x7A7A;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p12780114211442"><a id="p12780114211442"></a><a id="p12780114211442"></a>&#x5426;</p>
+</td>
+</tr>
+<tr id="row51581415115517"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p1158101545512"><a id="p1158101545512"></a><a id="p1158101545512"></a>ctrl_cpu_profiling</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p315841545519"><a id="p315841545519"></a><a id="p315841545519"></a>&#x4EE3;&#x8868;&#x662F;&#x5426;&#x91C7;&#x96C6;ctrl cpu&#x4FE1;&#x606F;&#x3002;&#x914D;&#x7F6E;on&#x4E3A;&#x5F00;&#x542F;&#x91C7;&#x96C6;&#xFF0C;&#x914D;&#x7F6E;off&#x4E3A;&#x4E0D;&#x91C7;&#x96C6;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;off&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p197801842174414"><a id="p197801842174414"></a><a id="p197801842174414"></a>&#x5426;</p>
+</td>
+</tr>
+<tr id="row144216254559"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p6442725105518"><a id="p6442725105518"></a><a id="p6442725105518"></a>ts_cpu_profiling</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p134420258552"><a id="p134420258552"></a><a id="p134420258552"></a>&#x4EE3;&#x8868;&#x662F;&#x5426;&#x91C7;&#x96C6;ts cpu&#x4FE1;&#x606F;&#x3002;&#x914D;&#x7F6E;on&#x4E3A;&#x5F00;&#x542F;&#x91C7;&#x96C6;&#xFF0C;&#x914D;&#x7F6E;off&#x4E3A;&#x4E0D;&#x91C7;&#x96C6;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;off&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p2780542124416"><a id="p2780542124416"></a><a id="p2780542124416"></a>&#x5426;</p>
+</td>
+</tr>
+<tr id="row19442125115514"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p10442925155513"><a id="p10442925155513"></a><a id="p10442925155513"></a>ai_cpu_profiling</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p1944218258557"><a id="p1944218258557"></a><a id="p1944218258557"></a>&#x4EE3;&#x8868;&#x662F;&#x5426;&#x91C7;&#x96C6;ai cpu&#x4FE1;&#x606F;&#x3002;&#x914D;&#x7F6E;on&#x4E3A;&#x5F00;&#x542F;&#x91C7;&#x96C6;&#xFF0C;&#x914D;&#x7F6E;off&#x4E3A;&#x4E0D;&#x91C7;&#x96C6;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;off&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p1878012422444"><a id="p1878012422444"></a><a id="p1878012422444"></a>&#x5426;</p>
+</td>
+</tr>
+<tr id="row6322629135516"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p17322329165517"><a id="p17322329165517"></a><a id="p17322329165517"></a>ai_core_profiling</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p332214294555"><a id="p332214294555"></a><a id="p332214294555"></a>&#x4EE3;&#x8868;&#x662F;&#x5426;&#x91C7;&#x96C6;ai core&#x4FE1;&#x606F;&#x3002;&#x914D;&#x7F6E;on&#x4E3A;&#x5F00;&#x542F;&#x91C7;&#x96C6;&#xFF0C;&#x914D;&#x7F6E;off&#x4E3A;&#x4E0D;&#x91C7;&#x96C6;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;off&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p678016426443"><a id="p678016426443"></a><a id="p678016426443"></a>&#x5426;</p>
+</td>
+</tr>
+<tr id="row113221529135514"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p1532242911552"><a id="p1532242911552"></a><a id="p1532242911552"></a>ai_core_profiling_mode</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p1432242916555"><a id="p1432242916555"></a><a id="p1432242916555"></a>&#x4EE3;&#x8868;ai core&#x91C7;&#x96C6;&#x6A21;&#x5F0F;&#x3002;&#x53EF;&#x9009;&#x9879;&#x4E3A;task-based&#x548C;sample-based&#x3002;&#x5176;&#x4E2D;task-based&#x4E3A;&#x4EE5;task&#x7C92;&#x5EA6;&#x91C7;&#x96C6;&#xFF0C;sample-based&#x4E3A;&#x4EE5;sample&#x7C92;&#x5EA6;&#x91C7;&#x96C6;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;task-based&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p87802420446"><a id="p87802420446"></a><a id="p87802420446"></a>&#x5426;</p>
+</td>
+</tr>
+<tr id="row732272914559"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p2032362905520"><a id="p2032362905520"></a><a id="p2032362905520"></a>ai_core_profiling_interval</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p1732342995511"><a id="p1732342995511"></a><a id="p1732342995511"></a>&#x8868;&#x793A;ai core&#x91C7;&#x6837;&#x6A21;&#x5F0F;&#x4E3A;sample based&#x65F6;&#xFF0C;ai core&#x7684;&#x91C7;&#x6837;&#x5468;&#x671F;&#x957F;&#x5EA6;&#x3002;&#x53D6;&#x503C;&#x8303;&#x56F4;&#x662F;[1, 1000]&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;10&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p1678044211446"><a id="p1678044211446"></a><a id="p1678044211446"></a>&#x5426;</p>
+</td>
+</tr>
+<tr id="row34461015115713"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p14464158572"><a id="p14464158572"></a><a id="p14464158572"></a>RTS_Profiling</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p20447161585716"><a id="p20447161585716"></a><a id="p20447161585716"></a>&#x8868;&#x793A;rts&#x6A21;&#x5757;&#x5F00;&#x5173;&#x3002;&#x914D;&#x7F6E;on&#x4E3A;&#x5F00;&#x542F;&#x91C7;&#x96C6;&#xFF0C;&#x914D;&#x7F6E;off&#x4E3A;&#x4E0D;&#x91C7;&#x96C6;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;off&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p117806426449"><a id="p117806426449"></a><a id="p117806426449"></a>&#x5426;</p>
+</td>
+</tr>
+<tr id="row1412832135719"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p2128621185713"><a id="p2128621185713"></a><a id="p2128621185713"></a>result_dir</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p1212872185716"><a id="p1212872185716"></a><a id="p1212872185716"></a>&#x8868;&#x793A;&#x7ED3;&#x679C;&#x6587;&#x4EF6;&#x5B58;&#x50A8;&#x5730;&#x5740;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&#x5219;&#x521B;&#x5EFA;&#xFF0C;&#x82E5;&#x5B58;&#x5728;&#x5219;&#x5C06;&#x4EE5;&#x524D;&#x6587;&#x4EF6;&#x5939;&#x6539;&#x4E3A;.old&#x3002;&#x6B64;&#x5904;&#x8DEF;&#x5F84;&#x5E94;&#x8F93;&#x5165;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x3002;</p>
+<p id="p525274571318"><a id="p525274571318"></a><a id="p525274571318"></a>&#x5728;<span class="parmname" id="parmname825244515132"><a id="parmname825244515132"></a><a id="parmname825244515132"></a>&#x201C;result_dir&#x201D;</span>&#x5904;&#x914D;&#x7F6E;&#x7684;&#x8DEF;&#x5F84;&#x7528;&#x4E8E;&#x5B58;&#x653E;&#x91C7;&#x96C6;&#x7ED3;&#x679C;&#xFF0C;&#x9700;&#x786E;&#x4FDD;Mind Studio&#x5B89;&#x88C5;&#x7528;&#x6237;&#x5BF9;&#x6B64;&#x8DEF;&#x5F84;&#x6709;&#x53EF;&#x8BFB;&#x53EF;&#x5199;&#x7684;&#x6743;&#x9650;&#xFF0C;&#x5EFA;&#x8BAE;&#x5C06;&#x8BE5;&#x8DEF;&#x5F84;&#x914D;&#x7F6E;&#x4E3A;<span class="filepath" id="filepath1189314571919"><a id="filepath1189314571919"></a><a id="filepath1189314571919"></a>&#x201C;~/tools/&#x201D;</span>&#x4E0B;&#x7684;&#x76EE;&#x5F55;&#x6216;&#x8005;<span class="filepath" id="filepath78931857696"><a id="filepath78931857696"></a><a id="filepath78931857696"></a>&#x201C;/projects/&#x201D;</span>&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p1878094210441"><a id="p1878094210441"></a><a id="p1878094210441"></a>&#x5426;</p>
+</td>
+</tr>
+<tr id="row496912291570"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p12970192915713"><a id="p12970192915713"></a><a id="p12970192915713"></a>cpu_profiling_interval</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p1497042965715"><a id="p1497042965715"></a><a id="p1497042965715"></a>&#x8868;&#x793A;cpu&#x91C7;&#x6837;&#x5468;&#x671F;&#xFF0C;&#x82E5;&#x6709;&#x8F93;&#x5165;&#x9700;&#x786E;&#x8BA4;&#x8F93;&#x5165;&#x662F;&#x5426;&#x5728;[20, 1000]&#x4E4B;&#x95F4;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;20&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p10780742164416"><a id="p10780742164416"></a><a id="p10780742164416"></a>&#x5426;</p>
+</td>
+</tr>
+<tr id="row422204105918"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p62217455920"><a id="p62217455920"></a><a id="p62217455920"></a>import</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p138185264425"><a id="p138185264425"></a><a id="p138185264425"></a>&#x4EE3;&#x8868;&#x8C03;&#x7528;mvsp_import.pyc&#x5C06;&#x91C7;&#x96C6;&#x7ED3;&#x679C;&#x6587;&#x4EF6;&#x5BFC;&#x5165;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x9700;&#x8981;&#x914D;&#x7F6E;&#x5DE5;&#x7A0B;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x3002;&#x91C7;&#x96C6;&#x7ED3;&#x679C;&#x6587;&#x4EF6;&#x5FC5;&#x987B;&#x5B58;&#x653E;&#x5728;<span class="filepath" id="filepath19410165253516"><a id="filepath19410165253516"></a><a id="filepath19410165253516"></a>&#x201C;Mind Studio&#x5B89;&#x88C5;&#x7528;&#x6237;&#x5BB6;&#x76EE;&#x5F55;/tools&#x201D;</span>&#x4E0B;&#x7684;&#x76EE;&#x5F55;&#x6216;&#x5B50;&#x76EE;&#x5F55;&#x4E2D;&#xFF0C;&#x5426;&#x5219;&#x91C7;&#x96C6;&#x7ED3;&#x679C;&#x6587;&#x4EF6;&#x65E0;&#x6CD5;&#x5BFC;&#x5165;&#x3002;&#x6B64;&#x53C2;&#x6570;&#x672A;&#x4FDD;&#x5B58;&#x4E8E; sample.ini&#x4E2D;&#x3002;</p>
+<p id="p1622844598"><a id="p1622844598"></a><a id="p1622844598"></a><b><span class="cmdname" id="cmdname1532133654217"><a id="cmdname1532133654217"></a><a id="cmdname1532133654217"></a>python hiprof.pyc</span></b>&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x53EF;&#x4EE5;&#x53EA;&#x5305;&#x542B;import&#x53C2;&#x6570;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p1478264218442"><a id="p1478264218442"></a><a id="p1478264218442"></a>&#x5426;</p>
+</td>
+</tr>
+<tr id="row172901395591"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p42904955918"><a id="p42904955918"></a><a id="p42904955918"></a>report</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p177691980138"><a id="p177691980138"></a><a id="p177691980138"></a>&#x8868;&#x793A;&#x6253;&#x5370;profiling&#x91C7;&#x96C6;&#x7ED3;&#x679C;&#x3002;</p>
+<p id="p1229013955916"><a id="p1229013955916"></a><a id="p1229013955916"></a><b><span class="cmdname" id="cmdname474910718146"><a id="cmdname474910718146"></a><a id="cmdname474910718146"></a>python hiprof.pyc</span></b>&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x53EF;&#x4EE5;&#x53EA;&#x5305;&#x542B;report&#x53C2;&#x6570;&#xFF0C;&#x5E76;&#x5728;&#x540E;&#x9762;&#x8F93;&#x5165;profiling&#x91C7;&#x96C6;&#x540E;&#x7684;&#x7ED3;&#x679C;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x5373;&#x53EF;&#x6253;&#x5370;&#x7ED3;&#x679C;&#x3002;&#x4F8B; python hiprof.pyc --report /projects/test/profiling_output/</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p47826421441"><a id="p47826421441"></a><a id="p47826421441"></a>&#x5426;</p>
+</td>
+</tr>
+<tr id="row12941193818819"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p8486108191710"><a id="p8486108191710"></a><a id="p8486108191710"></a>llc_bandwidth</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p1941133811819"><a id="p1941133811819"></a><a id="p1941133811819"></a>&#x4EE3;&#x8868;&#x91C7;&#x96C6;LLC&#x7684;&#x8BFB;&#x5199;&#x5E26;&#x5BBD;&#x4FE1;&#x606F;&#x3002;&#x914D;&#x7F6E;&#x4E3A;on&#x4E3A;&#x5F00;&#x542F;&#x91C7;&#x96C6;&#xFF0C;&#x914D;&#x7F6E;&#x4E3A;off&#x4E3A;&#x4E0D;&#x91C7;&#x96C6;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;off&#x3002;&#x4E0E;llc_capacity&#x5F00;&#x5173;&#x4E92;&#x65A5;&#xFF0C;&#x53EA;&#x80FD;&#x540C;&#x65F6;&#x91C7;&#x96C6;&#x4E00;&#x79CD;llc&#x6570;&#x636E;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p6782842104412"><a id="p6782842104412"></a><a id="p6782842104412"></a>&#x5426;</p>
+</td>
+</tr>
+<tr id="row191017414147"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p151010416149"><a id="p151010416149"></a><a id="p151010416149"></a>llc_capacity</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p1110124151413"><a id="p1110124151413"></a><a id="p1110124151413"></a>&#x4EE3;&#x8868;&#x91C7;&#x96C6;LLC&#x7684;&#x4F7F;&#x7528;&#x5BB9;&#x91CF;&#x4FE1;&#x606F;&#x3002;&#x914D;&#x7F6E;&#x4E3A;on&#x4E3A;&#x5F00;&#x542F;&#x91C7;&#x96C6;&#xFF0C;&#x914D;&#x7F6E;&#x4E3A;off&#x4E3A;&#x4E0D;&#x91C7;&#x96C6;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;off&#x3002;&#x4E0E;llc_bandwidth&#x5F00;&#x5173;&#x4E92;&#x65A5;&#xFF0C;&#x53EA;&#x80FD;&#x540C;&#x65F6;&#x91C7;&#x96C6;&#x4E00;&#x79CD;llc&#x6570;&#x636E;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p15782642164418"><a id="p15782642164418"></a><a id="p15782642164418"></a>&#x5426;</p>
+</td>
+</tr>
+<tr id="row3203123119100"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p12037318104"><a id="p12037318104"></a><a id="p12037318104"></a>llc_interval</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p620311314108"><a id="p620311314108"></a><a id="p620311314108"></a>&#x8868;&#x793A;LLC&#x91C7;&#x6837;&#x5468;&#x671F;&#xFF0C;&#x82E5;&#x6709;&#x8F93;&#x5165;&#x9700;&#x786E;&#x8BA4;&#x8F93;&#x5165;&#x662F;&#x5426;&#x5728;[100, 1000] ms&#x4E4B;&#x95F4;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;100ms&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p27821242124416"><a id="p27821242124416"></a><a id="p27821242124416"></a>&#x5426;</p>
+</td>
+</tr>
+<tr id="row4460105894811"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p74601858144816"><a id="p74601858144816"></a><a id="p74601858144816"></a>ddr_profiling</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p5965548192412"><a id="p5965548192412"></a><a id="p5965548192412"></a>&#x4EE3;&#x8868;&#x662F;&#x5426;&#x91C7;&#x96C6;ddr&#x4FE1;&#x606F;&#x3002;&#x914D;&#x7F6E;on&#x4E3A;&#x5F00;&#x542F;&#x91C7;&#x96C6;&#xFF0C;&#x914D;&#x7F6E;off&#x4E3A;&#x4E0D;&#x91C7;&#x96C6;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;off&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p87821342114413"><a id="p87821342114413"></a><a id="p87821342114413"></a>&#x5426;</p>
+</td>
+</tr>
+<tr id="row835113164913"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p1351143134911"><a id="p1351143134911"></a><a id="p1351143134911"></a>ddr_master_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p735115324915"><a id="p735115324915"></a><a id="p735115324915"></a>&#x8868;&#x793A;&#x91C7;&#x96C6;AI CPU&#x548C;Control CPU Core&#x7684;&#x8BFB;&#x5199;&#x5E26;&#x5BBD;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;&#x7A7A;&#xFF0C;&#x5F53;&#x524D;&#x53EF;&#x9009;0,1,2,3,4,5,6,7&#x3002;0,1,2,3&#x5BF9;&#x5E94;Control CPU core ID&#xFF1B;4,5,6,7&#x5BF9;&#x5E94;AI CPU core ID&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p87821542184418"><a id="p87821542184418"></a><a id="p87821542184418"></a>&#x5426;</p>
+</td>
+</tr>
+<tr id="row1630101211509"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p1630412185015"><a id="p1630412185015"></a><a id="p1630412185015"></a>ddr_interval</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p2063071235020"><a id="p2063071235020"></a><a id="p2063071235020"></a>&#x8868;&#x793A;DDR&#x91C7;&#x96C6;&#x5468;&#x671F;&#xFF0C;&#x82E5;&#x6709;&#x8F93;&#x5165;&#x9700;&#x786E;&#x8BA4;&#x8F93;&#x5165;&#x662F;&#x5426;&#x5728;[100, 1000] ms&#x4E4B;&#x95F4;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;100ms&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p1178264264419"><a id="p1178264264419"></a><a id="p1178264264419"></a>&#x5426;</p>
+</td>
+</tr>
+<tr id="row05131026296"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p151413262915"><a id="p151413262915"></a><a id="p151413262915"></a>all</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p155148282914"><a id="p155148282914"></a><a id="p155148282914"></a>&#x8868;&#x793A;&#x6253;&#x5F00;&#x6240;&#x6709;&#x6027;&#x80FD;&#x6570;&#x636E;&#x91C7;&#x96C6;&#x5F00;&#x5173;&#xFF0C;&#x53D6;&#x503C;&#x6709;on&#xFF0C;off&#x4E24;&#x9879;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;off&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p115145216296"><a id="p115145216296"></a><a id="p115145216296"></a>&#x5426;</p>
+</td>
+</tr>
+<tr id="row1224582415151"><td class="cellrowborder" valign="top" width="31.419999999999998%" headers="mcps1.2.4.1.1 "><p id="p7246142416152"><a id="p7246142416152"></a><a id="p7246142416152"></a>help</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.06%" headers="mcps1.2.4.1.2 "><p id="p1246202471518"><a id="p1246202471518"></a><a id="p1246202471518"></a>&#x8868;&#x793A;&#x67E5;&#x8BE2;&#x5E2E;&#x52A9;&#x4FE1;&#x606F;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.3 "><p id="p8246102412153"><a id="p8246102412153"></a><a id="p8246102412153"></a>&#x5426;</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>&#x8BF4;&#x660E;&#xFF1A;</strong>   </p>
+<ul>
+<li>&#x8BF7;&#x786E;&#x8BA4;&#x521B;&#x5EFA;&#x7684;result_dir&#x7684;&#x5404;&#x7EA7;&#x8DEF;&#x5F84;&#x7686;&#x5177;&#x5907;750&#x6743;&#x9650;&#x3002;  </li>
+<li>&#x5E26;&#x53C2;&#x6570;&#x7B97;&#x5B50;&#x8F93;&#x5165;&#x683C;&#x5F0F;&#x4E3A;&#xFF08;&#x5176;&#x4E2D;para1 para2&#x662F;app&#x7684;&#x53C2;&#x6570;&#xFF09; --  <em>app&#x6587;&#x4EF6;&#x5728;UI host&#x5B58;&#x50A8;&#x76EE;&#x5F55;&#xFF08;&#x81F3;app&#x540D;&#x5B57;&#xFF09;</em>  para1 para2&#x3002;&#x4F8B;&#x5982;&#xFF1A;-- /projects/CCE/out/main para1 para2&#x3002;&#x5982;&#x679C;&#x5728;&#x6027;&#x80FD;&#x6570;&#x636E;&#x91C7;&#x96C6;&#x7684;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x589E;&#x52A0;&#x201C;--  <em>app&#x6587;&#x4EF6;&#x5728;UI host&#x5B58;&#x50A8;&#x76EE;&#x5F55;&#xFF08;&#x81F3;app&#x540D;&#x5B57;&#xFF09;</em>  para1 para2&#x201D;&#x53C2;&#x6570;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x5C06;&#x8BE5;&#x53C2;&#x6570;&#x653E;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x5C3E;&#x90E8;&#xFF0C;&#x540C;&#x65F6;&#x9700;&#x5220;&#x9664;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x7684;&#x201C;--app&#x201D;&#x53C2;&#x6570;&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x51FA;&#x73B0;&#x89E3;&#x6790;&#x9519;&#x8BEF;&#x3002;  </li>
+<li>&#x5EFA;&#x8BAE;DDR&#x548C;LLC&#x7684;&#x91C7;&#x6837;&#x5468;&#x671F;&#x4E0D;&#x5927;&#x4E8E;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x6240;&#x9700;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x5426;&#x5219;&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x73B0;&#x91C7;&#x96C6;&#x4E0D;&#x5230;&#x6570;&#x636E;&#x7684;&#x95EE;&#x9898;&#x3002;  </li>
+<li>&#x5982;&#x679C;&#x91C7;&#x96C6;&#x65F6;&#x95F4;&#x5C11;&#x4E8E;1s&#xFF0C;&#x5219;&#x4E0D;&#x4F1A;&#x5C55;&#x793A;Control CPU Usage&#x3001;AI CPU Usage&#x3001;TS CPU Usage&#x56FE;&#x3002;  </li>
+</ul>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="AI-CPU-Function分析.html" class="navigation navigation-prev " aria-label="Previous page: AI CPU Function分析">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="参考.html" class="navigation navigation-next " aria-label="Next page: 参考">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"全流程Profiling（命令行方式）","level":"1.3.3","depth":2,"next":{"title":"参考","level":"1.3.4","depth":2,"path":"参考.md","ref":"参考.md","articles":[{"title":"重置连接redis服务的密码","level":"1.3.4.1","depth":3,"path":"重置连接redis服务的密码.md","ref":"重置连接redis服务的密码.md","articles":[]},{"title":"脚本清单","level":"1.3.4.2","depth":3,"path":"脚本清单.md","ref":"脚本清单.md","articles":[]}]},"previous":{"title":"AI CPU Function分析","level":"1.3.2.3.4","depth":4,"path":"AI-CPU-Function分析.md","ref":"AI-CPU-Function分析.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"imgUrl":"","topnav":[]},"plugins":["expandable-chapters","copy"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy":{},"expandableChapters":{"cssFile":["expandable-chapters-theme.css"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"website.css"}},"file":{"path":"全流程Profiling（命令行方式）.md","mtime":"2019-04-11T16:16:33.040Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-11T16:16:35.640Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/clipboard.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/copy.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

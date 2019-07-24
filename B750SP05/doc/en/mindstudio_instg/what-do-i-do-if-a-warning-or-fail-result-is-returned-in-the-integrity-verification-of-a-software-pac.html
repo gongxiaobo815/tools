@@ -1,0 +1,955 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>What Do I Do If a WARNING or FAIL Result Is Returned in the Integrity Verification of a Software Package? · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters-theme.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-copy/css/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="what-do-i-do-if-i-cannot-view-the-online-help-documents.html" />
+    
+    
+    <link rel="prev" href="what-do-i-do-if-profiling-fails-to-be-installed.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="privacy-statement.html">
+            
+                <a href="privacy-statement.html">
+            
+                    
+                    Privacy Statement
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="about-third-party-content.html">
+            
+                <a href="about-third-party-content.html">
+            
+                    
+                    About Third-Party Content
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="about-third-party-tools.html">
+            
+                <a href="about-third-party-tools.html">
+            
+                    
+                    About Third-Party Tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="about-personal-data.html">
+            
+                <a href="about-personal-data.html">
+            
+                    
+                    About Personal Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="environment-preparation.html">
+            
+                <a href="environment-preparation.html">
+            
+                    
+                    Environment Preparation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="server.html">
+            
+                <a href="server.html">
+            
+                    
+                    Server
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="preparing-the-server-environment.html">
+            
+                <a href="preparing-the-server-environment.html">
+            
+                    
+                    Preparing the Server Environment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="setting-a-common-user.html">
+            
+                <a href="setting-a-common-user.html">
+            
+                    
+                    Setting a Common User
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="setting-the-source.html">
+            
+                <a href="setting-the-source.html">
+            
+                    
+                    Setting the Source
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="installing-dependent-packages.html">
+            
+                <a href="installing-dependent-packages.html">
+            
+                    
+                    Installing Dependent Packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="client.html">
+            
+                <a href="client.html">
+            
+                    
+                    Client
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="software-package-preparation.html">
+            
+                <a href="software-package-preparation.html">
+            
+                    
+                    Software Package Preparation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="mind-studio-installation.html">
+            
+                <a href="mind-studio-installation.html">
+            
+                    
+                    Mind Studio Installation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="verification-of-the-software-package-integrity.html">
+            
+                <a href="verification-of-the-software-package-integrity.html">
+            
+                    
+                    Verification of the Software Package Integrity 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="boot-installation.html">
+            
+                <a href="boot-installation.html">
+            
+                    
+                    Boot Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="manual-installation.html">
+            
+                <a href="manual-installation.html">
+            
+                    
+                    Manual Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3" data-path="verifying-the-installation.html">
+            
+                <a href="verifying-the-installation.html">
+            
+                    
+                    Verifying the Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="common-operations.html">
+            
+                <a href="common-operations.html">
+            
+                    
+                    Common Operations
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="starting-mind-studio.html">
+            
+                <a href="starting-mind-studio.html">
+            
+                    
+                    Starting Mind Studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" data-path="stopping-mind-studio.html">
+            
+                <a href="stopping-mind-studio.html">
+            
+                    
+                    Stopping Mind Studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.3" data-path="uninstalling-mind-studio.html">
+            
+                <a href="uninstalling-mind-studio.html">
+            
+                    
+                    Uninstalling Mind Studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.4" data-path="querying-the-mind-studio-version.html">
+            
+                <a href="querying-the-mind-studio-version.html">
+            
+                    
+                    Querying the Mind Studio Version
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.5" data-path="configuring-the-openpgp-public-key.html">
+            
+                <a href="configuring-the-openpgp-public-key.html">
+            
+                    
+                    Configuring the openpgp Public Key
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.6" data-path="changing-the-user-password.html">
+            
+                <a href="changing-the-user-password.html">
+            
+                    
+                    Changing the User Password
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.7" data-path="changing-the-ip-addresses.html">
+            
+                <a href="changing-the-ip-addresses.html">
+            
+                    
+                    Changing the IP addresses
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="version-upgrade.html">
+            
+                <a href="version-upgrade.html">
+            
+                    
+                    Version Upgrade
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="preparing-for-the-upgrade.html">
+            
+                <a href="preparing-for-the-upgrade.html">
+            
+                    
+                    Preparing for the Upgrade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="performing-upgrade.html">
+            
+                <a href="performing-upgrade.html">
+            
+                    
+                    Performing Upgrade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="exception-handling.html">
+            
+                <a href="exception-handling.html">
+            
+                    
+                    Exception Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="faqs.html">
+            
+                <a href="faqs.html">
+            
+                    
+                    FAQs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="what-do-i-do-if-a-source-configuration-error-occurs-when-the-apt-get-update-command-is-run-during-mi.html">
+            
+                <a href="what-do-i-do-if-a-source-configuration-error-occurs-when-the-apt-get-update-command-is-run-during-mi.html">
+            
+                    
+                    What Do I Do If a Source Configuration Error Occurs When the apt-get update Command Is Run During Mind Studio installation?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="what-do-i-do-if-software-cycler-（for-python）-decorator-（for-python）-xxx-error-is-displayed-during-th.html">
+            
+                <a href="what-do-i-do-if-software-cycler-（for-python）-decorator-（for-python）-xxx-error-is-displayed-during-th.html">
+            
+                    
+                    What Do I Do If "Software cycler （for python） decorator （for python） xxx error" Is Displayed During the Installation?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="what-do-i-do-if-an-error-is-reported-during-the-installation-of-mind-studio.html">
+            
+                <a href="what-do-i-do-if-an-error-is-reported-during-the-installation-of-mind-studio.html">
+            
+                    
+                    What Do I Do If an Error Is Reported During the Installation of Mind Studio?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="what-do-i-do-if-mind-studio-cannot-start-normally.html">
+            
+                <a href="what-do-i-do-if-mind-studio-cannot-start-normally.html">
+            
+                    
+                    What Do I Do If Mind Studio Cannot Start Normally?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="what-do-i-do-if-mind-studio-fails-to-be-installed.html">
+            
+                <a href="what-do-i-do-if-mind-studio-fails-to-be-installed.html">
+            
+                    
+                    What Do I Do If Mind Studio Fails to Be Installed?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="what-do-i-do-if-the-mongodb-service-fails-to-be-stopped-during-the-uninstallation.html">
+            
+                <a href="what-do-i-do-if-the-mongodb-service-fails-to-be-stopped-during-the-uninstallation.html">
+            
+                    
+                    What Do I Do If the MongoDB Service Fails to Be Stopped During the Uninstallation?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="what-do-i-do-if-mind-studio-does-not-support-automatically-running-at-server-startup.html">
+            
+                <a href="what-do-i-do-if-mind-studio-does-not-support-automatically-running-at-server-startup.html">
+            
+                    
+                    What Do I Do If Mind Studio Does Not Support Automatically Running at Server Startup? 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="what-do-i-do-if-profiling-fails-to-be-installed.html">
+            
+                <a href="what-do-i-do-if-profiling-fails-to-be-installed.html">
+            
+                    
+                    What Do I Do If Profiling Fails to Be Installed?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8.9" data-path="what-do-i-do-if-a-warning-or-fail-result-is-returned-in-the-integrity-verification-of-a-software-pac.html">
+            
+                <a href="what-do-i-do-if-a-warning-or-fail-result-is-returned-in-the-integrity-verification-of-a-software-pac.html">
+            
+                    
+                    What Do I Do If a WARNING or FAIL Result Is Returned in the Integrity Verification of a Software Package?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="what-do-i-do-if-i-cannot-view-the-online-help-documents.html">
+            
+                <a href="what-do-i-do-if-i-cannot-view-the-online-help-documents.html">
+            
+                    
+                    What Do I Do If I Cannot View the Online Help Documents?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="open-source-third-party-libraries.html">
+            
+                <a href="open-source-third-party-libraries.html">
+            
+                    
+                    Open Source Third-Party Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >What Do I Do If a WARNING or FAIL Result Is Returned in the Integrity Verification of a Software Package?</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="what-do-i-do-if-a-warning-or-fail-result-is-returned-in-the-integrity-verification-of-a-software-package">What Do I Do If a WARNING or FAIL Result Is Returned in the Integrity Verification of a Software Package?<a id="EN-US_TOPIC_0139382250"></a></h1>
+<p>If a WARNING or FAIL result is returned in the integrity verification of a software package, the verification fails. Rectify the fault by referring to the handling suggestions described in  <a href="#table01021759124719">Table 1</a>.</p>
+<p><strong>Table  1</strong>  Verification result examples</p>
+<p><a id="table01021759124719"></a></p>
+<table><thead align="left"><tr id="row710335994714"><th class="cellrowborder" valign="top" width="15.97%" id="mcps1.2.5.1.1"><p id="p1410365916473"><a id="p1410365916473"></a><a id="p1410365916473"></a>Verification Result Description</p>
+</th>
+<th class="cellrowborder" valign="top" width="56.769999999999996%" id="mcps1.2.5.1.2"><p id="p910335984710"><a id="p910335984710"></a><a id="p910335984710"></a>Displayed Information</p>
+</th>
+<th class="cellrowborder" valign="top" width="8.690000000000001%" id="mcps1.2.5.1.3"><p id="p121031259114712"><a id="p121031259114712"></a><a id="p121031259114712"></a>Verification Result</p>
+</th>
+<th class="cellrowborder" valign="top" width="18.57%" id="mcps1.2.5.1.4"><p id="p8103195954718"><a id="p8103195954718"></a><a id="p8103195954718"></a>Handling Suggestion</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row9103359184720"><td class="cellrowborder" valign="top" width="15.97%" headers="mcps1.2.5.1.1 "><p id="p5103175918475"><a id="p5103175918475"></a><a id="p5103175918475"></a>The signature verification is successful without exception.</p>
+</td>
+<td class="cellrowborder" valign="top" width="56.769999999999996%" headers="mcps1.2.5.1.2 "><p id="p835175514815"><a id="p835175514815"></a><a id="p835175514815"></a>gpg: Signature made Thu Jan 9 15:29:06 2014 CST using RSA key ID 27A74824</p>
+<p id="p13511255124812"><a id="p13511255124812"></a><a id="p13511255124812"></a>gpg: Good signature from &quot;OpenPGP signature key for Huawei software (created on 30th Dec,2013) &lt;support@huawei.com&gt;&quot;</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.690000000000001%" headers="mcps1.2.5.1.3 "><p id="p8103185904720"><a id="p8103185904720"></a><a id="p8103185904720"></a>PASS</p>
+</td>
+<td class="cellrowborder" valign="top" width="18.57%" headers="mcps1.2.5.1.4 "><p id="p71032591479"><a id="p71032591479"></a><a id="p71032591479"></a>N/A</p>
+</td>
+</tr>
+<tr id="row41038594473"><td class="cellrowborder" valign="top" width="15.97%" headers="mcps1.2.5.1.1 "><p id="p1103175914715"><a id="p1103175914715"></a><a id="p1103175914715"></a>The signature verification fails.</p>
+</td>
+<td class="cellrowborder" valign="top" width="56.769999999999996%" headers="mcps1.2.5.1.2 "><p id="p20335103944912"><a id="p20335103944912"></a><a id="p20335103944912"></a>gpg: Signature made Thu Jan 9 15:29:06 2014 CST using RSA key ID 27A74824</p>
+<p id="p533515396493"><a id="p533515396493"></a><a id="p533515396493"></a>gpg: BAD signature from &quot;OpenPGP signature key for Huawei software (created on 30th Dec,2013) &lt;support@huawei.com&gt;&quot;</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.690000000000001%" headers="mcps1.2.5.1.3 "><p id="p15103145911476"><a id="p15103145911476"></a><a id="p15103145911476"></a>FAIL</p>
+</td>
+<td class="cellrowborder" valign="top" width="18.57%" headers="mcps1.2.5.1.4 "><p id="p84741556154910"><a id="p84741556154910"></a><a id="p84741556154910"></a>Download the target file again.</p>
+</td>
+</tr>
+<tr id="row110315592471"><td class="cellrowborder" valign="top" width="15.97%" headers="mcps1.2.5.1.1 "><p id="p8104175924716"><a id="p8104175924716"></a><a id="p8104175924716"></a>The public key cannot be found.</p>
+</td>
+<td class="cellrowborder" valign="top" width="56.769999999999996%" headers="mcps1.2.5.1.2 "><p id="p287257105019"><a id="p287257105019"></a><a id="p287257105019"></a>gpg: Signature made Thu Jan 9 15:20:01 2014 CST using RSA key ID 27A74824</p>
+<p id="p168727716503"><a id="p168727716503"></a><a id="p168727716503"></a>gpg: Can&apos;t check signature: public key not found</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.690000000000001%" headers="mcps1.2.5.1.3 "><p id="p41046595479"><a id="p41046595479"></a><a id="p41046595479"></a>FAIL</p>
+</td>
+<td class="cellrowborder" valign="top" width="18.57%" headers="mcps1.2.5.1.4 "><p id="p0104959164711"><a id="p0104959164711"></a><a id="p0104959164711"></a>Download the public key again. For details, see section <a href="configuring-the-openpgp-public-key.html#li191691956335">5.3.5 Configuring the openpgp Public Key</a>.</p>
+</td>
+</tr>
+<tr id="row4104185919477"><td class="cellrowborder" valign="top" width="15.97%" headers="mcps1.2.5.1.1 "><p id="p111042598477"><a id="p111042598477"></a><a id="p111042598477"></a>The signature verification is successful, but the public key is not ultimately trusted.</p>
+</td>
+<td class="cellrowborder" valign="top" width="56.769999999999996%" headers="mcps1.2.5.1.2 "><p id="p1012085814520"><a id="p1012085814520"></a><a id="p1012085814520"></a>gpg: Signature made Thu Jan 9 15:29:06 2014 CST using RSA key ID 27A74824</p>
+<p id="p141205580522"><a id="p141205580522"></a><a id="p141205580522"></a>gpg: Good signature from &quot;OpenPGP signature key for Huawei software (created on 30th Dec,2013) &lt;support@huawei.com&gt;&quot;</p>
+<p id="p4120358175214"><a id="p4120358175214"></a><a id="p4120358175214"></a>gpg: WARNING: This key is not certified with a trusted signature!</p>
+<p id="p6120105813524"><a id="p6120105813524"></a><a id="p6120105813524"></a>gpg: There is no indication that the signature belongs to the owner.</p>
+<p id="p112015811524"><a id="p112015811524"></a><a id="p112015811524"></a>Primary key fingerprint: B100 0AC3 8C41 525A 19BD C087 99AD 81DF 27A7 4824</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.690000000000001%" headers="mcps1.2.5.1.3 "><p id="p15104165944718"><a id="p15104165944718"></a><a id="p15104165944718"></a>WARNING</p>
+</td>
+<td class="cellrowborder" valign="top" width="18.57%" headers="mcps1.2.5.1.4 "><p id="p19104165916475"><a id="p19104165916475"></a><a id="p19104165916475"></a>After confirming that <strong id="b663117567712"><a id="b663117567712"></a><a id="b663117567712"></a>KeyID </strong>is <strong id="b411661489"><a id="b411661489"></a><a id="b411661489"></a>27A74824</strong>, set the Huawei public key to ultimate trust. For details, see <a href="configuring-the-openpgp-public-key.html#li265271519229">5.3.5</a> &quot;Configuring the openpgp Public Key.&quot;</p>
+</td>
+</tr>
+<tr id="row5104105913471"><td class="cellrowborder" valign="top" width="15.97%" headers="mcps1.2.5.1.1 "><p id="p910415597478"><a id="p910415597478"></a><a id="p910415597478"></a>The corresponding source file cannot be found.</p>
+</td>
+<td class="cellrowborder" valign="top" width="56.769999999999996%" headers="mcps1.2.5.1.2 "><p id="p524892325316"><a id="p524892325316"></a><a id="p524892325316"></a>gpg: no signed data</p>
+<p id="p82487239538"><a id="p82487239538"></a><a id="p82487239538"></a>gpg: can&apos;t hash datafile: No data</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.690000000000001%" headers="mcps1.2.5.1.3 "><p id="p1810416597471"><a id="p1810416597471"></a><a id="p1810416597471"></a>FAIL</p>
+</td>
+<td class="cellrowborder" valign="top" width="18.57%" headers="mcps1.2.5.1.4 "><p id="p1910415916471"><a id="p1910415916471"></a><a id="p1910415916471"></a>Download the target file again.</p>
+</td>
+</tr>
+<tr id="row7104195914717"><td class="cellrowborder" valign="top" width="15.97%" headers="mcps1.2.5.1.1 "><p id="p10104175918476"><a id="p10104175918476"></a><a id="p10104175918476"></a>The signature has expired.</p>
+</td>
+<td class="cellrowborder" valign="top" width="56.769999999999996%" headers="mcps1.2.5.1.2 "><p id="p1546294310533"><a id="p1546294310533"></a><a id="p1546294310533"></a>gpg: Signature made 04/24/13 10:50:29 CST using RSA key ID 133B64E5</p>
+<p id="p3462743105313"><a id="p3462743105313"></a><a id="p3462743105313"></a>gpg: Expired signature from &quot; OpenPGP signature test key &lt;support@huawei.com&gt;&quot;</p>
+<p id="p2462184314536"><a id="p2462184314536"></a><a id="p2462184314536"></a>gpg: Signature expired 04/25/13 10:50:29 CST</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.690000000000001%" headers="mcps1.2.5.1.3 "><p id="p18104185919478"><a id="p18104185919478"></a><a id="p18104185919478"></a>FAIL</p>
+</td>
+<td class="cellrowborder" valign="top" width="18.57%" headers="mcps1.2.5.1.4 "><p id="p1910495918477"><a id="p1910495918477"></a><a id="p1910495918477"></a>Download an updated target file.</p>
+</td>
+</tr>
+<tr id="row19104155974713"><td class="cellrowborder" valign="top" width="15.97%" headers="mcps1.2.5.1.1 "><p id="p13104259204711"><a id="p13104259204711"></a><a id="p13104259204711"></a>The signature verification is successful, but the public key has been revoked.</p>
+</td>
+<td class="cellrowborder" valign="top" width="56.769999999999996%" headers="mcps1.2.5.1.2 "><p id="p059217216549"><a id="p059217216549"></a><a id="p059217216549"></a>gpg: Signature made 06/13/13 11:14:49 CST using RSA key ID 133B64E5</p>
+<p id="p1259219285411"><a id="p1259219285411"></a><a id="p1259219285411"></a>gpg: Good signature from &quot; OpenPGP signature test key &lt;support@huawei.com&gt;&quot;</p>
+<p id="p1592628541"><a id="p1592628541"></a><a id="p1592628541"></a>gpg: WARNING: This key has been revoked by its owner!</p>
+<p id="p759214255415"><a id="p759214255415"></a><a id="p759214255415"></a>gpg: This could mean that the signature is forged.</p>
+<p id="p1859215285415"><a id="p1859215285415"></a><a id="p1859215285415"></a>gpg: reason for revocation: Key is no longer used</p>
+<p id="p5592621543"><a id="p5592621543"></a><a id="p5592621543"></a>gpg: revocation comment:</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.690000000000001%" headers="mcps1.2.5.1.3 "><p id="p1710465911476"><a id="p1710465911476"></a><a id="p1710465911476"></a>WARNING</p>
+</td>
+<td class="cellrowborder" valign="top" width="18.57%" headers="mcps1.2.5.1.4 "><p id="p191041259204718"><a id="p191041259204718"></a><a id="p191041259204718"></a>Download the latest public key and an updated target file.</p>
+</td>
+</tr>
+<tr id="row1235751855412"><td class="cellrowborder" valign="top" width="15.97%" headers="mcps1.2.5.1.1 "><p id="p12358918115410"><a id="p12358918115410"></a><a id="p12358918115410"></a>The corresponding signature file cannot be found in the source file.</p>
+</td>
+<td class="cellrowborder" valign="top" width="56.769999999999996%" headers="mcps1.2.5.1.2 "><p id="p19358181835419"><a id="p19358181835419"></a><a id="p19358181835419"></a>None</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.690000000000001%" headers="mcps1.2.5.1.3 "><p id="p203599181543"><a id="p203599181543"></a><a id="p203599181543"></a>WARNING</p>
+</td>
+<td class="cellrowborder" valign="top" width="18.57%" headers="mcps1.2.5.1.4 "><p id="p535941815411"><a id="p535941815411"></a><a id="p535941815411"></a>Download the signature file corresponding to the target file.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="what-do-i-do-if-profiling-fails-to-be-installed.html" class="navigation navigation-prev " aria-label="Previous page: What Do I Do If Profiling Fails to Be Installed?">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="what-do-i-do-if-i-cannot-view-the-online-help-documents.html" class="navigation navigation-next " aria-label="Next page: What Do I Do If I Cannot View the Online Help Documents?">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"What Do I Do If a WARNING or FAIL Result Is Returned in the Integrity Verification of a Software Package?","level":"1.8.9","depth":2,"next":{"title":"What Do I Do If I Cannot View the Online Help Documents?","level":"1.8.10","depth":2,"path":"what-do-i-do-if-i-cannot-view-the-online-help-documents.md","ref":"what-do-i-do-if-i-cannot-view-the-online-help-documents.md","articles":[]},"previous":{"title":"What Do I Do If Profiling Fails to Be Installed?","level":"1.8.8","depth":2,"path":"what-do-i-do-if-profiling-fails-to-be-installed.md","ref":"what-do-i-do-if-profiling-fails-to-be-installed.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"imgUrl":"","topnav":[]},"plugins":["expandable-chapters","copy","replace"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"replace":{},"copy":{},"expandableChapters":{"cssFile":["expandable-chapters-theme.css"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"website.css"}},"file":{"path":"what-do-i-do-if-a-warning-or-fail-result-is-returned-in-the-integrity-verification-of-a-software-pac.md","mtime":"2019-04-12T02:08:47.820Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-12T02:08:55.974Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/clipboard.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/copy.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-replace/js/replace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

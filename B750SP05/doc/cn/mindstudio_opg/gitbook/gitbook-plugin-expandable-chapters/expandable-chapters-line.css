@@ -1,0 +1,18 @@
+.book .book-summary ul.articles li a:before,
+.book .book-summary ul.articles li span:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    left: 0px;
+    top: 0;
+    border-left: 1px dashed #c3c4c5;
+}
+.book .book-summary ul.articles li a:after,
+.book .book-summary ul.articles li span:after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    left: 0;
+    top: 50%;
+    border-bottom: 1px solid #c3c4c5;
+}

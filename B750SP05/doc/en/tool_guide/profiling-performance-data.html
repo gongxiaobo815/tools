@@ -1,0 +1,751 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Profiling Performance Data · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters-theme.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-copy/css/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="viewing-performance-analysis-results.html" />
+    
+    
+    <link rel="prev" href="configuring-data-to-be-profiled.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="log-tool.html">
+            
+                <a href="log-tool.html">
+            
+                    
+                    Log Tool
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="log-overview.html">
+            
+                <a href="log-overview.html">
+            
+                    
+                    Log Overview
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="log-processing-mechanism.html">
+            
+                <a href="log-processing-mechanism.html">
+            
+                    
+                    Log Processing Mechanism
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="log-files.html">
+            
+                <a href="log-files.html">
+            
+                    
+                    Log Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="log-levels.html">
+            
+                <a href="log-levels.html">
+            
+                    
+                    Log Levels
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="log-format.html">
+            
+                <a href="log-format.html">
+            
+                    
+                    Log Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="log-configuration.html">
+            
+                <a href="log-configuration.html">
+            
+                    
+                    Log Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="instructions.html">
+            
+                <a href="instructions.html">
+            
+                    
+                    Instructions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="viewing-logs.html">
+            
+                <a href="viewing-logs.html">
+            
+                    
+                    Viewing Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="exporting-logs.html">
+            
+                <a href="exporting-logs.html">
+            
+                    
+                    Exporting Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="uploading-logs.html">
+            
+                <a href="uploading-logs.html">
+            
+                    
+                    Uploading Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="deleting-logs.html">
+            
+                <a href="deleting-logs.html">
+            
+                    
+                    Deleting Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="setting-the-log-level.html">
+            
+                <a href="setting-the-log-level.html">
+            
+                    
+                    Setting the Log Level
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="faqs.html">
+            
+                <a href="faqs.html">
+            
+                    
+                    FAQs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="what-do-i-do-if-no-log-file-is-generated-in-the-log-directory.html">
+            
+                <a href="what-do-i-do-if-no-log-file-is-generated-in-the-log-directory.html">
+            
+                    
+                    What Do I Do If No Log File Is Generated in the Log Directory?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="what-do-i-do-if-a-log-file-fails-to-be-uploaded-to-mind-studio-due-to-the-incorrect-format.html">
+            
+                <a href="what-do-i-do-if-a-log-file-fails-to-be-uploaded-to-mind-studio-due-to-the-incorrect-format.html">
+            
+                    
+                    What Do I Do If a Log File Fails to Be Uploaded to Mind Studio Due to the Incorrect Format?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="profiling.html">
+            
+                <a href="profiling.html">
+            
+                    
+                    Profiling
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="overview-0.html">
+            
+                <a href="overview-0.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="full-process-profiling-in-graphical-mode.html">
+            
+                <a href="full-process-profiling-in-graphical-mode.html">
+            
+                    
+                    Full-Process Profiling in Graphical Mode
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="configuring-data-to-be-profiled.html">
+            
+                <a href="configuring-data-to-be-profiled.html">
+            
+                    
+                    Configuring Data to Be Profiled
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2.2" data-path="profiling-performance-data.html">
+            
+                <a href="profiling-performance-data.html">
+            
+                    
+                    Profiling Performance Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="viewing-performance-analysis-results.html">
+            
+                <a href="viewing-performance-analysis-results.html">
+            
+                    
+                    Viewing Performance Analysis Results
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.3.1" data-path="summary.html">
+            
+                <a href="summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3.2" data-path="timeline.html">
+            
+                <a href="timeline.html">
+            
+                    
+                    Timeline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3.3" data-path="control-cpu-function.html">
+            
+                <a href="control-cpu-function.html">
+            
+                    
+                    Control CPU Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3.4" data-path="ai-cpu-function.html">
+            
+                <a href="ai-cpu-function.html">
+            
+                    
+                    AI CPU Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="full-process-profiling-in-command-line-mode.html">
+            
+                <a href="full-process-profiling-in-command-line-mode.html">
+            
+                    
+                    Full-Process Profiling in Command Line Mode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="reference.html">
+            
+                <a href="reference.html">
+            
+                    
+                    Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="resetting-the-password-for-connecting-to-the-redis-service.html">
+            
+                <a href="resetting-the-password-for-connecting-to-the-redis-service.html">
+            
+                    
+                    Resetting the Password for Connecting to the Redis Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="script-list.html">
+            
+                <a href="script-list.html">
+            
+                    
+                    Script List
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="black-box.html">
+            
+                <a href="black-box.html">
+            
+                    
+                    Black Box 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="overview-1.html">
+            
+                <a href="overview-1.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="instructions-2.html">
+            
+                <a href="instructions-2.html">
+            
+                    
+                    Instructions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Profiling Performance Data</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="profiling-performance-data">Profiling Performance Data<a id="EN-US_TOPIC_0141938120"></a></h1>
+<p>In the  <strong>Profiling</strong>  window, click  <strong>Start</strong>, as shown in  <a href="#fig8510121219422">Figure 1</a>.</p>
+<p><strong>Figure  1</strong>  Profiling performance data<a id="fig8510121219422"></a><br><img src="figures/profiling-performance-data.png" alt="" title="profiling-performance-data"></p>
+<p>View the running result in the  <strong>dev-machine</strong>  window, as shown in  <a href="#fig1515421512">Figure 2 Profiling results</a>. In the  <strong>dev-machine</strong>  window, if messages  <strong>send command and launch profiling</strong>  and  <strong>Parse data finish</strong>  are displayed and no error is reported between the two lines of logs, the performance data is successfully profiled.</p>
+<p><strong>Figure  2</strong>  Profiling results<a id="fig1515421512"></a><br><img src="figures/profiling-results.png" alt="" title="profiling-results"></p>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong>   </p>
+<ol>
+<li>To profile all hardware and software data in the miniRC scenario, make sure the following tools are installed in the  <strong>/bin</strong>  directory on the device side: perf (for profiling the control CPU performance), dmidecode (for profiling the frequency data in the  <strong>Host Info</strong>  area), and mpstat (for profiling the CPU usage). Grant the execute permissions on the tools. The perf, mpstat, and dmidecode tools are provided by the Linux kernel. If the Linux version is Ubuntu 16.04 or later, you can directly use these tools. Otherwise, you need to make an SD card by referring to 3 &quot;SD Card Making&quot; in the  <a href="https://www.huawei.com/minisite/ascend/en/filedetail_2.html" target="_blank">Atlas 200 DK User Guide</a>.  </li>
+<li>Ensure that the IDE-daemon-host program on the AI host and the IDE-daemon-device program on the device are started. When IDE-daemon-host is started, you can set the port number. The default port number is  <strong>22118</strong>.  </li>
+</ol>
+</blockquote>
+<p>To stop profiling, click  <strong>Stop</strong>  on the process orchestration window.</p>
+<p><strong>Figure  3</strong>  Stopping profiling<a id="fig116531629812"></a><br><img src="figures/stopping-profiling.png" alt="" title="stopping-profiling"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="configuring-data-to-be-profiled.html" class="navigation navigation-prev " aria-label="Previous page: Configuring Data to Be Profiled">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="viewing-performance-analysis-results.html" class="navigation navigation-next " aria-label="Next page: Viewing Performance Analysis Results">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Profiling Performance Data","level":"1.3.2.2","depth":3,"next":{"title":"Viewing Performance Analysis Results","level":"1.3.2.3","depth":3,"path":"viewing-performance-analysis-results.md","ref":"viewing-performance-analysis-results.md","articles":[{"title":"Summary","level":"1.3.2.3.1","depth":4,"path":"summary.md","ref":"summary.md","articles":[]},{"title":"Timeline","level":"1.3.2.3.2","depth":4,"path":"timeline.md","ref":"timeline.md","articles":[]},{"title":"Control CPU Function","level":"1.3.2.3.3","depth":4,"path":"control-cpu-function.md","ref":"control-cpu-function.md","articles":[]},{"title":"AI CPU Function","level":"1.3.2.3.4","depth":4,"path":"ai-cpu-function.md","ref":"ai-cpu-function.md","articles":[]}]},"previous":{"title":"Configuring Data to Be Profiled","level":"1.3.2.1","depth":3,"path":"configuring-data-to-be-profiled.md","ref":"configuring-data-to-be-profiled.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"imgUrl":"","topnav":[]},"plugins":["expandable-chapters","copy"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy":{},"expandableChapters":{"cssFile":["expandable-chapters-theme.css"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"website.css"}},"file":{"path":"profiling-performance-data.md","mtime":"2019-04-12T02:14:57.344Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-12T02:14:59.988Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/clipboard.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/copy.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

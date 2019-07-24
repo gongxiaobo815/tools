@@ -1,0 +1,2693 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>MultiTypeQueue构造函数 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters-theme.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-copy/css/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="PushData.html" />
+    
+    
+    <link rel="prev" href="队列管理MultiTypeQueue接口.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="HiAIEngine开发指导.html">
+            
+                <a href="HiAIEngine开发指导.html">
+            
+                    
+                    HiAIEngine开发指导
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="概述.html">
+            
+                <a href="概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="软件概述.html">
+            
+                <a href="软件概述.html">
+            
+                    
+                    软件概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="Engine流程执行.html">
+            
+                <a href="Engine流程执行.html">
+            
+                    
+                    Engine流程执行
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="HiAI-Engine开发.html">
+            
+                <a href="HiAI-Engine开发.html">
+            
+                    
+                    HiAI Engine开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="Default工程开发.html">
+            
+                <a href="Default工程开发.html">
+            
+                    
+                    Default工程开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="自定义工程开发.html">
+            
+                <a href="自定义工程开发.html">
+            
+                    
+                    自定义工程开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1" data-path="新建自定义工程.html">
+            
+                <a href="新建自定义工程.html">
+            
+                    
+                    新建自定义工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.2" data-path="导入样例工程代码.html">
+            
+                <a href="导入样例工程代码.html">
+            
+                    
+                    导入样例工程代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.3" data-path="工程实现.html">
+            
+                <a href="工程实现.html">
+            
+                    
+                    工程实现
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.3.1" data-path="ASIC场景.html">
+            
+                <a href="ASIC场景.html">
+            
+                    
+                    ASIC场景
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.3.1.1" data-path="配置库信息及环境变量.html">
+            
+                <a href="配置库信息及环境变量.html">
+            
+                    
+                    配置库信息及环境变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.3.1.2" data-path="离线模型转化.html">
+            
+                <a href="离线模型转化.html">
+            
+                    
+                    离线模型转化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.3.1.3" data-path="Engine实现.html">
+            
+                <a href="Engine实现.html">
+            
+                    
+                    Engine实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.3.1.4" data-path="Engine串接配置.html">
+            
+                <a href="Engine串接配置.html">
+            
+                    
+                    Engine串接配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.3.1.5" data-path="Engine串接实现.html">
+            
+                <a href="Engine串接实现.html">
+            
+                    
+                    Engine串接实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.3.2" data-path="AtlasDK场景.html">
+            
+                <a href="AtlasDK场景.html">
+            
+                    
+                    AtlasDK场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.4" data-path="工程编译.html">
+            
+                <a href="工程编译.html">
+            
+                    
+                    工程编译
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.4.1" data-path="ASIC场景-0.html">
+            
+                <a href="ASIC场景-0.html">
+            
+                    
+                    ASIC场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.4.2" data-path="AtlasDK场景-1.html">
+            
+                <a href="AtlasDK场景-1.html">
+            
+                    
+                    AtlasDK场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.5" data-path="工程执行.html">
+            
+                <a href="工程执行.html">
+            
+                    
+                    工程执行
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.5.1" data-path="ASIC场景-2.html">
+            
+                <a href="ASIC场景-2.html">
+            
+                    
+                    ASIC场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.5.2" data-path="AtlasDK场景-3.html">
+            
+                <a href="AtlasDK场景-3.html">
+            
+                    
+                    AtlasDK场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="参考.html">
+            
+                <a href="参考.html">
+            
+                    
+                    参考
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="数据类型注册.html">
+            
+                <a href="数据类型注册.html">
+            
+                    
+                    数据类型注册
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1.1" data-path="自定义模板数据类型注册.html">
+            
+                <a href="自定义模板数据类型注册.html">
+            
+                    
+                    自定义模板数据类型注册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.2" data-path="自定义数据类型注册.html">
+            
+                <a href="自定义数据类型注册.html">
+            
+                    
+                    自定义数据类型注册
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="多端口消息接收.html">
+            
+                <a href="多端口消息接收.html">
+            
+                    
+                    多端口消息接收
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="FAQ.html">
+            
+                <a href="FAQ.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="用户新定义的数据类型怎么在框架中使用.html">
+            
+                <a href="用户新定义的数据类型怎么在框架中使用.html">
+            
+                    
+                    用户新定义的数据类型怎么在框架中使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="HiAIEngine-API参考.html">
+            
+                <a href="HiAIEngine-API参考.html">
+            
+                    
+                    HiAIEngine API参考
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="简介.html">
+            
+                <a href="简介.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="流程编排接口.html">
+            
+                <a href="流程编排接口.html">
+            
+                    
+                    流程编排接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="流程串接接口.html">
+            
+                <a href="流程串接接口.html">
+            
+                    
+                    流程串接接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1.1" data-path="C语言接口.html">
+            
+                <a href="C语言接口.html">
+            
+                    
+                    C语言接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1.1.1" data-path="HIAI_Init（与C++共用）.html">
+            
+                <a href="HIAI_Init（与C++共用）.html">
+            
+                    
+                    HIAI_Init（与C++共用）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.1.1.2" data-path="HIAI_CreateGraph.html">
+            
+                <a href="HIAI_CreateGraph.html">
+            
+                    
+                    HIAI_CreateGraph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.1.1.3" data-path="HIAI_DestroyGraph.html">
+            
+                <a href="HIAI_DestroyGraph.html">
+            
+                    
+                    HIAI_DestroyGraph
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.1.2" data-path="C++接口.html">
+            
+                <a href="C++接口.html">
+            
+                    
+                    C++接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1.2.1" data-path="Graph-GetInstance.html">
+            
+                <a href="Graph-GetInstance.html">
+            
+                    
+                    Graph::GetInstance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.1.2.2" data-path="Graph-CreateGraph（根据配置文件创建Graph）.html">
+            
+                <a href="Graph-CreateGraph（根据配置文件创建Graph）.html">
+            
+                    
+                    Graph::CreateGraph（根据配置文件创建Graph）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.1.2.3" data-path="Graph-CreateGraph（根据Protobuf数据格式创建Graph）.html">
+            
+                <a href="Graph-CreateGraph（根据Protobuf数据格式创建Graph）.html">
+            
+                    
+                    Graph::CreateGraph（根据Protobuf数据格式创建Graph）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.1.2.4" data-path="Graph-DestroyGraph.html">
+            
+                <a href="Graph-DestroyGraph.html">
+            
+                    
+                    Graph::DestroyGraph
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="数据存储接口.html">
+            
+                <a href="数据存储接口.html">
+            
+                    
+                    数据存储接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.2.1" data-path="C语言接口-4.html">
+            
+                <a href="C语言接口-4.html">
+            
+                    
+                    C语言接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.2.1.1" data-path="HIAI_C_SendData.html">
+            
+                <a href="HIAI_C_SendData.html">
+            
+                    
+                    HIAI_C_SendData
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2.1.2" data-path="HIAI_SetRecvRecvFunctor.html">
+            
+                <a href="HIAI_SetRecvRecvFunctor.html">
+            
+                    
+                    HIAI_SetRecvRecvFunctor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2.2" data-path="C++接口-5.html">
+            
+                <a href="C++接口-5.html">
+            
+                    
+                    C++接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.2.2.1" data-path="Graph-SendData.html">
+            
+                <a href="Graph-SendData.html">
+            
+                    
+                    Graph::SendData
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2.2.2" data-path="HIAI_SendData.html">
+            
+                <a href="HIAI_SendData.html">
+            
+                    
+                    HIAI_SendData
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2.2.3" data-path="Graph-SetDataRecvFunctor.html">
+            
+                <a href="Graph-SetDataRecvFunctor.html">
+            
+                    
+                    Graph::SetDataRecvFunctor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="接口使用示例.html">
+            
+                <a href="接口使用示例.html">
+            
+                    
+                    接口使用示例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.3.1" data-path="C语言接口使用示例.html">
+            
+                <a href="C语言接口使用示例.html">
+            
+                    
+                    C语言接口使用示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3.2" data-path="C++接口使用示例.html">
+            
+                <a href="C++接口使用示例.html">
+            
+                    
+                    C++接口使用示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Engine实现接口.html">
+            
+                <a href="Engine实现接口.html">
+            
+                    
+                    Engine实现接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="Engine的构造函数与析构函数.html">
+            
+                <a href="Engine的构造函数与析构函数.html">
+            
+                    
+                    Engine的构造函数与析构函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="Engine-Init.html">
+            
+                <a href="Engine-Init.html">
+            
+                    
+                    Engine::Init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="宏-HIAI_DEFINE_PROCESS.html">
+            
+                <a href="宏-HIAI_DEFINE_PROCESS.html">
+            
+                    
+                    宏：HIAI_DEFINE_PROCESS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="宏-HIAI_IMPL_ENGINE_PROCESS.html">
+            
+                <a href="宏-HIAI_IMPL_ENGINE_PROCESS.html">
+            
+                    
+                    宏：HIAI_IMPL_ENGINE_PROCESS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="Engine-SendData.html">
+            
+                <a href="Engine-SendData.html">
+            
+                    
+                    Engine::SendData
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="Engine-SetDataRecvFunctor.html">
+            
+                <a href="Engine-SetDataRecvFunctor.html">
+            
+                    
+                    Engine::SetDataRecvFunctor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="调用示例.html">
+            
+                <a href="调用示例.html">
+            
+                    
+                    调用示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="功能接口.html">
+            
+                <a href="功能接口.html">
+            
+                    
+                    功能接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="离线模型管家（只提供C++接口）.html">
+            
+                <a href="离线模型管家（只提供C++接口）.html">
+            
+                    
+                    离线模型管家（只提供C++接口）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1.1" data-path="AIModelManager-Init.html">
+            
+                <a href="AIModelManager-Init.html">
+            
+                    
+                    AIModelManager::Init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.2" data-path="AIModelManager-SetListener.html">
+            
+                <a href="AIModelManager-SetListener.html">
+            
+                    
+                    AIModelManager::SetListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.3" data-path="AIModelManager-Process.html">
+            
+                <a href="AIModelManager-Process.html">
+            
+                    
+                    AIModelManager::Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.4" data-path="AIModelManager-CreateOutputTensor.html">
+            
+                <a href="AIModelManager-CreateOutputTensor.html">
+            
+                    
+                    AIModelManager::CreateOutputTensor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.5" data-path="AIModelManager-CreateInputTensor.html">
+            
+                <a href="AIModelManager-CreateInputTensor.html">
+            
+                    
+                    AIModelManager::CreateInputTensor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.6" data-path="AIModelManager-IsPreAllocateOutputMem.html">
+            
+                <a href="AIModelManager-IsPreAllocateOutputMem.html">
+            
+                    
+                    AIModelManager::IsPreAllocateOutputMem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.7" data-path="AIModelManager-GetModelIOTensorDim.html">
+            
+                <a href="AIModelManager-GetModelIOTensorDim.html">
+            
+                    
+                    AIModelManager::GetModelIOTensorDim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.8" data-path="AIModelManager-GetMaxUsedMemory.html">
+            
+                <a href="AIModelManager-GetMaxUsedMemory.html">
+            
+                    
+                    AIModelManager::GetMaxUsedMemory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.9" data-path="AISimpleTensor-SetBuffer.html">
+            
+                <a href="AISimpleTensor-SetBuffer.html">
+            
+                    
+                    AISimpleTensor::SetBuffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.10" data-path="AITensorFactory-CreateTensor.html">
+            
+                <a href="AITensorFactory-CreateTensor.html">
+            
+                    
+                    AITensorFactory::CreateTensor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.11" data-path="调用示例-6.html">
+            
+                <a href="调用示例-6.html">
+            
+                    
+                    调用示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="数据类型.html">
+            
+                <a href="数据类型.html">
+            
+                    
+                    数据类型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.2.1" data-path="AIConfigItem.html">
+            
+                <a href="AIConfigItem.html">
+            
+                    
+                    AIConfigItem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2.2" data-path="AIConfig.html">
+            
+                <a href="AIConfig.html">
+            
+                    
+                    AIConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2.3" data-path="AITensorParaDescription.html">
+            
+                <a href="AITensorParaDescription.html">
+            
+                    
+                    AITensorParaDescription
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2.4" data-path="AITensorDescription.html">
+            
+                <a href="AITensorDescription.html">
+            
+                    
+                    AITensorDescription
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2.5" data-path="AIModelDescription.html">
+            
+                <a href="AIModelDescription.html">
+            
+                    
+                    AIModelDescription
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2.6" data-path="AIContext.html">
+            
+                <a href="AIContext.html">
+            
+                    
+                    AIContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2.7" data-path="TensorDimension.html">
+            
+                <a href="TensorDimension.html">
+            
+                    
+                    TensorDimension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2.8" data-path="IAIListener.html">
+            
+                <a href="IAIListener.html">
+            
+                    
+                    IAIListener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2.9" data-path="IAITensor.html">
+            
+                <a href="IAITensor.html">
+            
+                    
+                    IAITensor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="其他用于编译依赖的接口.html">
+            
+                <a href="其他用于编译依赖的接口.html">
+            
+                    
+                    其他用于编译依赖的接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.3.1" data-path="AIAlgAPIFactory.html">
+            
+                <a href="AIAlgAPIFactory.html">
+            
+                    
+                    AIAlgAPIFactory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3.2" data-path="AIAlgAPIRegisterar.html">
+            
+                <a href="AIAlgAPIRegisterar.html">
+            
+                    
+                    AIAlgAPIRegisterar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3.3" data-path="REGISTER_ALG_API_UNIQUE.html">
+            
+                <a href="REGISTER_ALG_API_UNIQUE.html">
+            
+                    
+                    REGISTER_ALG_API_UNIQUE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3.4" data-path="REGISTER_ALG_API.html">
+            
+                <a href="REGISTER_ALG_API.html">
+            
+                    
+                    REGISTER_ALG_API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3.5" data-path="AIModelManager.html">
+            
+                <a href="AIModelManager.html">
+            
+                    
+                    AIModelManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3.6" data-path="getModelInfo.html">
+            
+                <a href="getModelInfo.html">
+            
+                    
+                    getModelInfo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3.7" data-path="IAINNNode.html">
+            
+                <a href="IAINNNode.html">
+            
+                    
+                    IAINNNode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3.8" data-path="AINNNodeFactory.html">
+            
+                <a href="AINNNodeFactory.html">
+            
+                    
+                    AINNNodeFactory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3.9" data-path="AINNNodeRegisterar.html">
+            
+                <a href="AINNNodeRegisterar.html">
+            
+                    
+                    AINNNodeRegisterar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3.10" data-path="REGISTER_NN_NODE.html">
+            
+                <a href="REGISTER_NN_NODE.html">
+            
+                    
+                    REGISTER_NN_NODE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3.11" data-path="AITensorGetBytes.html">
+            
+                <a href="AITensorGetBytes.html">
+            
+                    
+                    AITensorGetBytes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3.12" data-path="AITensorFactory.html">
+            
+                <a href="AITensorFactory.html">
+            
+                    
+                    AITensorFactory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3.13" data-path="REGISTER_TENSOR_CREATER_UNIQUE.html">
+            
+                <a href="REGISTER_TENSOR_CREATER_UNIQUE.html">
+            
+                    
+                    REGISTER_TENSOR_CREATER_UNIQUE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3.14" data-path="REGISTER_TENSOR_CREATER.html">
+            
+                <a href="REGISTER_TENSOR_CREATER.html">
+            
+                    
+                    REGISTER_TENSOR_CREATER
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3.15" data-path="AISimpleTensor.html">
+            
+                <a href="AISimpleTensor.html">
+            
+                    
+                    AISimpleTensor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3.16" data-path="AINeuralNetworkBuffer.html">
+            
+                <a href="AINeuralNetworkBuffer.html">
+            
+                    
+                    AINeuralNetworkBuffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3.17" data-path="AIImageBuffer.html">
+            
+                <a href="AIImageBuffer.html">
+            
+                    
+                    AIImageBuffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3.18" data-path="HIAILog.html">
+            
+                <a href="HIAILog.html">
+            
+                    
+                    HIAILog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3.19" data-path="HIAI_ENGINE_LOG.html">
+            
+                <a href="HIAI_ENGINE_LOG.html">
+            
+                    
+                    HIAI_ENGINE_LOG
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="异常处理.html">
+            
+                <a href="异常处理.html">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="辅助接口.html">
+            
+                <a href="辅助接口.html">
+            
+                    
+                    辅助接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="数据获取接口.html">
+            
+                <a href="数据获取接口.html">
+            
+                    
+                    数据获取接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1.1" data-path="获取Device数目.html">
+            
+                <a href="获取Device数目.html">
+            
+                    
+                    获取Device数目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.1.2" data-path="获取第一个DeviceID.html">
+            
+                <a href="获取第一个DeviceID.html">
+            
+                    
+                    获取第一个DeviceID
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.1.3" data-path="获取第一个GraphID.html">
+            
+                <a href="获取第一个GraphID.html">
+            
+                    
+                    获取第一个GraphID
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.1.4" data-path="获取下一个DeviceID.html">
+            
+                <a href="获取下一个DeviceID.html">
+            
+                    
+                    获取下一个DeviceID
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.1.5" data-path="获取下一个GraphID.html">
+            
+                <a href="获取下一个GraphID.html">
+            
+                    
+                    获取下一个GraphID
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.1.6" data-path="获取Engine指针.html">
+            
+                <a href="获取Engine指针.html">
+            
+                    
+                    获取Engine指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.1.7" data-path="获取Graph的GraphId.html">
+            
+                <a href="获取Graph的GraphId.html">
+            
+                    
+                    获取Graph的GraphId
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.1.8" data-path="获取Graph的DeviceID.html">
+            
+                <a href="获取Graph的DeviceID.html">
+            
+                    
+                    获取Graph的DeviceID
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.1.9" data-path="获取Engine的GraphId.html">
+            
+                <a href="获取Engine的GraphId.html">
+            
+                    
+                    获取Engine的GraphId
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.1.10" data-path="获取Engine队列最大大小.html">
+            
+                <a href="获取Engine队列最大大小.html">
+            
+                    
+                    获取Engine队列最大大小
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.1.11" data-path="获取Engine指定端口当前队列大小.html">
+            
+                <a href="获取Engine指定端口当前队列大小.html">
+            
+                    
+                    获取Engine指定端口当前队列大小
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.1.12" data-path="解析HiAI-Engine配置文件.html">
+            
+                <a href="解析HiAI-Engine配置文件.html">
+            
+                    
+                    解析HiAI Engine配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.1.13" data-path="获取PCIe的Info.html">
+            
+                <a href="获取PCIe的Info.html">
+            
+                    
+                    获取PCIe的Info
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.1.14" data-path="获取版本号.html">
+            
+                <a href="获取版本号.html">
+            
+                    
+                    获取版本号
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="数据类型序列化和反序列化.html">
+            
+                <a href="数据类型序列化和反序列化.html">
+            
+                    
+                    数据类型序列化和反序列化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.2.1" data-path="宏-HIAI_REGISTER_DATA_TYPE.html">
+            
+                <a href="宏-HIAI_REGISTER_DATA_TYPE.html">
+            
+                    
+                    宏:HIAI_REGISTER_DATA_TYPE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2.2" data-path="宏-HIAI_REGISTER_TEMPLATE_DATA_TYPE.html">
+            
+                <a href="宏-HIAI_REGISTER_TEMPLATE_DATA_TYPE.html">
+            
+                    
+                    宏:HIAI_REGISTER_TEMPLATE_DATA_TYPE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2.3" data-path="宏-HIAI_REGISTER_SERIALIZE_FUNC.html">
+            
+                <a href="宏-HIAI_REGISTER_SERIALIZE_FUNC.html">
+            
+                    
+                    宏:HIAI_REGISTER_SERIALIZE_FUNC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2.4" data-path="Graph-ReleaseDataBuffer.html">
+            
+                <a href="Graph-ReleaseDataBuffer.html">
+            
+                    
+                    Graph::ReleaseDataBuffer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2.5" data-path="接口使用示例-7.html">
+            
+                <a href="接口使用示例-7.html">
+            
+                    
+                    接口使用示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="内存管理.html">
+            
+                <a href="内存管理.html">
+            
+                    
+                    内存管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.3.1" data-path="HIAIMemory-HIAI_DMalloc（C++专用接口）.html">
+            
+                <a href="HIAIMemory-HIAI_DMalloc（C++专用接口）.html">
+            
+                    
+                    HIAIMemory::HIAI_DMalloc（C++专用接口）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3.2" data-path="HIAIMemory-HIAI_DFree（C++专用接口）.html">
+            
+                <a href="HIAIMemory-HIAI_DFree（C++专用接口）.html">
+            
+                    
+                    HIAIMemory::HIAI_DFree（C++专用接口）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3.3" data-path="HIAI_DMalloc（C语言与C++通用接口）.html">
+            
+                <a href="HIAI_DMalloc（C语言与C++通用接口）.html">
+            
+                    
+                    HIAI_DMalloc（C语言与C++通用接口）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3.4" data-path="HIAI_DFree（C语言与C++通用接口）.html">
+            
+                <a href="HIAI_DFree（C语言与C++通用接口）.html">
+            
+                    
+                    HIAI_DFree（C语言与C++通用接口）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="日志.html">
+            
+                <a href="日志.html">
+            
+                    
+                    日志
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.4.1" data-path="错误码注册.html">
+            
+                <a href="错误码注册.html">
+            
+                    
+                    错误码注册
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.4.1.1" data-path="宏HIAI_DEF_ERROR_CODE.html">
+            
+                <a href="宏HIAI_DEF_ERROR_CODE.html">
+            
+                    
+                    宏HIAI_DEF_ERROR_CODE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4.1.2" data-path="接口使用示例-8.html">
+            
+                <a href="接口使用示例-8.html">
+            
+                    
+                    接口使用示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4.2" data-path="日志打印.html">
+            
+                <a href="日志打印.html">
+            
+                    
+                    日志打印
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.4.2.1" data-path="日志打印格式1.html">
+            
+                <a href="日志打印格式1.html">
+            
+                    
+                    日志打印格式1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4.2.2" data-path="日志打印格式2.html">
+            
+                <a href="日志打印格式2.html">
+            
+                    
+                    日志打印格式2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4.2.3" data-path="日志打印格式3.html">
+            
+                <a href="日志打印格式3.html">
+            
+                    
+                    日志打印格式3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4.2.4" data-path="日志打印格式4.html">
+            
+                <a href="日志打印格式4.html">
+            
+                    
+                    日志打印格式4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4.2.5" data-path="日志打印格式5.html">
+            
+                <a href="日志打印格式5.html">
+            
+                    
+                    日志打印格式5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4.2.6" data-path="日志打印格式6.html">
+            
+                <a href="日志打印格式6.html">
+            
+                    
+                    日志打印格式6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4.2.7" data-path="日志打印格式7.html">
+            
+                <a href="日志打印格式7.html">
+            
+                    
+                    日志打印格式7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4.2.8" data-path="日志打印格式8.html">
+            
+                <a href="日志打印格式8.html">
+            
+                    
+                    日志打印格式8
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" data-path="队列管理MultiTypeQueue接口.html">
+            
+                <a href="队列管理MultiTypeQueue接口.html">
+            
+                    
+                    队列管理MultiTypeQueue接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.5.5.1" data-path="MultiTypeQueue构造函数.html">
+            
+                <a href="MultiTypeQueue构造函数.html">
+            
+                    
+                    MultiTypeQueue构造函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5.2" data-path="PushData.html">
+            
+                <a href="PushData.html">
+            
+                    
+                    PushData
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5.3" data-path="FrontData.html">
+            
+                <a href="FrontData.html">
+            
+                    
+                    FrontData
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5.4" data-path="PopData.html">
+            
+                <a href="PopData.html">
+            
+                    
+                    PopData
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5.5" data-path="PopAllData.html">
+            
+                <a href="PopAllData.html">
+            
+                    
+                    PopAllData
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5.6" data-path="接口使用示例-9.html">
+            
+                <a href="接口使用示例-9.html">
+            
+                    
+                    接口使用示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.6" data-path="事件注册接口.html">
+            
+                <a href="事件注册接口.html">
+            
+                    
+                    事件注册接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.6.1" data-path="GraphImpl-RegisterEventHandle.html">
+            
+                <a href="GraphImpl-RegisterEventHandle.html">
+            
+                    
+                    GraphImpl::RegisterEventHandle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7" data-path="其他.html">
+            
+                <a href="其他.html">
+            
+                    
+                    其他
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.7.1" data-path="Graph-UpdateEngineConfig.html">
+            
+                <a href="Graph-UpdateEngineConfig.html">
+            
+                    
+                    Graph::UpdateEngineConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7.2" data-path="DataRecvInterface-RecvData.html">
+            
+                <a href="DataRecvInterface-RecvData.html">
+            
+                    
+                    DataRecvInterface::RecvData
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7.3" data-path="Graph-SetPublicKeyForSignatureEncryption.html">
+            
+                <a href="Graph-SetPublicKeyForSignatureEncryption.html">
+            
+                    
+                    Graph::SetPublicKeyForSignatureEncryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="附录.html">
+            
+                <a href="附录.html">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="HiAI-Engine数据类型.html">
+            
+                <a href="HiAI-Engine数据类型.html">
+            
+                    
+                    HiAI Engine数据类型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1.1" data-path="Protobuffer数据类型.html">
+            
+                <a href="Protobuffer数据类型.html">
+            
+                    
+                    Protobuffer数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.1.2" data-path="HiAI-Engine自定义数据类型.html">
+            
+                <a href="HiAI-Engine自定义数据类型.html">
+            
+                    
+                    HiAI Engine自定义数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="HiAI-Engine已经注册的数据结构.html">
+            
+                <a href="HiAI-Engine已经注册的数据结构.html">
+            
+                    
+                    HiAI Engine已经注册的数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="其他对外接口说明.html">
+            
+                <a href="其他对外接口说明.html">
+            
+                    
+                    其他对外接口说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.4" data-path="示例.html">
+            
+                <a href="示例.html">
+            
+                    
+                    示例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.4.1" data-path="编排配置示例.html">
+            
+                <a href="编排配置示例.html">
+            
+                    
+                    编排配置示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.4.2" data-path="性能优化传输示例.html">
+            
+                <a href="性能优化传输示例.html">
+            
+                    
+                    性能优化传输示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >MultiTypeQueue构造函数</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="multitypequeue&#x6784;&#x9020;&#x51FD;&#x6570;">MultiTypeQueue&#x6784;&#x9020;&#x51FD;&#x6570;<a id="ZH-CN_TOPIC_0134465235"></a></h1>
+<p>MultiTypeQueue&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
+<h2 id="&#x51FD;&#x6570;&#x683C;&#x5F0F;">&#x51FD;&#x6570;&#x683C;&#x5F0F;<a id="section428121323411"></a></h2>
+<p><strong>MultiTypeQueue(uint32_t queNum, uint32_t maxQueLen = 1024, uint32_t durationMs = 0)&#xFF1B;</strong></p>
+<h2 id="&#x53C2;&#x6570;&#x8BF4;&#x660E;">&#x53C2;&#x6570;&#x8BF4;&#x660E;<a id="section795991810344"></a></h2>
+<p><a id="table438764393513"></a></p>
+<table><thead align="left"><tr id="row53871743113510"><th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.1.4.1.1"><p id="p1438834363520"><a id="p1438834363520"></a><a id="p1438834363520"></a>&#x53C2;&#x6570;</p>
+</th>
+<th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.1.4.1.2"><p id="p173881843143514"><a id="p173881843143514"></a><a id="p173881843143514"></a>&#x8BF4;&#x660E;</p>
+</th>
+<th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.1.4.1.3"><p id="p33881343113510"><a id="p33881343113510"></a><a id="p33881343113510"></a>&#x53D6;&#x503C;&#x8303;&#x56F4;</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row1569645174011"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p102455420427"><a id="p102455420427"></a><a id="p102455420427"></a><strong id="b512028182717"><a id="b512028182717"></a><a id="b512028182717"></a>queNum</strong></p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p894011019014"><a id="p894011019014"></a><a id="p894011019014"></a>&#x6307;&#x5B9A;&#x961F;&#x5217;&#x4E2A;&#x6570;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p1569104517409"><a id="p1569104517409"></a><a id="p1569104517409"></a>-</p>
+</td>
+</tr>
+<tr id="row1620124735814"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p02021747195818"><a id="p02021747195818"></a><a id="p02021747195818"></a><strong id="b101271483272"><a id="b101271483272"></a><a id="b101271483272"></a>maxQueLen</strong></p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p92021747185816"><a id="p92021747185816"></a><a id="p92021747185816"></a>&#x6307;&#x5B9A;&#x6BCF;&#x4E2A;&#x961F;&#x5217;&#x7684;&#x6700;&#x5927;&#x957F;&#x5EA6;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p820284785819"><a id="p820284785819"></a><a id="p820284785819"></a>-</p>
+</td>
+</tr>
+<tr id="row11131105111434"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p11132135174310"><a id="p11132135174310"></a><a id="p11132135174310"></a><strong id="b151272862714"><a id="b151272862714"></a><a id="b151272862714"></a>durationMs</strong></p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p3741729707"><a id="p3741729707"></a><a id="p3741729707"></a>&#x6307;&#x5B9A;&#x961F;&#x5217;&#x6210;&#x5458;&#x4ECE;&#x5165;&#x961F;&#x5230;&#x51FA;&#x961F;&#x6700;&#x5927;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x3002;&#x5F53;&#x67D0;&#x4E2A;&#x6210;&#x5458;&#x4ECE;&#x5165;&#x961F;(Push)&#x8D77;&#xFF0C;&#x8D85;&#x8FC7;duration_ms&#x65F6;&#x95F4;&#x540E;&#x8FD8;&#x672A;&#x51FA;&#x961F;&#xFF08;Pop&#xFF09;&#xFF0C;&#x5219;&#x8BE5;&#x6210;&#x5458;&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x5220;&#x9664;&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p7132145115432"><a id="p7132145115432"></a><a id="p7132145115432"></a>-</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="&#x8FD4;&#x56DE;&#x503C;">&#x8FD4;&#x56DE;&#x503C;<a id="section15604183923815"></a></h2>
+<p>&#x65E0;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="队列管理MultiTypeQueue接口.html" class="navigation navigation-prev " aria-label="Previous page: 队列管理MultiTypeQueue接口">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="PushData.html" class="navigation navigation-next " aria-label="Next page: PushData">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"MultiTypeQueue构造函数","level":"1.3.5.5.1","depth":4,"next":{"title":"PushData","level":"1.3.5.5.2","depth":4,"path":"PushData.md","ref":"PushData.md","articles":[]},"previous":{"title":"队列管理MultiTypeQueue接口","level":"1.3.5.5","depth":3,"path":"队列管理MultiTypeQueue接口.md","ref":"队列管理MultiTypeQueue接口.md","articles":[{"title":"MultiTypeQueue构造函数","level":"1.3.5.5.1","depth":4,"path":"MultiTypeQueue构造函数.md","ref":"MultiTypeQueue构造函数.md","articles":[]},{"title":"PushData","level":"1.3.5.5.2","depth":4,"path":"PushData.md","ref":"PushData.md","articles":[]},{"title":"FrontData","level":"1.3.5.5.3","depth":4,"path":"FrontData.md","ref":"FrontData.md","articles":[]},{"title":"PopData","level":"1.3.5.5.4","depth":4,"path":"PopData.md","ref":"PopData.md","articles":[]},{"title":"PopAllData","level":"1.3.5.5.5","depth":4,"path":"PopAllData.md","ref":"PopAllData.md","articles":[]},{"title":"接口使用示例","level":"1.3.5.5.6","depth":4,"path":"接口使用示例-9.md","ref":"接口使用示例-9.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"imgUrl":"","topnav":[]},"plugins":["expandable-chapters","copy"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy":{},"expandableChapters":{"cssFile":["expandable-chapters-theme.css"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"website.css"}},"file":{"path":"MultiTypeQueue构造函数.md","mtime":"2019-04-11T17:10:19.824Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-11T17:10:22.840Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/clipboard.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/copy.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

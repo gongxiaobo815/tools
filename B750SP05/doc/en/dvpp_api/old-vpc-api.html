@@ -1,0 +1,1959 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Old VPC API · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters-theme.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-copy/css/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="cmdlist.html" />
+    
+    
+    <link rel="prev" href="new-vpc-api.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="dvpp-external-apis.html">
+            
+                <a href="dvpp-external-apis.html">
+            
+                    
+                    DVPP External APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="createdvppapi.html">
+            
+                <a href="createdvppapi.html">
+            
+                    
+                    CreateDvppApi
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="dvppctl.html">
+            
+                <a href="dvppctl.html">
+            
+                    
+                    DvppCtl
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="new-vpc-api.html">
+            
+                <a href="new-vpc-api.html">
+            
+                    
+                    New VPC API 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2.2" data-path="old-vpc-api.html">
+            
+                <a href="old-vpc-api.html">
+            
+                    
+                    Old VPC API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="cmdlist.html">
+            
+                <a href="cmdlist.html">
+            
+                    
+                    CMDLIST
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="vdec.html">
+            
+                <a href="vdec.html">
+            
+                    
+                    VDEC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="jpege.html">
+            
+                <a href="jpege.html">
+            
+                    
+                    JPEGE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.6" data-path="jpegd.html">
+            
+                <a href="jpegd.html">
+            
+                    
+                    JPEGD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.7" data-path="pngd.html">
+            
+                <a href="pngd.html">
+            
+                    
+                    PNGD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.8" data-path="venc.html">
+            
+                <a href="venc.html">
+            
+                    
+                    VENC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.9" data-path="querying-dvpp-engine-capabilities.html">
+            
+                <a href="querying-dvpp-engine-capabilities.html">
+            
+                    
+                    Querying DVPP Engine Capabilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="destroydvppapi.html">
+            
+                <a href="destroydvppapi.html">
+            
+                    
+                    DestroyDvppApi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="exception-handling.html">
+            
+                <a href="exception-handling.html">
+            
+                    
+                    Exception Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="appendix.html">
+            
+                <a href="appendix.html">
+            
+                    
+                    Appendix
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="input-parameter-structures.html">
+            
+                <a href="input-parameter-structures.html">
+            
+                    
+                    Input Parameter Structures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="structures-in-vpc_in_msg.html">
+            
+                <a href="structures-in-vpc_in_msg.html">
+            
+                    
+                    Structures in vpc_in_msg
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1.1" data-path="rawdata_overlay_config.html">
+            
+                <a href="rawdata_overlay_config.html">
+            
+                    
+                    rawdata_overlay_config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.1.2" data-path="rawdata_collage_config.html">
+            
+                <a href="rawdata_collage_config.html">
+            
+                    
+                    rawdata_collage_config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.1.3" data-path="rdmachannel.html">
+            
+                <a href="rdmachannel.html">
+            
+                    
+                    RDMACHANNEL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.1.4" data-path="vpcturningreverse.html">
+            
+                <a href="vpcturningreverse.html">
+            
+                    
+                    VpcTurningReverse
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="structures-in-vpcuserimageconfigure.html">
+            
+                <a href="structures-in-vpcuserimageconfigure.html">
+            
+                    
+                    Structures in VpcUserImageConfigure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="structures-and-classes-in-vdec_in_msg.html">
+            
+                <a href="structures-and-classes-in-vdec_in_msg.html">
+            
+                    
+                    Structures and Classes in vdec_in_msg
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.4" data-path="structures-in-image_config.html">
+            
+                <a href="structures-in-image_config.html">
+            
+                    
+                    Structures in IMAGE_CONFIG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.5" data-path="structures-in-dvpp_engine_capability_stru.html">
+            
+                <a href="structures-in-dvpp_engine_capability_stru.html">
+            
+                    
+                    Structures in dvpp_engine_capability_stru
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="dvpp-executor-tool-instructions.html">
+            
+                <a href="dvpp-executor-tool-instructions.html">
+            
+                    
+                    DVPP Executor Tool Instructions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="environment-preparation.html">
+            
+                <a href="environment-preparation.html">
+            
+                    
+                    Environment Preparation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="input-parameters-of-the-dvpp-executor-tool.html">
+            
+                <a href="input-parameters-of-the-dvpp-executor-tool.html">
+            
+                    
+                    Input Parameters of the DVPP Executor Tool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="vpc-instructions.html">
+            
+                <a href="vpc-instructions.html">
+            
+                    
+                    VPC Instructions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.3.1" data-path="basic-functions-of-the-vpc.html">
+            
+                <a href="basic-functions-of-the-vpc.html">
+            
+                    
+                    Basic Functions of the VPC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3.2" data-path="vpc-raw-data-8k.html">
+            
+                <a href="vpc-raw-data-8k.html">
+            
+                    
+                    VPC Raw Data 8K
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="cmdlist-instructions.html">
+            
+                <a href="cmdlist-instructions.html">
+            
+                    
+                    CMDLIST Instructions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.5" data-path="vdec-instructions.html">
+            
+                <a href="vdec-instructions.html">
+            
+                    
+                    VDEC Instructions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.6" data-path="venc-instructions.html">
+            
+                <a href="venc-instructions.html">
+            
+                    
+                    VENC Instructions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.7" data-path="jpege-instructions.html">
+            
+                <a href="jpege-instructions.html">
+            
+                    
+                    JPEGE Instructions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.8" data-path="jpegd-instructions.html">
+            
+                <a href="jpegd-instructions.html">
+            
+                    
+                    JPEGD Instructions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.9" data-path="pngd-instructions.html">
+            
+                <a href="pngd-instructions.html">
+            
+                    
+                    PNGD Instructions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="acronyms-and-abbreviations.html">
+            
+                <a href="acronyms-and-abbreviations.html">
+            
+                    
+                    Acronyms and Abbreviations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="auxiliary-function-apis.html">
+            
+                <a href="auxiliary-function-apis.html">
+            
+                    
+                    Auxiliary Function APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="list-of-apis-that-are-not-recommended.html">
+            
+                <a href="list-of-apis-that-are-not-recommended.html">
+            
+                    
+                    List of APIs that Are Not Recommended
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Old VPC API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="old-vpc-api">Old VPC API<a id="EN-US_TOPIC_0161913627"></a></h1>
+<p><strong>It is not recommended to use the old VPC API.</strong>  The vision pre-processing core (VPC) module is used to handle media image conversion, including scaling, color gamut conversion, bit reduction processing, format conversion, block partitioning, overlay stitching, and CMDLIST.</p>
+<ul>
+<li>The performance specifications of VPC channels (the number of which is not limited) are as follows:</li>
+</ul>
+<p>The VPC performance will be changed when the resolution is changed during image processing, such as image cropping and scaling. When the resolution of an image is less than or equal to that of the original image, the performance specifications in the typical scenario are as follows:</p>
+<p><a id="table4179193581715"></a></p>
+<table><thead align="left"><tr id="row71901935201711"><th class="cellrowborder" valign="top" width="50%" id="mcps1.1.3.1.1"><p id="p1420115616174"><a id="p1420115616174"></a><a id="p1420115616174"></a>Scene</p>
+</th>
+<th class="cellrowborder" valign="top" width="50%" id="mcps1.1.3.1.2"><p id="p2198435101713"><a id="p2198435101713"></a><a id="p2198435101713"></a>Total Frame Rate</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row6202103521717"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.1.3.1.1 "><p id="p1420603516176"><a id="p1420603516176"></a><a id="p1420603516176"></a>1080p x 32 channels</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.1.3.1.2 "><p id="p420953531714"><a id="p420953531714"></a><a id="p420953531714"></a>1440 fps</p>
+</td>
+</tr>
+<tr id="row202111435131714"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.1.3.1.1 "><p id="p417812431917"><a id="p417812431917"></a><a id="p417812431917"></a>4K x 4 channels</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.1.3.1.2 "><p id="p15218035101710"><a id="p15218035101710"></a><a id="p15218035101710"></a>360 fps</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p>When the resolution of an image is greater than that of the original image, the formula for calculating the total frame rate is as follows:</p>
+<p>Total frame rate = (3840 x 2160 x 360)/(W x H) fps</p>
+<p>Where,  <strong>W</strong>  and  <strong>H</strong>  are the maximum width and height during the VPC processing. For example, a 1080p image is cropped to 960 x 540 and then scaled to 3840 x 2160. In this case,  <strong>W</strong>  is 3840 pixels and  <strong>H</strong>  is 2160 pixels.</p>
+<p>During the processing, if the scaling-down ratio is increased, the VPC processing performance slightly decreases.</p>
+<ul>
+<li><p>Restrictions on the width and height of the input and output images of the VPC:</p>
+<ul>
+<li>The width and height of the input image must be 2-pixel aligned (even numbers).</li>
+<li><p>The width and height of the output image must be 2-pixel aligned (even numbers).</p>
+<blockquote>
+<p><img src="public_sys-resources/icon-notice.gif" alt=""> <strong>NOTICE:</strong><br>The image width and height mentioned here refer to the valid area of an image. Actually, the buffer for the data that is sent to the VPC needs to be aligned by 128 x 16.  </p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>Restrictions on the buffers of the input and output images of the VPC:</p>
+<ul>
+<li><p>Restrictions on the input buffer of the VPC:</p>
+<ul>
+<li>Input data address (OS virtual address): 128-byte aligned</li>
+<li>Buffer restriction for the input image width: 128-byte aligned</li>
+<li>Buffer restriction for the input image height: 16-byte aligned</li>
+</ul>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong><br>For an image in YUV400sp format, the caller must allocate a space of the same size as the YUV420sp format, that is, width_align_128 x high_align_16 x 1.5.  </p>
+</blockquote>
+</li>
+<li><p>Restrictions on the output buffer of the VPC:</p>
+<ul>
+<li>Output data address (OS virtual address): 128-byte aligned</li>
+<li>Buffer restriction for the output image width: 128-byte aligned</li>
+<li>Buffer restriction for the output image height: 16-byte aligned</li>
+</ul>
+</li>
+<li><p>The virtual addresses of the input and output caches for the same task should be in the same 4 GB space.</p>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong><br>When the VPC is used to implement image cropping and scaling, DvppCtl needs to be called twice. For the first calling, the input parameter is  <strong>resize_param_in_msg</strong>, and the output parameter is  <strong>resize_param_out_msg</strong>. For the second calling, the input parameter is  <strong>vpc_in_msg</strong>, and the output parameter is  <strong>vpc_out_msg</strong>. For details, see  <a href="#section1386651145017">resize_param_in_msg</a>  to  <a href="#section972263915211">Output Parameter: vpc_out_msg</a>.  </p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="input-parameter-resizeparaminmsg">Input Parameter: resize_param_in_msg<a id="section1386651145017"></a></h2>
+<p><a id="table1131218498173"></a></p>
+<table><thead align="left"><tr id="row166091349101714"><th class="cellrowborder" valign="top" width="32.323232323232325%" id="mcps1.1.4.1.1"><p id="p6609104917171"><a id="p6609104917171"></a><a id="p6609104917171"></a>Member Variable</p>
+</th>
+<th class="cellrowborder" valign="top" width="32.55555555555556%" id="mcps1.1.4.1.2"><p id="p860924910174"><a id="p860924910174"></a><a id="p860924910174"></a>Description</p>
+</th>
+<th class="cellrowborder" valign="top" width="35.12121212121212%" id="mcps1.1.4.1.3"><p id="p16609449161715"><a id="p16609449161715"></a><a id="p16609449161715"></a>Value Range</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row136091149101717"><td class="cellrowborder" valign="top" width="32.323232323232325%" headers="mcps1.1.4.1.1 "><p id="p160915498176"><a id="p160915498176"></a><a id="p160915498176"></a>int src_width</p>
+</td>
+<td class="cellrowborder" valign="top" width="32.55555555555556%" headers="mcps1.1.4.1.2 "><p id="p17609114910173"><a id="p17609114910173"></a><a id="p17609114910173"></a>Width of the original image (2-pixel aligned)</p>
+<div class="notice" id="note108623115820"><a id="note108623115820"></a><a id="note108623115820"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><p id="p2861310586"><a id="p2861310586"></a><a id="p2861310586"></a>The original image mentioned here refers to the active area of an image. Actually, the buffer for the data that is sent to the VPC needs to be aligned by 128 x 16.</p>
+</div></div>
+</td>
+<td class="cellrowborder" valign="top" width="35.12121212121212%" headers="mcps1.1.4.1.3 "><p id="p5609184921713"><a id="p5609184921713"></a><a id="p5609184921713"></a>Minimum resolution:</p>
+<a id="ul17686194162716"></a><a id="ul17686194162716"></a><ul id="ul17686194162716"><li>128 (source from VDEC)</li><li>16 (source from non-VDEC)</li></ul>
+<p id="p136091149121711"><a id="p136091149121711"></a><a id="p136091149121711"></a>Maximum resolution:</p>
+<p id="p2036820518322"><a id="p2036820518322"></a><a id="p2036820518322"></a>4096</p>
+<p id="p6545123114311"><a id="p6545123114311"></a><a id="p6545123114311"></a>Mandatory</p>
+</td>
+</tr>
+<tr id="row2610194921720"><td class="cellrowborder" valign="top" width="32.323232323232325%" headers="mcps1.1.4.1.1 "><p id="p7610104951715"><a id="p7610104951715"></a><a id="p7610104951715"></a>int src_high</p>
+</td>
+<td class="cellrowborder" valign="top" width="32.55555555555556%" headers="mcps1.1.4.1.2 "><p id="p661054913171"><a id="p661054913171"></a><a id="p661054913171"></a>Height of the original image (2-pixel aligned)</p>
+<div class="notice" id="note14781731145918"><a id="note14781731145918"></a><a id="note14781731145918"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><p id="p78543116592"><a id="p78543116592"></a><a id="p78543116592"></a>The original image mentioned here refers to the active area of an image. Actually, the buffer for the data that is sent to the VPC needs to be aligned by 128 x 16.</p>
+</div></div>
+</td>
+<td class="cellrowborder" valign="top" width="35.12121212121212%" headers="mcps1.1.4.1.3 "><p id="p19610164941711"><a id="p19610164941711"></a><a id="p19610164941711"></a>Minimum resolution:</p>
+<a id="ul8525516112818"></a><a id="ul8525516112818"></a><ul id="ul8525516112818"><li>128 (source from VDEC)</li><li>16 (source from non-VDEC)</li></ul>
+<p id="p5610144911171"><a id="p5610144911171"></a><a id="p5610144911171"></a>Maximum resolution:</p>
+<p id="p142259569324"><a id="p142259569324"></a><a id="p142259569324"></a>4096</p>
+<p id="p13571220104319"><a id="p13571220104319"></a><a id="p13571220104319"></a>Mandatory</p>
+</td>
+</tr>
+<tr id="row166102049151719"><td class="cellrowborder" valign="top" width="32.323232323232325%" headers="mcps1.1.4.1.1 "><p id="p10610184991720"><a id="p10610184991720"></a><a id="p10610184991720"></a>int hmax</p>
+</td>
+<td class="cellrowborder" valign="top" width="32.55555555555556%" headers="mcps1.1.4.1.2 "><p id="p7610949121710"><a id="p7610949121710"></a><a id="p7610949121710"></a>Maximum offset from the origin in the horizontal direction</p>
+</td>
+<td class="cellrowborder" valign="top" width="35.12121212121212%" headers="mcps1.1.4.1.3 "><p id="p961094911718"><a id="p961094911718"></a><a id="p961094911718"></a>Odd number. For details, see <a href="#section975210188521">Input Parameter: vpc_in_msg</a>.</p>
+</td>
+</tr>
+<tr id="row13610194918172"><td class="cellrowborder" valign="top" width="32.323232323232325%" headers="mcps1.1.4.1.1 "><p id="p06113494176"><a id="p06113494176"></a><a id="p06113494176"></a>int hmin</p>
+</td>
+<td class="cellrowborder" valign="top" width="32.55555555555556%" headers="mcps1.1.4.1.2 "><p id="p274414441569"><a id="p274414441569"></a><a id="p274414441569"></a>Minimum offset from the origin in the horizontal direction</p>
+</td>
+<td class="cellrowborder" valign="top" width="35.12121212121212%" headers="mcps1.1.4.1.3 "><p id="p116111249141719"><a id="p116111249141719"></a><a id="p116111249141719"></a>Even number. For details, see <a href="#section975210188521">Input Parameter: vpc_in_msg</a>.</p>
+</td>
+</tr>
+<tr id="row1861104951713"><td class="cellrowborder" valign="top" width="32.323232323232325%" headers="mcps1.1.4.1.1 "><p id="p1761144991710"><a id="p1761144991710"></a><a id="p1761144991710"></a>int vmax</p>
+</td>
+<td class="cellrowborder" valign="top" width="32.55555555555556%" headers="mcps1.1.4.1.2 "><p id="p7415155165615"><a id="p7415155165615"></a><a id="p7415155165615"></a>Maximum offset from the origin in the vertical direction</p>
+</td>
+<td class="cellrowborder" valign="top" width="35.12121212121212%" headers="mcps1.1.4.1.3 "><p id="p10611174971715"><a id="p10611174971715"></a><a id="p10611174971715"></a>Odd number. For details, see <a href="#section975210188521">Input Parameter: vpc_in_msg</a>.</p>
+</td>
+</tr>
+<tr id="row46111349151710"><td class="cellrowborder" valign="top" width="32.323232323232325%" headers="mcps1.1.4.1.1 "><p id="p186114496177"><a id="p186114496177"></a><a id="p186114496177"></a>int vmin</p>
+</td>
+<td class="cellrowborder" valign="top" width="32.55555555555556%" headers="mcps1.1.4.1.2 "><p id="p18611184917177"><a id="p18611184917177"></a><a id="p18611184917177"></a>Minimum offset from the origin in the vertical direction</p>
+</td>
+<td class="cellrowborder" valign="top" width="35.12121212121212%" headers="mcps1.1.4.1.3 "><p id="p1761164961710"><a id="p1761164961710"></a><a id="p1761164961710"></a>Even number. For details, see <a href="#section975210188521">Input Parameter: vpc_in_msg</a>.</p>
+</td>
+</tr>
+<tr id="row1861144913171"><td class="cellrowborder" valign="top" width="32.323232323232325%" headers="mcps1.1.4.1.1 "><p id="p561254981710"><a id="p561254981710"></a><a id="p561254981710"></a>int dest_width</p>
+</td>
+<td class="cellrowborder" valign="top" width="32.55555555555556%" headers="mcps1.1.4.1.2 "><p id="p8612124910174"><a id="p8612124910174"></a><a id="p8612124910174"></a>Output image width</p>
+</td>
+<td class="cellrowborder" valign="top" width="35.12121212121212%" headers="mcps1.1.4.1.3 "><p id="p36124497176"><a id="p36124497176"></a><a id="p36124497176"></a>Even number</p>
+</td>
+</tr>
+<tr id="row126121491179"><td class="cellrowborder" valign="top" width="32.323232323232325%" headers="mcps1.1.4.1.1 "><p id="p56126490179"><a id="p56126490179"></a><a id="p56126490179"></a>int dest_high</p>
+</td>
+<td class="cellrowborder" valign="top" width="32.55555555555556%" headers="mcps1.1.4.1.2 "><p id="p1761218496177"><a id="p1761218496177"></a><a id="p1761218496177"></a>Output image height</p>
+</td>
+<td class="cellrowborder" valign="top" width="35.12121212121212%" headers="mcps1.1.4.1.3 "><p id="p1961224911711"><a id="p1961224911711"></a><a id="p1961224911711"></a>Even number</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="output-parameter-resizeparamoutmsg">Output Parameter: resize_param_out_msg<a id="section1361763718514"></a></h2>
+<p><a id="table7978257154320"></a></p>
+<table><thead align="left"><tr id="row11152155844317"><th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.1.4.1.1"><p id="p51521958104317"><a id="p51521958104317"></a><a id="p51521958104317"></a>Member Variable</p>
+</th>
+<th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.1.4.1.2"><p id="p181521587436"><a id="p181521587436"></a><a id="p181521587436"></a>Description</p>
+</th>
+<th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.1.4.1.3"><p id="p13152558124317"><a id="p13152558124317"></a><a id="p13152558124317"></a>Value Range</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row31521158104317"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p7153258124318"><a id="p7153258124318"></a><a id="p7153258124318"></a>int dest_width_stride</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p8153185804315"><a id="p8153185804315"></a><a id="p8153185804315"></a>Width alignment value of the output image</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p121531358184320"><a id="p121531358184320"></a><a id="p121531358184320"></a>128</p>
+</td>
+</tr>
+<tr id="row415355818436"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p0153858104317"><a id="p0153858104317"></a><a id="p0153858104317"></a>int dest_high_stride</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p5153145812435"><a id="p5153145812435"></a><a id="p5153145812435"></a>Height alignment value of the output image</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p5153105810431"><a id="p5153105810431"></a><a id="p5153105810431"></a>16</p>
+</td>
+</tr>
+<tr id="row5153958194318"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p1215375814310"><a id="p1215375814310"></a><a id="p1215375814310"></a>int hmax</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p71531558144310"><a id="p71531558144310"></a><a id="p71531558144310"></a>Maximum offset from the origin in the horizontal direction</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p20153258204312"><a id="p20153258204312"></a><a id="p20153258204312"></a>Odd number. For details, see <a href="#section975210188521">Input Parameter: vpc_in_msg</a>.</p>
+</td>
+</tr>
+<tr id="row20153135874312"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p11153195834316"><a id="p11153195834316"></a><a id="p11153195834316"></a>int hmin</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p215313586431"><a id="p215313586431"></a><a id="p215313586431"></a>Minimum offset from the origin in the horizontal direction</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p01541258144319"><a id="p01541258144319"></a><a id="p01541258144319"></a>Even number. For details, see <a href="#section975210188521">Input Parameter: vpc_in_msg</a>.</p>
+</td>
+</tr>
+<tr id="row111541358144312"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p91541158144311"><a id="p91541158144311"></a><a id="p91541158144311"></a>int vmax</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p7154135812437"><a id="p7154135812437"></a><a id="p7154135812437"></a>Maximum offset from the origin in the vertical direction</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p1215445817438"><a id="p1215445817438"></a><a id="p1215445817438"></a>Odd number. For details, see <a href="#section975210188521">Input Parameter: vpc_in_msg</a>.</p>
+</td>
+</tr>
+<tr id="row4154858164312"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p1015465813430"><a id="p1015465813430"></a><a id="p1015465813430"></a>int vmin</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p4154558134310"><a id="p4154558134310"></a><a id="p4154558134310"></a>Minimum offset from the origin in the vertical direction</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p697413135919"><a id="p697413135919"></a><a id="p697413135919"></a>Even number. For details, see <a href="#section975210188521">Input Parameter: vpc_in_msg</a>.</p>
+</td>
+</tr>
+<tr id="row1154058194317"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p215545814313"><a id="p215545814313"></a><a id="p215545814313"></a>double hinc</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p91551858174314"><a id="p91551858174314"></a><a id="p91551858174314"></a>Horizontal scaling coefficient</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p10155358174316"><a id="p10155358174316"></a><a id="p10155358174316"></a>For details, see <a href="#section975210188521">Input Parameter: vpc_in_msg</a>.</p>
+</td>
+</tr>
+<tr id="row18155105818433"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.1 "><p id="p3155155816435"><a id="p3155155816435"></a><a id="p3155155816435"></a>double vinc</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.2 "><p id="p111551358154318"><a id="p111551358154318"></a><a id="p111551358154318"></a>Vertical scaling coefficient</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.1.4.1.3 "><p id="p61551658114311"><a id="p61551658114311"></a><a id="p61551658114311"></a>For details, see <a href="#section975210188521">Input Parameter: vpc_in_msg</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="input-parameter-vpcinmsg">Input Parameter: vpc_in_msg<a id="section975210188521"></a></h2>
+<p><a id="table2484886"></a></p>
+<table><thead align="left"><tr id="row32559554"><th class="cellrowborder" valign="top" width="17.62%" id="mcps1.1.4.1.1"><p id="p20078207"><a id="p20078207"></a><a id="p20078207"></a>Member Variable</p>
+</th>
+<th class="cellrowborder" valign="top" width="37.730000000000004%" id="mcps1.1.4.1.2"><p id="p15722052"><a id="p15722052"></a><a id="p15722052"></a>Description</p>
+</th>
+<th class="cellrowborder" valign="top" width="44.65%" id="mcps1.1.4.1.3"><p id="p65526714"><a id="p65526714"></a><a id="p65526714"></a>Value Range</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row52869519"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p54572624"><a id="p54572624"></a><a id="p54572624"></a>int format</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p58306455"><a id="p58306455"></a><a id="p58306455"></a>Image format. The caller can customize the image format as long as the subsequent number is correctly matched. For example, the value of <strong id="b13962383512"><a id="b13962383512"></a><a id="b13962383512"></a>yuv420_semi_plannar</strong> is <strong id="b8595132443"><a id="b8595132443"></a><a id="b8595132443"></a>0</strong>. If YUV420sp is defined by the caller, the corresponding value must also be<strong id="b1777429779"><a id="b1777429779"></a><a id="b1777429779"></a> 0</strong>.</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p25494807"><a id="p25494807"></a><a id="p25494807"></a>yuv420_semi_plannar = 0,//0</p>
+<p id="p194318019233"><a id="p194318019233"></a><a id="p194318019233"></a>yuv400_semi_plannar = 0,//0</p>
+<p id="p28126672"><a id="p28126672"></a><a id="p28126672"></a>yuv422_semi_plannar,//1</p>
+<p id="p51813463"><a id="p51813463"></a><a id="p51813463"></a>yuv444_semi_plannar,//2</p>
+<p id="p63667988"><a id="p63667988"></a><a id="p63667988"></a>yuv422_packed,//3</p>
+<p id="p36140984"><a id="p36140984"></a><a id="p36140984"></a>yuv444_packed,//4</p>
+<p id="p56833404"><a id="p56833404"></a><a id="p56833404"></a>rgb888_packed,//5</p>
+<p id="p41738593"><a id="p41738593"></a><a id="p41738593"></a>xrgb8888_packed,//6</p>
+<p id="p27119578"><a id="p27119578"></a><a id="p27119578"></a>Mandatory</p>
+</td>
+</tr>
+<tr id="row42749614"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p40166689"><a id="p40166689"></a><a id="p40166689"></a>int: rank</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p32276348"><a id="p32276348"></a><a id="p32276348"></a>Rank mode of an image. The caller can customize the image rank as long as the subsequent number is correctly matched.</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p66110346"><a id="p66110346"></a><a id="p66110346"></a>For details, see <a href="#table1864161418388">Table 1</a>.</p>
+<p id="p53337801"><a id="p53337801"></a><a id="p53337801"></a>Mandatory</p>
+</td>
+</tr>
+<tr id="row10278168"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p27225255"><a id="p27225255"></a><a id="p27225255"></a>int: bitwidth</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p57762035"><a id="p57762035"></a><a id="p57762035"></a>Bit depth. The default value is 8 bits. 10 bits are used only when the image format is YUV/YVU420 semi-planar and HFBC compression is used.</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p48213219"><a id="p48213219"></a><a id="p48213219"></a>8 or 10</p>
+<p id="p31265788"><a id="p31265788"></a><a id="p31265788"></a>Optional</p>
+</td>
+</tr>
+<tr id="row12956639"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p42854864"><a id="p42854864"></a><a id="p42854864"></a>int: cvdr_or_rdma</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p48691998"><a id="p48691998"></a><a id="p48691998"></a>Whether the input image is transmitted through the CVDR or RDMA channel. The CVDR channel is used by default. The input of the RDMA channel is only the HFBC data output by the VDEC.</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p51737776"><a id="p51737776"></a><a id="p51737776"></a>CVDR: 1   RDMA: 0</p>
+<p id="p62986807"><a id="p62986807"></a><a id="p62986807"></a>Optional</p>
+</td>
+</tr>
+<tr id="row30010351"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p14919362"><a id="p14919362"></a><a id="p14919362"></a>int: width</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p508818"><a id="p508818"></a><a id="p508818"></a>Width of the input original image, 2-pixel aligned (even number)</p>
+<div class="notice" id="note11679471002"><a id="note11679471002"></a><a id="note11679471002"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><p id="p101712047103"><a id="p101712047103"></a><a id="p101712047103"></a>The original image mentioned here refers to the active area of an image. Actually, the buffer for the data that is sent to the VPC needs to be aligned by 128 x 16.</p>
+</div></div>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p41214278"><a id="p41214278"></a><a id="p41214278"></a>Minimum resolution:</p>
+<a id="ul1111172923419"></a><a id="ul1111172923419"></a><ul id="ul1111172923419"><li>128 (source from VDEC)</li><li>16 (source from non-VDEC)</li></ul>
+<p id="p47546751"><a id="p47546751"></a><a id="p47546751"></a>Maximum resolution:</p>
+<p id="p25267580"><a id="p25267580"></a><a id="p25267580"></a>4096</p>
+<p id="p26081629"><a id="p26081629"></a><a id="p26081629"></a>Mandatory</p>
+</td>
+</tr>
+<tr id="row33408077"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p21699748"><a id="p21699748"></a><a id="p21699748"></a>int: high</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p12849126"><a id="p12849126"></a><a id="p12849126"></a>Height of the input original image, 2-pixel aligned (even number)</p>
+<div class="notice" id="note13429752102"><a id="note13429752102"></a><a id="note13429752102"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><p id="p5436952604"><a id="p5436952604"></a><a id="p5436952604"></a>The original image mentioned here refers to the active area of an image. Actually, the buffer for the data that is sent to the VPC needs to be aligned by 128 x 16.</p>
+</div></div>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p34146301"><a id="p34146301"></a><a id="p34146301"></a>Minimum resolution:</p>
+<a id="ul21361934123413"></a><a id="ul21361934123413"></a><ul id="ul21361934123413"><li>128 (source from VDEC)</li><li>16 (source from non-VDEC)</li></ul>
+<p id="p62374365"><a id="p62374365"></a><a id="p62374365"></a>Maximum resolution:</p>
+<p id="p24498377"><a id="p24498377"></a><a id="p24498377"></a>4096</p>
+<p id="p19158806"><a id="p19158806"></a><a id="p19158806"></a>Mandatory</p>
+</td>
+</tr>
+<tr id="row38211534"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p8126535"><a id="p8126535"></a><a id="p8126535"></a>int: stride</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p54269597"><a id="p54269597"></a><a id="p54269597"></a>Image stride</p>
+<div class="notice" id="note157804599512"><a id="note157804599512"></a><a id="note157804599512"></a><span class="noticetitle"> NOTICE: </span><div class="noticebody"><p id="p17172013469"><a id="p17172013469"></a><a id="p17172013469"></a>The stride is different for different input formats.</p>
+</div></div>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p12211165818140"><a id="p12211165818140"></a><a id="p12211165818140"></a>YUV400sp, YUV420sp, YUV422sp, and YUV444sp: The width is 128-pixel aligned.</p>
+<p id="p1247995581915"><a id="p1247995581915"></a><a id="p1247995581915"></a>YUV422Packed: The result of width x 2 is 128-pixel aligned.</p>
+<p id="p174091317101816"><a id="p174091317101816"></a><a id="p174091317101816"></a>YUV444Packed and RGB888: The value of width x 3 is 128-pixel aligned.</p>
+<p id="p135471546111810"><a id="p135471546111810"></a><a id="p135471546111810"></a>XRGB8888: The result of width x 4 is 128-pixel aligned.</p>
+<p id="p65207344"><a id="p65207344"></a><a id="p65207344"></a>Mandatory</p>
+</td>
+</tr>
+<tr id="row49995190"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p23078612"><a id="p23078612"></a><a id="p23078612"></a>double: hinc</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p57428258"><a id="p57428258"></a><a id="p57428258"></a>Horizontal amplification multiple, output channel configuration of the AI core</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p21177288"><a id="p21177288"></a><a id="p21177288"></a>[0.03125, 1) or (1, 4]</p>
+<p id="p56377868"><a id="p56377868"></a><a id="p56377868"></a>If the scaling coefficient exceeds the value range, the VPC displays an error message. If scaling is not required, set the value to<strong id="b194537553200"><a id="b194537553200"></a><a id="b194537553200"></a> 1</strong>.</p>
+<p id="p37638767"><a id="p37638767"></a><a id="p37638767"></a>Mandatory</p>
+</td>
+</tr>
+<tr id="row3204586"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p58244917"><a id="p58244917"></a><a id="p58244917"></a>double: vinc</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p20217812"><a id="p20217812"></a><a id="p20217812"></a>Vertical amplification multiple, output channel configuration of the AI core</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p27030064"><a id="p27030064"></a><a id="p27030064"></a>[0.03125, 1) or (1, 4]</p>
+<p id="p41943984"><a id="p41943984"></a><a id="p41943984"></a>If the scaling coefficient exceeds the value range, the VPC displays an error message. If scaling is not required, set the value to<strong id="b73380590"><a id="b73380590"></a><a id="b73380590"></a> 1</strong>.</p>
+<p id="p41951536"><a id="p41951536"></a><a id="p41951536"></a>Mandatory</p>
+</td>
+</tr>
+<tr id="row42019505"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p48136739"><a id="p48136739"></a><a id="p48136739"></a>double: jpeg_hinc</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p6761773"><a id="p6761773"></a><a id="p6761773"></a>Horizontal amplification multiple, JPEGE output channel configuration</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p10832760"><a id="p10832760"></a><a id="p10832760"></a>[0.03125, 1) or (1, 4]</p>
+<p id="p30385981"><a id="p30385981"></a><a id="p30385981"></a>If the scaling coefficient exceeds the value range, the VPC displays an error message.</p>
+<p id="p5038380"><a id="p5038380"></a><a id="p5038380"></a>Optional (not applicable currently)</p>
+</td>
+</tr>
+<tr id="row45345420"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p49100399"><a id="p49100399"></a><a id="p49100399"></a>double: jpeg_vinc</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p17709391"><a id="p17709391"></a><a id="p17709391"></a>Vertical amplification multiple, JPEGE output channel configuration</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p25174547"><a id="p25174547"></a><a id="p25174547"></a>[0.03125, 1) or (1, 4]</p>
+<p id="p25244334"><a id="p25244334"></a><a id="p25244334"></a>If the scaling coefficient exceeds the value range, the VPC displays an error message.</p>
+<p id="p25872420"><a id="p25872420"></a><a id="p25872420"></a>Optional (not applicable currently)</p>
+</td>
+</tr>
+<tr id="row31525188"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p3403442"><a id="p3403442"></a><a id="p3403442"></a>int: hmax</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p7243425"><a id="p7243425"></a><a id="p7243425"></a>Maximum offset from the origin in the horizontal direction</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p49846585"><a id="p49846585"></a><a id="p49846585"></a>The value must be an odd number. If cropping is not required, set the value to (Input image width &#x2013; 1).</p>
+<p id="p45966083"><a id="p45966083"></a><a id="p45966083"></a>Mandatory</p>
+</td>
+</tr>
+<tr id="row11041569"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p21951873"><a id="p21951873"></a><a id="p21951873"></a>int: hmin</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p33271298"><a id="p33271298"></a><a id="p33271298"></a>Minimum offset from the origin in the horizontal direction</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p10620619"><a id="p10620619"></a><a id="p10620619"></a>The value must be an even number.</p>
+<p id="p28476715"><a id="p28476715"></a><a id="p28476715"></a>If cropping is not required, set the value to<strong id="b9426212259"><a id="b9426212259"></a><a id="b9426212259"></a> 0</strong>.</p>
+<p id="p54963845"><a id="p54963845"></a><a id="p54963845"></a>Mandatory</p>
+</td>
+</tr>
+<tr id="row24912564"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p4651802"><a id="p4651802"></a><a id="p4651802"></a>int: vmax</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p41251652"><a id="p41251652"></a><a id="p41251652"></a>Maximum offset from the origin in the vertical direction</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p6989711499"><a id="p6989711499"></a><a id="p6989711499"></a>The value must be an odd number.</p>
+<p id="p53049498"><a id="p53049498"></a><a id="p53049498"></a>If cropping is not required, set the value to (Input image width &#x2013; 1).</p>
+<p id="p7683442"><a id="p7683442"></a><a id="p7683442"></a>Mandatory</p>
+</td>
+</tr>
+<tr id="row2042118"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p31193837"><a id="p31193837"></a><a id="p31193837"></a>int: vmin</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p43672889"><a id="p43672889"></a><a id="p43672889"></a>Minimum offset from the origin in the vertical direction</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p47843154"><a id="p47843154"></a><a id="p47843154"></a>The value must be an even number.</p>
+<p id="p27935207"><a id="p27935207"></a><a id="p27935207"></a>If cropping is not required, set the value to<strong id="b7990123511441"><a id="b7990123511441"></a><a id="b7990123511441"></a> 0</strong>.</p>
+</td>
+</tr>
+<tr id="row50090271"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p30780169"><a id="p30780169"></a><a id="p30780169"></a>int: out_width</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p10165751"><a id="p10165751"></a><a id="p10165751"></a>Output image width</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p1767381425"><a id="p1767381425"></a><a id="p1767381425"></a>The value must be an even number (2-pixel aligned).</p>
+<p id="p18119506"><a id="p18119506"></a><a id="p18119506"></a>When a smart pointer is used to allocate the output buffer, this parameter is not mandatory. When the allocated buffer is used as the output buffer, this parameter is mandatory.</p>
+</td>
+</tr>
+<tr id="row58393857"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p32281965"><a id="p32281965"></a><a id="p32281965"></a>int: out_high</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p64702333"><a id="p64702333"></a><a id="p64702333"></a>Height of the output image</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p6397593"><a id="p6397593"></a><a id="p6397593"></a>The value must be an even number (2-pixel aligned).</p>
+<p id="p122336441523"><a id="p122336441523"></a><a id="p122336441523"></a>When a smart pointer is used to allocate the output buffer, this parameter is not mandatory. When the allocated buffer is used as the output buffer, this parameter is mandatory.</p>
+</td>
+</tr>
+<tr id="row48443050"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p31573016"><a id="p31573016"></a><a id="p31573016"></a>int: h_stride</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p687914108312"><a id="p687914108312"></a><a id="p687914108312"></a>Image height stride, which is the same as that described in<strong id="b68498115266"><a id="b68498115266"></a><a id="b68498115266"></a> int:stride</strong>. You do not need to set this parameter.</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p1422101115312"><a id="p1422101115312"></a><a id="p1422101115312"></a>The default value is <strong id="b1540062710358"><a id="b1540062710358"></a><a id="b1540062710358"></a>16</strong>. That is, the default input image height is 16-byte aligned.</p>
+<p id="p1422131110315"><a id="p1422131110315"></a><a id="p1422131110315"></a>Optional</p>
+</td>
+</tr>
+<tr id="row33372188"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p18792716"><a id="p18792716"></a><a id="p18792716"></a>char* in_buffer</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p45815008"><a id="p45815008"></a><a id="p45815008"></a>Input buffer</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p20028161"><a id="p20028161"></a><a id="p20028161"></a>Ensure that the input buffer size is the same as the length and width configured in<strong id="b10833194213916"><a id="b10833194213916"></a><a id="b10833194213916"></a> in_msg</strong>. If the input image is in YUV420 semi-planar NV12 format, the image size is Width x height x 1.5. If the input buffer size is inconsistent with this calculation result, the VPC fails to be invoked.</p>
+<p id="p46035721"><a id="p46035721"></a><a id="p46035721"></a>Mandatory</p>
+</td>
+</tr>
+<tr id="row11668310"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p5609031"><a id="p5609031"></a><a id="p5609031"></a>int: in_buffer_size</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p51678398"><a id="p51678398"></a><a id="p51678398"></a>Size of the input buffer</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p25200672"><a id="p25200672"></a><a id="p25200672"></a>This value is used to verify the input buffer.</p>
+<p id="p25479462"><a id="p25479462"></a><a id="p25479462"></a>Mandatory</p>
+</td>
+</tr>
+<tr id="row27988567"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p52481483"><a id="p52481483"></a><a id="p52481483"></a>shared_ptr&lt;AutoBuffer&gt; auto_out_buffer_1</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p23141731"><a id="p23141731"></a><a id="p23141731"></a>Output buffer 1</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p62540936"><a id="p62540936"></a><a id="p62540936"></a>This buffer needs to be configured when the basic VPC functions (cropping and scaling) are used. This parameter is a smart pointer transferred into the DVPP, used for the caller to allocate the output buffer.</p>
+<p id="p25997514"><a id="p25997514"></a><a id="p25997514"></a>You only need to set either this parameter or the subsequent parameter<strong id="b14194220142619"><a id="b14194220142619"></a><a id="b14194220142619"></a> out_buffer</strong>.</p>
+</td>
+</tr>
+<tr id="row205443563514"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p20302185012301"><a id="p20302185012301"></a><a id="p20302185012301"></a>char* out_buffer</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p230275033012"><a id="p230275033012"></a><a id="p230275033012"></a>Output buffer</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p10302135019305"><a id="p10302135019305"></a><a id="p10302135019305"></a>The buffer is allocated by the caller. Ensure that the first address is 128-byte aligned and the allocated buffer is within the 4 GB space. You only need to set either this parameter or the preceding parameter <strong id="b13349224268"><a id="b13349224268"></a><a id="b13349224268"></a>auto_out_buffer_1</strong>.</p>
+</td>
+</tr>
+<tr id="row32651041"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p27488663"><a id="p27488663"></a><a id="p27488663"></a>int: out_buffer_1_size</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p11989201"><a id="p11989201"></a><a id="p11989201"></a>Size of output buffer 1</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p31601207"><a id="p31601207"></a><a id="p31601207"></a>This value is used to verify the output buffer.</p>
+<p id="p1714501167"><a id="p1714501167"></a><a id="p1714501167"></a>If <strong id="b31991918011"><a id="b31991918011"></a><a id="b31991918011"></a>shared_ptr&lt;AutoBuffer&gt; auto_out_buffer_1</strong> is used to allocate the output buffer, this parameter is optional. If <strong id="b15360375019"><a id="b15360375019"></a><a id="b15360375019"></a>char* out_buffer</strong> is used to allocate the output buffer, this parameter is mandatory.</p>
+</td>
+</tr>
+<tr id="row247619579143"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p7478135715146"><a id="p7478135715146"></a><a id="p7478135715146"></a>shared_ptr&lt;AutoBuffer&gt; auto_out_buffer_2</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p18478205771411"><a id="p18478205771411"></a><a id="p18478205771411"></a>The smart pointer is the output of the other channel of the VPC dual-channel. (reserved interface)</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p114783579149"><a id="p114783579149"></a><a id="p114783579149"></a>--</p>
+</td>
+</tr>
+<tr id="row8921102161513"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p1592219213158"><a id="p1592219213158"></a><a id="p1592219213158"></a>int: out_buffer_2_size</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p552925275513"><a id="p552925275513"></a><a id="p552925275513"></a>Buffersize is the size of auto_out_buffer_2 smart pointer output buffer2.(reserved interface)</p>
+<p id="p48923548166"><a id="p48923548166"></a><a id="p48923548166"></a></p>
+<p id="p39222261515"><a id="p39222261515"></a><a id="p39222261515"></a></p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p8922824151"><a id="p8922824151"></a><a id="p8922824151"></a>--</p>
+</td>
+</tr>
+<tr id="row50257313"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p44310522"><a id="p44310522"></a><a id="p44310522"></a>int: use_flag</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p2171223143614"><a id="p2171223143614"></a><a id="p2171223143614"></a>Flag indicating whether the VPC function is used</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p2071282412364"><a id="p2071282412364"></a><a id="p2071282412364"></a>0: VPC</p>
+<p id="p1271514248364"><a id="p1271514248364"></a><a id="p1271514248364"></a>1: vpcrawdata8k</p>
+<p id="p32382491"><a id="p32382491"></a><a id="p32382491"></a>Default value: 0</p>
+<p id="p53649474"><a id="p53649474"></a><a id="p53649474"></a>Optional</p>
+</td>
+</tr>
+<tr id="row13083223"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p53108166"><a id="p53108166"></a><a id="p53108166"></a>rawdata_overlay_config: overlay[4]</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p6794185"><a id="p6794185"></a><a id="p6794185"></a>Raw data overlay structure, including the width, height, stride, image type, image format, bit width, and memory address of an image either text-based or picture-based</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p13458121"><a id="p13458121"></a><a id="p13458121"></a>For details, see <a href="rawdata_overlay_config.html">rawdata_overlay_config</a>.</p>
+</td>
+</tr>
+<tr id="row16365997"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p50577374"><a id="p50577374"></a><a id="p50577374"></a>rawdata_collage_config: collage</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p3126595"><a id="p3126595"></a><a id="p3126595"></a>Raw data stitching structure, including the width, height, stitching format, and output address of the overlaid text-based image after being scaled by the VPC</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p51927620"><a id="p51927620"></a><a id="p51927620"></a>For details, see <a href="rawdata_collage_config.html">rawdata_collage_config</a>.</p>
+</td>
+</tr>
+<tr id="row13621238595"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p10420170111018"><a id="p10420170111018"></a><a id="p10420170111018"></a>RDMACHANNEL rdma;</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p1542012061017"><a id="p1542012061017"></a><a id="p1542012061017"></a>Configuration structure dedicated for HFBC data</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p1142030171017"><a id="p1142030171017"></a><a id="p1142030171017"></a>For details, see <a href="rdmachannel.html">RDMACHANNEL</a>.</p>
+</td>
+</tr>
+<tr id="row91859501597"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p18738210321"><a id="p18738210321"></a><a id="p18738210321"></a>VpcTurningReverse turningReverse1</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p10422180131016"><a id="p10422180131016"></a><a id="p10422180131016"></a>Reserved interface for VPC tuning</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p1342215013107"><a id="p1342215013107"></a><a id="p1342215013107"></a>--</p>
+</td>
+</tr>
+<tr id="row8678145312918"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p3422160101012"><a id="p3422160101012"></a><a id="p3422160101012"></a>bool isVpcUseTurning1</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p72511041153510"><a id="p72511041153510"></a><a id="p72511041153510"></a>Flag indicating whether VPC tuning is used. It is used together with<strong id="b877775517352"><a id="b877775517352"></a><a id="b877775517352"></a> turningReverse1</strong>. (Reserved interface)</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p4986152312389"><a id="p4986152312389"></a><a id="p4986152312389"></a>--</p>
+</td>
+</tr>
+<tr id="row2125125711313"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p7731998144"><a id="p7731998144"></a><a id="p7731998144"></a>VpcTurningReverse turningReverse2</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p11731169171415"><a id="p11731169171415"></a><a id="p11731169171415"></a>Reserved interface for VPC tuning</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p3731169121412"><a id="p3731169121412"></a><a id="p3731169121412"></a>--</p>
+</td>
+</tr>
+<tr id="row20529141121410"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p1073289111410"><a id="p1073289111410"></a><a id="p1073289111410"></a>bool isVpcUseTurning2</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p1732159181410"><a id="p1732159181410"></a><a id="p1732159181410"></a>Flag indicating whether VPC tuning is used. It is used together with<strong id="b1111225362"><a id="b1111225362"></a><a id="b1111225362"></a> turningReverse2</strong>. (Reserved interface)</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p873212915144"><a id="p873212915144"></a><a id="p873212915144"></a>--</p>
+</td>
+</tr>
+<tr id="row1245865135415"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p91642004539"><a id="p91642004539"></a><a id="p91642004539"></a>string *yuvscaler_paraset</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p1816419035316"><a id="p1816419035316"></a><a id="p1816419035316"></a>Pointer to the first address of the array for the parameter set file path and file name</p>
+<div class="note" id="note12341711174412"><a id="note12341711174412"></a><a id="note12341711174412"></a><span class="notetitle"> NOTE: </span><div class="notebody"><a id="ul1601028124711"></a><a id="ul1601028124711"></a><ul id="ul1601028124711"><li>The parameter set must be on the device.</li><li>Ensure that the transferred file path is correct.</li></ul>
+</div></div>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p51649025310"><a id="p51649025310"></a><a id="p51649025310"></a>The path of the parameter set file consists of the absolute file path on the device and the file name, for example, <strong id="b87663916395"><a id="b87663916395"></a><a id="b87663916395"></a>{&quot;/home/HwHiAiUser/matrix/YUVScaler_pra.h&quot;}</strong>.</p>
+<p id="p12564173094615"><a id="p12564173094615"></a><a id="p12564173094615"></a></p>
+</td>
+</tr>
+<tr id="row1159753185217"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p1416418020533"><a id="p1416418020533"></a><a id="p1416418020533"></a>unsigned int yuvscaler_paraset_size</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p6164106533"><a id="p6164106533"></a><a id="p6164106533"></a>Number of elements in the string array. The default value is <strong id="b116720430179"><a id="b116720430179"></a><a id="b116720430179"></a>1</strong>.</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p716412017534"><a id="p716412017534"></a><a id="p716412017534"></a>yuvscaler_paraset_size &#x2264; 10</p>
+</td>
+</tr>
+<tr id="row1456994975218"><td class="cellrowborder" valign="top" width="17.62%" headers="mcps1.1.4.1.1 "><p id="p316417035312"><a id="p316417035312"></a><a id="p316417035312"></a>unsigned int index</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.730000000000004%" headers="mcps1.1.4.1.2 "><p id="p216418025319"><a id="p216418025319"></a><a id="p216418025319"></a>Index of the elements in the yuvscaler_paraset array</p>
+</td>
+<td class="cellrowborder" valign="top" width="44.65%" headers="mcps1.1.4.1.3 "><p id="p116411011536"><a id="p116411011536"></a><a id="p116411011536"></a>0 &#x2264; index &lt; 10</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="output-parameter-vpcoutmsg">Output Parameter: vpc_out_msg<a id="section972263915211"></a></h2>
+<p>None. The output image is in  <strong>auto_out_buffer_1</strong>  of<strong> vpc_in_msg</strong>. You can obtain the image by reading the buffer.</p>
+<p><strong>Table  1</strong>  Rank configuration table for the input and output image formats</p>
+<p><a id="table1864161418388"></a></p>
+<table><thead align="left"><tr id="row52458145385"><th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.1"><p id="p92451214133815"><a id="p92451214133815"></a><a id="p92451214133815"></a>Input Image Format</p>
+</th>
+<th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.2"><p id="p1124612145387"><a id="p1124612145387"></a><a id="p1124612145387"></a>Rank Parameter Configuration of the VPC</p>
+</th>
+<th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.3"><p id="p424619143382"><a id="p424619143382"></a><a id="p424619143382"></a>Output Image Format</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row324612148389"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p5246131473816"><a id="p5246131473816"></a><a id="p5246131473816"></a>YUV420sp  NV12</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p12462014183814"><a id="p12462014183814"></a><a id="p12462014183814"></a>NV12 = 0</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p6246314133810"><a id="p6246314133810"></a><a id="p6246314133810"></a>YUV420sp  NV21</p>
+</td>
+</tr>
+<tr id="row624610141381"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p1524641483812"><a id="p1524641483812"></a><a id="p1524641483812"></a>YUV420sp  NV21</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p11246121473819"><a id="p11246121473819"></a><a id="p11246121473819"></a>NV21 = 1</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p172461814203820"><a id="p172461814203820"></a><a id="p172461814203820"></a>YUV420sp  NV21</p>
+</td>
+</tr>
+<tr id="row162461114153819"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p1024615141383"><a id="p1024615141383"></a><a id="p1024615141383"></a>YUV420sp  NV12</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p42461314173811"><a id="p42461314173811"></a><a id="p42461314173811"></a>NV12 = 1</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p1924641463817"><a id="p1924641463817"></a><a id="p1924641463817"></a>YUV420sp  NV12</p>
+</td>
+</tr>
+<tr id="row172465144384"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p924601412381"><a id="p924601412381"></a><a id="p924601412381"></a>YUV420sp  NV21</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p32465143380"><a id="p32465143380"></a><a id="p32465143380"></a>NV21 = 0</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p824621417386"><a id="p824621417386"></a><a id="p824621417386"></a>YUV420sp  NV12</p>
+</td>
+</tr>
+<tr id="row1689511423912"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p1495044512913"><a id="p1495044512913"></a><a id="p1495044512913"></a>YUV422sp  NV16</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p196216457920"><a id="p196216457920"></a><a id="p196216457920"></a>NV16 = 1</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p20974184510911"><a id="p20974184510911"></a><a id="p20974184510911"></a>YUV420sp  NV12</p>
+</td>
+</tr>
+<tr id="row6884739596"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p189901645391"><a id="p189901645391"></a><a id="p189901645391"></a>YUV422sp  NV61</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p19993451399"><a id="p19993451399"></a><a id="p19993451399"></a>NV61 = 0</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p4914461193"><a id="p4914461193"></a><a id="p4914461193"></a>YUV420sp  NV12</p>
+</td>
+</tr>
+<tr id="row112461614133812"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p1124661463816"><a id="p1124661463816"></a><a id="p1124661463816"></a>YUV422sp  NV16</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p202482014143814"><a id="p202482014143814"></a><a id="p202482014143814"></a>NV16 = 0</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p224821415383"><a id="p224821415383"></a><a id="p224821415383"></a>YUV420sp  NV21</p>
+</td>
+</tr>
+<tr id="row1924841433811"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p1424810145381"><a id="p1424810145381"></a><a id="p1424810145381"></a>YUV422sp  NV61</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p125151493813"><a id="p125151493813"></a><a id="p125151493813"></a>NV61 = 1</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p15251161419389"><a id="p15251161419389"></a><a id="p15251161419389"></a>YUV420sp  NV21</p>
+</td>
+</tr>
+<tr id="row7343111617616"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p17293636663"><a id="p17293636663"></a><a id="p17293636663"></a>YUV444sp  444spUV</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p1330515364610"><a id="p1330515364610"></a><a id="p1330515364610"></a>444spUV = 1</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p13171936069"><a id="p13171936069"></a><a id="p13171936069"></a>YUV420sp  NV12</p>
+</td>
+</tr>
+<tr id="row143450161763"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p63351636063"><a id="p63351636063"></a><a id="p63351636063"></a>YUV444sp  444spVU</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p134917365611"><a id="p134917365611"></a><a id="p134917365611"></a>444spVU= 0</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p136214361168"><a id="p136214361168"></a><a id="p136214361168"></a>YUV420sp  NV12</p>
+</td>
+</tr>
+<tr id="row425171463812"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p925121443819"><a id="p925121443819"></a><a id="p925121443819"></a>YUV444sp  444spUV</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p8251111420386"><a id="p8251111420386"></a><a id="p8251111420386"></a>444spUV = 0</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p192511814123817"><a id="p192511814123817"></a><a id="p192511814123817"></a>YUV420sp  NV21</p>
+</td>
+</tr>
+<tr id="row1625118143386"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p1925151412383"><a id="p1925151412383"></a><a id="p1925151412383"></a>YUV444sp  444spVU</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p625101433816"><a id="p625101433816"></a><a id="p625101433816"></a>444spVU= 1</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p1425131411381"><a id="p1425131411381"></a><a id="p1425131411381"></a>YUV420sp  NV21</p>
+</td>
+</tr>
+<tr id="row7252111419386"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p525221423819"><a id="p525221423819"></a><a id="p525221423819"></a>YUV422packet YUYV</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p1625211141381"><a id="p1625211141381"></a><a id="p1625211141381"></a>YUYV = 2</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p5252171463820"><a id="p5252171463820"></a><a id="p5252171463820"></a>YUV420sp  NV12</p>
+</td>
+</tr>
+<tr id="row82524141383"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p1225211413381"><a id="p1225211413381"></a><a id="p1225211413381"></a>YUV422packet YVYU</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p725221416383"><a id="p725221416383"></a><a id="p725221416383"></a>YVYU = 3</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p13252141414382"><a id="p13252141414382"></a><a id="p13252141414382"></a>YUV420sp  NV21</p>
+</td>
+</tr>
+<tr id="row325231410381"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p152527143388"><a id="p152527143388"></a><a id="p152527143388"></a>YUV422packet UYVY</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p32521014153810"><a id="p32521014153810"></a><a id="p32521014153810"></a>UYVY = 4</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p152525147382"><a id="p152525147382"></a><a id="p152525147382"></a>YUV420sp  NV12</p>
+</td>
+</tr>
+<tr id="row625271413816"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p1252914173810"><a id="p1252914173810"></a><a id="p1252914173810"></a>YUV444packet YUV</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p6252614183815"><a id="p6252614183815"></a><a id="p6252614183815"></a>YUV = 5</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p13252514143814"><a id="p13252514143814"></a><a id="p13252514143814"></a>YUV420sp  NV12</p>
+</td>
+</tr>
+<tr id="row192522014123810"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p15252191414381"><a id="p15252191414381"></a><a id="p15252191414381"></a>RGB888 RGB</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p32521214133814"><a id="p32521214133814"></a><a id="p32521214133814"></a>RGB = 6</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p1925271493818"><a id="p1925271493818"></a><a id="p1925271493818"></a>YUV420sp  NV12</p>
+</td>
+</tr>
+<tr id="row125213141387"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p19252914193813"><a id="p19252914193813"></a><a id="p19252914193813"></a>RGB888 BGR</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p5254191443818"><a id="p5254191443818"></a><a id="p5254191443818"></a>BGR = 7</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p6254914193810"><a id="p6254914193810"></a><a id="p6254914193810"></a>YUV420sp  NV21</p>
+</td>
+</tr>
+<tr id="row1325410144389"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p122541146386"><a id="p122541146386"></a><a id="p122541146386"></a>RGB888 RGB</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p12254151413387"><a id="p12254151413387"></a><a id="p12254151413387"></a>BGR = 7</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p925441443814"><a id="p925441443814"></a><a id="p925441443814"></a>YUV420sp  NV21</p>
+</td>
+</tr>
+<tr id="row425418146384"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p1025411433819"><a id="p1025411433819"></a><a id="p1025411433819"></a>RGB888 BGR</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p1325431419382"><a id="p1325431419382"></a><a id="p1325431419382"></a>RGB = 6</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p0254191416382"><a id="p0254191416382"></a><a id="p0254191416382"></a>YUV420sp  NV12</p>
+</td>
+</tr>
+<tr id="row9254101416380"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p1425414145384"><a id="p1425414145384"></a><a id="p1425414145384"></a>XRGB8888 RGBA</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p19254214203817"><a id="p19254214203817"></a><a id="p19254214203817"></a>RGBA = 8</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p102558145386"><a id="p102558145386"></a><a id="p102558145386"></a>YUV420sp  NV12</p>
+</td>
+</tr>
+<tr id="row8255151416388"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p18255151463816"><a id="p18255151463816"></a><a id="p18255151463816"></a>XRGB8888 RGBA</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p625571463818"><a id="p625571463818"></a><a id="p625571463818"></a>BGRA = 9</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p1225581443818"><a id="p1225581443818"></a><a id="p1225581443818"></a>YUV420sp  NV21</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="calling-example">Calling Example<a id="section948810214544"></a></h2>
+<ul>
+<li><p>Calling example for the basic VPC functions:</p>
+<p><strong>gXxxxx </strong>is a configuration parameter. The parameter configuration and VPC invoking are divided into two steps:</p>
+<p>Step 1: Use the DVPP_CTL_TOOL_CASE_GET_RESIZE_PARAM command word to call DvppCtl to obtain configuration parameters. The input parameter of DvppCtl is  <strong>resize_param_in_msg</strong>, and the output parameter is  <strong>resize_param_out_msg</strong>. That is, the parameters such as the width and height of the original image, cropped area (hmax,hmin,vamx,vmin), and output width and height are transferred to the DVPP by using  <strong>resize_param_in_msg</strong>. The DVPP returns the regenerated cropped area (hmax,hmin,vamx,vmin) and scaling ratio (hinc,vinc) to the caller after calculation.</p>
+<p>Step 2: The caller transfers the parameters returned in Step 1 to the DVPP using vpc_in_msg, changes the calling command word of DvppCtl to DVPP_CTL_VPC_PROC, and executes and obtains the processing result.</p>
+<pre><code>    dvppapi_ctl_msg dvppApiCtlMsg;
+    vpc_in_msg vpcInMsg;
+    resize_param_in_msg resize_in_param;
+    resize_param_out_msg resize_out_param;
+    resize_in_param.src_width = gWidth;
+    resize_in_param.src_high = gHigh;
+    resize_in_param.hmax = gHmax;
+    resize_in_param.hmin = gHmin;
+    resize_in_param.vmax = gVmax;
+    resize_in_param.vmin = gVmin;
+    resize_in_param.dest_width = floor(gHinc * (gHmax - gHmin + 1) + 0.5);
+    resize_in_param.dest_high = floor(gVinc * (gVmax - gVmin + 1) + 0.5);
+    printf(&quot;width  =%d\n&quot;, gWidth);
+    printf(&quot;high   =%d\n&quot;, gHigh);
+    printf(&quot;hmax   =%d\n&quot;, gHmax);
+    printf(&quot;hmin   =%d\n&quot;, gHmin);
+    printf(&quot;vmax   =%d\n&quot;, gVmax);
+    printf(&quot;vmin   =%d\n&quot;, gVmin);
+    printf(&quot;out width   =%d\n&quot;, resize_in_param.dest_width);
+    printf(&quot;out hight   =%d\n&quot;, resize_in_param.dest_high );
+
+    dvppApiCtlMsg.in = (void *)(&amp;resize_in_param);
+    dvppApiCtlMsg.out = (void *)(&amp;resize_out_param);
+    IDVPPAPI *pidvppapi = NULL;
+    CreateDvppApi(pidvppapi);
+    if (DvppCtl(pidvppapi, DVPP_CTL_TOOL_CASE_GET_RESIZE_PARAM, &amp;dvppApiCtlMsg) != 0) {
+        printf(&quot;call DVPP_CTL_TOOL_CASE_GET_RESIZE_PARAM process faild!\n&quot;);
+        DestroyDvppApi(pidvppapi);
+        return;
+    }
+
+    int bufferSize        = 0;
+    vpcInMsg.format       = gFormat;
+    vpcInMsg.cvdr_or_rdma = gcvdr_or_rdma;
+    vpcInMsg.bitwidth = gBitwidth;
+    vpcInMsg.rank = gRank;
+    vpcInMsg.width = gWidth;
+    vpcInMsg.high = gHigh;
+    vpcInMsg.stride = gStride;
+    vpcInMsg.hmax = resize_out_param.hmax;
+    vpcInMsg.hmin = resize_out_param.hmin;
+    vpcInMsg.vmax = resize_out_param.vmax;
+    vpcInMsg.vmin = resize_out_param.vmin;
+    vpcInMsg.vinc = resize_out_param.vinc;
+    vpcInMsg.hinc = resize_out_param.hinc;
+    printf(&quot;resize_out_param.hinc = %lf\n&quot;, resize_out_param.hinc);
+    printf(&quot;resize_out_param.vinc = %lf\n&quot;, resize_out_param.vinc);
+    printf(&quot;resize_out_param.hmax = %d\n&quot;, resize_out_param.hmax);
+    printf(&quot;resize_out_param.hmin = %d\n&quot;, resize_out_param.hmin);
+    printf(&quot;resize_out_param.vmax = %d\n&quot;, resize_out_param.vmax);
+    printf(&quot;resize_out_param.vmin = %d\n&quot;, resize_out_param.vmin);
+
+    printf(&quot;format =%d\n&quot;, vpcInMsg.format);
+    printf(&quot;rank   =%d\n&quot;, vpcInMsg.rank);
+    printf(&quot;width  =%d\n&quot;, vpcInMsg.width);
+    printf(&quot;high   =%d\n&quot;, vpcInMsg.high);
+    printf(&quot;stride =%d\n&quot;, vpcInMsg.stride);
+    printf(&quot;hmax   =%d\n&quot;, vpcInMsg.hmax);
+    printf(&quot;hmin   =%d\n&quot;, vpcInMsg.hmin);
+    printf(&quot;vmax   =%d\n&quot;, vpcInMsg.vmax);
+    printf(&quot;vmin   =%d\n&quot;, vpcInMsg.vmin);
+    printf(&quot;vinc   =%F\n&quot;, vpcInMsg.vinc);
+    printf(&quot;hinc   =%F\n&quot;, vpcInMsg.hinc);
+    if (vpcInMsg.cvdr_or_rdma == 0) {
+        printf(&quot;rdma channel\n&quot;);
+        int buffersize ;
+        char * payloadY ;
+        char * payloadC ;
+        char * headY ;
+        char * headC ;
+        FILE * rdmaimage = fopen(in_file_name, &quot;rb&quot;);
+
+        if (vpcInMsg.bitwidth == 10) {
+            buffersize                        = vpcInMsg.width  * vpcInMsg.high * 2 + 512 * 1024;
+            payloadY                          = (char*)memalign(128, buffersize);
+            headY                             = payloadY + vpcInMsg.width  * vpcInMsg.high * 2;
+            headC                             = headY + 256 * 1024;
+            vpcInMsg.rdma.luma_payload_addr   = (long)payloadY;
+            vpcInMsg.rdma.chroma_payload_addr = (long)payloadY + 640;
+        } else {
+            buffersize                        = vpcInMsg.width * vpcInMsg.high * 1.5 + 512 * 1024;
+            payloadY                          = (char*)memalign(128, buffersize);
+            payloadC                          = payloadY + vpcInMsg.width * vpcInMsg.high;
+            headY                             = payloadC + vpcInMsg.width * vpcInMsg.high / 2;
+            headC                             = headY + 256 * 1024;
+            vpcInMsg.rdma.luma_payload_addr   = (long)payloadY;
+            vpcInMsg.rdma.chroma_payload_addr = (long)payloadC;
+        }
+
+        fread(payloadY, 1, buffersize, rdmaimage);
+        vpcInMsg.rdma.luma_head_addr        = (long)headY;
+        vpcInMsg.rdma.chroma_head_addr      = (long)headC;
+        vpcInMsg.rdma.luma_head_stride      = vpcInMsg.stride;
+        vpcInMsg.rdma.chroma_head_stride    = vpcInMsg.stride;
+        vpcInMsg.rdma.luma_payload_stride   = gpYStride;
+        vpcInMsg.rdma.chroma_payload_stride = gpUVStride;
+        fclose(rdmaimage);
+        printf(&quot;luma payload stride= %d\n&quot;, vpcInMsg.rdma.luma_payload_stride );
+        printf(&quot;chroma payload stride= %d\n&quot;, vpcInMsg.rdma.chroma_payload_stride );
+    } else {
+        alloc_buffer(vpcInMsg.width, vpcInMsg.high, vpcInMsg.stride, bufferSize);
+        if (open_image(in_file_name, vpcInMsg.width, vpcInMsg.high, vpcInMsg.stride) != 0) {
+            printf(&quot;open file failed~\n&quot;);
+            free(in_buffer);
+            return;
+        }
+        vpcInMsg.in_buffer      = in_buffer;
+        vpcInMsg.in_buffer_size = bufferSize;
+    }
+    //alloc in and out buffer
+    shared_ptr&lt;AutoBuffer&gt; auto_out_buffer = make_shared&lt;AutoBuffer&gt;();
+    vpcInMsg.auto_out_buffer_1             = auto_out_buffer;
+    dvppApiCtlMsg.in                       = (void *)(&amp;vpcInMsg);
+    dvppApiCtlMsg.in_size                  = sizeof(vpc_in_msg);
+
+    if (pidvppapi != NULL) {
+
+        for (int i = 0; i &lt; gLoop; i++) {
+            if (DvppCtl(pidvppapi, DVPP_CTL_VPC_PROC, &amp;dvppApiCtlMsg) != 0) {
+                printf(&quot;call dvppctl process faild!\n&quot;);
+                DestroyDvppApi(pidvppapi);
+                free(in_buffer);
+                return;
+            }
+        }
+
+    } else {
+        printf(&quot;pidvppapi is null!\n&quot;);
+    }
+
+    free(in_buffer);
+
+    FILE *fp = NULL;
+    fp = fopen(out_file_name, &quot;wb+&quot;);
+    if (fp == NULL) {
+        printf(&quot;open file %s failed~\n&quot;, out_file_name);
+        free(in_buffer);
+        return;
+    }
+
+    fwrite(vpcInMsg.auto_out_buffer_1-&gt;getBuffer(), 1, vpcInMsg.auto_out_buffer_1-&gt;getBufferSize(), fp);
+    fflush(fp);
+    fclose(fp);
+    DestroyDvppApi(pidvppapi);
+    return;
+</code></pre></li>
+<li><p>Calling example for the basic raw data 8K functions:</p>
+<p>Parameter configurations:</p>
+<pre><code>    dvppapi_ctl_msg dvppApiCtlMsg;
+    vpc_in_msg vpcInMsg;
+    vpcInMsg.width = gWidth;
+    vpcInMsg.high = gHigh;
+    vpcInMsg.stride = gStride;
+    vpcInMsg.out_width = gOutWidth;
+    vpcInMsg.out_high = gOutHigh;
+    printf(&quot;width     =%d\n&quot;, vpcInMsg.width);
+    printf(&quot;high      =%d\n&quot;, vpcInMsg.high);
+    printf(&quot;stride    =%d\n&quot;, vpcInMsg.stride);
+    printf(&quot;out_width =%d\n&quot;, vpcInMsg.out_width);
+    printf(&quot;out_high  =%d\n&quot;, vpcInMsg.out_high);
+    //alloc in and out buffer
+    char *in_buffer = (char *)malloc(vpcInMsg.width * vpcInMsg.high * 1.5);
+    if (in_buffer = NULL) {
+        printf(&quot;malloc fail\n&quot;);
+        return;
+    }
+
+    shared_ptr&lt;AutoBuffer&gt; auto_out_buffer = make_shared&lt;AutoBuffer&gt;();
+    FILE *yuvimage = fopen(in_file_name, &quot;rb&quot;);
+    if (yuvimage == NULL) {
+        printf(&quot;no such file!,file_name=[%s]\n&quot;, in_file_name);
+        free(in_buffer);
+        return;
+    } else {
+        fread(in_buffer, 1, vpcInMsg.width * vpcInMsg.high * 3 / 2, yuvimage);
+    }
+
+    vpcInMsg.rank = gRank;
+    vpcInMsg.in_buffer = in_buffer;
+    vpcInMsg.in_buffer_size = vpcInMsg.width * vpcInMsg.high * 1.5;
+    vpcInMsg.auto_out_buffer_1 = auto_out_buffer;
+    vpcInMsg.use_flag = 1;
+    dvppApiCtlMsg.in = (void *)(&amp;vpcInMsg);
+    dvppApiCtlMsg.in_size = sizeof(vpc_in_msg);
+    IDVPPAPI *pidvppapi = NULL;
+    CreateDvppApi(pidvppapi);
+    if (pidvppapi != NULL) {
+        if (DvppCtl(pidvppapi, DVPP_CTL_VPC_PROC, &amp;dvppApiCtlMsg) != 0) {
+            printf(&quot;call dvppctl process faild!\n&quot;);
+            DestroyDvppApi(pidvppapi);
+            free(in_buffer);
+            fclose(yuvimage);
+            return;
+        }
+    } else {
+        printf(&quot;pidvppapi is null!\n&quot;);
+    }
+
+    DestroyDvppApi(pidvppapi);
+    FILE *fp = NULL;
+    fp = fopen(out_file_name, &quot;wb+&quot;);
+    if (fp != NULL) {
+        fwrite(vpcInMsg.auto_out_buffer_1-&gt;getBuffer(), 1, vpcInMsg.auto_out_buffer_1-&gt;getBufferSize(), fp);
+        fflush(fp);
+        fclose(fp);
+    } else {
+        fclose(yuvimage);
+        return;
+    }
+
+    free(in_buffer);
+    fclose(yuvimage);
+    return;
+</code></pre></li>
+<li><p>Calling example for the basic raw data overlay functions:</p>
+<pre><code>    dvppapi_ctl_msg dvppApiCtlMsg;
+    vpc_in_msg vpcInMsg;
+   // Configure raw data overlay parameters.
+    vpcInMsg.use_flag = 2;
+    vpcInMsg.overlay.image_type = 0;
+    vpcInMsg.overlay.image_rank_type = 0;
+    vpcInMsg.overlay.bit_width = 8;
+    vpcInMsg.overlay.in_width_image = 1000;
+    vpcInMsg.overlay.in_high_image = 1000;
+    vpcInMsg.overlay.in_width_text = 500;
+    vpcInMsg.overlay.in_high_text = 390;
+    vpcInMsg.overlay.image_width_stride = 2;
+    vpcInMsg.overlay.image_high_stride = 2;
+    vpcInMsg.overlay.text_width_stride = 2;
+    vpcInMsg.overlay.text_high_stride = 2;
+    vpcInMsg.overlay.in_buffer_image = NULL;
+    vpcInMsg.overlay.in_buffer_text = NULL;
+    vpcInMsg.overlay.auto_overlay_out_buffer = make_shared&lt;AutoBuffer&gt;();
+   // Initialize the image buffer.
+    if(NULL == (vpcInMsg.overlay.in_buffer_image = (char*)malloc(vpcInMsg.overlay.in_width_image*vpcInMsg.overlay.in_high_image*3/2)))    {
+        printf(&quot;in_buffer_image alloc failed!\n&quot;);
+        return ;
+    }
+   // Open the image in the allocated buffer.
+    char image_file[50] = &quot;yuv_data_0&quot;;
+    FILE * yuvimage = fopen(image_file,&quot;rb&quot;);
+    if(NULL == yuvimage)    {
+        printf(&quot;VPC_TEST: yuv image open faild!&quot;);
+        return ;
+    }    else    {
+        fread(vpcInMsg.overlay.in_buffer_image, 1,vpcInMsg.overlay.in_width_image*vpcInMsg.overlay.in_high_image*3/2,yuvimage);
+        fclose(yuvimage);
+        yuvimage = NULL;
+}
+
+   // Initialize the text buffer.
+    if(NULL == (vpcInMsg.overlay.in_buffer_text = (char*)malloc(vpcInMsg.overlay.in_width_text*vpcInMsg.overlay.in_high_text*3/2)))    {
+        printf(&quot;in_buffer_text alloc failed!&quot;);
+        free(vpcInMsg.overlay.in_buffer_image);
+        return ;
+    }
+
+  // Open the text-based image in the allocated memory.
+    char text_file[50] = &quot;text_0&quot;;
+    FILE * yuvtext = fopen(text_file,&quot;rb&quot;);
+    if(NULL == yuvtext)    {
+        printf(&quot;VPC_TEST: yuv text image open faild!&quot;);
+        free(vpcInMsg.overlay.in_buffer_image);
+        return ;
+    }    else    {
+        fread(vpcInMsg.overlay.in_buffer_text, 1,vpcInMsg.overlay.in_width_text*vpcInMsg.overlay.in_high_text*3/2, yuvtext);
+        fclose(yuvtext);
+        yuvtext = NULL;
+    }
+
+    dvppApiCtlMsg.in = (void*)(&amp;vpcInMsg);
+    dvppApiCtlMsg.in_size = sizeof(vpc_in_msg);
+    IDVPPAPI *pidvppapi = NULL;
+    CreateDvppApi(pidvppapi);
+    if(pidvppapi!=NULL)    {
+        if(DvppCtl(pidvppapi,DVPP_CTL_VPC_PROC,&amp;dvppApiCtlMsg)!= 0)        {
+            printf(&quot;call dvppctl process faild!\n&quot;);
+            DestroyDvppApi(pidvppapi);
+            free(vpcInMsg.overlay.in_buffer_image);
+            free(vpcInMsg.overlay.in_buffer_text);
+            return ;
+        }
+        DestroyDvppApi(pidvppapi);
+        FILE * fp   = fopen(&quot;./out_overlay_image_share&quot;,&quot;wb+&quot;);
+        fwrite(vpcInMsg.overlay.auto_overlay_out_buffer-&gt;getBuffer(),1,vpcInMsg.overlay.in_width_image*vpcInMsg.overlay.in_high_image*3/2,fp);
+        fflush(fp);
+        fclose(fp);
+        fp=NULL;
+        return ;
+    }    else    {
+        printf(&quot;pidvppapi is null!\n&quot;);
+        return ;
+    }
+    if(NULL != vpcInMsg.overlay.in_buffer_image)    {
+        free(vpcInMsg.overlay.in_buffer_image);
+        vpcInMsg.overlay.in_buffer_image = NULL;
+    }
+    if(NULL != vpcInMsg.overlay.in_buffer_text)    {
+        free(vpcInMsg.overlay.in_buffer_text);
+        vpcInMsg.overlay.in_buffer_text = NULL;
+    }
+</code></pre></li>
+<li><p>Calling example for the basic raw data stitching functions:</p>
+<pre><code>    dvppapi_ctl_msg dvppApiCtlMsg;
+    vpc_in_msg vpcInMsg;
+    // Configure raw data stitching parameters.
+    vpcInMsg.use_flag = 3;
+    vpcInMsg.collage.image_type = 0;
+    vpcInMsg.collage.image_rank_type = 0;
+    vpcInMsg.collage.bit_width = 8;
+    vpcInMsg.collage.in_width = 1000;
+    vpcInMsg.collage.in_high = 1000;
+    vpcInMsg.collage.width_stride = 2;
+    vpcInMsg.collage.high_stride = 2;
+    vpcInMsg.collage.collage_type = 0;
+    vpcInMsg.collage.auto_out_buffer = make_shared&lt;AutoBuffer&gt;();
+    char image_file[4][50] = {&quot;yuv_data_0&quot;,&quot;yuv_data_1&quot;,&quot;yuv_data_2&quot;,&quot;yuv_data_3&quot;};
+   // Initialize the image buffer.
+    for(int i=0; i&lt;4; i++) {
+        if(NULL == (vpcInMsg.collage.in_buffer[i] = (char*)malloc(vpcInMsg.collage.in_width*                                        vpcInMsg.collage.in_high*3/2)))
+        {
+            printf(&quot;in_buffer_image alloc failed!\n&quot;);
+            for(int j=0; j&lt;i; j++) {
+                free(vpcInMsg.collage.in_buffer[j]);
+            }
+            return ;
+        }
+      // Open the image in the allocated buffer.
+        FILE * yuvimage = fopen(image_file[i],&quot;rb&quot;);
+        if(NULL == yuvimage)        {
+            printf(&quot;PVC_TEST: yuv image open faild!&quot;);
+            return ;
+        }        else        {
+            fread(vpcInMsg.collage.in_buffer[i], 1,vpcInMsg.collage.in_width*
+                  vpcInMsg.collage.in_high*3/2,yuvimage);
+            fclose(yuvimage);
+            yuvimage = NULL;
+        }
+    }
+
+    dvppApiCtlMsg.in = (void*)(&amp;vpcInMsg);
+    dvppApiCtlMsg.in_size = sizeof(vpc_in_msg);
+    IDVPPAPI *pidvppapi = NULL;
+    CreateDvppApi(pidvppapi);
+    if(pidvppapi!=NULL)    {
+        if(DvppCtl(pidvppapi,DVPP_CTL_VPC_PROC,&amp;dvppApiCtlMsg)!= 0)        {
+            printf(&quot;call dvppctl process faild!\n&quot;);
+            DestroyDvppApi(pidvppapi);
+            for(int i=0; i&lt;4; i++) {
+                free(vpcInMsg.collage.in_buffer[i]);
+            }
+            return ;
+        }
+        DestroyDvppApi(pidvppapi);
+        FILE * fp   = fopen(&quot;./out_collage_image_share&quot;,&quot;wb+&quot;);
+        fwrite(vpcInMsg.collage.auto_out_buffer-&gt;getBuffer(),1,vpcInMsg.collage.in_width*vpcInMsg.collage.in_high*6,fp);
+        fflush(fp);
+        fclose(fp);
+        fp=NULL;
+        return ;
+    }    else    {
+        printf(&quot;pidvppapi is null!\n&quot;);
+        return ;
+    }
+    for(int i=0; i&lt;4; i++) {
+        if(NULL != vpcInMsg.collage.in_buffer[i])        {
+            free(vpcInMsg.collage.in_buffer[i]);
+            vpcInMsg.collage.in_buffer[i] = NULL;
+        }
+    }
+</code></pre></li>
+<li><p>VPC API calling:</p>
+<pre><code>IDVPPAPI *pidvppapi = NULL;
+CreateDvppApi(pidvppapi);
+if(pidvppapi!=NULL)
+{
+ if(0 != DvppCtl(pidvppapi,DVPP_CTL_VPC_PROC,&amp;dvppApiCtlMsg))
+ {
+  printf(&quot;call dvppctl process faild!\n&quot;);
+  DestroyDvppApi(pidvppapi);
+  return -1;
+ }
+}
+else
+printf(&quot;pidvppapi is null!\n&quot;);
+DestroyDvppApi(pidvppapi);
+</code></pre></li>
+<li><p>Calling example for the function of obtaining the VPC resize parameter configuration:</p>
+<p><strong>gXxxxx </strong>is a configuration parameter.</p>
+<pre><code>dvppapi_ctl_msg dvppApiCtlMsg;
+vpc_in_msg vpcInMsg;
+resize_param_in_msg resize_in_param;
+resize_param_out_msg resize_out_param;
+resize_in_param.src_width = gWidth;
+resize_in_param.src_high = gHigh;
+resize_in_param.hmax = gHmax;
+resize_in_param.hmin = gHmin;
+resize_in_param.vmax = gVmax;
+resize_in_param.vmin = gVmin;
+resize_in_param.dest_width = floor(gHinc * (gHmax - gHmin + 1) + 0.5);
+resize_in_param.dest_high = floor(gVinc * (gVmax - gVmin + 1) + 0.5);
+dvppApiCtlMsg.in = (void *)(&amp;resize_in_param);
+dvppApiCtlMsg.out = (void *)(&amp;resize_out_param);
+IDVPPAPI *pidvppapi = NULL;
+CreateDvppApi(pidvppapi);
+if (0 != DvppCtl(pidvppapi, DVPP_CTL_TOOL_CASE_GET_RESIZE_PARAM, &amp;dvppApiCtlMsg))
+{
+  printf(&quot;call dvppctl process faild!\n&quot;);
+  DestroyDvppApi(pidvppapi);
+  return;
+}
+int bufferSize = 0;
+vpcInMsg.format = gFormat;
+vpcInMsg.cvdr_or_rdma = gcvdr_or_rdma;
+vpcInMsg.bitwidth = gBitwidth;
+vpcInMsg.rank = gRank;
+vpcInMsg.width = gWidth;
+vpcInMsg.high = gHigh;
+vpcInMsg.stride = gStride;
+vpcInMsg.hmax = resize_out_param.hmax;
+vpcInMsg.hmin = resize_out_param.hmin;
+vpcInMsg.vmax = resize_out_param.vmax;
+vpcInMsg.vmin = resize_out_param.vmin;
+vpcInMsg.vinc = resize_out_param.vinc;
+vpcInMsg.hinc = resize_out_param.hinc;
+</code></pre></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="new-vpc-api.html" class="navigation navigation-prev " aria-label="Previous page: New VPC API ">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="cmdlist.html" class="navigation navigation-next " aria-label="Next page: CMDLIST">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Old VPC API","level":"1.3.2.2","depth":3,"next":{"title":"CMDLIST","level":"1.3.2.3","depth":3,"path":"cmdlist.md","ref":"cmdlist.md","articles":[]},"previous":{"title":"New VPC API ","level":"1.3.2.1","depth":3,"path":"new-vpc-api.md","ref":"new-vpc-api.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"imgUrl":"","topnav":[]},"plugins":["expandable-chapters","copy"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy":{},"expandableChapters":{"cssFile":["expandable-chapters-theme.css"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"website.css"}},"file":{"path":"old-vpc-api.md","mtime":"2019-04-12T02:02:38.648Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-12T02:02:41.402Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/clipboard.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/copy.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

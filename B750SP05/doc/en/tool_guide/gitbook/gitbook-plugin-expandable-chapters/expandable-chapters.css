@@ -1,0 +1,83 @@
+/*
+* 修改侧边栏样式
+*/
+.book-summary ul.summary li ul {
+	padding-left: 15px;
+}
+.book .book-summary .chapter > .articles {
+	position: relative;
+	overflow: hidden;
+	max-height: 0px;
+}
+.book-summary ul.summary li.active>a {
+	color: #2086d7 !important;
+}
+.book .book-summary .chapter.expanded > .articles {
+	max-height: 9999px;
+}
+.book-summary ul.summary li ul {
+	padding-left: 20px;
+}
+.book .book-summary .exc-trigger {
+	position: absolute;
+  	left: 12px;
+  	top: 14px;
+	font-size: 10px;
+}
+.book .book-summary ul.articles {
+	position: relative;
+}
+.book .book-summary ul.articles li {
+	position: relative;
+}
+/*.book .book-summary ul.articles:before {*/
+	/*content: '';*/
+	/*position: absolute;*/
+	/*height: calc(100% - 20px);*/
+	/*top: 50%;*/
+	/*left: 40px;*/
+	/*border-left: 1px dashed #999999;*/
+	/*transform: translateY(-50%);*/
+/*}*/
+
+/*.book .book-summary ul.articles li:before {*/
+
+	/*content: '';*/
+	/*position: absolute;*/
+	/*width: 0.5em;*/
+	/*left: 20px;*/
+	/*top: 50%;*/
+	/*border-bottom: 1px dashed #999999;*/
+/*}*/
+
+.book .book-summary ul.summary ul.articles li a,
+.book .book-summary ul.summary ul.articles li span{
+	color: #535353 ;
+	font-weight: normal ;
+	padding-left: 35px ;
+}
+
+.book .book-summary ul.summary li a,
+.book .book-summary ul.summary li span {
+	padding-left: 30px;
+	cursor: pointer;
+	text-decoration: none;
+	color: #666;
+	font-weight: 600;
+}
+
+.book .book-summary ul.summary li a:hover,
+.book .book-summary ul.summary li span:hover,
+.book .book-summary ul.summary ul.articles li a:hover,
+.book .book-summary ul.summary ul.articles li span:hover{
+	color: #2086d7 ;
+	transform:  translate3d(-1px, 0, 0);
+}
+.book .book-summary .exc-trigger:before {
+  	content: "\f054";
+}
+
+.book .book-summary .expanded > a .exc-trigger:before,
+.book .book-summary .expanded > span .exc-trigger:before {
+	content: "\f078";
+}

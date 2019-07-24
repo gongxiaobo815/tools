@@ -1,0 +1,1864 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>te.lang.cce.compute_four2five（input, raw_shape_4D） · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters-theme.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-copy/css/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="te-lang-cce-compute_five2four（input-raw_shape_4d）.html" />
+    
+    
+    <link rel="prev" href="te-lang-cce-conv（-args）.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="development-of-custom-operators.html">
+            
+                <a href="development-of-custom-operators.html">
+            
+                    
+                    Development of Custom Operators
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="scenario-description.html">
+            
+                <a href="scenario-description.html">
+            
+                    
+                    Scenario Description
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="statement.html">
+            
+                <a href="statement.html">
+            
+                    
+                    Statement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="developing-a-custom-operator.html">
+            
+                <a href="developing-a-custom-operator.html">
+            
+                    
+                    Developing a Custom Operator
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="operating-procedure.html">
+            
+                <a href="operating-procedure.html">
+            
+                    
+                    Operating Procedure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="creating-a-te-operator-development-project.html">
+            
+                <a href="creating-a-te-operator-development-project.html">
+            
+                    
+                    Creating a TE Operator Development Project
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.2.1" data-path="directly-creating-an-operator-development-project.html">
+            
+                <a href="directly-creating-an-operator-development-project.html">
+            
+                    
+                    Directly Creating an Operator Development Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2.2" data-path="creating-an-operator-development-project-after-a-conversion-failure.html">
+            
+                <a href="creating-an-operator-development-project-after-a-conversion-failure.html">
+            
+                    
+                    Creating an Operator Development Project After a Conversion Failure
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="developing-a-custom-operator-0.html">
+            
+                <a href="developing-a-custom-operator-0.html">
+            
+                    
+                    Developing a Custom Operator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="developing-an-operator-plug-in.html">
+            
+                <a href="developing-an-operator-plug-in.html">
+            
+                    
+                    Developing an Operator Plug-In
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.5" data-path="compiling-a-te-operator-project.html">
+            
+                <a href="compiling-a-te-operator-project.html">
+            
+                    
+                    Compiling a TE Operator Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.6" data-path="running-a-te-operator-project.html">
+            
+                <a href="running-a-te-operator-project.html">
+            
+                    
+                    Running a TE Operator Project
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.6.1" data-path="building-an-input-data-file.html">
+            
+                <a href="building-an-input-data-file.html">
+            
+                    
+                    Building an Input Data File
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.6.2" data-path="configuring-running-parameters.html">
+            
+                <a href="configuring-running-parameters.html">
+            
+                    
+                    Configuring Running Parameters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.6.3" data-path="running-a-single-operator.html">
+            
+                <a href="running-a-single-operator.html">
+            
+                    
+                    Running a Single Operator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.7" data-path="loading-the-plug-in-conversion-model.html">
+            
+                <a href="loading-the-plug-in-conversion-model.html">
+            
+                    
+                    Loading the Plug-In Conversion Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="running-the-custom-operator-on-the-entire-network.html">
+            
+                <a href="running-the-custom-operator-on-the-entire-network.html">
+            
+                    
+                    Running the Custom Operator on the Entire Network
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="creating-a-mind-project.html">
+            
+                <a href="creating-a-mind-project.html">
+            
+                    
+                    Creating a Mind Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="importing-a-network-model.html">
+            
+                <a href="importing-a-network-model.html">
+            
+                    
+                    Importing a Network Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="orchestration-process.html">
+            
+                <a href="orchestration-process.html">
+            
+                    
+                    Orchestration Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="compiling-and-running-a-mind-engine-project.html">
+            
+                <a href="compiling-and-running-a-mind-engine-project.html">
+            
+                    
+                    Compiling and Running a Mind Engine Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="operator-development-reference.html">
+            
+                <a href="operator-development-reference.html">
+            
+                    
+                    Operator Development Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="introduction-to-the-reduction-operator.html">
+            
+                <a href="introduction-to-the-reduction-operator.html">
+            
+                    
+                    Introduction to the Reduction Operator
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1.1" data-path="definition-of-the-reduction-operator.html">
+            
+                <a href="definition-of-the-reduction-operator.html">
+            
+                    
+                    Definition of the Reduction Operator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.1.2" data-path="parsing-reduction-operator-code.html">
+            
+                <a href="parsing-reduction-operator-code.html">
+            
+                    
+                    Parsing Reduction Operator Code
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1.2.1" data-path="importing-the-tvm-module.html">
+            
+                <a href="importing-the-tvm-module.html">
+            
+                    
+                    Importing the TVM Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.1.2.2" data-path="statement-input.html">
+            
+                <a href="statement-input.html">
+            
+                    
+                    Statement Input
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.1.2.3" data-path="computation-process.html">
+            
+                <a href="computation-process.html">
+            
+                    
+                    Computation Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.1.2.4" data-path="compiling-an-operator.html">
+            
+                <a href="compiling-an-operator.html">
+            
+                    
+                    Compiling an Operator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.1.3" data-path="parsing-the-registration-code-of-the-operator-plug-in.html">
+            
+                <a href="parsing-the-registration-code-of-the-operator-plug-in.html">
+            
+                    
+                    Parsing the Registration Code of the Operator Plug-In 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="introduction-to-the-sign-operator.html">
+            
+                <a href="introduction-to-the-sign-operator.html">
+            
+                    
+                    Introduction to the Sign Operator
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.2.1" data-path="definition-of-the-sign-operator.html">
+            
+                <a href="definition-of-the-sign-operator.html">
+            
+                    
+                    Definition of the Sign Operator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2.2" data-path="parsing-the-implementation-code-of-the-sign-operator.html">
+            
+                <a href="parsing-the-implementation-code-of-the-sign-operator.html">
+            
+                    
+                    Parsing the Implementation Code of the Sign Operator 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.2.2.1" data-path="importing-modules.html">
+            
+                <a href="importing-modules.html">
+            
+                    
+                    Importing Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2.2.2" data-path="statement-input-1.html">
+            
+                <a href="statement-input-1.html">
+            
+                    
+                    Statement Input
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2.2.3" data-path="computation-process-2.html">
+            
+                <a href="computation-process-2.html">
+            
+                    
+                    Computation Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2.2.4" data-path="compiling-an-operator-3.html">
+            
+                <a href="compiling-an-operator-3.html">
+            
+                    
+                    Compiling an Operator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="function-reference-for-operator-plug-in-development.html">
+            
+                <a href="function-reference-for-operator-plug-in-development.html">
+            
+                    
+                    Function Reference for Operator Plug-In Development
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.1" data-path="list-of-related-functions.html">
+            
+                <a href="list-of-related-functions.html">
+            
+                    
+                    List of Related Functions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.1.1" data-path="non-ir-mode.html">
+            
+                <a href="non-ir-mode.html">
+            
+                    
+                    Non-IR Mode
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.1.1.1" data-path="parseparams.html">
+            
+                <a href="parseparams.html">
+            
+                    
+                    ParseParams
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.1.2" data-path="parseweights.html">
+            
+                <a href="parseweights.html">
+            
+                    
+                    ParseWeights
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.1.3" data-path="convertweight.html">
+            
+                <a href="convertweight.html">
+            
+                    
+                    ConvertWeight
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.1.4" data-path="convertshape.html">
+            
+                <a href="convertshape.html">
+            
+                    
+                    ConvertShape
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.1.5" data-path="getoutputdesc.html">
+            
+                <a href="getoutputdesc.html">
+            
+                    
+                    GetOutputDesc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.1.6" data-path="buildtvmbinfile.html">
+            
+                <a href="buildtvmbinfile.html">
+            
+                    
+                    BuildTvmBinFile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.1.7" data-path="registration-macro-of-the-operator-building-function.html">
+            
+                <a href="registration-macro-of-the-operator-building-function.html">
+            
+                    
+                    Registration Macro of the Operator Building Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.1.8" data-path="calling-example.html">
+            
+                <a href="calling-example.html">
+            
+                    
+                    Calling Example
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.2" data-path="ir-mode.html">
+            
+                <a href="ir-mode.html">
+            
+                    
+                    IR Mode
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.1.2.1" data-path="attr.html">
+            
+                <a href="attr.html">
+            
+                    
+                    Attr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.2.2" data-path="parseparams-4.html">
+            
+                <a href="parseparams-4.html">
+            
+                    
+                    ParseParams
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.2.3" data-path="getoutputdesc-5.html">
+            
+                <a href="getoutputdesc-5.html">
+            
+                    
+                    GetOutputDesc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.2.4" data-path="buildtvmbinfile-6.html">
+            
+                <a href="buildtvmbinfile-6.html">
+            
+                    
+                    BuildTvmBinFile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.2.5" data-path="registration-macro-of-operator-parameter-specifications.html">
+            
+                <a href="registration-macro-of-operator-parameter-specifications.html">
+            
+                    
+                    Registration Macro of Operator Parameter Specifications 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.2.6" data-path="registration-macro-of-the-operator-parsing-function.html">
+            
+                <a href="registration-macro-of-the-operator-parsing-function.html">
+            
+                    
+                    Registration Macro of the Operator Parsing Function 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.2.7" data-path="registration-macro-of-the-operator-building-function-7.html">
+            
+                <a href="registration-macro-of-the-operator-building-function-7.html">
+            
+                    
+                    Registration Macro of the Operator Building Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.2.8" data-path="calling-example-8.html">
+            
+                <a href="calling-example-8.html">
+            
+                    
+                    Calling Example
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.1.2.8.1" data-path="user-defined-class.html">
+            
+                <a href="user-defined-class.html">
+            
+                    
+                    User-Defined Class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.2.8.2" data-path="calling-the-attr-function.html">
+            
+                <a href="calling-the-attr-function.html">
+            
+                    
+                    Calling the Attr Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.2.8.3" data-path="customizing-the-parseparams-function.html">
+            
+                <a href="customizing-the-parseparams-function.html">
+            
+                    
+                    Customizing the ParseParams Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.2.8.4" data-path="rewriting-the-getoutputdesc-and-buildtvmbinfile-functions.html">
+            
+                <a href="rewriting-the-getoutputdesc-and-buildtvmbinfile-functions.html">
+            
+                    
+                    Rewriting the GetOutputDesc and BuildTvmBinFile Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.2.8.5" data-path="registering-an-operator.html">
+            
+                <a href="registering-an-operator.html">
+            
+                    
+                    Registering an Operator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.2" data-path="list-of-built-in-operators-of-the-framework.html">
+            
+                <a href="list-of-built-in-operators-of-the-framework.html">
+            
+                    
+                    List of Built-In Operators of the Framework
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="tensor-engine-api-reference.html">
+            
+                <a href="tensor-engine-api-reference.html">
+            
+                    
+                    Tensor Engine API Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="introduction-9.html">
+            
+                <a href="introduction-9.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="description.html">
+            
+                <a href="description.html">
+            
+                    
+                    Description
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="compute-apis.html">
+            
+                <a href="compute-apis.html">
+            
+                    
+                    Compute APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="te-lang-cce-vadd（lhs-rhs）.html">
+            
+                <a href="te-lang-cce-vadd（lhs-rhs）.html">
+            
+                    
+                    te.lang.cce.vadd（lhs, rhs）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="te-lang-cce-vsub（lhs-rhs）.html">
+            
+                <a href="te-lang-cce-vsub（lhs-rhs）.html">
+            
+                    
+                    te.lang.cce.vsub（lhs, rhs）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" data-path="te-lang-cce-vmul（lhs-rhs）.html">
+            
+                <a href="te-lang-cce-vmul（lhs-rhs）.html">
+            
+                    
+                    te.lang.cce.vmul（lhs, rhs）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.4" data-path="te-lang-cce-vmin（lhs-rhs）.html">
+            
+                <a href="te-lang-cce-vmin（lhs-rhs）.html">
+            
+                    
+                    te.lang.cce.vmin（lhs, rhs）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.5" data-path="te-lang-cce-vmax（lhs-rhs）.html">
+            
+                <a href="te-lang-cce-vmax（lhs-rhs）.html">
+            
+                    
+                    te.lang.cce.vmax（lhs, rhs）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.6" data-path="te-lang-cce-vor（lhs-rhs）.html">
+            
+                <a href="te-lang-cce-vor（lhs-rhs）.html">
+            
+                    
+                    te.lang.cce.vor（lhs, rhs）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.7" data-path="te-lang-cce-vand（lhs-rhs）.html">
+            
+                <a href="te-lang-cce-vand（lhs-rhs）.html">
+            
+                    
+                    te.lang.cce.vand（lhs, rhs）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.8" data-path="te-lang-cce-vadds（raw_tensor-scalar）.html">
+            
+                <a href="te-lang-cce-vadds（raw_tensor-scalar）.html">
+            
+                    
+                    te.lang.cce.vadds（raw_tensor, scalar）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.9" data-path="te-lang-cce-vmuls（raw_tensor-scalar）.html">
+            
+                <a href="te-lang-cce-vmuls（raw_tensor-scalar）.html">
+            
+                    
+                    te.lang.cce.vmuls（raw_tensor, scalar）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.10" data-path="te-lang-cce-vlog（raw_tensor）.html">
+            
+                <a href="te-lang-cce-vlog（raw_tensor）.html">
+            
+                    
+                    te.lang.cce.vlog（raw_tensor）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.11" data-path="te-lang-cce-vexp（raw_tensor）.html">
+            
+                <a href="te-lang-cce-vexp（raw_tensor）.html">
+            
+                    
+                    te.lang.cce.vexp（raw_tensor）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.12" data-path="te-lang-cce-vabs（raw_tensor）.html">
+            
+                <a href="te-lang-cce-vabs（raw_tensor）.html">
+            
+                    
+                    te.lang.cce.vabs（raw_tensor）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.13" data-path="te-lang-cce-vrec（raw_tensor）.html">
+            
+                <a href="te-lang-cce-vrec（raw_tensor）.html">
+            
+                    
+                    te.lang.cce.vrec（raw_tensor）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.14" data-path="te-lang-cce-cast_to（data-dtype-f1628integerflag-false）.html">
+            
+                <a href="te-lang-cce-cast_to（data-dtype-f1628integerflag-false）.html">
+            
+                    
+                    te.lang.cce.cast_to（data, dtype, f1628IntegerFlag=False）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.15" data-path="te-lang-cce-vrelu（raw_tensor）.html">
+            
+                <a href="te-lang-cce-vrelu（raw_tensor）.html">
+            
+                    
+                    te.lang.cce.vrelu（raw_tensor）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.16" data-path="te-lang-cce-vnot（raw_tensor）.html">
+            
+                <a href="te-lang-cce-vnot（raw_tensor）.html">
+            
+                    
+                    te.lang.cce.vnot（raw_tensor）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.17" data-path="te-lang-cce-vaxpy（lhs-rhs-scalar）.html">
+            
+                <a href="te-lang-cce-vaxpy（lhs-rhs-scalar）.html">
+            
+                    
+                    te.lang.cce.vaxpy（lhs, rhs, scalar）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.18" data-path="te-lang-cce-vmla（x-y-z）.html">
+            
+                <a href="te-lang-cce-vmla（x-y-z）.html">
+            
+                    
+                    te.lang.cce.vmla（x, y, z）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.19" data-path="te-lang-cce-vmadd（x-y-z）.html">
+            
+                <a href="te-lang-cce-vmadd（x-y-z）.html">
+            
+                    
+                    te.lang.cce.vmadd（x, y, z）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.20" data-path="te-lang-cce-vmaddrelu（x-y-z）.html">
+            
+                <a href="te-lang-cce-vmaddrelu（x-y-z）.html">
+            
+                    
+                    te.lang.cce.vmaddrelu（x, y, z）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.21" data-path="te-lang-cce-ceil（raw_tensor）.html">
+            
+                <a href="te-lang-cce-ceil（raw_tensor）.html">
+            
+                    
+                    te.lang.cce.ceil（raw_tensor）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.22" data-path="te-lang-cce-floor（raw_tensor）.html">
+            
+                <a href="te-lang-cce-floor（raw_tensor）.html">
+            
+                    
+                    te.lang.cce.floor（raw_tensor）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.23" data-path="te-lang-cce-round（raw_tensor）.html">
+            
+                <a href="te-lang-cce-round（raw_tensor）.html">
+            
+                    
+                    te.lang.cce.round（raw_tensor）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.24" data-path="te-lang-cce-sum（raw_tensor-axis）.html">
+            
+                <a href="te-lang-cce-sum（raw_tensor-axis）.html">
+            
+                    
+                    te.lang.cce.sum（raw_tensor, axis）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.25" data-path="te-lang-cce-reduce_min（raw_tensor-axis）.html">
+            
+                <a href="te-lang-cce-reduce_min（raw_tensor-axis）.html">
+            
+                    
+                    te.lang.cce.reduce_min（raw_tensor, axis）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.26" data-path="te-lang-cce-reduce_max（raw_tensor-axis）.html">
+            
+                <a href="te-lang-cce-reduce_max（raw_tensor-axis）.html">
+            
+                    
+                    te.lang.cce.reduce_max（raw_tensor, axis）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.27" data-path="te-lang-cce-broadcast（var-shape-output_dtype-none）.html">
+            
+                <a href="te-lang-cce-broadcast（var-shape-output_dtype-none）.html">
+            
+                    
+                    te.lang.cce.broadcast（var, shape, output_dtype=None）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.28" data-path="te-lang-cce-unsorted_segment_sum（tensor-segment_ids-num_segments-init_value-0）.html">
+            
+                <a href="te-lang-cce-unsorted_segment_sum（tensor-segment_ids-num_segments-init_value-0）.html">
+            
+                    
+                    te.lang.cce.unsorted_segment_sum（tensor, segment_ids, num_segments, init_value=0）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.29" data-path="te-lang-cce-unsorted_segment_mean（tensor-segment_ids-num_segments-init_value-0）.html">
+            
+                <a href="te-lang-cce-unsorted_segment_mean（tensor-segment_ids-num_segments-init_value-0）.html">
+            
+                    
+                    te.lang.cce.unsorted_segment_mean（tensor, segment_ids, num_segments, init_value=0）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.30" data-path="te-lang-cce-unsorted_segment_prod（tensor-segment_ids-num_segments-init_value-0）.html">
+            
+                <a href="te-lang-cce-unsorted_segment_prod（tensor-segment_ids-num_segments-init_value-0）.html">
+            
+                    
+                    te.lang.cce.unsorted_segment_prod（tensor, segment_ids, num_segments, init_value=0）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.31" data-path="te-lang-cce-unsorted_segment_min（tensor-segment_ids-num_segments-init_value-0）.html">
+            
+                <a href="te-lang-cce-unsorted_segment_min（tensor-segment_ids-num_segments-init_value-0）.html">
+            
+                    
+                    te.lang.cce.unsorted_segment_min（tensor, segment_ids, num_segments, init_value=0）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.32" data-path="te-lang-cce-unsorted_segment_max（tensor-segment_ids-num_segments-init_value-0）.html">
+            
+                <a href="te-lang-cce-unsorted_segment_max（tensor-segment_ids-num_segments-init_value-0）.html">
+            
+                    
+                    te.lang.cce.unsorted_segment_max（tensor, segment_ids, num_segments, init_value=0）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.33" data-path="te-lang-cce-concat（raw_tensors-axis）.html">
+            
+                <a href="te-lang-cce-concat（raw_tensors-axis）.html">
+            
+                    
+                    te.lang.cce.concat（raw_tensors, axis）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.34" data-path="te-lang-cce-conv（-args）.html">
+            
+                <a href="te-lang-cce-conv（-args）.html">
+            
+                    
+                    te.lang.cce.conv（*args）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3.35" data-path="te-lang-cce-compute_four2five（input-raw_shape_4d）.html">
+            
+                <a href="te-lang-cce-compute_four2five（input-raw_shape_4d）.html">
+            
+                    
+                    te.lang.cce.compute_four2five（input, raw_shape_4D）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.36" data-path="te-lang-cce-compute_five2four（input-raw_shape_4d）.html">
+            
+                <a href="te-lang-cce-compute_five2four（input-raw_shape_4d）.html">
+            
+                    
+                    te.lang.cce.compute_five2four（input, raw_shape_4D）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="build-apis.html">
+            
+                <a href="build-apis.html">
+            
+                    
+                    Build APIs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="te-lang-cce-auto_schedule（outs）.html">
+            
+                <a href="te-lang-cce-auto_schedule（outs）.html">
+            
+                    
+                    te.lang.cce.auto_schedule（outs）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2" data-path="te-lang-cce-cce_build_code（sch-config_map-）.html">
+            
+                <a href="te-lang-cce-cce_build_code（sch-config_map-）.html">
+            
+                    
+                    te.lang.cce.cce_build_code（sch, config_map = {}）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="compilation-dependent-apis.html">
+            
+                <a href="compilation-dependent-apis.html">
+            
+                    
+                    Compilation-Dependent APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="instructions.html">
+            
+                <a href="instructions.html">
+            
+                    
+                    Instructions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.6.1" data-path="usage-example.html">
+            
+                <a href="usage-example.html">
+            
+                    
+                    Usage Example
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6.2" data-path="exception-handling.html">
+            
+                <a href="exception-handling.html">
+            
+                    
+                    Exception Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="appendix.html">
+            
+                <a href="appendix.html">
+            
+                    
+                    Appendix
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.7.1" data-path="acronyms-and-glossary.html">
+            
+                <a href="acronyms-and-glossary.html">
+            
+                    
+                    Acronyms and Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >te.lang.cce.compute_four2five（input, raw_shape_4D）</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="telangccecomputefour2five&#xFF08;input-rawshape4d&#xFF09;">te.lang.cce.compute_four2five&#xFF08;input, raw_shape_4D&#xFF09;<a id="EN-US_TOPIC_0148203054"></a></h1>
+<p>Converts the 4D data format  <strong>NCHW</strong>  to the 5D data format  <strong>NC1HWC0</strong>. The supported type is float16.</p>
+<h2 id="parameter-description">Parameter Description<a id="section156943811263"></a></h2>
+<ul>
+<li><strong>input</strong>: input tensor, 4D &#xFF08;N,C,H,W&#xFF09;, tvm.tensor type</li>
+<li><strong>raw_shape_4D</strong>: dimension of the input tensor</li>
+</ul>
+<h2 id="return-value">Return Value<a id="section1772581272620"></a></h2>
+<p><strong>res_tensor</strong>: tensor after the data format is converted into 5D &#xFF08;N,C1,H,W,C0&#xFF09;, tvm.tensor type</p>
+<h2 id="calling-example">Calling Example<a id="section06004154262"></a></h2>
+<pre><code>import tvm
+import te.lang.cce
+raw_shape = (N,C,H,W)
+in_dtype = &quot;float16&quot;
+input = tvm.placeholder(raw_shape, name=&apos;input&apos;, dtype=in_dtype)
+res = te.lang.cce.compute_four2five(input, raw_shape)
+# res.shape = (N,(C+15)//16,H,W,16)
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="te-lang-cce-conv（-args）.html" class="navigation navigation-prev " aria-label="Previous page: te.lang.cce.conv（*args）">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="te-lang-cce-compute_five2four（input-raw_shape_4d）.html" class="navigation navigation-next " aria-label="Next page: te.lang.cce.compute_five2four（input, raw_shape_4D）">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"te.lang.cce.compute_four2five（input, raw_shape_4D）","level":"1.4.3.35","depth":3,"next":{"title":"te.lang.cce.compute_five2four（input, raw_shape_4D）","level":"1.4.3.36","depth":3,"path":"te-lang-cce-compute_five2four（input-raw_shape_4d）.md","ref":"te-lang-cce-compute_five2four（input-raw_shape_4d）.md","articles":[]},"previous":{"title":"te.lang.cce.conv（*args）","level":"1.4.3.34","depth":3,"path":"te-lang-cce-conv（-args）.md","ref":"te-lang-cce-conv（-args）.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"imgUrl":"","topnav":[]},"plugins":["expandable-chapters","copy","replace"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"replace":{},"copy":{},"expandableChapters":{"cssFile":["expandable-chapters-theme.css"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"website.css"}},"file":{"path":"te-lang-cce-compute_four2five（input-raw_shape_4d）.md","mtime":"2019-04-12T02:38:38.856Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-12T02:38:55.882Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/clipboard.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/copy.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-replace/js/replace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

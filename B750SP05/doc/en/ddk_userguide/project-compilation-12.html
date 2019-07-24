@@ -1,0 +1,998 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Project Compilation · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters-theme.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-copy/css/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="project-running-13.html" />
+    
+    
+    <link rel="prev" href="code-implementation-11.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="ddk-sample-overview.html">
+            
+                <a href="ddk-sample-overview.html">
+            
+                    
+                    DDK Sample Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="tvm.html">
+            
+                <a href="tvm.html">
+            
+                    
+                    tvm
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="project-description.html">
+            
+                <a href="project-description.html">
+            
+                    
+                    Project Description
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="project-path.html">
+            
+                <a href="project-path.html">
+            
+                    
+                    Project Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="project-import.html">
+            
+                <a href="project-import.html">
+            
+                    
+                    Project Import
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="sample-data-generation.html">
+            
+                <a href="sample-data-generation.html">
+            
+                    
+                    Sample Data GeneratIon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="code-implementation.html">
+            
+                <a href="code-implementation.html">
+            
+                    
+                    Code Implementation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="project-compilation.html">
+            
+                <a href="project-compilation.html">
+            
+                    
+                    Project Compilation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="project-running.html">
+            
+                <a href="project-running.html">
+            
+                    
+                    Project Running 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="output-verification.html">
+            
+                <a href="output-verification.html">
+            
+                    
+                    Output Verification
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="fasterrcnn_vgg16_asic.html">
+            
+                <a href="fasterrcnn_vgg16_asic.html">
+            
+                    
+                    fasterrcnn_vgg16_asic
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="project-description-0.html">
+            
+                <a href="project-description-0.html">
+            
+                    
+                    Project Description
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="project-path-1.html">
+            
+                <a href="project-path-1.html">
+            
+                    
+                    Project Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="project-import-2.html">
+            
+                <a href="project-import-2.html">
+            
+                    
+                    Project Import
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="data-input.html">
+            
+                <a href="data-input.html">
+            
+                    
+                    Data Input
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="code-implementation-3.html">
+            
+                <a href="code-implementation-3.html">
+            
+                    
+                    Code Implementation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="project-compilation-4.html">
+            
+                <a href="project-compilation-4.html">
+            
+                    
+                    Project Compilation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="project-running-5.html">
+            
+                <a href="project-running-5.html">
+            
+                    
+                    Project Running
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="output-verification-6.html">
+            
+                <a href="output-verification-6.html">
+            
+                    
+                    Output Verification
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="classify_net_asic.html">
+            
+                <a href="classify_net_asic.html">
+            
+                    
+                    classify_net_asic
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="project-description-7.html">
+            
+                <a href="project-description-7.html">
+            
+                    
+                    Project Description
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="project-path-8.html">
+            
+                <a href="project-path-8.html">
+            
+                    
+                    Project Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="project-import-9.html">
+            
+                <a href="project-import-9.html">
+            
+                    
+                    Project Import
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="data-input-10.html">
+            
+                <a href="data-input-10.html">
+            
+                    
+                    Data Input
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="code-implementation-11.html">
+            
+                <a href="code-implementation-11.html">
+            
+                    
+                    Code Implementation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.6" data-path="project-compilation-12.html">
+            
+                <a href="project-compilation-12.html">
+            
+                    
+                    Project Compilation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="project-running-13.html">
+            
+                <a href="project-running-13.html">
+            
+                    
+                    Project Running 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="output-verification-14.html">
+            
+                <a href="output-verification-14.html">
+            
+                    
+                    Output Verification
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="detection_ssd.html">
+            
+                <a href="detection_ssd.html">
+            
+                    
+                    detection_ssd 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="project-description-15.html">
+            
+                <a href="project-description-15.html">
+            
+                    
+                    Project Description
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="project-path-16.html">
+            
+                <a href="project-path-16.html">
+            
+                    
+                    Project Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="project-import-17.html">
+            
+                <a href="project-import-17.html">
+            
+                    
+                    Project Import
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="data-input-18.html">
+            
+                <a href="data-input-18.html">
+            
+                    
+                    Data Input
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="code-implementation-19.html">
+            
+                <a href="code-implementation-19.html">
+            
+                    
+                    Code Implementation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="project-compilation-20.html">
+            
+                <a href="project-compilation-20.html">
+            
+                    
+                    Project Compilation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="project-running-21.html">
+            
+                <a href="project-running-21.html">
+            
+                    
+                    Project Running 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="output-verification-22.html">
+            
+                <a href="output-verification-22.html">
+            
+                    
+                    Output Verification
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="dvpp.html">
+            
+                <a href="dvpp.html">
+            
+                    
+                    dvpp
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="project-description-23.html">
+            
+                <a href="project-description-23.html">
+            
+                    
+                    Project Description
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="sample-code-path.html">
+            
+                <a href="sample-code-path.html">
+            
+                    
+                    Sample code path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="data-input-24.html">
+            
+                <a href="data-input-24.html">
+            
+                    
+                    Data Input
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="code-implementation-25.html">
+            
+                <a href="code-implementation-25.html">
+            
+                    
+                    Code Implementation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="project-compilation-26.html">
+            
+                <a href="project-compilation-26.html">
+            
+                    
+                    Project Compilation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="project-running-27.html">
+            
+                <a href="project-running-27.html">
+            
+                    
+                    Project Running 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="output-verification-28.html">
+            
+                <a href="output-verification-28.html">
+            
+                    
+                    Output Verification
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Project Compilation</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="project-compilation">Project Compilation<a id="EN-US_TOPIC_0158997268"></a></h1>
+<p>Perform compilation on the compilation GUI provided by Mind Studio. In this compilation mode, you do not need to compile Makefile. The detailed procedure is as follows:</p>
+<ol>
+<li>Select the project whose project structure needs to be configured, and then choose  <strong>Build &gt; Edit Build Configuration</strong>. The window for configuring a custom project is displayed.</li>
+<li><p>Configure a custom project.</p>
+<p>The custom configuration project consists of three tab pages:  <strong>Main</strong>,<strong> Host</strong>, and  <strong>Device</strong>.</p>
+<p>Each .so file needs to be configured on the corresponding tab page based on the  <strong>side</strong>  value of each engine in the  <strong>sample.prototxt </strong>file.</p>
+<p><a href="#en-us_topic_0136383476_table1716453412546">Table 1</a>  describes the  <strong>Main</strong>,<strong> Host</strong>, and  <strong>Device</strong>  parameters.</p>
+<p><strong>Table  1</strong>  Configuration description</p>
+<p><a id="en-us_topic_0136383476_table1716453412546"></a></p>
+<table><thead align="left"><tr id="en-us_topic_0136383476_row416593405419"><th class="cellrowborder" valign="top" width="13.01%" id="mcps1.2.3.1.1"><p id="en-us_topic_0136383476_p81651534145414"><a id="en-us_topic_0136383476_p81651534145414"></a><a id="en-us_topic_0136383476_p81651534145414"></a>Configuration Area</p>
+</th>
+<th class="cellrowborder" valign="top" width="86.99%" id="mcps1.2.3.1.2"><p id="en-us_topic_0136383476_p2016523405414"><a id="en-us_topic_0136383476_p2016523405414"></a><a id="en-us_topic_0136383476_p2016523405414"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="en-us_topic_0136383476_row7165173495416"><td class="cellrowborder" valign="top" width="13.01%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0136383476_p13165143411540"><a id="en-us_topic_0136383476_p13165143411540"></a><a id="en-us_topic_0136383476_p13165143411540"></a>Main</p>
+</td>
+<td class="cellrowborder" valign="top" width="86.99%" headers="mcps1.2.3.1.2 "><p id="p1229812142168"><a id="p1229812142168"></a><a id="p1229812142168"></a><span class="parmname" id="parmname1329871401618"><a id="parmname1329871401618"></a><a id="parmname1329871401618"></a><b>MainEngine</b></span> implementation files, that is, the .cpp files:</p>
+<a id="ul18275112861617"></a><a id="ul18275112861617"></a><ul id="ul18275112861617"><li>classify_net_main.cpp</li><li>/host/classify_net_host.cpp</li><li>/host/data_recv.cpp</li><li>/host/util.cpp</li><li>/device/sample_data.cpp</li></ul>
+<p id="p6636194132719"><a id="p6636194132719"></a><a id="p6636194132719"></a>After the configuration is saved, the<strong id="b198931058151820"><a id="b198931058151820"></a><a id="b198931058151820"></a> CMakeLists.txt </strong>file is generated in the <strong id="b17893115891813"><a id="b17893115891813"></a><a id="b17893115891813"></a>build</strong> folder under the root directory of the project.</p>
+<p id="en-us_topic_0136383476_p159030145519"><a id="en-us_topic_0136383476_p159030145519"></a><a id="en-us_topic_0136383476_p159030145519"></a>After the compilation is successful, the executable file is generated in the <strong id="b6893513201916"><a id="b6893513201916"></a><a id="b6893513201916"></a>out </strong>folder.</p>
+</td>
+</tr>
+<tr id="row2045464101313"><td class="cellrowborder" valign="top" width="13.01%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0136383476_p19165113465415"><a id="en-us_topic_0136383476_p19165113465415"></a><a id="en-us_topic_0136383476_p19165113465415"></a>Host</p>
+</td>
+<td class="cellrowborder" valign="top" width="86.99%" headers="mcps1.2.3.1.2 "><p id="p162231478267"><a id="p162231478267"></a><a id="p162231478267"></a>Add the engine that needs to run on the host and enter the engine name.</p>
+<p id="p1799163401217"><a id="p1799163401217"></a><a id="p1799163401217"></a>In this sample, this tab does not need to be configured.</p>
+</td>
+</tr>
+<tr id="en-us_topic_0136383476_row91657342545"><td class="cellrowborder" valign="top" width="13.01%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0136383476_p12165163425419"><a id="en-us_topic_0136383476_p12165163425419"></a><a id="en-us_topic_0136383476_p12165163425419"></a>Device</p>
+</td>
+<td class="cellrowborder" valign="top" width="86.99%" headers="mcps1.2.3.1.2 "><p id="p10644354192618"><a id="p10644354192618"></a><a id="p10644354192618"></a>Add the engine that needs to run on the device and enter the engine library name <span class="parmname" id="parmname5907544562"><a id="parmname5907544562"></a><a id="parmname5907544562"></a><b>ai_engine</b></span>.</p>
+<p id="p1993605221418"><a id="p1993605221418"></a><a id="p1993605221418"></a>Select the .cpp files:</p>
+<p id="p8158025181518"><a id="p8158025181518"></a><a id="p8158025181518"></a>/device/classify_net_ai_engine.cpp</p>
+<p id="p115431871438"><a id="p115431871438"></a><a id="p115431871438"></a>/device/sample_data.cpp</p>
+<div class="note" id="note31001752301"><a id="note31001752301"></a><a id="note31001752301"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p0100517801"><a id="p0100517801"></a><a id="p0100517801"></a>The .so file needs to be signed to avoid being tampered with. The signing method is as follows:</p>
+<a id="ol20360361214"></a><a id="ol20360361214"></a><ol id="ol20360361214"><li>Call the RSA_generate_key interface of the OpenSSL tool to generate the public key <strong id="b1230484314192"><a id="b1230484314192"></a><a id="b1230484314192"></a>pub.pem</strong> and the private key <strong id="b331913437192"><a id="b331913437192"></a><a id="b331913437192"></a>pri.pem</strong>. The recommended key length is greater than or equal to 2048 bits.</li><li>Use the private key to sign the .so file using the SHA256 algorithm to generate the <strong id="b7757124510199"><a id="b7757124510199"></a><a id="b7757124510199"></a>.so.signature</strong> file, which is stored in the same directory as the original .so file.</li><li>Call the SetPublicKeyForSignatureEncryption interface to transfer the public key to HiAI Engine. For details about the APIs, see the <span id="ph67437144814"><a id="ph67437144814"></a><a id="ph67437144814"></a><a href="https://www.huawei.com/minisite/ascend/en/filedetail_12.html" target="_blank" rel="noopener noreferrer">HiAI Engine API Reference</a></span>.</li></ol>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p>Which of the three tab pages is configured depends on which side the .so file of the engine needs to be used. In this sample, SourceEngine and DestEngine are configured on the  <strong>Main </strong>tab page while ClassifyNetEngine and TransEngine are configured on the  <strong>Device </strong>tab page. The following figures show the compilation configuration examples.</p>
+<p><strong>Figure  1</strong>  Configuration example on the  <strong>Main</strong>  tab page<a id="fig17496151910599"></a><br><img src="figures/configuration-example-on-the-main-tab-page-1.png" alt="" title="configuration-example-on-the-main-tab-page-1"></p>
+<p><strong>Figure  2</strong>  Configuration example on the  <strong>Device </strong>tab page<a id="fig138971943171713"></a><br><img src="figures/configuration-example-on-the-device-tab-page-2.png" alt="" title="configuration-example-on-the-device-tab-page-2"></p>
+<p>Click  <strong>Build Options</strong>  in the  <strong>Build Configurations</strong>  dialog box. A dialog box is displayed, as shown in  <a href="#en-us_topic_0136383476_fig72154394112">Figure 3</a>.</p>
+<p><strong>Figure  3</strong>  Build Options<a id="en-us_topic_0136383476_fig72154394112"></a><br><img src="figures/build-options.png" alt="" title="build-options"></p>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong>   </p>
+<ul>
+<li>On the  <strong>Main</strong>  and  <strong>Device</strong>  tab pages, set  <strong>Include Path</strong>  to  <strong>/projects/ClassifyNet/inc</strong>.  </li>
+</ul>
+</blockquote>
+<p><a href="#en-us_topic_0158986094_en-us_topic_0136383476_table195921430174714">Table 2</a>  describes the parameters on each tab page of the  <strong>Build Options </strong>dialog box.</p>
+<p><strong>Table  2</strong>  Parameters in the Build Options dialog box</p>
+<p><a id="en-us_topic_0158986094_en-us_topic_0136383476_table195921430174714"></a></p>
+<table><thead align="left"><tr id="en-us_topic_0158986094_en-us_topic_0136383476_row11596430154711"><th class="cellrowborder" valign="top" width="30%" id="mcps1.2.3.1.1"><p id="en-us_topic_0158986094_en-us_topic_0136383476_p16599183054711"><a id="en-us_topic_0158986094_en-us_topic_0136383476_p16599183054711"></a><a id="en-us_topic_0158986094_en-us_topic_0136383476_p16599183054711"></a>Parameter </p>
+</th>
+<th class="cellrowborder" valign="top" width="70%" id="mcps1.2.3.1.2"><p id="en-us_topic_0158986094_en-us_topic_0136383476_p1760113015477"><a id="en-us_topic_0158986094_en-us_topic_0136383476_p1760113015477"></a><a id="en-us_topic_0158986094_en-us_topic_0136383476_p1760113015477"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="en-us_topic_0158986094_en-us_topic_0136383476_row16602143020479"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0158986094_en-us_topic_0136383476_p106041530124720"><a id="en-us_topic_0158986094_en-us_topic_0136383476_p106041530124720"></a><a id="en-us_topic_0158986094_en-us_topic_0136383476_p106041530124720"></a>Automatically regenerate CMakeLists.txt</p>
+</td>
+<td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0158986094_en-us_topic_0136383476_p321101010337"><a id="en-us_topic_0158986094_en-us_topic_0136383476_p321101010337"></a><a id="en-us_topic_0158986094_en-us_topic_0136383476_p321101010337"></a>This check box is selected by default.</p>
+<a id="en-us_topic_0158986094_en-us_topic_0136383476_ul2092911311331"></a><a id="en-us_topic_0158986094_en-us_topic_0136383476_ul2092911311331"></a><ul id="en-us_topic_0158986094_en-us_topic_0136383476_ul2092911311331"><li>If this check box is selected, the <strong id="en-us_topic_0158986094_b15828172114439"><a id="en-us_topic_0158986094_b15828172114439"></a><a id="en-us_topic_0158986094_b15828172114439"></a>CMakeLists.txt </strong>file is automatically overwritten each time the configuration is saved. (If the Makefile is modified, the <strong id="en-us_topic_0158986094_b10484022104314"><a id="en-us_topic_0158986094_b10484022104314"></a><a id="en-us_topic_0158986094_b10484022104314"></a>CMakeLists.txt </strong>file will also be overwritten.)</li><li>If this check box is deselected, the <strong id="en-us_topic_0158986094_b21635239439"><a id="en-us_topic_0158986094_b21635239439"></a><a id="en-us_topic_0158986094_b21635239439"></a>CMakeLists.txt </strong>file is not automatically overwritten each time the configuration is saved.</li></ul>
+</td>
+</tr>
+<tr id="en-us_topic_0158986094_en-us_topic_0136383476_row206061302475"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0158986094_en-us_topic_0136383476_p36071630184720"><a id="en-us_topic_0158986094_en-us_topic_0136383476_p36071630184720"></a><a id="en-us_topic_0158986094_en-us_topic_0136383476_p36071630184720"></a>C++ Standard</p>
+</td>
+<td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0158986094_en-us_topic_0136383476_p098192953311"><a id="en-us_topic_0158986094_en-us_topic_0136383476_p098192953311"></a><a id="en-us_topic_0158986094_en-us_topic_0136383476_p098192953311"></a>C++ standard. The options are as follows:</p>
+<a id="en-us_topic_0158986094_en-us_topic_0136383476_ul822819094414"></a><a id="en-us_topic_0158986094_en-us_topic_0136383476_ul822819094414"></a><ul id="en-us_topic_0158986094_en-us_topic_0136383476_ul822819094414"><li>C++ 11</li><li>C++ 98</li></ul>
+<p id="en-us_topic_0158986094_en-us_topic_0136383476_p88618122445"><a id="en-us_topic_0158986094_en-us_topic_0136383476_p88618122445"></a><a id="en-us_topic_0158986094_en-us_topic_0136383476_p88618122445"></a>The default setting is <strong id="en-us_topic_0158986094_b1680463820437"><a id="en-us_topic_0158986094_b1680463820437"></a><a id="en-us_topic_0158986094_b1680463820437"></a>C++ 11</strong>.</p>
+</td>
+</tr>
+<tr id="en-us_topic_0158986094_en-us_topic_0136383476_row20608133034711"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0158986094_en-us_topic_0136383476_p36091302479"><a id="en-us_topic_0158986094_en-us_topic_0136383476_p36091302479"></a><a id="en-us_topic_0158986094_en-us_topic_0136383476_p36091302479"></a>Debug Flags</p>
+</td>
+<td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0158986094_en-us_topic_0136383476_p11298532103319"><a id="en-us_topic_0158986094_en-us_topic_0136383476_p11298532103319"></a><a id="en-us_topic_0158986094_en-us_topic_0136383476_p11298532103319"></a>Compilation mode. The options are as follows:</p>
+<a id="en-us_topic_0158986094_en-us_topic_0136383476_ul3393134519442"></a><a id="en-us_topic_0158986094_en-us_topic_0136383476_ul3393134519442"></a><ul id="en-us_topic_0158986094_en-us_topic_0136383476_ul3393134519442"><li>Debug</li><li>Release</li></ul>
+<p id="en-us_topic_0158986094_en-us_topic_0136383476_p426485354412"><a id="en-us_topic_0158986094_en-us_topic_0136383476_p426485354412"></a><a id="en-us_topic_0158986094_en-us_topic_0136383476_p426485354412"></a>The default setting is <strong id="en-us_topic_0158986094_b15991744184316"><a id="en-us_topic_0158986094_b15991744184316"></a><a id="en-us_topic_0158986094_b15991744184316"></a>Debug</strong>.</p>
+</td>
+</tr>
+<tr id="en-us_topic_0158986094_en-us_topic_0136383476_row1161218308479"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0158986094_en-us_topic_0136383476_p16612163017471"><a id="en-us_topic_0158986094_en-us_topic_0136383476_p16612163017471"></a><a id="en-us_topic_0158986094_en-us_topic_0136383476_p16612163017471"></a>Cpp Flags</p>
+</td>
+<td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0158986094_en-us_topic_0136383476_p186141130194718"><a id="en-us_topic_0158986094_en-us_topic_0136383476_p186141130194718"></a><a id="en-us_topic_0158986094_en-us_topic_0136383476_p186141130194718"></a>Compilation option, which is configured by users.</p>
+</td>
+</tr>
+<tr id="en-us_topic_0158986094_en-us_topic_0136383476_row3614930144713"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0158986094_en-us_topic_0136383476_p1561653024710"><a id="en-us_topic_0158986094_en-us_topic_0136383476_p1561653024710"></a><a id="en-us_topic_0158986094_en-us_topic_0136383476_p1561653024710"></a>Link Library</p>
+</td>
+<td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0158986094_en-us_topic_0136383476_p18618143018478"><a id="en-us_topic_0158986094_en-us_topic_0136383476_p18618143018478"></a><a id="en-us_topic_0158986094_en-us_topic_0136383476_p18618143018478"></a>Referenced link library, which can be configured by users.</p>
+<p id="en-us_topic_0158986094_en-us_topic_0136383476_p1975019472364"><a id="en-us_topic_0158986094_en-us_topic_0136383476_p1975019472364"></a><a id="en-us_topic_0158986094_en-us_topic_0136383476_p1975019472364"></a>Linked dynamic library, corresponding to the value of <strong id="en-us_topic_0158986094_b20163134894312"><a id="en-us_topic_0158986094_b20163134894312"></a><a id="en-us_topic_0158986094_b20163134894312"></a>-l </strong>in the compilation command.</p>
+</td>
+</tr>
+<tr id="en-us_topic_0158986094_en-us_topic_0136383476_row1618153010470"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0158986094_en-us_topic_0136383476_p1618163015479"><a id="en-us_topic_0158986094_en-us_topic_0136383476_p1618163015479"></a><a id="en-us_topic_0158986094_en-us_topic_0136383476_p1618163015479"></a>Lib Path</p>
+</td>
+<td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0158986094_en-us_topic_0136383476_p198041234912"><a id="en-us_topic_0158986094_en-us_topic_0136383476_p198041234912"></a><a id="en-us_topic_0158986094_en-us_topic_0136383476_p198041234912"></a>Link library path. Currently, the default path is used. You can add configuration.</p>
+<p id="en-us_topic_0158986094_en-us_topic_0136383476_p16191305476"><a id="en-us_topic_0158986094_en-us_topic_0136383476_p16191305476"></a><a id="en-us_topic_0158986094_en-us_topic_0136383476_p16191305476"></a>Dynamic library search path, corresponding to the value of <strong id="en-us_topic_0158986094_b1726549184313"><a id="en-us_topic_0158986094_b1726549184313"></a><a id="en-us_topic_0158986094_b1726549184313"></a>-L</strong> in the compilation command.</p>
+</td>
+</tr>
+<tr id="en-us_topic_0158986094_en-us_topic_0136383476_row1562013302478"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="en-us_topic_0158986094_en-us_topic_0136383476_p116211530164714"><a id="en-us_topic_0158986094_en-us_topic_0136383476_p116211530164714"></a><a id="en-us_topic_0158986094_en-us_topic_0136383476_p116211530164714"></a>Include Path</p>
+</td>
+<td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="en-us_topic_0158986094_en-us_topic_0136383476_p49094368110"><a id="en-us_topic_0158986094_en-us_topic_0136383476_p49094368110"></a><a id="en-us_topic_0158986094_en-us_topic_0136383476_p49094368110"></a>Header file path. Currently, the default path is used. You can add configuration.</p>
+<p id="en-us_topic_0158986094_en-us_topic_0136383476_p7622133094711"><a id="en-us_topic_0158986094_en-us_topic_0136383476_p7622133094711"></a><a id="en-us_topic_0158986094_en-us_topic_0136383476_p7622133094711"></a>Header file search path, corresponding to the value of <strong id="en-us_topic_0158986094_b850715144320"><a id="en-us_topic_0158986094_b850715144320"></a><a id="en-us_topic_0158986094_b850715144320"></a>-I</strong> in the compilation command.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>After the configuration is complete, click  <strong>Save</strong>  to save the project structure configuration. Click  <strong>Build</strong>  to compile the project structure.</p>
+<p>The project structure configuration can be saved in either of the following ways:</p>
+<ul>
+<li><p>In the  <strong>Build Options</strong>  window, if  <strong>Automatically regenerate CMakeLists.txt</strong>  is selected, the  <strong>build</strong>  window will display the generation information of CMakeLists.txt files, and the  <strong>build</strong>  folder that stores the CMakeLists.txt files is automatically generated in the root directory of the project, as shown in  <a href="#en-us_topic_0136383476_fig199439261294">Figure 4</a>.</p>
+<p><strong>Figure  4</strong>  Project directory example<a id="en-us_topic_0136383476_fig199439261294"></a><br><img src="figures/project-directory-example-3.png" alt="" title="project-directory-example-3"></p>
+</li>
+<li><p>If  <strong>Automatically regenerate CMakeLists.txt</strong>  in the  <strong>Build Options</strong>  window is deselected:</p>
+<ul>
+<li>If the  <strong>build </strong>folder does not exist in the root directory of the project or the  <strong>build </strong>folder in the root directory of the project does not contain the<strong> CMakeLists.txt</strong>  file, the  <strong>build </strong>folder containing the  <strong>CMakeLists.txt</strong>  file is automatically generated, as shown in  <a href="#en-us_topic_0136383476_fig199439261294">Figure 4</a>.</li>
+<li><p>If the  <strong>build</strong>  folder containing the<strong> CMakeLists.txt</strong>  file exists in the root directory of the project, the  <strong>Automatically regenerate CMakeLists.txt</strong>  dialog box is displayed, as shown in  <a href="#en-us_topic_0136383476_fig656864818511">Figure 5</a>.</p>
+<p><strong>Figure  5</strong>  Automatically regenerate CMakeLists.txt prompt<a id="en-us_topic_0136383476_fig656864818511"></a><br><img src="figures/automatically-regenerate-cmakelists-txt-prompt-4.png" alt="" title="automatically-regenerate-cmakelists-txt-prompt-4"></p>
+<p>If you click  <strong>OK</strong>, the original  <strong>CMakeLists.txt </strong>file is overwritten.</p>
+<p>If you click  <strong>Cancel</strong>, the  <strong>CMakeLists.txt</strong>  file in the current project directory is used for compilation, and no more  <strong>CMakeLists.txt </strong>file is generated.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>After the project compilation is complete, the  <strong>build</strong>  window displays the result, as shown in  <a href="#fig1927812485232">Figure 6</a>.</p>
+<p><strong>Figure  6</strong>  Compilation output window<a id="fig1927812485232"></a><br><img src="figures/compilation-output-window-5.png" alt="" title="compilation-output-window-5"></p>
+<p>After the compilation is successful, the  <strong>out </strong>folder is generated in the root directory of the project.</p>
+<p><strong>Figure  7</strong>  Generated files after compilation <a id="fig15129723202417"></a><br><img src="figures/generated-files-after-compilation.png" alt="" title="generated-files-after-compilation"></p>
+<p>The  <strong>ClassifyNet</strong>  file in the  <strong>out </strong>folder is the executable file generated by the Main Engine.</p>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong>   </p>
+<ol>
+<li>The folders and files that are not selected by the main engine, host engines, and device engines in the project are skipped during compilation.  </li>
+<li>If a project that has not been configured is compiled in one-click mode, the  <strong>build </strong>folder that exists in the root directory of the project is renamed, you need to change the path value directly used to compile the project if the folder contains the  <strong>CMakeLists.txt </strong>file. Otherwise, the project is compiled using the selected configuration.  </li>
+<li>If a project is renamed, you need to change the path value of  <strong>Files</strong>  on the  <strong>Main</strong>,  <strong>Host</strong>, and  <strong>Device </strong>tab pages. If the previous configuration is run, the generator generates an invalid project with the original project name based on the path value in the original  <strong>Files</strong>.  </li>
+</ol>
+</blockquote>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="code-implementation-11.html" class="navigation navigation-prev " aria-label="Previous page: Code Implementation">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="project-running-13.html" class="navigation navigation-next " aria-label="Next page: Project Running ">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Project Compilation","level":"1.5.6","depth":2,"next":{"title":"Project Running ","level":"1.5.7","depth":2,"path":"project-running-13.md","ref":"project-running-13.md","articles":[]},"previous":{"title":"Code Implementation","level":"1.5.5","depth":2,"path":"code-implementation-11.md","ref":"code-implementation-11.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"imgUrl":"","topnav":[]},"plugins":["expandable-chapters","copy"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy":{},"expandableChapters":{"cssFile":["expandable-chapters-theme.css"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"website.css"}},"file":{"path":"project-compilation-12.md","mtime":"2019-04-11T16:23:38.240Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-11T16:23:40.851Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/clipboard.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/copy.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

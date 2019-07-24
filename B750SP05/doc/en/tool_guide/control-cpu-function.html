@@ -1,0 +1,787 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Control CPU Function · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters-theme.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-copy/css/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ai-cpu-function.html" />
+    
+    
+    <link rel="prev" href="timeline.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="log-tool.html">
+            
+                <a href="log-tool.html">
+            
+                    
+                    Log Tool
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="log-overview.html">
+            
+                <a href="log-overview.html">
+            
+                    
+                    Log Overview
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="log-processing-mechanism.html">
+            
+                <a href="log-processing-mechanism.html">
+            
+                    
+                    Log Processing Mechanism
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="log-files.html">
+            
+                <a href="log-files.html">
+            
+                    
+                    Log Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="log-levels.html">
+            
+                <a href="log-levels.html">
+            
+                    
+                    Log Levels
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="log-format.html">
+            
+                <a href="log-format.html">
+            
+                    
+                    Log Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="log-configuration.html">
+            
+                <a href="log-configuration.html">
+            
+                    
+                    Log Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="instructions.html">
+            
+                <a href="instructions.html">
+            
+                    
+                    Instructions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="viewing-logs.html">
+            
+                <a href="viewing-logs.html">
+            
+                    
+                    Viewing Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="exporting-logs.html">
+            
+                <a href="exporting-logs.html">
+            
+                    
+                    Exporting Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="uploading-logs.html">
+            
+                <a href="uploading-logs.html">
+            
+                    
+                    Uploading Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="deleting-logs.html">
+            
+                <a href="deleting-logs.html">
+            
+                    
+                    Deleting Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="setting-the-log-level.html">
+            
+                <a href="setting-the-log-level.html">
+            
+                    
+                    Setting the Log Level
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="faqs.html">
+            
+                <a href="faqs.html">
+            
+                    
+                    FAQs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="what-do-i-do-if-no-log-file-is-generated-in-the-log-directory.html">
+            
+                <a href="what-do-i-do-if-no-log-file-is-generated-in-the-log-directory.html">
+            
+                    
+                    What Do I Do If No Log File Is Generated in the Log Directory?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="what-do-i-do-if-a-log-file-fails-to-be-uploaded-to-mind-studio-due-to-the-incorrect-format.html">
+            
+                <a href="what-do-i-do-if-a-log-file-fails-to-be-uploaded-to-mind-studio-due-to-the-incorrect-format.html">
+            
+                    
+                    What Do I Do If a Log File Fails to Be Uploaded to Mind Studio Due to the Incorrect Format?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="profiling.html">
+            
+                <a href="profiling.html">
+            
+                    
+                    Profiling
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="overview-0.html">
+            
+                <a href="overview-0.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="full-process-profiling-in-graphical-mode.html">
+            
+                <a href="full-process-profiling-in-graphical-mode.html">
+            
+                    
+                    Full-Process Profiling in Graphical Mode
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="configuring-data-to-be-profiled.html">
+            
+                <a href="configuring-data-to-be-profiled.html">
+            
+                    
+                    Configuring Data to Be Profiled
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="profiling-performance-data.html">
+            
+                <a href="profiling-performance-data.html">
+            
+                    
+                    Profiling Performance Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="viewing-performance-analysis-results.html">
+            
+                <a href="viewing-performance-analysis-results.html">
+            
+                    
+                    Viewing Performance Analysis Results
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.3.1" data-path="summary.html">
+            
+                <a href="summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3.2" data-path="timeline.html">
+            
+                <a href="timeline.html">
+            
+                    
+                    Timeline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2.3.3" data-path="control-cpu-function.html">
+            
+                <a href="control-cpu-function.html">
+            
+                    
+                    Control CPU Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3.4" data-path="ai-cpu-function.html">
+            
+                <a href="ai-cpu-function.html">
+            
+                    
+                    AI CPU Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="full-process-profiling-in-command-line-mode.html">
+            
+                <a href="full-process-profiling-in-command-line-mode.html">
+            
+                    
+                    Full-Process Profiling in Command Line Mode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="reference.html">
+            
+                <a href="reference.html">
+            
+                    
+                    Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="resetting-the-password-for-connecting-to-the-redis-service.html">
+            
+                <a href="resetting-the-password-for-connecting-to-the-redis-service.html">
+            
+                    
+                    Resetting the Password for Connecting to the Redis Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="script-list.html">
+            
+                <a href="script-list.html">
+            
+                    
+                    Script List
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="black-box.html">
+            
+                <a href="black-box.html">
+            
+                    
+                    Black Box 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="overview-1.html">
+            
+                <a href="overview-1.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="instructions-2.html">
+            
+                <a href="instructions-2.html">
+            
+                    
+                    Instructions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Control CPU Function</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="control-cpu-function">Control CPU Function<a id="EN-US_TOPIC_0141986719"></a></h1>
+<p>As long as  <strong>Control CPU Profiling</strong>  is enabled in the  <strong>Hardware </strong>configuration area, the  <strong>Control CPU Function</strong>  tab page is generated. The top functions of the control CPU during profiling are ranked by  <strong>Cycles </strong>by default, as shown in  <a href="#fig45011014251">Figure 1</a>.</p>
+<p>You can click  <img src="figures/en-us_image_0152754119.png" alt="">  next to the table to export the data to an Excel file on the local PC.</p>
+<p><strong>Figure  1</strong>  Control CPU Function tab page<a id="fig45011014251"></a><br><img src="figures/control-cpu-function-tab-page.png" alt="" title="control-cpu-function-tab-page"></p>
+<p>Configure the  <strong>Control CPU Binary/Symbol Search</strong>  and  <strong>Control CPU C/C++ Source Search</strong>  paths on the  <strong>Configuration</strong>  tab page. On the  <strong>Control CPU Function</strong>  tab page, select  <strong>Module/Fucntion/Callstack</strong>  in the  <strong>Grouping</strong>  area, double-click the function name to jump to the source code of the corresponding function. </p>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong><br><strong>~/tools</strong>  is the default  <strong>toolpath</strong>  setting, which can be customized during Mind Studio installation. You can view the value of  <strong>toolpath </strong>in the  <strong>scripts/env.conf</strong>  file. You can run the  <strong>find / -name &apos;env.conf&apos;</strong>  command to view the location of the  <strong>env.conf</strong>  file in the  <strong>script </strong>directory.  </p>
+</blockquote>
+<p>The procedure is as follows:</p>
+<ol>
+<li><p><a id="li673413251327"></a>Go to the  <strong>Control CPU Function</strong>  tab page, select  <strong>Module/Fucntion/Callstack</strong>, view the path of the binary application file to which the function belongs on the device, and record the path.</p>
+<p>For example, in the example shown in  <a href="#fig168796246516">Figure 2</a>, the binary application file  <strong>libcrypto.so.1.1</strong>  is stored in the  <strong>/usr/lib64</strong>  directory on the device.</p>
+<p><strong>Figure  2</strong>  Viewing the path of the binary application file<a id="fig168796246516"></a><br><img src="figures/viewing-the-path-of-the-binary-application-file.png" alt="" title="viewing-the-path-of-the-binary-application-file"></p>
+</li>
+<li><p><a id="li1914642751112"></a>Log in to the Mind Studio server as the Mind Studio installation user and obtain the aarch64-linux-gnu-objdump and aarch64-linux-gnu-addr2line tools from the  <strong>~/tools/che/ddk/ddk/toolchains/aarch64-linux-gcc6.3/bin</strong>  directory. Run the following commands:</p>
+<p><strong>./aarch64-linux-gnu-objdump -S  <em>binary file path</em></strong>: Obtains the address of the assembly instructions.</p>
+<p><strong>./aarch64-linux-gnu-addr2line -ie libcrypto.so.1.1  <em>Specific assembly instruction address</em></strong>: Obtains the source code path.</p>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong>   </p>
+<ul>
+<li>The binary file must contain the symbol information (not stripped). That is, the debug version compiled by using the<strong> -g</strong>  option is used. Otherwise, the source code path cannot be obtained after the  <strong>addr2line </strong>command is executed.  </li>
+<li>objdump and addr2line are third-party open source tools. You can look up the parameters of them yourself.  </li>
+<li>For Mind Studio on the developer board, you can obtain the aarch64-linux-gnu-objdump and aarch64-linux-gnu-addr2line tools from the  <strong>/usr/bin</strong>  directory on the Mind Studio server.  </li>
+</ul>
+</blockquote>
+</li>
+<li><p><a id="li73984141323"></a>Go to the  <strong>Configuration</strong>  tab and click  <strong>Modify</strong>  next to  <strong>Control CPU Binary/Symbol Search</strong>. Set the path to the  <strong>tools </strong>path of the Mind Studio installation directory on the server, for example,  <strong>/home/ascend/tools/demo</strong>.</p>
+<p><strong>Figure  3</strong>  Modifying the path <a id="fig11338115416287"></a><br><img src="figures/modifying-the-path.png" alt="" title="modifying-the-path"></p>
+</li>
+<li><p><a id="li41285545409"></a>Similarly, click  <strong>Modify</strong>  next to  <strong>Control CPU C/C++ Source Search</strong>. Set the path to the  <strong>tools </strong>path of the Mind Studio installation directory on the server, for example,  <strong>/home/ascend/tools/demo</strong>.</p>
+</li>
+<li><p><a id="li980626114111"></a>Create the binary file path recorded in  <a href="#li673413251327">1</a>  in the path configured in  <a href="#li73984141323">3</a>. Create the source code path recorded in  <a href="#li1914642751112">2</a>  in the path configured in  <a href="#li41285545409">4</a>.</p>
+<p>For example, create the  <strong>usr/lib64</strong>  directory in  <strong>~/tools/demo</strong>.</p>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong>   </p>
+<ul>
+<li>If the binary file path and source code path are not in the standard Linux absolute path format, directly save the binary file and source code in the root directory of the configuration path described in Step 3.  </li>
+<li>If the binary file path and source code path contain invalid characters such as [ \ &apos; ; * ? ~ ` ! @ # $ % ^ &amp; + = ) ( &lt; &gt; { } ] | &quot;, the function cannot be used.  </li>
+</ul>
+</blockquote>
+</li>
+<li><p>Copy the binary files on the device side to the directory created in  <a href="#li980626114111">5</a>, for example,  <strong>~/tools/demo/usr/lib64</strong>.</p>
+</li>
+<li><p>Go to the  <strong>Control CPU Function</strong>  tab and double-click any function in the red frame. The assembly code and source code corresponding to the function is displayed.</p>
+<p><strong>Figure  4</strong>  Jumping to the source code<a id="fig9434720202711"></a><br><img src="figures/jumping-to-the-source-code.png" alt="" title="jumping-to-the-source-code"></p>
+</li>
+</ol>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong><br>Ensure that the path is the  <strong>tools </strong>path in the home directory of the Mind Studio installation user.  </p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="timeline.html" class="navigation navigation-prev " aria-label="Previous page: Timeline">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ai-cpu-function.html" class="navigation navigation-next " aria-label="Next page: AI CPU Function">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Control CPU Function","level":"1.3.2.3.3","depth":4,"next":{"title":"AI CPU Function","level":"1.3.2.3.4","depth":4,"path":"ai-cpu-function.md","ref":"ai-cpu-function.md","articles":[]},"previous":{"title":"Timeline","level":"1.3.2.3.2","depth":4,"path":"timeline.md","ref":"timeline.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"imgUrl":"","topnav":[]},"plugins":["expandable-chapters","copy"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy":{},"expandableChapters":{"cssFile":["expandable-chapters-theme.css"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"website.css"}},"file":{"path":"control-cpu-function.md","mtime":"2019-04-12T02:14:57.256Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-12T02:14:59.988Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/clipboard.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/copy.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

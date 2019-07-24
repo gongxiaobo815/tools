@@ -1,0 +1,908 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Preparing the Server Environment · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters-theme.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-copy/css/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="setting-a-common-user.html" />
+    
+    
+    <link rel="prev" href="server.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="privacy-statement.html">
+            
+                <a href="privacy-statement.html">
+            
+                    
+                    Privacy Statement
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="about-third-party-content.html">
+            
+                <a href="about-third-party-content.html">
+            
+                    
+                    About Third-Party Content
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="about-third-party-tools.html">
+            
+                <a href="about-third-party-tools.html">
+            
+                    
+                    About Third-Party Tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="about-personal-data.html">
+            
+                <a href="about-personal-data.html">
+            
+                    
+                    About Personal Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="environment-preparation.html">
+            
+                <a href="environment-preparation.html">
+            
+                    
+                    Environment Preparation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="server.html">
+            
+                <a href="server.html">
+            
+                    
+                    Server
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1.1" data-path="preparing-the-server-environment.html">
+            
+                <a href="preparing-the-server-environment.html">
+            
+                    
+                    Preparing the Server Environment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="setting-a-common-user.html">
+            
+                <a href="setting-a-common-user.html">
+            
+                    
+                    Setting a Common User
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="setting-the-source.html">
+            
+                <a href="setting-the-source.html">
+            
+                    
+                    Setting the Source
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="installing-dependent-packages.html">
+            
+                <a href="installing-dependent-packages.html">
+            
+                    
+                    Installing Dependent Packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="client.html">
+            
+                <a href="client.html">
+            
+                    
+                    Client
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="software-package-preparation.html">
+            
+                <a href="software-package-preparation.html">
+            
+                    
+                    Software Package Preparation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="mind-studio-installation.html">
+            
+                <a href="mind-studio-installation.html">
+            
+                    
+                    Mind Studio Installation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="verification-of-the-software-package-integrity.html">
+            
+                <a href="verification-of-the-software-package-integrity.html">
+            
+                    
+                    Verification of the Software Package Integrity 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="boot-installation.html">
+            
+                <a href="boot-installation.html">
+            
+                    
+                    Boot Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="manual-installation.html">
+            
+                <a href="manual-installation.html">
+            
+                    
+                    Manual Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3" data-path="verifying-the-installation.html">
+            
+                <a href="verifying-the-installation.html">
+            
+                    
+                    Verifying the Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="common-operations.html">
+            
+                <a href="common-operations.html">
+            
+                    
+                    Common Operations
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="starting-mind-studio.html">
+            
+                <a href="starting-mind-studio.html">
+            
+                    
+                    Starting Mind Studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" data-path="stopping-mind-studio.html">
+            
+                <a href="stopping-mind-studio.html">
+            
+                    
+                    Stopping Mind Studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.3" data-path="uninstalling-mind-studio.html">
+            
+                <a href="uninstalling-mind-studio.html">
+            
+                    
+                    Uninstalling Mind Studio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.4" data-path="querying-the-mind-studio-version.html">
+            
+                <a href="querying-the-mind-studio-version.html">
+            
+                    
+                    Querying the Mind Studio Version
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.5" data-path="configuring-the-openpgp-public-key.html">
+            
+                <a href="configuring-the-openpgp-public-key.html">
+            
+                    
+                    Configuring the openpgp Public Key
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.6" data-path="changing-the-user-password.html">
+            
+                <a href="changing-the-user-password.html">
+            
+                    
+                    Changing the User Password
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.7" data-path="changing-the-ip-addresses.html">
+            
+                <a href="changing-the-ip-addresses.html">
+            
+                    
+                    Changing the IP addresses
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="version-upgrade.html">
+            
+                <a href="version-upgrade.html">
+            
+                    
+                    Version Upgrade
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="preparing-for-the-upgrade.html">
+            
+                <a href="preparing-for-the-upgrade.html">
+            
+                    
+                    Preparing for the Upgrade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="performing-upgrade.html">
+            
+                <a href="performing-upgrade.html">
+            
+                    
+                    Performing Upgrade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="exception-handling.html">
+            
+                <a href="exception-handling.html">
+            
+                    
+                    Exception Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="faqs.html">
+            
+                <a href="faqs.html">
+            
+                    
+                    FAQs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="what-do-i-do-if-a-source-configuration-error-occurs-when-the-apt-get-update-command-is-run-during-mi.html">
+            
+                <a href="what-do-i-do-if-a-source-configuration-error-occurs-when-the-apt-get-update-command-is-run-during-mi.html">
+            
+                    
+                    What Do I Do If a Source Configuration Error Occurs When the apt-get update Command Is Run During Mind Studio installation?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="what-do-i-do-if-software-cycler-（for-python）-decorator-（for-python）-xxx-error-is-displayed-during-th.html">
+            
+                <a href="what-do-i-do-if-software-cycler-（for-python）-decorator-（for-python）-xxx-error-is-displayed-during-th.html">
+            
+                    
+                    What Do I Do If "Software cycler （for python） decorator （for python） xxx error" Is Displayed During the Installation?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="what-do-i-do-if-an-error-is-reported-during-the-installation-of-mind-studio.html">
+            
+                <a href="what-do-i-do-if-an-error-is-reported-during-the-installation-of-mind-studio.html">
+            
+                    
+                    What Do I Do If an Error Is Reported During the Installation of Mind Studio?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="what-do-i-do-if-mind-studio-cannot-start-normally.html">
+            
+                <a href="what-do-i-do-if-mind-studio-cannot-start-normally.html">
+            
+                    
+                    What Do I Do If Mind Studio Cannot Start Normally?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="what-do-i-do-if-mind-studio-fails-to-be-installed.html">
+            
+                <a href="what-do-i-do-if-mind-studio-fails-to-be-installed.html">
+            
+                    
+                    What Do I Do If Mind Studio Fails to Be Installed?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="what-do-i-do-if-the-mongodb-service-fails-to-be-stopped-during-the-uninstallation.html">
+            
+                <a href="what-do-i-do-if-the-mongodb-service-fails-to-be-stopped-during-the-uninstallation.html">
+            
+                    
+                    What Do I Do If the MongoDB Service Fails to Be Stopped During the Uninstallation?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="what-do-i-do-if-mind-studio-does-not-support-automatically-running-at-server-startup.html">
+            
+                <a href="what-do-i-do-if-mind-studio-does-not-support-automatically-running-at-server-startup.html">
+            
+                    
+                    What Do I Do If Mind Studio Does Not Support Automatically Running at Server Startup? 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="what-do-i-do-if-profiling-fails-to-be-installed.html">
+            
+                <a href="what-do-i-do-if-profiling-fails-to-be-installed.html">
+            
+                    
+                    What Do I Do If Profiling Fails to Be Installed?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="what-do-i-do-if-a-warning-or-fail-result-is-returned-in-the-integrity-verification-of-a-software-pac.html">
+            
+                <a href="what-do-i-do-if-a-warning-or-fail-result-is-returned-in-the-integrity-verification-of-a-software-pac.html">
+            
+                    
+                    What Do I Do If a WARNING or FAIL Result Is Returned in the Integrity Verification of a Software Package?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="what-do-i-do-if-i-cannot-view-the-online-help-documents.html">
+            
+                <a href="what-do-i-do-if-i-cannot-view-the-online-help-documents.html">
+            
+                    
+                    What Do I Do If I Cannot View the Online Help Documents?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="open-source-third-party-libraries.html">
+            
+                <a href="open-source-third-party-libraries.html">
+            
+                    
+                    Open Source Third-Party Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Preparing the Server Environment</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="preparing-the-server-environment">Preparing the Server Environment<a id="EN-US_TOPIC_0154811242"></a></h1>
+<p>The server serves as the installation environment of Mind Studio. The following requirements on the hardware and operating system &#xFF08;OS&#xFF09; must be met.</p>
+<p><strong>Table  1</strong>  Ubuntu system version information</p>
+<p><a id="table1515616482231"></a></p>
+<table><thead align="left"><tr id="row8157124812317"><th class="cellrowborder" valign="top" width="9.53%" id="mcps1.2.5.1.1"><p id="p17157194842316"><a id="p17157194842316"></a><a id="p17157194842316"></a>Category</p>
+</th>
+<th class="cellrowborder" valign="top" width="13.65%" id="mcps1.2.5.1.2"><p id="p31575485237"><a id="p31575485237"></a><a id="p31575485237"></a>Version Restriction</p>
+</th>
+<th class="cellrowborder" valign="top" width="39.77%" id="mcps1.2.5.1.3"><p id="p825219253259"><a id="p825219253259"></a><a id="p825219253259"></a>Obtaining Method</p>
+</th>
+<th class="cellrowborder" valign="top" width="37.05%" id="mcps1.2.5.1.4"><p id="p7157144842317"><a id="p7157144842317"></a><a id="p7157144842317"></a>Precautions</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row1315754852313"><td class="cellrowborder" valign="top" width="9.53%" headers="mcps1.2.5.1.1 "><p id="p015714483233"><a id="p015714483233"></a><a id="p015714483233"></a>Hardware</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.65%" headers="mcps1.2.5.1.2 "><p id="p21711256182615"><a id="p21711256182615"></a><a id="p21711256182615"></a>&#x2265; 4 GB memory is recommended for a single-user scenario.</p>
+</td>
+<td class="cellrowborder" valign="top" width="39.77%" headers="mcps1.2.5.1.3 "><p id="p0157184819232"><a id="p0157184819232"></a><a id="p0157184819232"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.05%" headers="mcps1.2.5.1.4 "><a id="ul18330193818"></a><a id="ul18330193818"></a><ul id="ul18330193818"><li>If the memory size of the Linux host is 4 GB, the size of the model file should be less than or equal to 350 MB for model conversion and simulation on Mind Studio. Otherwise, the OS may be unstable.</li><li>If the configurations of the Linux host are upgraded, for example, the memory is expanded to 8 GB, the supported operation specifications should be increased proportionally.<p id="p484130183810"><a id="p484130183810"></a><a id="p484130183810"></a>For example, if the memory is expanded from 4 GB to 8 GB, the size threshold of the model file should be 700 MB.</p>
+</li></ul>
+</td>
+</tr>
+<tr id="row1615815486234"><td class="cellrowborder" valign="top" width="9.53%" headers="mcps1.2.5.1.1 "><p id="p1315844817233"><a id="p1315844817233"></a><a id="p1315844817233"></a>OS</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.65%" headers="mcps1.2.5.1.2 "><p id="p1315824812319"><a id="p1315824812319"></a><a id="p1315824812319"></a>16.04.3</p>
+</td>
+<td class="cellrowborder" valign="top" width="39.77%" headers="mcps1.2.5.1.3 "><p id="p1455011842714"><a id="p1455011842714"></a><a id="p1455011842714"></a>Download the required version from <a href="http://old-releases.ubuntu.com/releases/16.04.3/" target="_blank" rel="noopener noreferrer">http://old-releases.ubuntu.com/releases/16.04.3/</a>. You can download the desktop version <span class="parmname" id="parmname555051816273"><a id="parmname555051816273"></a><a id="parmname555051816273"></a><b>ubuntu-XXX-desktop-amd64.iso</b></span> or server version <span class="parmname" id="parmname115501518192716"><a id="parmname115501518192716"></a><a id="parmname115501518192716"></a><b>ubuntu-XXX-server-amd64.iso</b></span>.</p>
+<div class="note" id="note1550161811277"><a id="note1550161811277"></a><a id="note1550161811277"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p255091814275"><a id="p255091814275"></a><a id="p255091814275"></a>In <strong id="b111703125285"><a id="b111703125285"></a><a id="b111703125285"></a>ubuntu-<em id="i18170161218281"><a id="i18170161218281"></a><a id="i18170161218281"></a>XXX</em>-desktop-amd64.iso </strong>and<strong id="b191701312152814"><a id="b191701312152814"></a><a id="b191701312152814"></a> ubuntu-<em id="i161701112132814"><a id="i161701112132814"></a><a id="i161701112132814"></a>XXX</em>-server-amd64.iso</strong>, <em id="i818651216284"><a id="i818651216284"></a><a id="i818651216284"></a><strong id="b7186111262819"><a id="b7186111262819"></a><a id="b7186111262819"></a>XXX </strong></em>indicates the version number.</p>
+</div></div>
+</td>
+<td class="cellrowborder" valign="top" width="37.05%" headers="mcps1.2.5.1.4 "><a id="ul20279173762618"></a><a id="ul20279173762618"></a><ul id="ul20279173762618"><li>Ensure that the OS supports the UTF-8 character set. Otherwise, you cannot view the support documents by using online help of Mind Studio after the installation. For details about the troubleshooting solution, see <a href="what-do-i-do-if-i-cannot-view-the-online-help-documents.html">What Do I Do If I Cannot View the Online Help Documents?</a>.</li><li>During model conversion, if a custom TE plug-in is loaded, the GUI may be stuck. Run the <strong id="b41831843144510"><a id="b41831843144510"></a><a id="b41831843144510"></a>uname -r</strong> or <strong id="b4505184912459"><a id="b4505184912459"></a><a id="b4505184912459"></a>cat /proc/version</strong> command to check whether the Linux kernel version is earlier than 4.18. If so, upgrade the Linux kernel by referring to:<p id="p9791164318132"><a id="p9791164318132"></a><a id="p9791164318132"></a><a href="https://bugzilla.kernel.org/attachment.cgi?id=277305" target="_blank" rel="noopener noreferrer">https://bugzilla.kernel.org/attachment.cgi?id=277305</a></p>
+</li></ul>
+</td>
+</tr>
+<tr id="row157381059123015"><td class="cellrowborder" valign="top" width="9.53%" headers="mcps1.2.5.1.1 "><p id="p573995943010"><a id="p573995943010"></a><a id="p573995943010"></a>Python</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.65%" headers="mcps1.2.5.1.2 "><p id="p37395593304"><a id="p37395593304"></a><a id="p37395593304"></a>2.7</p>
+</td>
+<td class="cellrowborder" valign="top" width="39.77%" headers="mcps1.2.5.1.3 "><p id="p20740195918304"><a id="p20740195918304"></a><a id="p20740195918304"></a>For details, see <a href="installing-dependent-packages.html">Installing Dependent Packages</a>.</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.05%" headers="mcps1.2.5.1.4 "><p id="p2074075993018"><a id="p2074075993018"></a><a id="p2074075993018"></a>-</p>
+</td>
+</tr>
+<tr id="row202674843118"><td class="cellrowborder" valign="top" width="9.53%" headers="mcps1.2.5.1.1 "><p id="p626720843111"><a id="p626720843111"></a><a id="p626720843111"></a>JDK</p>
+</td>
+<td class="cellrowborder" valign="top" width="13.65%" headers="mcps1.2.5.1.2 "><p id="p18268883318"><a id="p18268883318"></a><a id="p18268883318"></a>1.8.0_171+</p>
+</td>
+<td class="cellrowborder" valign="top" width="39.77%" headers="mcps1.2.5.1.3 "><p id="p172689815316"><a id="p172689815316"></a><a id="p172689815316"></a>For details, see <a href="installing-dependent-packages.html">Installing Dependent Packages</a>.</p>
+</td>
+<td class="cellrowborder" valign="top" width="37.05%" headers="mcps1.2.5.1.4 "><p id="p162687833117"><a id="p162687833117"></a><a id="p162687833117"></a>-</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="server.html" class="navigation navigation-prev " aria-label="Previous page: Server">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="setting-a-common-user.html" class="navigation navigation-next " aria-label="Next page: Setting a Common User">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Preparing the Server Environment","level":"1.4.1.1","depth":3,"next":{"title":"Setting a Common User","level":"1.4.1.2","depth":3,"path":"setting-a-common-user.md","ref":"setting-a-common-user.md","articles":[]},"previous":{"title":"Server","level":"1.4.1","depth":2,"path":"server.md","ref":"server.md","articles":[{"title":"Preparing the Server Environment","level":"1.4.1.1","depth":3,"path":"preparing-the-server-environment.md","ref":"preparing-the-server-environment.md","articles":[]},{"title":"Setting a Common User","level":"1.4.1.2","depth":3,"path":"setting-a-common-user.md","ref":"setting-a-common-user.md","articles":[]},{"title":"Setting the Source","level":"1.4.1.3","depth":3,"path":"setting-the-source.md","ref":"setting-the-source.md","articles":[]},{"title":"Installing Dependent Packages","level":"1.4.1.4","depth":3,"path":"installing-dependent-packages.md","ref":"installing-dependent-packages.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"imgUrl":"","topnav":[]},"plugins":["expandable-chapters","copy","replace"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"replace":{},"copy":{},"expandableChapters":{"cssFile":["expandable-chapters-theme.css"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"website.css"}},"file":{"path":"preparing-the-server-environment.md","mtime":"2019-04-12T02:08:47.752Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-12T02:08:55.974Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/clipboard.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/copy.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-replace/js/replace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

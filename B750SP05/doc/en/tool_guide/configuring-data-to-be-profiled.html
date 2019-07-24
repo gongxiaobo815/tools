@@ -1,0 +1,871 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Configuring Data to Be Profiled · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters-theme.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-copy/css/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="profiling-performance-data.html" />
+    
+    
+    <link rel="prev" href="full-process-profiling-in-graphical-mode.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="log-tool.html">
+            
+                <a href="log-tool.html">
+            
+                    
+                    Log Tool
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="log-overview.html">
+            
+                <a href="log-overview.html">
+            
+                    
+                    Log Overview
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="log-processing-mechanism.html">
+            
+                <a href="log-processing-mechanism.html">
+            
+                    
+                    Log Processing Mechanism
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="log-files.html">
+            
+                <a href="log-files.html">
+            
+                    
+                    Log Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="log-levels.html">
+            
+                <a href="log-levels.html">
+            
+                    
+                    Log Levels
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="log-format.html">
+            
+                <a href="log-format.html">
+            
+                    
+                    Log Format
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="log-configuration.html">
+            
+                <a href="log-configuration.html">
+            
+                    
+                    Log Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="instructions.html">
+            
+                <a href="instructions.html">
+            
+                    
+                    Instructions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="viewing-logs.html">
+            
+                <a href="viewing-logs.html">
+            
+                    
+                    Viewing Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="exporting-logs.html">
+            
+                <a href="exporting-logs.html">
+            
+                    
+                    Exporting Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="uploading-logs.html">
+            
+                <a href="uploading-logs.html">
+            
+                    
+                    Uploading Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="deleting-logs.html">
+            
+                <a href="deleting-logs.html">
+            
+                    
+                    Deleting Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="setting-the-log-level.html">
+            
+                <a href="setting-the-log-level.html">
+            
+                    
+                    Setting the Log Level
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="faqs.html">
+            
+                <a href="faqs.html">
+            
+                    
+                    FAQs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="what-do-i-do-if-no-log-file-is-generated-in-the-log-directory.html">
+            
+                <a href="what-do-i-do-if-no-log-file-is-generated-in-the-log-directory.html">
+            
+                    
+                    What Do I Do If No Log File Is Generated in the Log Directory?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="what-do-i-do-if-a-log-file-fails-to-be-uploaded-to-mind-studio-due-to-the-incorrect-format.html">
+            
+                <a href="what-do-i-do-if-a-log-file-fails-to-be-uploaded-to-mind-studio-due-to-the-incorrect-format.html">
+            
+                    
+                    What Do I Do If a Log File Fails to Be Uploaded to Mind Studio Due to the Incorrect Format?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="profiling.html">
+            
+                <a href="profiling.html">
+            
+                    
+                    Profiling
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="overview-0.html">
+            
+                <a href="overview-0.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="full-process-profiling-in-graphical-mode.html">
+            
+                <a href="full-process-profiling-in-graphical-mode.html">
+            
+                    
+                    Full-Process Profiling in Graphical Mode
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.2.1" data-path="configuring-data-to-be-profiled.html">
+            
+                <a href="configuring-data-to-be-profiled.html">
+            
+                    
+                    Configuring Data to Be Profiled
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="profiling-performance-data.html">
+            
+                <a href="profiling-performance-data.html">
+            
+                    
+                    Profiling Performance Data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="viewing-performance-analysis-results.html">
+            
+                <a href="viewing-performance-analysis-results.html">
+            
+                    
+                    Viewing Performance Analysis Results
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.3.1" data-path="summary.html">
+            
+                <a href="summary.html">
+            
+                    
+                    Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3.2" data-path="timeline.html">
+            
+                <a href="timeline.html">
+            
+                    
+                    Timeline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3.3" data-path="control-cpu-function.html">
+            
+                <a href="control-cpu-function.html">
+            
+                    
+                    Control CPU Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3.4" data-path="ai-cpu-function.html">
+            
+                <a href="ai-cpu-function.html">
+            
+                    
+                    AI CPU Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="full-process-profiling-in-command-line-mode.html">
+            
+                <a href="full-process-profiling-in-command-line-mode.html">
+            
+                    
+                    Full-Process Profiling in Command Line Mode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="reference.html">
+            
+                <a href="reference.html">
+            
+                    
+                    Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="resetting-the-password-for-connecting-to-the-redis-service.html">
+            
+                <a href="resetting-the-password-for-connecting-to-the-redis-service.html">
+            
+                    
+                    Resetting the Password for Connecting to the Redis Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="script-list.html">
+            
+                <a href="script-list.html">
+            
+                    
+                    Script List
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="black-box.html">
+            
+                <a href="black-box.html">
+            
+                    
+                    Black Box 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="overview-1.html">
+            
+                <a href="overview-1.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="instructions-2.html">
+            
+                <a href="instructions-2.html">
+            
+                    
+                    Instructions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Configuring Data to Be Profiled</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="configuring-data-to-be-profiled">Configuring Data to Be Profiled<a id="EN-US_TOPIC_0141811164"></a></h1>
+<ol>
+<li>Double-click the<strong> *.mind</strong>  file in the Mind project.</li>
+<li><p>On the process orchestration page that is displayed, click the  <strong>Profiling</strong>  icon, as shown in  <a href="#fig596617517154">Figure 1</a>.</p>
+<p><strong>Figure  1</strong>  Profiling icon<a id="fig596617517154"></a><br><img src="figures/profiling-icon.png" alt="" title="profiling-icon"></p>
+</li>
+<li><p>In the  <strong>Profiling</strong>  dialog box that is displayed, configure the configuration items in the  <strong>Hardware</strong>,  <strong>Software</strong>, and  <strong>Connection </strong>areas to specify the modules whose performance data needs to be profiled and the profiling interval.</p>
+<ol>
+<li><p>Set the  <strong>Hardware</strong>  parameters.</p>
+<p><a href="#fig16760225191510">Figure 2</a>  shows the profiling attributes that can be configured for the hardware.</p>
+<p><strong>Figure  2</strong>  Hardware configuration area<a id="fig16760225191510"></a><br><img src="figures/hardware-configuration-area.png" alt="" title="hardware-configuration-area"></p>
+<p><a href="#table5186175712358">Table 1</a>  describes the details of the  <strong>Hardware</strong>  parameters.</p>
+<p><strong>Table  1</strong>  Hardware configuration parameters</p>
+<p><a id="table5186175712358"></a></p>
+<table><thead align="left"><tr id="row12184155713514"><th class="cellrowborder" valign="top" width="27.04%" id="mcps1.2.3.1.1"><p id="p15184175733517"><a id="p15184175733517"></a><a id="p15184175733517"></a>Parameter</p>
+</th>
+<th class="cellrowborder" valign="top" width="72.96000000000001%" id="mcps1.2.3.1.2"><p id="p10184157173517"><a id="p10184157173517"></a><a id="p10184157173517"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row41845574356"><td class="cellrowborder" valign="top" width="27.04%" headers="mcps1.2.3.1.1 "><p id="p161849577352"><a id="p161849577352"></a><a id="p161849577352"></a><strong id="b2184185717353"><a id="b2184185717353"></a><a id="b2184185717353"></a>Control CPU Profiling</strong></p>
+</td>
+<td class="cellrowborder" valign="top" width="72.96000000000001%" headers="mcps1.2.3.1.2 "><p id="p218412574350"><a id="p218412574350"></a><a id="p218412574350"></a>Whether to enable profiling for the control CPU of the NPU. When this parameter is set to <strong id="b19632124121013"><a id="b19632124121013"></a><a id="b19632124121013"></a>ON</strong>, the PMU event on the control CPU is profiled. Currently, the default events are 0x11 and 0x8, where 0x11 indicates the number of cycles executed by the CPU and 0x8 indicates the number of executed instructions.</p>
+</td>
+</tr>
+<tr id="row18184165713350"><td class="cellrowborder" valign="top" width="27.04%" headers="mcps1.2.3.1.1 "><p id="p19184115723510"><a id="p19184115723510"></a><a id="p19184115723510"></a><strong id="b71841570356"><a id="b71841570356"></a><a id="b71841570356"></a>TS CPU Profiling</strong></p>
+</td>
+<td class="cellrowborder" valign="top" width="72.96000000000001%" headers="mcps1.2.3.1.2 "><p id="p2844220194917"><a id="p2844220194917"></a><a id="p2844220194917"></a>Whether to enable profiling for the AI task schedule (TS) CPU. When this parameter is set to <strong id="b139176547123"><a id="b139176547123"></a><a id="b139176547123"></a>ON</strong>, the PMU event on the TS CPU is profiled. Currently, the default events are 0x11 and 0x8, where 0x11 indicates the number of cycles executed by the CPU and 0x8 indicates the number of executed instructions.</p>
+</td>
+</tr>
+<tr id="row16185125711352"><td class="cellrowborder" valign="top" width="27.04%" headers="mcps1.2.3.1.1 "><p id="p5185145716359"><a id="p5185145716359"></a><a id="p5185145716359"></a><strong id="b12185165715354"><a id="b12185165715354"></a><a id="b12185165715354"></a>AI CPU Profiling</strong></p>
+</td>
+<td class="cellrowborder" valign="top" width="72.96000000000001%" headers="mcps1.2.3.1.2 "><p id="p149014241492"><a id="p149014241492"></a><a id="p149014241492"></a>Whether to enable profiling for the AI operator CPU (different from the AI core CPU). When this parameter is set to <strong id="b787410464145"><a id="b787410464145"></a><a id="b787410464145"></a>ON</strong>, the PMU event on the AI CPU is profiled. Currently, the default events are 0x11 and 0x8, where 0x11 indicates the number of cycles executed by the CPU and 0x8 indicates the number of executed instructions.</p>
+</td>
+</tr>
+<tr id="row11851657183515"><td class="cellrowborder" valign="top" width="27.04%" headers="mcps1.2.3.1.1 "><p id="p918575712357"><a id="p918575712357"></a><a id="p918575712357"></a><strong id="b20185145717354"><a id="b20185145717354"></a><a id="b20185145717354"></a>CPU Sampling Intervals(ms)</strong></p>
+</td>
+<td class="cellrowborder" valign="top" width="72.96000000000001%" headers="mcps1.2.3.1.2 "><p id="p3185185717352"><a id="p3185185717352"></a><a id="p3185185717352"></a>PMU event profiling interval of the control CPU, TS CPU, and AI CPU. The default value is <strong id="b1647417871614"><a id="b1647417871614"></a><a id="b1647417871614"></a>20</strong> (ms).</p>
+</td>
+</tr>
+<tr id="row318545716355"><td class="cellrowborder" valign="top" width="27.04%" headers="mcps1.2.3.1.1 "><p id="p15185175763513"><a id="p15185175763513"></a><a id="p15185175763513"></a><strong id="b8185105712350"><a id="b8185105712350"></a><a id="b8185105712350"></a>AI Core Profiling</strong></p>
+</td>
+<td class="cellrowborder" valign="top" width="72.96000000000001%" headers="mcps1.2.3.1.2 "><p id="p4185195703517"><a id="p4185195703517"></a><a id="p4185195703517"></a>Processing unit responsible for the scalar, cube, and FP AI computation. Task-based and sample-based AI core profiling is supported. Currently, the default events are 0x3, 0x8, 0x9, 0xe, 0x3a, 0x3b, 0x4a, and 0x49. 0x3 indicates the number of executed cube instructions, 0x8 indicates the number of executed vector instructions, 0x9 indicates the number of executed scalar instructions, 0xe indicates the total number of instruction cycles, 0x3a indicates the number of scalar read requests for the UB, 0x3b indicates the number of scalar write requests for the UB, 0x4a indicates the number of cube int instructions, and 0x49 indicates the number of cube FP instructions. In task-based mode, the performance data is profiled by task, while in sample-based mode, the performance data is profiled at a fixed interval.</p>
+</td>
+</tr>
+<tr id="row11186757113515"><td class="cellrowborder" valign="top" width="27.04%" headers="mcps1.2.3.1.1 "><p id="p11851457183510"><a id="p11851457183510"></a><a id="p11851457183510"></a><strong id="b3185657183514"><a id="b3185657183514"></a><a id="b3185657183514"></a>Peripheral Profiling</strong></p>
+</td>
+<td class="cellrowborder" valign="top" width="72.96000000000001%" headers="mcps1.2.3.1.2 "><p id="p318615723516"><a id="p318615723516"></a><a id="p318615723516"></a>Whether to enable profiling for the peripherals. Currently, the supported peripherals are the digital vision pre-process (DVPP) and network interface collector (NIC). The default profiling interval is 10 ms.</p>
+</td>
+</tr>
+<tr id="row64915543436"><td class="cellrowborder" valign="top" width="27.04%" headers="mcps1.2.3.1.1 "><p id="p164910547437"><a id="p164910547437"></a><a id="p164910547437"></a><strong id="b116890317453"><a id="b116890317453"></a><a id="b116890317453"></a>LLC Capacity</strong></p>
+</td>
+<td class="cellrowborder" valign="top" width="72.96000000000001%" headers="mcps1.2.3.1.2 "><p id="p1110124151413"><a id="p1110124151413"></a><a id="p1110124151413"></a>Whether to enable profiling for the capacity information of the last level cache (LLC). This switch is mutually exclusive with the <strong id="b2307115220316"><a id="b2307115220316"></a><a id="b2307115220316"></a>LLC bandwidth</strong> switch. Only one type of LLC data can be profiled at a time. <span class="parmname" id="parmname769943493111"><a id="parmname769943493111"></a><a id="parmname769943493111"></a><b>Sampling Intervals</b></span> indicates the LLC profiling interval. The value range is [100, 1000]. The default value is 100 (ms).</p>
+</td>
+</tr>
+<tr id="row1717410114418"><td class="cellrowborder" valign="top" width="27.04%" headers="mcps1.2.3.1.1 "><p id="p3174130144420"><a id="p3174130144420"></a><a id="p3174130144420"></a><strong id="b1512619794516"><a id="b1512619794516"></a><a id="b1512619794516"></a>LLC Bandwidth</strong></p>
+</td>
+<td class="cellrowborder" valign="top" width="72.96000000000001%" headers="mcps1.2.3.1.2 "><p id="p267085915207"><a id="p267085915207"></a><a id="p267085915207"></a>Whether to enable profiling for the read and write bandwidths of the LLC. This switch is mutually exclusive with the <strong id="b23881754163211"><a id="b23881754163211"></a><a id="b23881754163211"></a>LLC capacity</strong> switch. Only one type of LLC data can be profiled at a time. <span class="parmname" id="parmname838895483211"><a id="parmname838895483211"></a><a id="parmname838895483211"></a><b>Sampling Intervals</b></span> indicates the LLC profiling interval. The value range is [100, 1000]. The default value is 100 (ms).</p>
+</td>
+</tr>
+<tr id="row179071528154910"><td class="cellrowborder" valign="top" width="27.04%" headers="mcps1.2.3.1.1 "><p id="p16416253155015"><a id="p16416253155015"></a><a id="p16416253155015"></a><strong id="b164181453145012"><a id="b164181453145012"></a><a id="b164181453145012"></a>DDR Profiling</strong></p>
+</td>
+<td class="cellrowborder" valign="top" width="72.96000000000001%" headers="mcps1.2.3.1.2 "><p id="p1350181215261"><a id="p1350181215261"></a><a id="p1350181215261"></a>Whether to enable profiling for the read and write bandwidths of the DDR SDRAM. The default setting is <strong id="b69022172468"><a id="b69022172468"></a><a id="b69022172468"></a>OFF</strong>.</p>
+<p id="p1352818402269"><a id="p1352818402269"></a><a id="p1352818402269"></a><span class="parmname" id="parmname1722171582720"><a id="parmname1722171582720"></a><a id="parmname1722171582720"></a><b>Master ID</b></span> indicates the core whose read and write bandwidths are to be profiled. The value range is 0&#x2013;7. 0&#x2013;3 correspond to the core IDs of the control CPU. 4&#x2013;7 correspond to the core IDs of the AI CPU.</p>
+<p id="p2063071235020"><a id="p2063071235020"></a><a id="p2063071235020"></a><span class="parmname" id="parmname19959171819282"><a id="parmname19959171819282"></a><a id="parmname19959171819282"></a><b>Sampling Intervals</b></span> indicates the DDR profiling interval. The value range is [100, 1000]. The default value is <strong id="b92312049205317"><a id="b92312049205317"></a><a id="b92312049205317"></a>100 </strong>(ms).</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>NOTE:</strong>   </p>
+<ul>
+<li>The performance monitor unit (PMU) is a hardware unit of the CPU. The CPU performance data can be read by accessing related registers.  </li>
+<li>DVPP is short for digital vision pre-process.  </li>
+<li>NIC is short for network interface controller.  </li>
+<li>It is recommended that the DDR and LLC sampling intervals be not greater than the time required for program execution. Otherwise, data cannot be profiled.  </li>
+</ul>
+</blockquote>
+</li>
+<li><p>Set the  <strong>Software</strong>  parameters.</p>
+<p><a href="#fig5854758556">Figure 3</a>  shows the profiling attributes that can be configured for the software.</p>
+<p><strong>Figure  3</strong>  Software configuration area<a id="fig5854758556"></a><br><img src="figures/software-configuration-area.png" alt="" title="software-configuration-area"></p>
+<p><a href="#table5705774360">Table 2</a>  describes the details of the  <strong>Software</strong>  parameters.</p>
+<p><strong>Table  2</strong>  Software configuration parameters</p>
+<p><a id="table5705774360"></a></p>
+<table><thead align="left"><tr id="row1469977183611"><th class="cellrowborder" valign="top" width="32%" id="mcps1.2.3.1.1"><p id="p17699127103610"><a id="p17699127103610"></a><a id="p17699127103610"></a>Parameter</p>
+</th>
+<th class="cellrowborder" valign="top" width="68%" id="mcps1.2.3.1.2"><p id="p1699147123614"><a id="p1699147123614"></a><a id="p1699147123614"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row77005783615"><td class="cellrowborder" valign="top" width="32%" headers="mcps1.2.3.1.1 "><p id="p16699197193615"><a id="p16699197193615"></a><a id="p16699197193615"></a><strong id="b76991676362"><a id="b76991676362"></a><a id="b76991676362"></a>HIAI Engine Profiling</strong></p>
+</td>
+<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.3.1.2 "><p id="p07009718365"><a id="p07009718365"></a><a id="p07009718365"></a>Whether to enable profiling for HiIAI Engine</p>
+</td>
+</tr>
+<tr id="row1570015719367"><td class="cellrowborder" valign="top" width="32%" headers="mcps1.2.3.1.1 "><p id="p67009716368"><a id="p67009716368"></a><a id="p67009716368"></a><strong id="b13700976367"><a id="b13700976367"></a><a id="b13700976367"></a>OME Profiling</strong></p>
+</td>
+<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.3.1.2 "><p id="p197001379361"><a id="p197001379361"></a><a id="p197001379361"></a>Whether to enable OME profiling</p>
+</td>
+</tr>
+<tr id="row770117716369"><td class="cellrowborder" valign="top" width="32%" headers="mcps1.2.3.1.1 "><p id="p1770111713368"><a id="p1770111713368"></a><a id="p1770111713368"></a><strong id="b670167103614"><a id="b670167103614"></a><a id="b670167103614"></a>RTS Profiling</strong></p>
+</td>
+<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.3.1.2 "><p id="p1370167193618"><a id="p1370167193618"></a><a id="p1370167193618"></a>Whether to enable RTS profiling</p>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>Set the  <strong>Connection</strong>  parameters.</p>
+<p><a href="#fig158972610437">Figure 4</a>  shows the connection information.  <a href="#table1517318487373">Table 3</a>  describes the connection configuration parameters.</p>
+<p><strong>Figure  4</strong>  Connection configuration page<a id="fig158972610437"></a><br><img src="figures/connection-configuration-page.png" alt="" title="connection-configuration-page"></p>
+<p><strong>Table  3</strong>  Connection configuration parameters</p>
+<p><a id="table1517318487373"></a></p>
+<table><thead align="left"><tr id="row161721548143714"><th class="cellrowborder" valign="top" width="34.46%" id="mcps1.2.3.1.1"><p id="p5172134833715"><a id="p5172134833715"></a><a id="p5172134833715"></a>Parameter</p>
+</th>
+<th class="cellrowborder" valign="top" width="65.53999999999999%" id="mcps1.2.3.1.2"><p id="p18172154817376"><a id="p18172154817376"></a><a id="p18172154817376"></a>Description</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row61729480374"><td class="cellrowborder" valign="top" width="34.46%" headers="mcps1.2.3.1.1 "><p id="p111721948173713"><a id="p111721948173713"></a><a id="p111721948173713"></a><strong id="b2172134833720"><a id="b2172134833720"></a><a id="b2172134833720"></a>Host Address</strong></p>
+</td>
+<td class="cellrowborder" valign="top" width="65.53999999999999%" headers="mcps1.2.3.1.2 "><p id="p122442021434"><a id="p122442021434"></a><a id="p122442021434"></a>IP address of the server on the host side</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+</li>
+</ol>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="full-process-profiling-in-graphical-mode.html" class="navigation navigation-prev " aria-label="Previous page: Full-Process Profiling in Graphical Mode">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="profiling-performance-data.html" class="navigation navigation-next " aria-label="Next page: Profiling Performance Data">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Configuring Data to Be Profiled","level":"1.3.2.1","depth":3,"next":{"title":"Profiling Performance Data","level":"1.3.2.2","depth":3,"path":"profiling-performance-data.md","ref":"profiling-performance-data.md","articles":[]},"previous":{"title":"Full-Process Profiling in Graphical Mode","level":"1.3.2","depth":2,"path":"full-process-profiling-in-graphical-mode.md","ref":"full-process-profiling-in-graphical-mode.md","articles":[{"title":"Configuring Data to Be Profiled","level":"1.3.2.1","depth":3,"path":"configuring-data-to-be-profiled.md","ref":"configuring-data-to-be-profiled.md","articles":[]},{"title":"Profiling Performance Data","level":"1.3.2.2","depth":3,"path":"profiling-performance-data.md","ref":"profiling-performance-data.md","articles":[]},{"title":"Viewing Performance Analysis Results","level":"1.3.2.3","depth":3,"path":"viewing-performance-analysis-results.md","ref":"viewing-performance-analysis-results.md","articles":[{"title":"Summary","level":"1.3.2.3.1","depth":4,"path":"summary.md","ref":"summary.md","articles":[]},{"title":"Timeline","level":"1.3.2.3.2","depth":4,"path":"timeline.md","ref":"timeline.md","articles":[]},{"title":"Control CPU Function","level":"1.3.2.3.3","depth":4,"path":"control-cpu-function.md","ref":"control-cpu-function.md","articles":[]},{"title":"AI CPU Function","level":"1.3.2.3.4","depth":4,"path":"ai-cpu-function.md","ref":"ai-cpu-function.md","articles":[]}]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"imgUrl":"","topnav":[]},"plugins":["expandable-chapters","copy"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy":{},"expandableChapters":{"cssFile":["expandable-chapters-theme.css"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"website.css"}},"file":{"path":"configuring-data-to-be-profiled.md","mtime":"2019-04-12T02:14:57.252Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-12T02:14:59.988Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/clipboard.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/copy.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

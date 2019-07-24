@@ -1,0 +1,731 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Mind Studio发送命令给Device侧执行 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters-theme.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-copy/css/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Mind-Studio发送命令给Host侧执行.html" />
+    
+    
+    <link rel="prev" href="简介.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="简介.html">
+            
+                <a href="简介.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="Mind-Studio发送命令给Device侧执行.html">
+            
+                <a href="Mind-Studio发送命令给Device侧执行.html">
+            
+                    
+                    Mind Studio发送命令给Device侧执行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Mind-Studio发送命令给Host侧执行.html">
+            
+                <a href="Mind-Studio发送命令给Host侧执行.html">
+            
+                    
+                    Mind Studio发送命令给Host侧执行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Mind-Studio传输文件给Device侧.html">
+            
+                <a href="Mind-Studio传输文件给Device侧.html">
+            
+                    
+                    Mind Studio传输文件给Device侧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Mind-Studio传输文件给Host侧.html">
+            
+                <a href="Mind-Studio传输文件给Host侧.html">
+            
+                    
+                    Mind Studio传输文件给Host侧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Mind-Studio从Host侧获取文件.html">
+            
+                <a href="Mind-Studio从Host侧获取文件.html">
+            
+                    
+                    Mind Studio从Host侧获取文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="检测Mind-Studio与Host之间的心跳.html">
+            
+                <a href="检测Mind-Studio与Host之间的心跳.html">
+            
+                    
+                    检测Mind Studio与Host之间的心跳
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="设置日志级别.html">
+            
+                <a href="设置日志级别.html">
+            
+                    
+                    设置日志级别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Mind-Studio将Profiling采集项的信息发送给Host.html">
+            
+                <a href="Mind-Studio将Profiling采集项的信息发送给Host.html">
+            
+                    
+                    Mind Studio将Profiling采集项的信息发送给Host
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="从Host侧采集黑匣子的dump异常信息.html">
+            
+                <a href="从Host侧采集黑匣子的dump异常信息.html">
+            
+                    
+                    从Host侧采集黑匣子的dump异常信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="获取与Host连接的Device信息.html">
+            
+                <a href="获取与Host连接的Device信息.html">
+            
+                    
+                    获取与Host连接的Device信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="生成字符串加密文件.html">
+            
+                <a href="生成字符串加密文件.html">
+            
+                    
+                    生成字符串加密文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="同步Mind-Studio与Host侧的时间.html">
+            
+                <a href="同步Mind-Studio与Host侧的时间.html">
+            
+                    
+                    同步Mind Studio与Host侧的时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="查看帮助信息.html">
+            
+                <a href="查看帮助信息.html">
+            
+                    
+                    查看帮助信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Mind Studio发送命令给Device侧执行</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="mind-studio&#x53D1;&#x9001;&#x547D;&#x4EE4;&#x7ED9;device&#x4FA7;&#x6267;&#x884C;">Mind Studio&#x53D1;&#x9001;&#x547D;&#x4EE4;&#x7ED9;Device&#x4FA7;&#x6267;&#x884C;<a id="ZH-CN_TOPIC_0147907750"></a></h1>
+<h2 id="&#x547D;&#x4EE4;&#x529F;&#x80FD;">&#x547D;&#x4EE4;&#x529F;&#x80FD;<a id="section16840213414"></a></h2>
+<p>Mind Studio&#x53D1;&#x9001;&#x547D;&#x4EE4;&#x7ED9;Device&#x4FA7;&#x6267;&#x884C;&#xFF0C;&#x6BD4;&#x5982;&#x53D1;&#x9001;&#x67E5;&#x770B;Device&#x4FA7;&#x7684;&#x65E5;&#x671F;&#x4FE1;&#x606F;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
+<h2 id="&#x547D;&#x4EE4;&#x683C;&#x5F0F;">&#x547D;&#x4EE4;&#x683C;&#x5F0F;<a id="section13936161914410"></a></h2>
+<p>IDE-daemon-client --host &lt;<em>host_ip</em>&gt;:&lt;<em>port</em>&gt; [--device &lt;<em>deviceID</em>&gt;] --cmd &lt;<em>command</em>&gt;</p>
+<h2 id="&#x53C2;&#x6570;&#x8BF4;&#x660E;">&#x53C2;&#x6570;&#x8BF4;&#x660E;<a id="section119060551240"></a></h2>
+<p><strong>&#x8868; 1</strong>  &#x53C2;&#x6570;&#x8BF4;&#x660E;</p>
+<p><a id="table20997825050"></a></p>
+<table><thead align="left"><tr id="row999917251252"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.1"><p id="p999918251056"><a id="p999918251056"></a><a id="p999918251056"></a>&#x53C2;&#x6570;&#x540D;&#x79F0;</p>
+</th>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.2"><p id="p59991225153"><a id="p59991225153"></a><a id="p59991225153"></a>&#x53C2;&#x6570;&#x63CF;&#x8FF0;</p>
+</th>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.3"><p id="p1799912251351"><a id="p1799912251351"></a><a id="p1799912251351"></a>&#x662F;&#x5426;&#x5FC5;&#x9009;</p>
+</th>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.4"><p id="p1999825853"><a id="p1999825853"></a><a id="p1999825853"></a>&#x9ED8;&#x8BA4;&#x503C;</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row3306919111511"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p103081319181513"><a id="p103081319181513"></a><a id="p103081319181513"></a>--host</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><a id="ul132331512215"></a><a id="ul132331512215"></a><ul id="ul132331512215"><li><em id="i11695545164414"><a id="i11695545164414"></a><a id="i11695545164414"></a>host_ip</em>&#xFF1A;&#x6307;&#x5B9A;Host&#x4FA7;&#x7684;IP&#x5730;&#x5740;&#x3002;</li><li><em id="i1086811313458"><a id="i1086811313458"></a><a id="i1086811313458"></a>port</em>&#xFF1A;&#x6307;&#x5B9A;&#x7AEF;&#x53E3;&#x53F7;&#x3002;</li></ul>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p12308191920159"><a id="p12308191920159"></a><a id="p12308191920159"></a>&#x662F;</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p143081219101513"><a id="p143081219101513"></a><a id="p143081219101513"></a><em id="i982932135015"><a id="i982932135015"></a><a id="i982932135015"></a>port</em>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;22118&#x3002;</p>
+</td>
+</tr>
+<tr id="row19587192112277"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p12742101912314"><a id="p12742101912314"></a><a id="p12742101912314"></a>--device</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p1874281910235"><a id="p1874281910235"></a><a id="p1874281910235"></a>&#x5982;&#x679C;Host&#x8FDE;&#x63A5;&#x4E86;&#x591A;&#x4E2A;Device&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<em id="i68668461252"><a id="i68668461252"></a><a id="i68668461252"></a>--</em>device<em id="i19867046172520"><a id="i19867046172520"></a><a id="i19867046172520"></a> deviceID</em>&#x6307;&#x5B9A;&#x5177;&#x4F53;&#x7684;Device&#x3002;&#x5982;&#x679C;&#x4E0D;&#x6307;&#x5B9A;Device&#xFF0C;&#x5219;&#x9ED8;&#x8BA4;&#x6307;&#x5B9A;<em id="i175721248112615"><a id="i175721248112615"></a><a id="i175721248112615"></a>deviceID</em>&#x4E3A;0&#x7684;Device&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p674314194237"><a id="p674314194237"></a><a id="p674314194237"></a>&#x5426;</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p374313199238"><a id="p374313199238"></a><a id="p374313199238"></a><em id="i1914931852518"><a id="i1914931852518"></a><a id="i1914931852518"></a>deviceID</em>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;0&#x3002;</p>
+</td>
+</tr>
+<tr id="row12999725856"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p209991025854"><a id="p209991025854"></a><a id="p209991025854"></a>--cmd</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p7999112511519"><a id="p7999112511519"></a><a id="p7999112511519"></a>&#x6307;&#x5B9A;&#x9700;&#x8981;Device&#x4FA7;&#x6267;&#x884C;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x547D;&#x4EE4;&#x5217;&#x8868;&#x8BF7;&#x53C2;&#x89C1;<a href="#section18715141418224">command&#x5217;&#x8868;</a>&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p1899992513520"><a id="p1899992513520"></a><a id="p1899992513520"></a>&#x662F;</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p5999112510515"><a id="p5999112510515"></a><a id="p5999112510515"></a>-</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="&#x4F7F;&#x7528;&#x793A;&#x4F8B;">&#x4F7F;&#x7528;&#x793A;&#x4F8B;<a id="section2234124465"></a></h2>
+<ol>
+<li>&#x4EE5;Mind Studio&#x5B89;&#x88C5;&#x7528;&#x6237;&#x767B;&#x5F55;Mind Studio&#x6240;&#x5728;&#x7684;&#x670D;&#x52A1;&#x5668;&#x540E;&#x53F0;&#x3002;</li>
+<li><p>&#x6267;&#x884C;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#x8BBE;&#x7F6E;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x3002;</p>
+<pre><code>export  LD_LIBRARY_PATH=~/tools/che/ddk/ddk/uihost/lib
+export  PATH=$PATH:~/tools/che/ddk/ddk/uihost/bin
+</code></pre></li>
+<li><p>&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF0C;&#x67E5;&#x770B;Device&#x4FA7;&#x7684;&#x65E5;&#x671F;&#x4FE1;&#x606F;&#x3002;</p>
+<pre><code>IDE-daemon-client --host xx.xx.xx.xx:22118 --cmd date
+</code></pre><blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>&#x8BF4;&#x660E;&#xFF1A;</strong><br><em>xx.xx.xx.xx</em>&#x9700;&#x8981;&#x66FF;&#x6362;&#x4E3A;&#x5B9E;&#x9645;&#x7684;Host&#x7684;IP&#x5730;&#x5740;&#x3002;  </p>
+</blockquote>
+</li>
+</ol>
+<h2 id="command&#x5217;&#x8868;"><em>command</em>&#x5217;&#x8868;<a id="section18715141418224"></a></h2>
+<p>&#x5728;&#x534A;&#x56FA;&#x5316;&#x7C7B;&#x7684;&#x547D;&#x4EE4;&#x4E2D;&#xFF0C;<em>xxxx&#x3001;yy</em>&#x7B49;&#x5185;&#x5BB9;&#x9700;&#x8981;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x66FF;&#x6362;&#x4E3A;&#x76EE;&#x5F55;&#x540D;&#x79F0;&#x6216;&#x6587;&#x4EF6;&#x540D;&#x79F0;&#x3002;</p>
+<p><a id="table1296105517228"></a></p>
+<table><thead align="left"><tr id="row888185672220"><th class="cellrowborder" valign="top" width="7.71%" id="mcps1.1.4.1.1"><p id="p98825682213"><a id="p98825682213"></a><a id="p98825682213"></a>&#x7C7B;&#x522B;</p>
+</th>
+<th class="cellrowborder" valign="top" width="63.72%" id="mcps1.1.4.1.2"><p id="p1988185616221"><a id="p1988185616221"></a><a id="p1988185616221"></a>&#x547D;&#x4EE4;</p>
+</th>
+<th class="cellrowborder" valign="top" width="28.57%" id="mcps1.1.4.1.3"><p id="p1089156182211"><a id="p1089156182211"></a><a id="p1089156182211"></a>&#x5907;&#x6CE8;</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row6891756192219"><td class="cellrowborder" rowspan="14" valign="top" width="7.71%" headers="mcps1.1.4.1.1 "><p id="p1021742415139"><a id="p1021742415139"></a><a id="p1021742415139"></a>&#x56FA;&#x5316;</p>
+</td>
+<td class="cellrowborder" valign="top" width="63.72%" headers="mcps1.1.4.1.2 "><p id="p4451715141211"><a id="p4451715141211"></a><a id="p4451715141211"></a>ide_cmd.sh --reboot</p>
+</td>
+<td class="cellrowborder" valign="top" width="28.57%" headers="mcps1.1.4.1.3 "><p id="p43950317817"><a id="p43950317817"></a><a id="p43950317817"></a>sudo&#x63D0;&#x6743;&#xFF0C;&#x5B9E;&#x9645;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x4E3A;</p>
+<p id="p118985618225"><a id="p118985618225"></a><a id="p118985618225"></a><strong id="b1251645379"><a id="b1251645379"></a><a id="b1251645379"></a>sudo </strong><em id="i1091445976"><a id="i1091445976"></a><a id="i1091445976"></a>command</em>&#xFF0C;&#x5B9E;&#x9645;&#x6267;&#x884C;&#x4E3A;reboot mini&#x547D;&#x4EE4;</p>
+</td>
+</tr>
+<tr id="row1689856102220"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p189165622219"><a id="p189165622219"></a><a id="p189165622219"></a>date</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p1589195662216"><a id="p1589195662216"></a><a id="p1589195662216"></a>-</p>
+</td>
+</tr>
+<tr id="row8143102212019"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p91771389113"><a id="p91771389113"></a><a id="p91771389113"></a>mkdir -p /tmp/profiler-tools/</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p17145202215016"><a id="p17145202215016"></a><a id="p17145202215016"></a>-</p>
+</td>
+</tr>
+<tr id="row1655619249013"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p19177133811111"><a id="p19177133811111"></a><a id="p19177133811111"></a>rm /opt/mini/mini_developerKit*.rar</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p115568248015"><a id="p115568248015"></a><a id="p115568248015"></a>-</p>
+</td>
+</tr>
+<tr id="row1291719261906"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p111776382012"><a id="p111776382012"></a><a id="p111776382012"></a>chmod +x /opt/mini/minirc_install_phase1.sh</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p891814263013"><a id="p891814263013"></a><a id="p891814263013"></a>-</p>
+</td>
+</tr>
+<tr id="row109651847706"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p1917718381715"><a id="p1917718381715"></a><a id="p1917718381715"></a>/opt/mini/minirc_install_phase1.sh</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p15965647700"><a id="p15965647700"></a><a id="p15965647700"></a>-</p>
+</td>
+</tr>
+<tr id="row846845111010"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p96518136177"><a id="p96518136177"></a><a id="p96518136177"></a>tar -xvf ~/host/EVB.tar -C ~/host/</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p1146812511407"><a id="p1146812511407"></a><a id="p1146812511407"></a>-</p>
+</td>
+</tr>
+<tr id="row148551653209"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p917710380117"><a id="p917710380117"></a><a id="p917710380117"></a>rm -rf /var/dlog/*</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p1885618539019"><a id="p1885618539019"></a><a id="p1885618539019"></a>-</p>
+</td>
+</tr>
+<tr id="row124361561207"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p1217717383119"><a id="p1217717383119"></a><a id="p1217717383119"></a>rm -rf ~/host</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p24371056207"><a id="p24371056207"></a><a id="p24371056207"></a>-</p>
+</td>
+</tr>
+<tr id="row7751338119"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p6177138515"><a id="p6177138515"></a><a id="p6177138515"></a>mkdir -p ~/host</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p1975131018"><a id="p1975131018"></a><a id="p1975131018"></a>-</p>
+</td>
+</tr>
+<tr id="row203523516118"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p1793520618591"><a id="p1793520618591"></a><a id="p1793520618591"></a>rm -rf ~/HIAI_PROJECTS/dlog.tar</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p63531651515"><a id="p63531651515"></a><a id="p63531651515"></a>-</p>
+</td>
+</tr>
+<tr id="row1169077019"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p53824705913"><a id="p53824705913"></a><a id="p53824705913"></a>tar -cPf ~/HIAI_PROJECTS/dlog.tar /var/dlog/</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p66911578117"><a id="p66911578117"></a><a id="p66911578117"></a>-</p>
+</td>
+</tr>
+<tr id="row102614104611"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p14319146468"><a id="p14319146468"></a><a id="p14319146468"></a>grep -rn &quot;firmware upgrade finish, start to reboot&quot; /var/davinci/log</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 ">&#xA0;&#xA0;</td>
+</tr>
+<tr id="row1289175612223"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p172475034616"><a id="p172475034616"></a><a id="p172475034616"></a>grep -rn &quot;fail&quot; /var/davinci/log/firmware_upgrade_progress.log</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p389756172219"><a id="p389756172219"></a><a id="p389756172219"></a>-</p>
+</td>
+</tr>
+<tr id="row1689115632211"><td class="cellrowborder" rowspan="29" valign="top" width="7.71%" headers="mcps1.1.4.1.1 "><p id="p7898565228"><a id="p7898565228"></a><a id="p7898565228"></a>&#x534A;&#x56FA;&#x5316;</p>
+</td>
+<td class="cellrowborder" valign="top" width="63.72%" headers="mcps1.1.4.1.2 "><p id="p3147192810110"><a id="p3147192810110"></a><a id="p3147192810110"></a>rm -rf ~/HIAI_PROJECTS/<em id="i20485745513"><a id="i20485745513"></a><a id="i20485745513"></a>xxxx</em>;  rm -rf ~/HIAI_DATANDMELSET/<em id="i1299817482012"><a id="i1299817482012"></a><a id="i1299817482012"></a>xxxx</em>; rm -rf ~/profiler-app/<em id="i15981125117110"><a id="i15981125117110"></a><a id="i15981125117110"></a>xxxx</em>; rm -rf ~/ide_daemon/<em id="i1022718551510"><a id="i1022718551510"></a><a id="i1022718551510"></a>xxxx</em></p>
+</td>
+<td class="cellrowborder" valign="top" width="28.57%" headers="mcps1.1.4.1.3 "><p id="p1289185622213"><a id="p1289185622213"></a><a id="p1289185622213"></a>-</p>
+</td>
+</tr>
+<tr id="row1891656112212"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p1127403116612"><a id="p1127403116612"></a><a id="p1127403116612"></a>rm ~/HIAI_PROJECTS/<em id="i182847271822"><a id="i182847271822"></a><a id="i182847271822"></a>xxxx</em>;  rm ~/HIAI_DATANDMELSET/<em id="i11315730626"><a id="i11315730626"></a><a id="i11315730626"></a>xxxx</em>; rm ~/profiler-app/<em id="i89417331724"><a id="i89417331724"></a><a id="i89417331724"></a>xxxx</em>; rm ~/ide_daemon/<em id="i1847111361022"><a id="i1847111361022"></a><a id="i1847111361022"></a>xxxx</em></p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p1892564221"><a id="p1892564221"></a><a id="p1892564221"></a>-</p>
+</td>
+</tr>
+<tr id="row1189356152218"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p527453111613"><a id="p527453111613"></a><a id="p527453111613"></a>wx -l ~/HIAI_PROJECTS/<em id="i191114389134"><a id="i191114389134"></a><a id="i191114389134"></a>xxxx</em>;  wc -l ~/HIAI_DATANDMELSET/<em id="i15632104311133"><a id="i15632104311133"></a><a id="i15632104311133"></a>xxxx</em>; wc -l ~/profiler-app/<em id="i33971947191318"><a id="i33971947191318"></a><a id="i33971947191318"></a>xxxx</em></p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p99085622217"><a id="p99085622217"></a><a id="p99085622217"></a>-</p>
+</td>
+</tr>
+<tr id="row13901656182217"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p1427412313612"><a id="p1427412313612"></a><a id="p1427412313612"></a>mkdir -p ~/HIAI_PROJECTS/<em id="i3673145019135"><a id="i3673145019135"></a><a id="i3673145019135"></a>xxxx</em>;  mkdir -p ~/HIAI_DATANDMELSET/<em id="i1399985514137"><a id="i1399985514137"></a><a id="i1399985514137"></a>xxxx</em>; mkdir -p ~/profiler-app/<em id="i171117593137"><a id="i171117593137"></a><a id="i171117593137"></a>xxxx</em>; mkdir -p ~/ide_daemon/<em id="i203787351418"><a id="i203787351418"></a><a id="i203787351418"></a>xxxx</em></p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p390205642210"><a id="p390205642210"></a><a id="p390205642210"></a>-</p>
+</td>
+</tr>
+<tr id="row1690145612217"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p17274103110616"><a id="p17274103110616"></a><a id="p17274103110616"></a>mkdir ~/HIAI_PROJECTS/<em id="i1182310612145"><a id="i1182310612145"></a><a id="i1182310612145"></a>xxxx</em>;  mkdir ~/HIAI_DATANDMELSET/<em id="i11147210101420"><a id="i11147210101420"></a><a id="i11147210101420"></a>xxxx</em>; mkdir ~/profiler-app/<em id="i8847212121419"><a id="i8847212121419"></a><a id="i8847212121419"></a>xxxx</em>; mkdir ~/ide_daemon/<em id="i7863615111419"><a id="i7863615111419"></a><a id="i7863615111419"></a>xxxx</em></p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p18901856162216"><a id="p18901856162216"></a><a id="p18901856162216"></a>-</p>
+</td>
+</tr>
+<tr id="row1990556112220"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p327420319613"><a id="p327420319613"></a><a id="p327420319613"></a>tar -cf ~/HIAI_PROJECTS/<em id="i1466816528294"><a id="i1466816528294"></a><a id="i1466816528294"></a>xxxx</em>/<em id="i2073542219143"><a id="i2073542219143"></a><a id="i2073542219143"></a>yy</em>.tar -C ~/HIAI_PROJECTS/<em id="i323935872917"><a id="i323935872917"></a><a id="i323935872917"></a>xxxx</em>;  tar -cf ~/HIAI_DATANDMELSET/<em id="i9348726131418"><a id="i9348726131418"></a><a id="i9348726131418"></a>xxxx</em>/<em id="i133812917142"><a id="i133812917142"></a><a id="i133812917142"></a>yy</em>.tar -C ~/HIAI_DATANDMELSET/<em id="i2355633181413"><a id="i2355633181413"></a><a id="i2355633181413"></a>xxxx</em></p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 ">&#xA0;&#xA0;</td>
+</tr>
+<tr id="row79015562225"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p627414311867"><a id="p627414311867"></a><a id="p627414311867"></a>tar -cf ~/profiler-app/<em id="i162581657111411"><a id="i162581657111411"></a><a id="i162581657111411"></a>xxxx</em>/<em id="i58957261519"><a id="i58957261519"></a><a id="i58957261519"></a>yy</em>.tar -C ~/profiler-app/<em id="i17205741302"><a id="i17205741302"></a><a id="i17205741302"></a>xxxx</em></p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p1690556172215"><a id="p1690556172215"></a><a id="p1690556172215"></a>-</p>
+</td>
+</tr>
+<tr id="row990656122218"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p8274153110614"><a id="p8274153110614"></a><a id="p8274153110614"></a>tar -xvf ~/HIAI_PROJECTS/<em id="i1858737203011"><a id="i1858737203011"></a><a id="i1858737203011"></a>xxxx</em>/<em id="i179051610123015"><a id="i179051610123015"></a><a id="i179051610123015"></a>yy</em>.tar -C ~/HIAI_PROJECTS/<em id="i875751343016"><a id="i875751343016"></a><a id="i875751343016"></a>xxxx</em>;  tar -xvf ~/HIAI_DATANDMELSET/<em id="i893931603010"><a id="i893931603010"></a><a id="i893931603010"></a>xxxx</em>/<em id="i1795032014305"><a id="i1795032014305"></a><a id="i1795032014305"></a>yy</em>.tar -C ~/HIAI_DATANDMELSET/<em id="i20610132333015"><a id="i20610132333015"></a><a id="i20610132333015"></a>xxxx</em></p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p6907562223"><a id="p6907562223"></a><a id="p6907562223"></a>-</p>
+</td>
+</tr>
+<tr id="row690135617225"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p1927410311165"><a id="p1927410311165"></a><a id="p1927410311165"></a>tar -xvf ~/profiler-app/<em id="i14512640183013"><a id="i14512640183013"></a><a id="i14512640183013"></a>xxxx</em>/<em id="i1890413227324"><a id="i1890413227324"></a><a id="i1890413227324"></a>yy</em>.tar -C ~/profiler-app/<em id="i113631934153319"><a id="i113631934153319"></a><a id="i113631934153319"></a>xxxx</em></p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p159045692216"><a id="p159045692216"></a><a id="p159045692216"></a>-</p>
+</td>
+</tr>
+<tr id="row59095642218"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p42741431663"><a id="p42741431663"></a><a id="p42741431663"></a>mv ~/HIAI_PROJECTS/<em id="i164793712339"><a id="i164793712339"></a><a id="i164793712339"></a>xxxx </em>~/HIAI_PROJECTS/<em id="i1152713403336"><a id="i1152713403336"></a><a id="i1152713403336"></a>xxxx</em>;  mv ~/profiler-app/<em id="i176873435339"><a id="i176873435339"></a><a id="i176873435339"></a>xxxx </em>~/profiler-app/<em id="i33251846103313"><a id="i33251846103313"></a><a id="i33251846103313"></a>xxxx</em></p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p169075672211"><a id="p169075672211"></a><a id="p169075672211"></a>-</p>
+</td>
+</tr>
+<tr id="row1990145602213"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p42741731266"><a id="p42741731266"></a><a id="p42741731266"></a>chmod +x ~/HIAI_PROJECTS/<em id="i3550449193312"><a id="i3550449193312"></a><a id="i3550449193312"></a>xxxx</em>;   chmod +x ~/profiler-app/<em id="i1996615523339"><a id="i1996615523339"></a><a id="i1996615523339"></a>xxxx</em>;     chmod +x ~/ide_daemon/<em id="i1558405520332"><a id="i1558405520332"></a><a id="i1558405520332"></a>xxxx</em></p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p1590185618225"><a id="p1590185618225"></a><a id="p1590185618225"></a>-</p>
+</td>
+</tr>
+<tr id="row183331232630"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p13343326314"><a id="p13343326314"></a><a id="p13343326314"></a>chmod -w ~/ide_daemon/<em id="i9657145620313"><a id="i9657145620313"></a><a id="i9657145620313"></a>xxxx</em></p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p433410323311"><a id="p433410323311"></a><a id="p433410323311"></a>-</p>
+</td>
+</tr>
+<tr id="row29075613221"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p52743311363"><a id="p52743311363"></a><a id="p52743311363"></a>cp ~/HIAI_PROJECTS/<em id="i1748918012346"><a id="i1748918012346"></a><a id="i1748918012346"></a>xxxx </em>~/HIAI_PROJECTS/<em id="i126043310347"><a id="i126043310347"></a><a id="i126043310347"></a>xxxx</em>;  cp -af ~/HIAI_PROJECTS/<em id="i112601568347"><a id="i112601568347"></a><a id="i112601568347"></a>xxxx  </em>~/HIAI_PROJECTS/<em id="i15275792340"><a id="i15275792340"></a><a id="i15275792340"></a>xxxx</em></p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p0906565221"><a id="p0906565221"></a><a id="p0906565221"></a>-</p>
+</td>
+</tr>
+<tr id="row5901456102210"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p1527453111617"><a id="p1527453111617"></a><a id="p1527453111617"></a>sha512sum ~/HIAI_DATANDMELSET/<em id="i1834431233414"><a id="i1834431233414"></a><a id="i1834431233414"></a>xxxx</em></p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p29115617229"><a id="p29115617229"></a><a id="p29115617229"></a>-</p>
+</td>
+</tr>
+<tr id="row19115618223"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p1727410311968"><a id="p1727410311968"></a><a id="p1727410311968"></a>find ~/HIAI_DATANDMELSET/<em id="i101941115113410"><a id="i101941115113410"></a><a id="i101941115113410"></a>xxxx </em>-type f|xargs sha512sum|sort</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p1391165612219"><a id="p1391165612219"></a><a id="p1391165612219"></a>-</p>
+</td>
+</tr>
+<tr id="row391456122210"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p3274331062"><a id="p3274331062"></a><a id="p3274331062"></a>~/HIAI_PROJECTS/<em id="i15835183344"><a id="i15835183344"></a><a id="i15835183344"></a>xxxx</em>;      ~/ide_daemon/<em id="i3654152173417"><a id="i3654152173417"></a><a id="i3654152173417"></a>xxxx</em></p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p49155692216"><a id="p49155692216"></a><a id="p49155692216"></a>&#x6267;&#x884C;&#x53EF;&#x6267;&#x884C;&#x5236;&#x6587;&#x4EF6;&#x3002;</p>
+</td>
+</tr>
+<tr id="row1591205613228"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p1440319497618"><a id="p1440319497618"></a><a id="p1440319497618"></a>cd ~/HIAI_PROJECTS/<em id="i2056812521268"><a id="i2056812521268"></a><a id="i2056812521268"></a>xxxx</em>/out;./<em id="i0518455868"><a id="i0518455868"></a><a id="i0518455868"></a>yy</em></p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p1991756172217"><a id="p1991756172217"></a><a id="p1991756172217"></a>&#x5230;&#x76EE;&#x5F55;&#x4E0B;&#x6267;&#x884C;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x3002;</p>
+</td>
+</tr>
+<tr id="row1891756182211"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p132751531967"><a id="p132751531967"></a><a id="p132751531967"></a>kill PID</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p59165652213"><a id="p59165652213"></a><a id="p59165652213"></a>-</p>
+</td>
+</tr>
+<tr id="row49115561228"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p12275631563"><a id="p12275631563"></a><a id="p12275631563"></a>kill -9 PID</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p69155614227"><a id="p69155614227"></a><a id="p69155614227"></a>-</p>
+</td>
+</tr>
+<tr id="row198982163397"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p5898161623910"><a id="p5898161623910"></a><a id="p5898161623910"></a>pkill xxxxx</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p1089881613391"><a id="p1089881613391"></a><a id="p1089881613391"></a>xxxx&#x9700;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x66FF;&#x6362;&#x4E3A;&#x8FDB;&#x7A0B;&#x540D;</p>
+</td>
+</tr>
+<tr id="row1277331953914"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p13773101953917"><a id="p13773101953917"></a><a id="p13773101953917"></a>pidof xxxxx</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p6773111943913"><a id="p6773111943913"></a><a id="p6773111943913"></a>xxxx&#x9700;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x66FF;&#x6362;&#x4E3A;&#x8FDB;&#x7A0B;&#x540D;</p>
+</td>
+</tr>
+<tr id="row5911156192217"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p19277131864"><a id="p19277131864"></a><a id="p19277131864"></a>ps ux | awk &apos;{print}&apos;| sed 1d;   ps ux | awk &apos;{print $x\t$y}&apos;| sed 1d</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p119295642210"><a id="p119295642210"></a><a id="p119295642210"></a>-</p>
+</td>
+</tr>
+<tr id="row053817271478"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p14538172716717"><a id="p14538172716717"></a><a id="p14538172716717"></a>ps -ef | awk &apos;{print}&apos;| sed 1d;   ps ux | awk &apos;{print $x\t$y}&apos;| sed 1d</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p753818271375"><a id="p753818271375"></a><a id="p753818271375"></a>-</p>
+</td>
+</tr>
+<tr id="row149275610221"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p127713311466"><a id="p127713311466"></a><a id="p127713311466"></a>for p in `pidof <em id="i1451364204514"><a id="i1451364204514"></a><a id="i1451364204514"></a>xxx</em>`; do { echo &quot;kill $p&quot;; kill $p; }; done</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p16927568221"><a id="p16927568221"></a><a id="p16927568221"></a>-</p>
+</td>
+</tr>
+<tr id="row10920561226"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p127713114619"><a id="p127713114619"></a><a id="p127713114619"></a><em id="i012191494513"><a id="i012191494513"></a><a id="i012191494513"></a>ide_cmd.sh --eth0_up ip _address</em></p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p77451549151115"><a id="p77451549151115"></a><a id="p77451549151115"></a>sudo&#x63D0;&#x6743;&#xFF0C;&#x5B9E;&#x9645;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x4E3A;</p>
+<p id="p1774714915114"><a id="p1774714915114"></a><a id="p1774714915114"></a><strong id="b1574712493119"><a id="b1574712493119"></a><a id="b1574712493119"></a>sudo </strong><em id="i19748174913115"><a id="i19748174913115"></a><a id="i19748174913115"></a>command</em>&#xFF0C;&#x811A;&#x672C;&#x4E2D;&#x6267;&#x884C;&#x4E3A;ifconfig eth0 ip_address</p>
+<p id="p15399174616720"><a id="p15399174616720"></a><a id="p15399174616720"></a>&#x4EC5;&#x9002;&#x7528;&#x4E8E;&#x5F00;&#x53D1;&#x8005;&#x677F;&#x3002;</p>
+<p id="p178143194610"><a id="p178143194610"></a><a id="p178143194610"></a><em id="i1161913144617"><a id="i1161913144617"></a><a id="i1161913144617"></a>ip_address</em>&#x9700;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x66FF;&#x6362;&#x3002;</p>
+</td>
+</tr>
+<tr id="row109235618222"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p102779311617"><a id="p102779311617"></a><a id="p102779311617"></a>ide_cmd.sh --setup_eth0 <em id="i3868131784616"><a id="i3868131784616"></a><a id="i3868131784616"></a>ip_address</em> <em id="i1387620391486"><a id="i1387620391486"></a><a id="i1387620391486"></a>netmask_address</em> <em id="i2748142811469"><a id="i2748142811469"></a><a id="i2748142811469"></a>gw_address</em></p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p1409155361115"><a id="p1409155361115"></a><a id="p1409155361115"></a>sudo&#x63D0;&#x6743;&#xFF0C;&#x5B9E;&#x9645;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x4E3A;</p>
+<p id="p641175371117"><a id="p641175371117"></a><a id="p641175371117"></a><strong id="b34121653161111"><a id="b34121653161111"></a><a id="b34121653161111"></a>sudo </strong><em id="i641317533119"><a id="i641317533119"></a><a id="i641317533119"></a>command</em>&#xFF0C;&#x811A;&#x672C;&#x5B8F;&#x6267;&#x884C;&#x4E3A;ifconfig eth0 ip_address netmask netmask_address &amp;&amp; route add default gw gw_address</p>
+<p id="p113625329717"><a id="p113625329717"></a><a id="p113625329717"></a>&#x4EC5;&#x9002;&#x7528;&#x4E8E;&#x5F00;&#x53D1;&#x8005;&#x677F;&#x3002;</p>
+<p id="p16400153420483"><a id="p16400153420483"></a><a id="p16400153420483"></a><em id="i137571434174816"><a id="i137571434174816"></a><a id="i137571434174816"></a>ip_address</em>/netmask_address/gw_address&#x9700;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x66FF;&#x6362;&#x3002;</p>
+</td>
+</tr>
+<tr id="row4921456162211"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p152771631369"><a id="p152771631369"></a><a id="p152771631369"></a>sed -i &apos;/iface.eth0/{n;s/address.*/address <em id="i641423514465"><a id="i641423514465"></a><a id="i641423514465"></a>ip_address</em>/;}&apos; /etc/network/interfaces</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p1963210561116"><a id="p1963210561116"></a><a id="p1963210561116"></a>sudo&#x63D0;&#x6743;&#xFF0C;&#x5B9E;&#x9645;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x4E3A;</p>
+<p id="p14632105617113"><a id="p14632105617113"></a><a id="p14632105617113"></a><strong id="b66323567117"><a id="b66323567117"></a><a id="b66323567117"></a>sudo </strong><em id="i1363417560111"><a id="i1363417560111"></a><a id="i1363417560111"></a>command</em></p>
+<p id="p144112305720"><a id="p144112305720"></a><a id="p144112305720"></a>&#x4EC5;&#x9002;&#x7528;&#x4E8E;&#x5F00;&#x53D1;&#x8005;&#x677F;&#x3002;</p>
+<p id="p397915378487"><a id="p397915378487"></a><a id="p397915378487"></a><em id="i134371038174810"><a id="i134371038174810"></a><a id="i134371038174810"></a>ip_address</em>&#x9700;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x66FF;&#x6362;&#x3002;</p>
+</td>
+</tr>
+<tr id="row1692756202210"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p12277183114619"><a id="p12277183114619"></a><a id="p12277183114619"></a>sed -i &apos;/iface.eth0/{n;n;s/netmask.*/netmask <em id="i1569754164610"><a id="i1569754164610"></a><a id="i1569754164610"></a>ip_address</em>/;}&apos; /etc/network/interfaces</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p363365913111"><a id="p363365913111"></a><a id="p363365913111"></a>sudo&#x63D0;&#x6743;&#xFF0C;&#x5B9E;&#x9645;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x4E3A;</p>
+<p id="p1563311594118"><a id="p1563311594118"></a><a id="p1563311594118"></a><strong id="b1363520595112"><a id="b1363520595112"></a><a id="b1363520595112"></a>sudo </strong><em id="i7637859201118"><a id="i7637859201118"></a><a id="i7637859201118"></a>command</em></p>
+<p id="p101136283711"><a id="p101136283711"></a><a id="p101136283711"></a>&#x4EC5;&#x9002;&#x7528;&#x4E8E;&#x5F00;&#x53D1;&#x8005;&#x677F;&#x3002;</p>
+<p id="p153572041144815"><a id="p153572041144815"></a><a id="p153572041144815"></a><em id="i86991741174819"><a id="i86991741174819"></a><a id="i86991741174819"></a>ip_address</em>&#x9700;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x66FF;&#x6362;&#x3002;</p>
+</td>
+</tr>
+<tr id="row99210569221"><td class="cellrowborder" valign="top" headers="mcps1.1.4.1.1 "><p id="p4277163111614"><a id="p4277163111614"></a><a id="p4277163111614"></a>sed -i &apos;/iface.eth0/{n;n;n;s/gateway.*/gateway <em id="i16926125812470"><a id="i16926125812470"></a><a id="i16926125812470"></a>ip_address</em>/;}&apos; /etc/network/interfaces</p>
+</td>
+<td class="cellrowborder" valign="top" headers="mcps1.1.4.1.2 "><p id="p94657221210"><a id="p94657221210"></a><a id="p94657221210"></a>sudo&#x63D0;&#x6743;&#xFF0C;&#x5B9E;&#x9645;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x4E3A;</p>
+<p id="p64663221219"><a id="p64663221219"></a><a id="p64663221219"></a><strong id="b19466162161216"><a id="b19466162161216"></a><a id="b19466162161216"></a>sudo </strong><em id="i54679261211"><a id="i54679261211"></a><a id="i54679261211"></a>command</em></p>
+<p id="p1747185113618"><a id="p1747185113618"></a><a id="p1747185113618"></a>&#x4EC5;&#x9002;&#x7528;&#x4E8E;&#x5F00;&#x53D1;&#x8005;&#x677F;&#x3002;</p>
+<p id="p192345552486"><a id="p192345552486"></a><a id="p192345552486"></a><em id="i4450855194819"><a id="i4450855194819"></a><a id="i4450855194819"></a>ip_address</em>&#x9700;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x66FF;&#x6362;&#x3002;</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="简介.html" class="navigation navigation-prev " aria-label="Previous page: 简介">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Mind-Studio发送命令给Host侧执行.html" class="navigation navigation-next " aria-label="Next page: Mind Studio发送命令给Host侧执行">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Mind Studio发送命令给Device侧执行","level":"1.3","depth":1,"next":{"title":"Mind Studio发送命令给Host侧执行","level":"1.4","depth":1,"path":"Mind-Studio发送命令给Host侧执行.md","ref":"Mind-Studio发送命令给Host侧执行.md","articles":[]},"previous":{"title":"简介","level":"1.2","depth":1,"path":"简介.md","ref":"简介.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"imgUrl":"","topnav":[]},"plugins":["expandable-chapters","copy"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy":{},"expandableChapters":{"cssFile":["expandable-chapters-theme.css"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"website.css"}},"file":{"path":"Mind-Studio发送命令给Device侧执行.md","mtime":"2019-03-13T09:17:47.024Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-13T09:34:51.871Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/clipboard.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/copy.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

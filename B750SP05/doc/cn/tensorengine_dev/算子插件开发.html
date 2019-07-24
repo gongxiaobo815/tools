@@ -1,0 +1,2046 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>算子插件开发 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters-theme.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-copy/css/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="编译TE算子工程.html" />
+    
+    
+    <link rel="prev" href="自定义算子开发.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="简介.html">
+            
+                <a href="简介.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="自定义算子开发与运行.html">
+            
+                <a href="自定义算子开发与运行.html">
+            
+                    
+                    自定义算子开发与运行
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="简介-0.html">
+            
+                <a href="简介-0.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="场景说明.html">
+            
+                <a href="场景说明.html">
+            
+                    
+                    场景说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="声明.html">
+            
+                <a href="声明.html">
+            
+                    
+                    声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="自定义算子开发实例.html">
+            
+                <a href="自定义算子开发实例.html">
+            
+                    
+                    自定义算子开发实例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="操作流程.html">
+            
+                <a href="操作流程.html">
+            
+                    
+                    操作流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="创建TE算子开发工程.html">
+            
+                <a href="创建TE算子开发工程.html">
+            
+                    
+                    创建TE算子开发工程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.2.1" data-path="直接新建算子开发工程.html">
+            
+                <a href="直接新建算子开发工程.html">
+            
+                    
+                    直接新建算子开发工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2.2" data-path="模型转化失败进入算子开发工程.html">
+            
+                <a href="模型转化失败进入算子开发工程.html">
+            
+                    
+                    模型转化失败进入算子开发工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="自定义算子开发.html">
+            
+                <a href="自定义算子开发.html">
+            
+                    
+                    自定义算子开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.4.4" data-path="算子插件开发.html">
+            
+                <a href="算子插件开发.html">
+            
+                    
+                    算子插件开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.5" data-path="编译TE算子工程.html">
+            
+                <a href="编译TE算子工程.html">
+            
+                    
+                    编译TE算子工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.6" data-path="运行TE算子工程.html">
+            
+                <a href="运行TE算子工程.html">
+            
+                    
+                    运行TE算子工程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.6.1" data-path="构造输入数据文件.html">
+            
+                <a href="构造输入数据文件.html">
+            
+                    
+                    构造输入数据文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.6.2" data-path="配置运行参数.html">
+            
+                <a href="配置运行参数.html">
+            
+                    
+                    配置运行参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.6.3" data-path="运行单算子.html">
+            
+                <a href="运行单算子.html">
+            
+                    
+                    运行单算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.7" data-path="加载插件转换模型.html">
+            
+                <a href="加载插件转换模型.html">
+            
+                    
+                    加载插件转换模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="自定义算子整网络执行.html">
+            
+                <a href="自定义算子整网络执行.html">
+            
+                    
+                    自定义算子整网络执行
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="创建Mind工程.html">
+            
+                <a href="创建Mind工程.html">
+            
+                    
+                    创建Mind工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="导入网络模型.html">
+            
+                <a href="导入网络模型.html">
+            
+                    
+                    导入网络模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="编排流程.html">
+            
+                <a href="编排流程.html">
+            
+                    
+                    编排流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="编译运行.html">
+            
+                <a href="编译运行.html">
+            
+                    
+                    编译运行
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="算子开发参考.html">
+            
+                <a href="算子开发参考.html">
+            
+                    
+                    算子开发参考
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="reduction算子介绍.html">
+            
+                <a href="reduction算子介绍.html">
+            
+                    
+                    reduction算子介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1.1" data-path="reduction算子定义.html">
+            
+                <a href="reduction算子定义.html">
+            
+                    
+                    reduction算子定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.1.2" data-path="reduction算子代码解析.html">
+            
+                <a href="reduction算子代码解析.html">
+            
+                    
+                    reduction算子代码解析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1.2.1" data-path="导入TVM模块.html">
+            
+                <a href="导入TVM模块.html">
+            
+                    
+                    导入TVM模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.1.2.2" data-path="声明输入.html">
+            
+                <a href="声明输入.html">
+            
+                    
+                    声明输入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.1.2.3" data-path="计算过程.html">
+            
+                <a href="计算过程.html">
+            
+                    
+                    计算过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.1.2.4" data-path="算子编译.html">
+            
+                <a href="算子编译.html">
+            
+                    
+                    算子编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.1.3" data-path="算子插件注册代码解析.html">
+            
+                <a href="算子插件注册代码解析.html">
+            
+                    
+                    算子插件注册代码解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="sign算子介绍.html">
+            
+                <a href="sign算子介绍.html">
+            
+                    
+                    sign算子介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.2.1" data-path="sign算子定义.html">
+            
+                <a href="sign算子定义.html">
+            
+                    
+                    sign算子定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2.2" data-path="算子实现代码解析.html">
+            
+                <a href="算子实现代码解析.html">
+            
+                    
+                    算子实现代码解析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.2.2.1" data-path="导入模块.html">
+            
+                <a href="导入模块.html">
+            
+                    
+                    导入模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2.2.2" data-path="声明输入-1.html">
+            
+                <a href="声明输入-1.html">
+            
+                    
+                    声明输入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2.2.3" data-path="计算过程-2.html">
+            
+                <a href="计算过程-2.html">
+            
+                    
+                    计算过程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2.2.4" data-path="算子编译-3.html">
+            
+                <a href="算子编译-3.html">
+            
+                    
+                    算子编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="算子插件开发函数参考.html">
+            
+                <a href="算子插件开发函数参考.html">
+            
+                    
+                    算子插件开发函数参考
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.1" data-path="相关函数列表.html">
+            
+                <a href="相关函数列表.html">
+            
+                    
+                    相关函数列表
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.1.1" data-path="非IR方式.html">
+            
+                <a href="非IR方式.html">
+            
+                    
+                    非IR方式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.1.1.1" data-path="ParseParams函数.html">
+            
+                <a href="ParseParams函数.html">
+            
+                    
+                    ParseParams函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.1.2" data-path="ParseWeights函数.html">
+            
+                <a href="ParseWeights函数.html">
+            
+                    
+                    ParseWeights函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.1.3" data-path="ConvertWeight函数.html">
+            
+                <a href="ConvertWeight函数.html">
+            
+                    
+                    ConvertWeight函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.1.4" data-path="ConvertShape函数.html">
+            
+                <a href="ConvertShape函数.html">
+            
+                    
+                    ConvertShape函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.1.5" data-path="GetOutputDesc函数.html">
+            
+                <a href="GetOutputDesc函数.html">
+            
+                    
+                    GetOutputDesc函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.1.6" data-path="BuildTvmBinFile函数.html">
+            
+                <a href="BuildTvmBinFile函数.html">
+            
+                    
+                    BuildTvmBinFile函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.1.7" data-path="算子构建函数注册宏.html">
+            
+                <a href="算子构建函数注册宏.html">
+            
+                    
+                    算子构建函数注册宏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.1.8" data-path="调用示例.html">
+            
+                <a href="调用示例.html">
+            
+                    
+                    调用示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.2" data-path="IR方式.html">
+            
+                <a href="IR方式.html">
+            
+                    
+                    IR方式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.1.2.1" data-path="Attr函数.html">
+            
+                <a href="Attr函数.html">
+            
+                    
+                    Attr函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.2.2" data-path="ParseParams函数-4.html">
+            
+                <a href="ParseParams函数-4.html">
+            
+                    
+                    ParseParams函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.2.3" data-path="GetOutputDesc函数-5.html">
+            
+                <a href="GetOutputDesc函数-5.html">
+            
+                    
+                    GetOutputDesc函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.2.4" data-path="BuildTvmBinFile函数-6.html">
+            
+                <a href="BuildTvmBinFile函数-6.html">
+            
+                    
+                    BuildTvmBinFile函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.2.5" data-path="算子参数规格注册宏.html">
+            
+                <a href="算子参数规格注册宏.html">
+            
+                    
+                    算子参数规格注册宏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.2.6" data-path="算子解析函数注册宏.html">
+            
+                <a href="算子解析函数注册宏.html">
+            
+                    
+                    算子解析函数注册宏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.2.7" data-path="算子构建函数注册宏-7.html">
+            
+                <a href="算子构建函数注册宏-7.html">
+            
+                    
+                    算子构建函数注册宏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.2.8" data-path="调用示例-8.html">
+            
+                <a href="调用示例-8.html">
+            
+                    
+                    调用示例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.1.2.8.1" data-path="用户自定义类.html">
+            
+                <a href="用户自定义类.html">
+            
+                    
+                    用户自定义类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.2.8.2" data-path="调用Attr函数.html">
+            
+                <a href="调用Attr函数.html">
+            
+                    
+                    调用Attr函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.2.8.3" data-path="自定义ParseParams函数.html">
+            
+                <a href="自定义ParseParams函数.html">
+            
+                    
+                    自定义ParseParams函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.2.8.4" data-path="重写GetOutputDesc函数和BuildTvmBinFile函数.html">
+            
+                <a href="重写GetOutputDesc函数和BuildTvmBinFile函数.html">
+            
+                    
+                    重写GetOutputDesc函数和BuildTvmBinFile函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.1.2.8.5" data-path="算子注册.html">
+            
+                <a href="算子注册.html">
+            
+                    
+                    算子注册
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.2" data-path="框架内置算子列表.html">
+            
+                <a href="框架内置算子列表.html">
+            
+                    
+                    框架内置算子列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="TensorEngine-API参考.html">
+            
+                <a href="TensorEngine-API参考.html">
+            
+                    
+                    TensorEngine API参考
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="TE简介.html">
+            
+                <a href="TE简介.html">
+            
+                    
+                    TE简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="说明.html">
+            
+                <a href="说明.html">
+            
+                    
+                    说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="compute接口.html">
+            
+                <a href="compute接口.html">
+            
+                    
+                    compute接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="te-lang-cce-vadd（lhs-rhs）.html">
+            
+                <a href="te-lang-cce-vadd（lhs-rhs）.html">
+            
+                    
+                    te.lang.cce.vadd（lhs, rhs）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="te-lang-cce-vsub（lhs-rhs）.html">
+            
+                <a href="te-lang-cce-vsub（lhs-rhs）.html">
+            
+                    
+                    te.lang.cce.vsub（lhs, rhs）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" data-path="te-lang-cce-vmul（lhs-rhs）.html">
+            
+                <a href="te-lang-cce-vmul（lhs-rhs）.html">
+            
+                    
+                    te.lang.cce.vmul（lhs, rhs）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.4" data-path="te-lang-cce-vmin（lhs-rhs）.html">
+            
+                <a href="te-lang-cce-vmin（lhs-rhs）.html">
+            
+                    
+                    te.lang.cce.vmin（lhs, rhs）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.5" data-path="te-lang-cce-vmax（lhs-rhs）.html">
+            
+                <a href="te-lang-cce-vmax（lhs-rhs）.html">
+            
+                    
+                    te.lang.cce.vmax（lhs, rhs）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.6" data-path="te-lang-cce-vor（lhs-rhs）.html">
+            
+                <a href="te-lang-cce-vor（lhs-rhs）.html">
+            
+                    
+                    te.lang.cce.vor（lhs, rhs）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.7" data-path="te-lang-cce-vand（lhs-rhs）.html">
+            
+                <a href="te-lang-cce-vand（lhs-rhs）.html">
+            
+                    
+                    te.lang.cce.vand（lhs, rhs）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.8" data-path="te-lang-cce-vadds（raw_tensor-scalar）.html">
+            
+                <a href="te-lang-cce-vadds（raw_tensor-scalar）.html">
+            
+                    
+                    te.lang.cce.vadds（raw_tensor, scalar）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.9" data-path="te-lang-cce-vmuls（raw_tensor-scalar）.html">
+            
+                <a href="te-lang-cce-vmuls（raw_tensor-scalar）.html">
+            
+                    
+                    te.lang.cce.vmuls（raw_tensor, scalar）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.10" data-path="te-lang-cce-vlog（raw_tensor）.html">
+            
+                <a href="te-lang-cce-vlog（raw_tensor）.html">
+            
+                    
+                    te.lang.cce.vlog（raw_tensor）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.11" data-path="te-lang-cce-vexp（raw_tensor）.html">
+            
+                <a href="te-lang-cce-vexp（raw_tensor）.html">
+            
+                    
+                    te.lang.cce.vexp（raw_tensor）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.12" data-path="te-lang-cce-vabs（raw_tensor）.html">
+            
+                <a href="te-lang-cce-vabs（raw_tensor）.html">
+            
+                    
+                    te.lang.cce.vabs（raw_tensor）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.13" data-path="te-lang-cce-vrec（raw_tensor）.html">
+            
+                <a href="te-lang-cce-vrec（raw_tensor）.html">
+            
+                    
+                    te.lang.cce.vrec（raw_tensor）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.14" data-path="te-lang-cce-cast_to（data-dtype-f1628IntegerFlag-False）.html">
+            
+                <a href="te-lang-cce-cast_to（data-dtype-f1628IntegerFlag-False）.html">
+            
+                    
+                    te.lang.cce.cast_to（data, dtype, f1628IntegerFlag=False）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.15" data-path="te-lang-cce-vrelu（raw_tensor）.html">
+            
+                <a href="te-lang-cce-vrelu（raw_tensor）.html">
+            
+                    
+                    te.lang.cce.vrelu（raw_tensor）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.16" data-path="te-lang-cce-vnot（raw_tensor）.html">
+            
+                <a href="te-lang-cce-vnot（raw_tensor）.html">
+            
+                    
+                    te.lang.cce.vnot（raw_tensor）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.17" data-path="te-lang-cce-vaxpy（lhs-rhs-scalar）.html">
+            
+                <a href="te-lang-cce-vaxpy（lhs-rhs-scalar）.html">
+            
+                    
+                    te.lang.cce.vaxpy（lhs, rhs, scalar）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.18" data-path="te-lang-cce-vmla（x-y-z）.html">
+            
+                <a href="te-lang-cce-vmla（x-y-z）.html">
+            
+                    
+                    te.lang.cce.vmla（x, y, z）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.19" data-path="te-lang-cce-vmadd（x-y-z）.html">
+            
+                <a href="te-lang-cce-vmadd（x-y-z）.html">
+            
+                    
+                    te.lang.cce.vmadd（x, y, z）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.20" data-path="te-lang-cce-vmaddrelu（x-y-z）.html">
+            
+                <a href="te-lang-cce-vmaddrelu（x-y-z）.html">
+            
+                    
+                    te.lang.cce.vmaddrelu（x, y, z）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.21" data-path="te-lang-cce-ceil（raw_tensor）.html">
+            
+                <a href="te-lang-cce-ceil（raw_tensor）.html">
+            
+                    
+                    te.lang.cce.ceil（raw_tensor）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.22" data-path="te-lang-cce-floor（raw_tensor）.html">
+            
+                <a href="te-lang-cce-floor（raw_tensor）.html">
+            
+                    
+                    te.lang.cce.floor（raw_tensor）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.23" data-path="te-lang-cce-round（raw_tensor）.html">
+            
+                <a href="te-lang-cce-round（raw_tensor）.html">
+            
+                    
+                    te.lang.cce.round（raw_tensor）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.24" data-path="te-lang-cce-sum（raw_tensor-axis）.html">
+            
+                <a href="te-lang-cce-sum（raw_tensor-axis）.html">
+            
+                    
+                    te.lang.cce.sum（raw_tensor, axis）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.25" data-path="te-lang-cce-reduce_min（raw_tensor-axis）.html">
+            
+                <a href="te-lang-cce-reduce_min（raw_tensor-axis）.html">
+            
+                    
+                    te.lang.cce.reduce_min（raw_tensor, axis）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.26" data-path="te-lang-cce-reduce_max（raw_tensor-axis）.html">
+            
+                <a href="te-lang-cce-reduce_max（raw_tensor-axis）.html">
+            
+                    
+                    te.lang.cce.reduce_max（raw_tensor, axis）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.27" data-path="te-lang-cce-broadcast（var-shape-output_dtype-None）.html">
+            
+                <a href="te-lang-cce-broadcast（var-shape-output_dtype-None）.html">
+            
+                    
+                    te.lang.cce.broadcast（var, shape, output_dtype=None）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.28" data-path="te-lang-cce-unsorted_segment_sum（tensor-segment_ids-num_segments-init_value-0）.html">
+            
+                <a href="te-lang-cce-unsorted_segment_sum（tensor-segment_ids-num_segments-init_value-0）.html">
+            
+                    
+                    te.lang.cce.unsorted_segment_sum（tensor, segment_ids, num_segments, init_value=0）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.29" data-path="te-lang-cce-unsorted_segment_mean（tensor-segment_ids-num_segments-init_value-0）.html">
+            
+                <a href="te-lang-cce-unsorted_segment_mean（tensor-segment_ids-num_segments-init_value-0）.html">
+            
+                    
+                    te.lang.cce.unsorted_segment_mean（tensor, segment_ids, num_segments, init_value=0）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.30" data-path="te-lang-cce-unsorted_segment_prod（tensor-segment_ids-num_segments-init_value-0）.html">
+            
+                <a href="te-lang-cce-unsorted_segment_prod（tensor-segment_ids-num_segments-init_value-0）.html">
+            
+                    
+                    te.lang.cce.unsorted_segment_prod（tensor, segment_ids, num_segments, init_value=0）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.31" data-path="te-lang-cce-unsorted_segment_min（tensor-segment_ids-num_segments-init_value-0）.html">
+            
+                <a href="te-lang-cce-unsorted_segment_min（tensor-segment_ids-num_segments-init_value-0）.html">
+            
+                    
+                    te.lang.cce.unsorted_segment_min（tensor, segment_ids, num_segments, init_value=0）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.32" data-path="te-lang-cce-unsorted_segment_max（tensor-segment_ids-num_segments-init_value-0）.html">
+            
+                <a href="te-lang-cce-unsorted_segment_max（tensor-segment_ids-num_segments-init_value-0）.html">
+            
+                    
+                    te.lang.cce.unsorted_segment_max（tensor, segment_ids, num_segments, init_value=0）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.33" data-path="te-lang-cce-concat（raw_tensors-axis）.html">
+            
+                <a href="te-lang-cce-concat（raw_tensors-axis）.html">
+            
+                    
+                    te.lang.cce.concat（raw_tensors, axis）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.34" data-path="te-lang-cce-conv（-args）.html">
+            
+                <a href="te-lang-cce-conv（-args）.html">
+            
+                    
+                    te.lang.cce.conv（*args）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.35" data-path="te-lang-cce-compute_four2five（input-raw_shape_4D）.html">
+            
+                <a href="te-lang-cce-compute_four2five（input-raw_shape_4D）.html">
+            
+                    
+                    te.lang.cce.compute_four2five（input, raw_shape_4D）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.36" data-path="te-lang-cce-compute_five2four（input-raw_shape_4D）.html">
+            
+                <a href="te-lang-cce-compute_five2four（input-raw_shape_4D）.html">
+            
+                    
+                    te.lang.cce.compute_five2four（input, raw_shape_4D）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="build接口.html">
+            
+                <a href="build接口.html">
+            
+                    
+                    build接口
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="te-lang-cce-auto_schedule（outs）.html">
+            
+                <a href="te-lang-cce-auto_schedule（outs）.html">
+            
+                    
+                    te.lang.cce.auto_schedule（outs）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2" data-path="te-lang-cce-cce_build_code（sch-config_map-）.html">
+            
+                <a href="te-lang-cce-cce_build_code（sch-config_map-）.html">
+            
+                    
+                    te.lang.cce.cce_build_code（sch, config_map = {}）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="编译依赖接口.html">
+            
+                <a href="编译依赖接口.html">
+            
+                    
+                    编译依赖接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="使用方式.html">
+            
+                <a href="使用方式.html">
+            
+                    
+                    使用方式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.6.1" data-path="使用示例.html">
+            
+                <a href="使用示例.html">
+            
+                    
+                    使用示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6.2" data-path="异常处理.html">
+            
+                <a href="异常处理.html">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="附录.html">
+            
+                <a href="附录.html">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.7.1" data-path="缩略语和术语一览.html">
+            
+                <a href="缩略语和术语一览.html">
+            
+                    
+                    缩略语和术语一览
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >算子插件开发</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B97;&#x5B50;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;">&#x7B97;&#x5B50;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;<a id="ZH-CN_TOPIC_0144577670"></a></h1>
+<h2 id="&#x539F;&#x7406;&#x4ECB;&#x7ECD;">&#x539F;&#x7406;&#x4ECB;&#x7ECD;<a id="section1068711168449"></a></h2>
+<p>&#x5728;&#x5F00;&#x53D1;&#x7B97;&#x5B50;&#x63D2;&#x4EF6;&#x65F6;&#xFF0C;&#x652F;&#x6301;&#x4EE5;&#x4E0B;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x3002;</p>
+<ul>
+<li><p>&#x975E;IR&#xFF08;intermediate representation&#xFF0C;&#x4E2D;&#x4ECB;&#x7801;&#xFF09;&#x65B9;&#x5F0F;</p>
+<ol>
+<li>&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#xFF08;&#x5982;&#xFF1A;ReductionParser&#x7C7B;&#xFF09;&#xFF0C;&#x7EE7;&#x627F;CaffeTVMOpParser&#x57FA;&#x7C7B;&#xFF0C;&#x91CD;&#x5199;ParseParams&#x3001;ParseWeights&#x51FD;&#x6570;&#xFF0C;&#x5B9E;&#x73B0;caffe&#x6A21;&#x578B;&#x4E0E;&#x81EA;&#x5B9A;&#x4E49;&#x6A21;&#x578B;&#x4E2D;&#x7B97;&#x5B50;&#x53C2;&#x6570;&#x3001;&#x6743;&#x503C;&#x53C2;&#x6570;&#x7684;&#x6620;&#x5C04;&#x3002;</li>
+<li>&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#xFF08;&#x5982;&#xFF1A;ReductionBuilder&#x7C7B;&#xFF09;&#xFF0C;&#x7EE7;&#x627F;TVMOpBuilder&#x57FA;&#x7C7B;&#xFF0C;&#x91CD;&#x5199;GetOutputDesc&#x51FD;&#x6570;&#xFF08;&#x83B7;&#x53D6;&#x7B97;&#x5B50;&#x7684;&#x8F93;&#x51FA;&#x63CF;&#x8FF0;&#xFF09;&#x3001;BuildTvmBinFile&#x51FD;&#x6570;&#xFF08;&#x6784;&#x5EFA;&#x7B97;&#x5B50;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#xFF09;&#x3002;</li>
+<li><p>&#x8C03;&#x7528;DOMI_REGISTER_OP&#x5B8C;&#x6210;&#x7B97;&#x5B50;&#x6CE8;&#x518C;&#x3002;</p>
+<p><strong>&#x56FE; 1</strong>  &#x7B97;&#x5B50;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x539F;&#x7406;&#x56FE;<a id="fig18596195013718"></a><br><img src="figures/&#x7B97;&#x5B50;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x539F;&#x7406;&#x56FE;.png" alt="" title="&#x7B97;&#x5B50;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x539F;&#x7406;&#x56FE;"></p>
+</li>
+</ol>
+</li>
+<li><p>IR&#x65B9;&#x5F0F;</p>
+<ol>
+<li>&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#xFF08;&#x5982;&#xFF1A;CustomOperator&#x7C7B;&#xFF09;&#xFF0C;&#x7EE7;&#x627F;Operator&#x7C7B;&#xFF0C;&#x8C03;&#x7528;Attr&#x51FD;&#x6570;&#xFF08;&#x5C06;&#x5C5E;&#x6027;&#x503C;&#x5199;&#x5165;&#x5230;&#x79BB;&#x7EBF;&#x6A21;&#x578B;&#xFF09;&#x3001;&#x91CD;&#x5199;ParseParams&#x51FD;&#x6570;&#xFF08;&#x5B8C;&#x6210;caffe&#x6A21;&#x578B;&#x53C2;&#x6570;&#x548C;&#x6743;&#x503C;&#x7684;&#x8F6C;&#x6362;&#xFF0C;&#x5C06;&#x7ED3;&#x679C;&#x586B;&#x5230;&#x4E2D;&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x4E2D;&#xFF09;&#x3002;</li>
+<li>&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#xFF08;&#x5982;&#xFF1A;caffe_reduction_layerOpBuilder&#x7C7B;&#xFF09;&#xFF0C;&#x7EE7;&#x627F;TVMOpBuilder&#x57FA;&#x7C7B;&#xFF0C;&#x91CD;&#x5199;GetOutputDesc&#x51FD;&#x6570;&#xFF08;&#x83B7;&#x53D6;&#x7B97;&#x5B50;&#x7684;&#x8F93;&#x51FA;&#x63CF;&#x8FF0;&#xFF09;&#x3001;BuildTvmBinFile&#x51FD;&#x6570;&#xFF08;&#x6784;&#x5EFA;&#x7B97;&#x5B50;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#xFF09;&#x3002;</li>
+<li>&#x8C03;&#x7528;DOMI_OP_SCHEMA&#x6CE8;&#x518C;&#x7B97;&#x5B50;&#x53C2;&#x6570;&#x89C4;&#x683C;&#xFF0C;&#x8C03;&#x7528;DOMI_REGISTER_CAFFE_PARSER&#x6CE8;&#x518C;&#x7B97;&#x5B50;&#x89E3;&#x6790;&#x51FD;&#x6570;&#xFF0C;&#x8C03;&#x7528;DOMI_REGISTER_OP&#x5B8C;&#x6210;&#x7B97;&#x5B50;&#x6CE8;&#x518C;&#x3002;</li>
+</ol>
+</li>
+</ul>
+<h2 id="&#x7B97;&#x5B50;&#x63D2;&#x4EF6;&#x6CE8;&#x518C;&#x4EE3;&#x7801;&#x5F00;&#x53D1;">&#x7B97;&#x5B50;&#x63D2;&#x4EF6;&#x6CE8;&#x518C;&#x4EE3;&#x7801;&#x5F00;&#x53D1;<a id="section830434194110"></a></h2>
+<p>&#x4FEE;&#x6539;&#x7B97;&#x5B50;&#x5DE5;&#x7A0B;&#x6587;&#x4EF6;&#x4E2D;&#x7684;Reduction_parser.cpp&#x6587;&#x4EF6;&#xFF0C;&#x5B9E;&#x73B0;&#x6B64;&#x63D2;&#x4EF6;&#x7684;&#x4EE3;&#x7801;&#x5F00;&#x53D1;&#xFF08;&#x672C;&#x793A;&#x4F8B;&#x4F7F;&#x7528;&#x975E;IR&#x65B9;&#x5F0F;&#x5F00;&#x53D1;&#x7B97;&#x5B50;&#x63D2;&#x4EF6;&#xFF0C;IR&#x65B9;&#x5F0F;&#x8BF7;&#x53C2;&#x89C1;<a href="IR&#x65B9;&#x5F0F;.html">IR&#x65B9;&#x5F0F;</a>&#xFF09;&#x3002;</p>
+<p>&#x4FEE;&#x6539;&#x597D;&#x7684;&#x4EE3;&#x7801;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF0C;&#x8BE6;&#x7EC6;&#x4EE3;&#x7801;&#x89E3;&#x6790;&#x8BF7;&#x53C2;&#x89C1;<a href="&#x7B97;&#x5B50;&#x63D2;&#x4EF6;&#x6CE8;&#x518C;&#x4EE3;&#x7801;&#x89E3;&#x6790;.html">&#x7B97;&#x5B50;&#x63D2;&#x4EF6;&#x6CE8;&#x518C;&#x4EE3;&#x7801;&#x89E3;&#x6790;</a>&#x3002;</p>
+<blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>&#x8BF4;&#x660E;&#xFF1A;</strong><br>&#x62F7;&#x8D1D;&#x540E;&#x8BF7;&#x4FDD;&#x6301;&#x4EE3;&#x7801;&#x683C;&#x5F0F;&#xFF0C;&#x5426;&#x5219;&#x7F16;&#x8BD1;&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x9519;&#x3002;<br>&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x4E2D;&#x7684;<strong>sys.path.append</strong>&#xFF08;&apos;<strong>/projects/<em>ReductionOP_Demo</em>/Reduction/operator</strong>&apos;&#xFF09;&#x4E2D;&#x7684;<strong><em>ReductionOP_Demo</em></strong>&#x8BF7;&#x4FEE;&#x6539;&#x4E3A;&#x60A8;&#x7684;&#x5B9E;&#x9645;&#x5DE5;&#x7A0B;&#x540D;&#x79F0;&#x3002;  </p>
+</blockquote>
+<pre><code>#include &lt;Python.h&gt;
+#include &quot;omg/register.h&quot;
+#include &quot;proto/caffe/caffe.pb.h&quot;
+#include &quot;omg/parser/caffe/caffe_tvm_op_parser.h&quot;
+#include &quot;omg/model/op_builder/tvm_op_builder.h&quot;
+#include &lt;string&gt;
+#include &lt;iostream&gt;
+namespace domi
+{
+
+// ####  ReductionParser&#x662F;&#x89E3;&#x6790;&#x5668;&#x7684;&#x7C7B;&#x540D;&#xFF0C;&#x53EF;&#x4EE5;&#x968F;&#x610F;&#x6307;&#x5B9A;&#xFF0C;&#x53EA;&#x8981;&#x6700;&#x540E;&#x6CE8;&#x518C;&#x65F6;&#x4F7F;&#x7528;&#x6B64;&#x7C7B;&#x540D;&#x5373;&#x53EF;
+class ReductionParser : public CaffeTVMOpParser
+{
+public:
+    ReductionParser()
+    {
+    }
+
+    ~ReductionParser(){};
+
+    //##&#x5C06;Caffe&#x6A21;&#x578B;prototxt&#x4E2D;&#x7684;&#x7B97;&#x5B50;&#x53C2;&#x6570;&#xFF0C;&#x6620;&#x5C04;&#x5230;&#x79BB;&#x7EBF;&#x6A21;&#x578B;
+    virtual Status ParseParams(const Message* op_src, OpDef*  op_dest) override
+    {
+        const caffe::LayerParameter* layer =
+            dynamic_cast&lt;const caffe::LayerParameter*&gt;(op_src);
+
+        //#### &#x8F93;&#x5165;&#x7B97;&#x5B50;&#x53C2;&#x6570;&#x5408;&#x6CD5;&#x6027;&#x6821;&#x9A8C;
+        if (nullptr == layer)
+        {
+            printf(&quot;Dynamic cast op_src to LayerParameter failed\n&quot;);
+            return FAILED;
+        }
+        // #### &#x7B97;&#x5B50;&#x64CD;&#x4F5C;&#x7C7B;&#x578B;&#x4E0E;&#x5176;&#x5B57;&#x7B26;&#x4E32;&#x5BF9;&#x5E94;&#x7684;MAP
+        std::map&lt;::caffe::ReductionParameter_ReductionOp, std::string&gt; operation_map = {
+            { caffe::ReductionParameter_ReductionOp_SUM, &quot;SUM&quot; },
+        { caffe::ReductionParameter_ReductionOp_ASUM, &quot;ASUM&quot; },
+        { caffe::ReductionParameter_ReductionOp_SUMSQ, &quot;SUMSQ&quot; },
+        { caffe::ReductionParameter_ReductionOp_MEAN, &quot;MEAN&quot; },
+        };
+        // #### &#x83B7;&#x53D6;&#x7B97;&#x5B50;&#x53C2;&#x6570;
+        const ::caffe::ReductionParameter&amp; param = layer-&gt;reduction_param();
+
+        //#### &#x8BBE;&#x7F6E;&#x53C2;&#x6570;&#x81F3;op_dest&#x4E2D;
+        AddOpAttr(&quot;operation&quot;, operation_map[param.operation()], op_dest);
+        AddOpAttr(&quot;axis&quot;, (int32_t)param.axis(), op_dest);
+        AddOpAttr(&quot;coeff&quot;, param.coeff(), op_dest);
+        return SUCCESS;
+    }
+    virtual Status ParseWeights(const Message* op_src, OpDef* op_dest) override
+    {
+        // TODO: parse weights
+        return SUCCESS;
+    }
+};
+
+// #### ReductionBuilder&#x662F;&#x6784;&#x5EFA;&#x5668;&#x7684;&#x7C7B;&#x540D;&#xFF0C;&#x53EF;&#x4EE5;&#x968F;&#x610F;&#x6307;&#x5B9A;&#xFF0C;&#x53EA;&#x8981;&#x6700;&#x540E;&#x6CE8;&#x518C;&#x65F6;&#x4F7F;&#x7528;&#x6B64;&#x7C7B;&#x540D;&#x5373;&#x53EF;
+class ReductionBuilder : public TVMOpBuilder
+{
+public:
+    using TVMOpBuilder::TVMOpBuilder;
+
+    ~ReductionBuilder()
+    {
+    }
+// #### &#x83B7;&#x53D6;&#x8F93;&#x51FA;tensor&#x63CF;&#x8FF0;&#x7684;&#x5904;&#x7406;&#x51FD;&#x6570;
+    virtual Status GetOutputDesc(vector&lt;TensorDescriptor&gt;&amp; v_output_desc) override
+    {
+        v_output_desc.push_back(op_def_-&gt;input_desc(0));
+
+        int32_t axis = -1;
+        // #### &#x89E3;&#x6790;axis&#x53C2;&#x6570;
+        if (!GetOpAttr(&quot;axis&quot;, &amp;axis, op_def_))
+        {
+            printf(&quot;GetOpAttr axis failed!\n&quot;);
+        }
+  // #### &#x7531;&#x4E8E;davinci&#x6A21;&#x578B;&#x4F1A;&#x5C06;&#x6240;&#x6709;shape&#x8865;&#x9F50;&#x5230;4d&#xFF0C;&#x8FD9;&#x91CC;&#x9700;&#x8981;&#x4FEE;&#x590D;axis&#xFF0C;&#x6307;&#x5411;&#x539F;&#x6765;2d&#x65F6;&#x7684;&#x4F4D;&#x7F6E;
+        if (axis &lt; 0) axis -= 2;
+
+        if (axis &lt; 0) axis += v_output_desc[0].dim_size();
+
+        if (axis &lt; 0 || axis &gt;= v_output_desc[0].dim_size())
+        {
+            printf(&quot;invalid axis:%d, dim_size:%d\n&quot;, axis, v_output_desc[0].dim_size());
+            return PARAM_INVALID;
+        }
+        v_output_desc[0].set_dim(axis, 1);
+
+        return SUCCESS;
+    }
+    virtual Status BuildTvmBinFile(TVMBinInfo&amp; tvm_bin_info) override      //###&#x6784;&#x7B97;&#x5B50;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;
+    {
+        // 1. call tvm python api to build bin files
+        // 2. set path to TVMBinInfo tvm_bin_info
+        PyObject *pModule = NULL;
+        PyObject *pFunc = NULL;
+        PyObject *pArg = NULL;
+        PyObject *result = NULL;
+
+        // #### python&#x521D;&#x59CB;&#x5316;
+        Py_Initialize();
+
+        // #### &#x5BFC;&#x5165;topi.cce&#x6A21;&#x5757;
+        PyRun_SimpleString(&quot;import sys&quot;);
+        PyRun_SimpleString(&quot;sys.path.append(&apos;/projects/ReductionOP_Demo/Reduction/operator&apos;)&quot;);
+        pModule = PyImport_ImportModule(&quot;Reduction&quot;);
+        if (!pModule)
+        {
+            PyErr_Print();
+            printf(&quot;import topi.cce failed!\n&quot;);
+            return FAILED;
+        }
+        std::string operation;
+        int32_t axis = -1;
+        float coeff = 1;
+        // #### &#x89E3;&#x6790;operation&#x53C2;&#x6570;
+        if (!GetOpAttr(&quot;operation&quot;, &amp;operation, op_def_))
+        {
+            // #### &#x589E;&#x52A0;&#x5F02;&#x5E38;&#x5904;&#x7406;&#x3001;&#x53EF;&#x7EF4;&#x62A4;&#x4FE1;&#x606F;
+            printf(&quot;GetOpAttr operation failed!\n&quot;);
+        }
+        // #### &#x89E3;&#x6790;axis&#x53C2;&#x6570;
+        if (!GetOpAttr(&quot;axis&quot;, &amp;axis, op_def_))
+        {
+            printf(&quot;GetOpAttr axis failed!\n&quot;);
+        }
+        // #### &#x7531;&#x4E8E;davinci&#x6A21;&#x578B;&#x4F1A;&#x5C06;&#x6240;&#x6709;shape&#x8865;&#x9F50;&#x5230;4d&#xFF0C;&#x8FD9;&#x91CC;&#x9700;&#x8981;&#x4FEE;&#x590D;axis&#xFF0C;&#x6307;&#x5411;&#x539F;&#x6765;2d&#x65F6;&#x7684;&#x4F4D;&#x7F6E;
+        if (axis &lt; 0) axis -= 2;
+
+        // #### &#x89E3;&#x6790;coeff&#x53C2;&#x6570;
+        if (!GetOpAttr(&quot;coeff&quot;, &amp;coeff, op_def_))
+        {
+            printf(&quot;GetOpAttr coeff failed!\n&quot;);
+        }
+        // #### &#x89E3;&#x6790;&#x8F93;&#x5165;tensor&#x63CF;&#x8FF0;
+        TensorDescriptor input_desc = op_def_-&gt;input_desc(0);
+
+        // #### &#x89E3;&#x6790;&#x8F93;&#x5165;shape&#x503C;&#xFF0C;&#x6821;&#x9A8C;&#x5176;&#x5927;&#x5C0F;&#x662F;&#x5426;&#x4E3A;4
+        if (input_desc.dim_size() != 4)
+        {
+            printf(&quot;The shape size is %d, which is not 4!&quot;, input_desc.dim_size());
+            return FAILED;
+        }
+        // #### &#x8C03;&#x7528;Python&#x63A5;&#x53E3;&#x751F;&#x6210;Tvm&#x7B97;&#x5B50;
+        pFunc = PyObject_GetAttrString(pModule, &quot;Reduction&quot;);
+        pArg = Py_BuildValue(
+            &quot;(i,i,i,i), s, i, s, f, s&quot;,
+            input_desc.dim(0), input_desc.dim(1), input_desc.dim(2), input_desc.dim(3),&quot;float16&quot;,
+            axis, operation.c_str(), coeff, &quot;cce_reductionLayer_1_10_1_1_float16__3_SUMSQ_1_0&quot;);
+
+        PyEval_CallObject(pFunc, pArg);
+        // #### &#x7ED3;&#x675F;python&#x8C03;&#x7528;
+        Py_Finalize();
+        // #### &#x8BBE;&#x7F6E;&#x7B97;&#x5B50;json&#x6587;&#x4EF6;&#x8DEF;&#x5F84;
+        tvm_bin_info.json_file_path = &quot;./kernel_meta/cce_reductionLayer_1_10_1_1_float16__3_SUMSQ_1_0.json&quot;;
+        return SUCCESS;
+    }
+
+        virtual Status TransWeights(size_t&amp; mem_offset) override
+        {
+                // trans weights and calculate weights memory size
+                return SUCCESS;
+        }
+};
+DOMI_REGISTER_OP(&quot;caffe_reduction_layer2&quot;)                          //  caffe_reduction_layer2&#x662F;&#x7B97;&#x5B50;&#x5728;davinci&#x6A21;&#x578B;&#x7684;&#x7C7B;&#x578B;&#x540D;&#xFF0C;&#x53EF;&#x4EE5;&#x968F;&#x610F;&#x6307;&#x5B9A;&#xFF0C;&#x4E0D;&#x53EF;&#x4E0E;&#x5DF2;&#x6709;&#x7C7B;&#x578B;&#x540D;&#x91CD;&#x590D;&#xFF0C;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;
+    .FrameworkType(CAFFE)                                          //  &#x7B97;&#x5B50;&#x5F52;&#x5C5E;&#xFF0C;&#x679A;&#x4E3E;&#x7C7B;&#x578B;&#xFF0C;CAFFE, TENSORFLOW
+    .OriginOpType(&quot;Reduction&quot;)                                     //  Reduction&#x8868;&#x793A;&#x8BE5;&#x7B97;&#x5B50;&#x5728;caffe&#x6846;&#x67B6;&#x4E2D;&#x7684;&#x7C7B;&#x578B;&#x540D;
+    .ParserCreatorFn(PARSER_FN(ReductionParser))     //  ReductionParser&#x5BF9;&#x5E94;&#x4E0A;&#x9762;&#x7684;&#x7C7B;&#x540D;
+    .BuilderCreatorFn(BUILDER_FN(ReductionBuilder))  //  ReductionBuilder&#x5BF9;&#x5E94;&#x4E0A;&#x9762;&#x7684;&#x7C7B;&#x540D;
+    .ImplyType(ImplyType::TVM);                                    //  &#x5B9E;&#x73B0;&#x7C7B;&#x578B;&#xFF0C;&#x5F53;&#x524D;&#x53EA;&#x652F;&#x6301;TVM
+
+}  // namespace domi
+</code></pre><p>&#x7B97;&#x5B50;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#x6D89;&#x53CA;&#x5230;&#x7684;&#x51FD;&#x6570;&#x8BF7;&#x53C2;&#x8003;<a href="&#x7B97;&#x5B50;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x51FD;&#x6570;&#x53C2;&#x8003;.html">&#x7B97;&#x5B50;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x51FD;&#x6570;&#x53C2;&#x8003;</a>&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="自定义算子开发.html" class="navigation navigation-prev " aria-label="Previous page: 自定义算子开发">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="编译TE算子工程.html" class="navigation navigation-next " aria-label="Next page: 编译TE算子工程">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"算子插件开发","level":"1.3.4.4","depth":3,"next":{"title":"编译TE算子工程","level":"1.3.4.5","depth":3,"path":"编译TE算子工程.md","ref":"编译TE算子工程.md","articles":[]},"previous":{"title":"自定义算子开发","level":"1.3.4.3","depth":3,"path":"自定义算子开发.md","ref":"自定义算子开发.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"imgUrl":"","topnav":[]},"plugins":["expandable-chapters","copy","replace"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"replace":{},"copy":{},"expandableChapters":{"cssFile":["expandable-chapters-theme.css"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"website.css"}},"file":{"path":"算子插件开发.md","mtime":"2019-04-11T18:21:20.716Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-11T18:21:50.813Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/clipboard.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/copy.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-replace/js/replace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

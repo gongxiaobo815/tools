@@ -1,0 +1,486 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Mind Studio传输文件给Device侧 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters-theme.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-copy/css/copy.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Mind-Studio传输文件给Host侧.html" />
+    
+    
+    <link rel="prev" href="Mind-Studio发送命令给Host侧执行.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="简介.html">
+            
+                <a href="简介.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Mind-Studio发送命令给Device侧执行.html">
+            
+                <a href="Mind-Studio发送命令给Device侧执行.html">
+            
+                    
+                    Mind Studio发送命令给Device侧执行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Mind-Studio发送命令给Host侧执行.html">
+            
+                <a href="Mind-Studio发送命令给Host侧执行.html">
+            
+                    
+                    Mind Studio发送命令给Host侧执行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="Mind-Studio传输文件给Device侧.html">
+            
+                <a href="Mind-Studio传输文件给Device侧.html">
+            
+                    
+                    Mind Studio传输文件给Device侧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Mind-Studio传输文件给Host侧.html">
+            
+                <a href="Mind-Studio传输文件给Host侧.html">
+            
+                    
+                    Mind Studio传输文件给Host侧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Mind-Studio从Host侧获取文件.html">
+            
+                <a href="Mind-Studio从Host侧获取文件.html">
+            
+                    
+                    Mind Studio从Host侧获取文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="检测Mind-Studio与Host之间的心跳.html">
+            
+                <a href="检测Mind-Studio与Host之间的心跳.html">
+            
+                    
+                    检测Mind Studio与Host之间的心跳
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="设置日志级别.html">
+            
+                <a href="设置日志级别.html">
+            
+                    
+                    设置日志级别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Mind-Studio将Profiling采集项的信息发送给Host.html">
+            
+                <a href="Mind-Studio将Profiling采集项的信息发送给Host.html">
+            
+                    
+                    Mind Studio将Profiling采集项的信息发送给Host
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="从Host侧采集黑匣子的dump异常信息.html">
+            
+                <a href="从Host侧采集黑匣子的dump异常信息.html">
+            
+                    
+                    从Host侧采集黑匣子的dump异常信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="获取与Host连接的Device信息.html">
+            
+                <a href="获取与Host连接的Device信息.html">
+            
+                    
+                    获取与Host连接的Device信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="生成字符串加密文件.html">
+            
+                <a href="生成字符串加密文件.html">
+            
+                    
+                    生成字符串加密文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="同步Mind-Studio与Host侧的时间.html">
+            
+                <a href="同步Mind-Studio与Host侧的时间.html">
+            
+                    
+                    同步Mind Studio与Host侧的时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="查看帮助信息.html">
+            
+                <a href="查看帮助信息.html">
+            
+                    
+                    查看帮助信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Mind Studio传输文件给Device侧</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="mind-studio&#x4F20;&#x8F93;&#x6587;&#x4EF6;&#x7ED9;device&#x4FA7;">Mind Studio&#x4F20;&#x8F93;&#x6587;&#x4EF6;&#x7ED9;Device&#x4FA7;<a id="ZH-CN_TOPIC_0147907752"></a></h1>
+<h2 id="&#x547D;&#x4EE4;&#x529F;&#x80FD;">&#x547D;&#x4EE4;&#x529F;&#x80FD;<a id="section16840213414"></a></h2>
+<p>Mind Studio&#x4F20;&#x8F93;&#x6587;&#x4EF6;&#x7ED9;Device&#x4FA7;&#x3002;</p>
+<h2 id="&#x547D;&#x4EE4;&#x683C;&#x5F0F;">&#x547D;&#x4EE4;&#x683C;&#x5F0F;<a id="section13936161914410"></a></h2>
+<p>IDE-daemon-client --host &lt;<em>host_ip</em>&gt;:&lt;<em>port</em>&gt; [--device &lt;<em>deviceID&gt;</em>] --file &lt;<em>source_dir</em>&gt; &lt;<em>dest_dir</em>&gt;</p>
+<h2 id="&#x53C2;&#x6570;&#x8BF4;&#x660E;">&#x53C2;&#x6570;&#x8BF4;&#x660E;<a id="section9202122985815"></a></h2>
+<p><strong>&#x8868; 1</strong>  &#x53C2;&#x6570;&#x8BF4;&#x660E;</p>
+<p><a id="table20202142935810"></a></p>
+<table><thead align="left"><tr id="row1720422910589"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.1"><p id="p1620592911587"><a id="p1620592911587"></a><a id="p1620592911587"></a>&#x53C2;&#x6570;&#x540D;&#x79F0;</p>
+</th>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.2"><p id="p12205182918587"><a id="p12205182918587"></a><a id="p12205182918587"></a>&#x53C2;&#x6570;&#x63CF;&#x8FF0;</p>
+</th>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.3"><p id="p5205429155810"><a id="p5205429155810"></a><a id="p5205429155810"></a>&#x662F;&#x5426;&#x5FC5;&#x9009;</p>
+</th>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.4"><p id="p42061929195812"><a id="p42061929195812"></a><a id="p42061929195812"></a>&#x9ED8;&#x8BA4;&#x503C;</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row122066296585"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p1420618293586"><a id="p1420618293586"></a><a id="p1420618293586"></a>--host</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><a id="ul1257115238211"></a><a id="ul1257115238211"></a><ul id="ul1257115238211"><li><em id="i11695545164414"><a id="i11695545164414"></a><a id="i11695545164414"></a>host_ip</em>&#xFF1A;&#x6307;&#x5B9A;Host&#x4FA7;&#x7684;IP&#x5730;&#x5740;&#x3002;</li><li><em id="i1086811313458"><a id="i1086811313458"></a><a id="i1086811313458"></a>port</em>&#xFF1A;&#x6307;&#x5B9A;&#x7AEF;&#x53E3;&#x53F7;&#x3002;</li></ul>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p16209029105817"><a id="p16209029105817"></a><a id="p16209029105817"></a>&#x662F;</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p172091429155816"><a id="p172091429155816"></a><a id="p172091429155816"></a><em id="i982932135015"><a id="i982932135015"></a><a id="i982932135015"></a>port</em>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;22118&#x3002;</p>
+</td>
+</tr>
+<tr id="row17438111432813"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p12742101912314"><a id="p12742101912314"></a><a id="p12742101912314"></a>--device</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p1874281910235"><a id="p1874281910235"></a><a id="p1874281910235"></a>&#x5982;&#x679C;Host&#x8FDE;&#x63A5;&#x4E86;&#x591A;&#x4E2A;Device&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<em id="i68668461252"><a id="i68668461252"></a><a id="i68668461252"></a>--</em>device<em id="i19867046172520"><a id="i19867046172520"></a><a id="i19867046172520"></a> deviceID</em>&#x6307;&#x5B9A;&#x5177;&#x4F53;&#x7684;Device&#x3002;&#x5982;&#x679C;&#x4E0D;&#x6307;&#x5B9A;Device&#xFF0C;&#x5219;&#x9ED8;&#x8BA4;&#x6307;&#x5B9A;<em id="i175721248112615"><a id="i175721248112615"></a><a id="i175721248112615"></a>deviceID</em>&#x4E3A;0&#x7684;Device&#x3002;</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p674314194237"><a id="p674314194237"></a><a id="p674314194237"></a>&#x5426;</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p374313199238"><a id="p374313199238"></a><a id="p374313199238"></a><em id="i1914931852518"><a id="i1914931852518"></a><a id="i1914931852518"></a>deviceID</em>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;0&#x3002;</p>
+</td>
+</tr>
+<tr id="row112101129155815"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p1421132918589"><a id="p1421132918589"></a><a id="p1421132918589"></a>--file</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><a id="ul71388531331"></a><a id="ul71388531331"></a><ul id="ul71388531331"><li><em id="i3219164210317"><a id="i3219164210317"></a><a id="i3219164210317"></a>source_dir</em>&#xFF1A;&#x6307;&#x5B9A;Mind Studio&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x6E90;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x5305;&#x542B;&#x6587;&#x4EF6;&#x540D;&#x3002;</li><li><em id="i204821349737"><a id="i204821349737"></a><a id="i204821349737"></a>dest_dir</em>&#xFF1A;&#x6307;&#x5B9A;Device&#x4FA7;&#x7528;&#x4E8E;&#x5B58;&#x653E;&#x76EE;&#x7684;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x5305;&#x542B;&#x6587;&#x4EF6;&#x540D;&#x3002;&#x5FC5;&#x987B;&#x6307;&#x5B9A;&#x5B58;&#x653E;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x5426;&#x5219;&#x547D;&#x4EE4;&#x4F1A;&#x6267;&#x884C;&#x5931;&#x8D25;&#x3002;&#x6B64;&#x5904;&#x6587;&#x4EF6;&#x5B58;&#x653E;&#x7684;&#x8DEF;&#x5F84;&#x53EA;&#x80FD;&#x662F;&#x4EE5;&#x4E0B;&#x8DEF;&#x5F84;&#xFF1A;<a id="ul583381915434"></a><a id="ul583381915434"></a><ul id="ul583381915434"><li>~/ide_daemon</li><li>~/HIAI_PROJECTS</li><li>~/HIAI_DATANDMELSET</li><li>/opt/mini</li><li>/var/log/hisi_logs</li><li>/var/dlog</li></ul>
+</li></ul>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p13211229145814"><a id="p13211229145814"></a><a id="p13211229145814"></a>&#x662F;</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p821242910585"><a id="p821242910585"></a><a id="p821242910585"></a>-</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="&#x4F7F;&#x7528;&#x793A;&#x4F8B;">&#x4F7F;&#x7528;&#x793A;&#x4F8B;<a id="section18411611595"></a></h2>
+<ol>
+<li>&#x4EE5;Mind Studio&#x5B89;&#x88C5;&#x7528;&#x6237;&#x767B;&#x5F55;Mind Studio&#x6240;&#x5728;&#x7684;&#x670D;&#x52A1;&#x5668;&#x540E;&#x53F0;&#x3002;</li>
+<li><p>&#x6267;&#x884C;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#x8BBE;&#x7F6E;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x3002;</p>
+<pre><code>export  LD_LIBRARY_PATH=~/tools/che/ddk/ddk/uihost/lib
+export  PATH=$PATH:~/tools/che/ddk/ddk/uihost/bin
+</code></pre></li>
+<li><p>&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF0C;&#x5C06;A.java&#x6587;&#x4EF6;&#x4F20;&#x8F93;&#x5230;Device&#x4FA7;&#xFF0C;&#x5E76;&#x5C06;&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x4E3A;B.java&#x3002;</p>
+<pre><code>IDE-daemon-client --host xx.xx.xx.xx:22118 --file /tmp/A.java &quot;~/ide_daemon/B.java&quot;
+</code></pre><blockquote>
+<p><img src="public_sys-resources/icon-note.gif" alt=""> <strong>&#x8BF4;&#x660E;&#xFF1A;</strong><br><em>xx.xx.xx.xx</em>&#x9700;&#x8981;&#x66FF;&#x6362;&#x4E3A;&#x5B9E;&#x9645;&#x7684;Host&#x7684;IP&#x5730;&#x5740;&#x3002;  </p>
+</blockquote>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Mind-Studio发送命令给Host侧执行.html" class="navigation navigation-prev " aria-label="Previous page: Mind Studio发送命令给Host侧执行">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Mind-Studio传输文件给Host侧.html" class="navigation navigation-next " aria-label="Next page: Mind Studio传输文件给Host侧">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Mind Studio传输文件给Device侧","level":"1.5","depth":1,"next":{"title":"Mind Studio传输文件给Host侧","level":"1.6","depth":1,"path":"Mind-Studio传输文件给Host侧.md","ref":"Mind-Studio传输文件给Host侧.md","articles":[]},"previous":{"title":"Mind Studio发送命令给Host侧执行","level":"1.4","depth":1,"path":"Mind-Studio发送命令给Host侧执行.md","ref":"Mind-Studio发送命令给Host侧执行.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"imgUrl":"","topnav":[]},"plugins":["expandable-chapters","copy"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"copy":{},"expandableChapters":{"cssFile":["expandable-chapters-theme.css"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"website.css"}},"file":{"path":"Mind-Studio传输文件给Device侧.md","mtime":"2019-03-13T09:34:13.464Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-13T09:34:51.871Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/clipboard.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy/js/copy.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
