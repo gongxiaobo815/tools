@@ -34,6 +34,25 @@
 # ************************Variable*********************************************
 ScriptPath="$( cd "$(dirname "$0")" ; pwd -P )""/"
 DEV_NAME=$1
+
+#********************** UPDATE TO FIX ISSUE REGARDING /dev/mmc* MOUNTED SD CARD **********
+
+if [[ $DEV_NAME == /dev/mmc* ]]
+then
+    echo "Partion naming with p-prefix"	
+    p1="p1"
+    p2="p2"
+    p3="p3"	  	
+else
+    echo "Partition naming without p-prefix"	
+    p1="1"
+    p2="2"
+    p3="3"
+fi
+
+#####################################################################################
+
+
 ISO_FILE_DIR=$2
 ISO_FILE=$3
 RUN_MINI=$4
@@ -425,21 +444,21 @@ n
     sleep 5
 
     echo "y
-    " | mkfs.ext3 -L ubuntu_fs ${DEV_NAME}1
+    " | mkfs.ext3 -L ubuntu_fs ${DEV_NAME}$p1 # updated by aman
     if [[ $? -ne 0 ]];then
      echo "Failed: Format SDcard1 failed!"
      return 1;
     fi
 
     echo "y
-    " | mkfs.ext3 -L ubuntu_fs ${DEV_NAME}2
+    " | mkfs.ext3 -L ubuntu_fs ${DEV_NAME}$p2 # updated by aman
     if [[ $? -ne 0 ]];then
      echo "Failed: Format SDcard2 failed!"
      return 1;
     fi
 
     echo "y
-    " | mkfs.ext3 -L ubuntu_fs ${DEV_NAME}3
+    " | mkfs.ext3 -L ubuntu_fs ${DEV_NAME}$p3 # updated by aman
     if [[ $? -ne 0 ]];then
      echo "Failed: Format SDcard3 failed!"
      return 1;
@@ -602,21 +621,21 @@ function main()
         rm -rf ${TMPDIR_SD_MOUNT}
     fi
     mkdir ${TMPDIR_SD_MOUNT}
-    mount ${DEV_NAME}1 ${TMPDIR_SD_MOUNT} 2>/dev/null
+    mount ${DEV_NAME}$p1 ${TMPDIR_SD_MOUNT} 2>/dev/null  # updated by aman
 
     if [[ -d "${TMPDIR_SD2_MOUNT}" ]];then
         umount ${TMPDIR_SD2_MOUNT} 2>/dev/null
         rm -rf ${TMPDIR_SD2_MOUNT}
     fi
     mkdir ${TMPDIR_SD2_MOUNT}
-    mount ${DEV_NAME}2 ${TMPDIR_SD2_MOUNT} 2>/dev/null
+    mount ${DEV_NAME}$p2 ${TMPDIR_SD2_MOUNT} 2>/dev/null  # updated by aman
 
     if [[ -d "${TMPDIR_SD3_MOUNT}" ]];then
         umount ${TMPDIR_SD3_MOUNT} 2>/dev/null
         rm -rf ${TMPDIR_SD3_MOUNT}
     fi
     mkdir ${TMPDIR_SD3_MOUNT}
-    mount ${DEV_NAME}3 ${TMPDIR_SD3_MOUNT} 2>/dev/null
+    mount ${DEV_NAME}$p3 ${TMPDIR_SD3_MOUNT} 2>/dev/null  # updated by aman
 
     echo "Process: 3/4(Copy filesystem and mini package to SDcard)"
     copyFilesToSDcard
