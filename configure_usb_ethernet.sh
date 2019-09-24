@@ -160,13 +160,19 @@ function main()
     fi
     echo "Configure ${usb_ethernet} by ${usb_ip}"
     configure_usb_ethernet ${usb_ethernet} ${usb_ip}
-    sed -i "s/managed=false/managed=true/g" /etc/NetworkManager/NetworkManager.conf
-    ifconfig ${usb_ethernet} down 1>/dev/null 2>&1
-    ifconfig ${usb_ethernet} up 1>/dev/null 2>&1
-    echo "Restart NetworkManager service..."
-    service NetworkManager restart
-    echo "Configure usb ip successfully."
-
+    if [ -f "/etc/NetworkManager/NetworkManager.conf" ]; then
+        sed -i "s/managed=false/managed=true/g" /etc/NetworkManager/NetworkManager.conf
+        ifconfig ${usb_ethernet} down 1>/dev/null 2>&1
+        ifconfig ${usb_ethernet} up 1>/dev/null 2>&1
+        echo "Restart NetworkManager service..."
+        service NetworkManager restart
+        echo "Configure usb ip successfully."
+    else
+        ifconfig ${usb_ethernet} down 1>/dev/null 2>&1
+        #service networking restart
+        /etc/init.d/networking restart
+        echo "Configure usb ip successfully."
+    fi
 }
 
 main $*
