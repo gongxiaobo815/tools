@@ -49,7 +49,7 @@ CURRENT_PATH = os.path.dirname(
 
 SD_CARD_MAKING_PATH = os.path.join(CURRENT_PATH, "sd_card_making")
 
-MIN_DISK_SIZE = 8 * 1024 * 1024 * 1024
+MIN_DISK_SIZE = 7 * 1024 * 1024 * 1024
 
 MAKING_SD_CARD_COMMAND = "bash {path}/make_ubuntu_sd.sh " + " {dev_name}" + \
     " {pkg_path} {ubuntu_file_name} {ascend_developerkit_file_name}" + \
