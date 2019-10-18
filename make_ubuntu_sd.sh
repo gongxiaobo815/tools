@@ -443,6 +443,10 @@ n
 
     sleep 5
 
+    checkSDCard
+    if [ $? -ne 0 ];then
+        return 1
+    fi
     echo "y
     " | mkfs.ext3 -L ubuntu_fs ${DEV_NAME}$p1 # updated by aman
     if [[ $? -ne 0 ]];then
@@ -450,6 +454,10 @@ n
      return 1;
     fi
 
+    checkSDCard
+    if [ $? -ne 0 ];then
+        return 1
+    fi
     echo "y
     " | mkfs.ext3 -L ubuntu_fs ${DEV_NAME}$p2 # updated by aman
     if [[ $? -ne 0 ]];then
@@ -457,6 +465,10 @@ n
      return 1;
     fi
 
+    checkSDCard
+    if [ $? -ne 0 ];then
+        return 1
+    fi
     echo "y
     " | mkfs.ext3 -L ubuntu_fs ${DEV_NAME}$p3 # updated by aman
     if [[ $? -ne 0 ]];then
